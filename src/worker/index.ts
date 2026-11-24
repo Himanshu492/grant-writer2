@@ -562,7 +562,7 @@ app.patch('/api/settings', async (c) => {
 app.get('/api/admin/agent-install', (c) => {
   const origin = new URL(c.req.url).origin;
   return c.json({
-    command: `curl -fsSL ${origin}/agent/install.sh | sudo bash -s -- ${origin} ${c.env.AGENT_TOKEN}`,
+    command: `curl -fsSL ${origin}/agent/install.sh | bash -s -- ${origin} ${c.env.AGENT_TOKEN}`,
     version: AGENT.version,
   });
 });

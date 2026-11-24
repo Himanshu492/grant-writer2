@@ -96,6 +96,10 @@ sandbox.post('/submit', async (c) => {
     const values = form.getAll(key).map((v) => (typeof v === 'string' ? v : { filename: (v as File).name, size: (v as File).size }));
     payload[key] = values.length === 1 ? values[0] : values;
   }
-  await c.env.DB.prepare('INSERT INTO sandbox_submissions(payload_json) VALUES(?)').bind(JSON.stringify(payload)).run();
+  await c.env.DB.batch([
+    c.env.DB.prepare('INSERT INTO sandbox_submissions(payload_json) VALUES(?)').bind(JSON.stringify(payload).slice(0, 20000)),
+    // Practice data only: keep the most recent few.
+    c.env.DB.prepare('DELETE FROM sandbox_submissions WHERE id NOT IN (SELECT id FROM sandbox_submissions ORDER BY id DESC LIMIT 20)'),
+  ]);
   return c.html(page('Submitted', `<h1 id="done">Application submitted</h1><p>Thank you. Your sandbox application has been received.</p>`));
 });

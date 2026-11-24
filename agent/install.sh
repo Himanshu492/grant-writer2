@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Installs (or updates) the grants portal browser agent on a Debian/Ubuntu VM.
 #
-#   curl -fsSL <PORTAL_URL>/agent/install.sh | sudo bash -s -- <PORTAL_URL> <AGENT_TOKEN>
+#   curl -fsSL <PORTAL_URL>/agent/install.sh | bash -s -- <PORTAL_URL> <AGENT_TOKEN>      (as root)
 #
 # What it sets up, all as systemd services that survive reboots:
 #   - a virtual screen with one visible Chrome the agent drives (persistent profile, so logins stick)
@@ -171,8 +171,8 @@ UNIT
 systemctl daemon-reload
 SERVICES="grants-xvfb grants-wm grants-vnc grants-novnc grants-agent"
 command -v cloudflared >/dev/null && SERVICES="$SERVICES grants-liveview"
-systemctl enable --now $SERVICES >/dev/null 2>&1
-systemctl restart $SERVICES
+systemctl enable $SERVICES >/dev/null 2>&1 || true
+systemctl restart $SERVICES || true
 
 say "Checking"
 sleep 8
