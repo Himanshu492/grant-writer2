@@ -108,6 +108,19 @@ async function browser() {
   const profile = join(cfg.dataDir, 'profile');
   mkdirSync(profile, { recursive: true });
   for (const lock of ['SingletonLock', 'SingletonCookie', 'SingletonSocket']) rmSync(join(profile, lock), { force: true });
+  // People log in to funder portals in this shared browser: sessions should persist (cookies), passwords should not be stored.
+  try {
+    const prefsFile = join(profile, 'Default', 'Preferences');
+    mkdirSync(join(profile, 'Default'), { recursive: true });
+    let prefs = {};
+    try { prefs = JSON.parse(readFileSync(prefsFile, 'utf8')); } catch { /* first start */ }
+    prefs.credentials_enable_service = false;
+    prefs.credentials_enable_autosignin = false;
+    prefs.profile = { ...(prefs.profile || {}), password_manager_enabled: false };
+    writeFileSync(prefsFile, JSON.stringify(prefs));
+  } catch (e) {
+    log('could not set browser preferences:', e.message);
+  }
   context = await chromium.launchPersistentContext(profile, {
     headless: cfg.headless,
     executablePath: cfg.chromePath,
