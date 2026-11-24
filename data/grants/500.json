@@ -1,0 +1,908 @@
+{
+  "id": "500",
+  "title": "The 500 Fellowship (500 Global flagship program in San Francisco; formerly the Flagship Accelerator)",
+  "funder": "500 Global",
+  "program_url": "https://500.co/founders/flagship",
+  "application_url": "https://flagship.aplica.500.co/",
+  "status": "rolling",
+  "deadline": null,
+  "deadline_note": "No application deadline is published. 500.co lists the program dates as November 30, 2026 - April 9, 2027 and says \"Apply to be considered for the next batch\"; the application portal's active batch (\"Flagship Batch 37\") is flagged as rolling with no applications deadline. Which batch a new application would be considered for is not stated.",
+  "amount": "Up to $50K from 500 Global upon acceptance, with potential for up to $1M more depending on progress (equity/terms not published on the program page)",
+  "summary": {
+    "at_a_glance": "500 Global's flagship program, now branded \"The 500 Fellowship\": four months in person in San Francisco for early-stage founders \"building for the U.S. and the world\". Accepted companies can receive up to $50K right away with potential for up to $1M more as they progress. Applications go through 500 Global's own portal (Aplica), which still calls the program the \"Flagship Accelerator\".",
+    "what_they_offer": "Investment: \"Companies accepted into the 500 Fellowship can receive up to $50K right away with the potential for up to $1M more as you progress.\" Network: 500 Global's network of VCs, resources, mentorship and market insights across geographies. Mentorship: operator-investors, alumni founder coaches, entrepreneurs in residence, mentors and guest speakers. Format: weekly group day, 1:1s, and a showcase at the end. Also access to \"over $1M in credits in the 500 FounderHub\". The FAQ says participation is free (\"No. It's absolutely free.\").",
+    "what_theyre_looking_for": "\"This is for the top 0.1% of founders. We meet builders as early as day 0 who have a nonobvious deep insight on the market and an unfair advantage to get to the people who need it the most. We're looking for founders who've started building and thinking globally already. You might have just started or you already have your first users, revenue or pilots. You're in the U.S. already, or you plan to be within six months.\" FAQ: \"Early U.S. traction helps. If you're not there yet, apply anyway.\" 500 is \"sector agnostic and invests in all tech- enabled solutions from AI, deep tech, infrastructure, applications, enterprise, consumer, marketplaces, SaaS, and many more.\"",
+    "who_can_apply": "Early-stage founders of tech-enabled companies in any sector, anywhere, who are in the U.S. or plan to be within six months and can spend four months in person in San Francisco (co-working space in Mission Bay). \"On average 30-40% of a batch is international.\" Re-applying after a rejection is encouraged.",
+    "how_to_apply": "1) Click Apply on 500.co/founders/flagship, which opens flagship.aplica.500.co. 2) Create an account (first name, last name, email, password) or sign in. 3) Complete the application form (Intro, The Business, The Team, The Basics), including a pitch-deck link and a cap-table upload. 4) \"Selected applicants will have a series of interviews with the team.\" 5) Kick off in San Francisco. The FAQ says every application is reviewed individually and a response \"could take up to a few weeks\".",
+    "worth_noting": "The form asks for six months of monthly revenue and monthly customer/user counts, burn rate and cash balance as required numeric fields, so a pre-revenue company still has to enter numbers. A cap table file upload and a pitch-deck link (viewable in incognito) are required. The 500.co page was rebranded to \"500 Fellowship\" (page says updated Sep 2026) while the portal and the form wording still say \"accelerator program\". The older \"$150K for 6%\" terms quoted on third-party sites are not on the current official page."
+  },
+  "portal": {
+    "platform": "Aplica - 500 Global's own application platform (flagship.aplica.500.co); the form is backed by a HubSpot form (\"GAP Accelerator Application B37\")",
+    "requires_login": true,
+    "may_have_captcha": null,
+    "needs_file_uploads": true,
+    "notes": "An account is required before the form is shown: sign up at /auth/signup with First Name, Last Name, Email Address and Password (\"Must have at least 8 characters in length, lower case (a-z), upper case (A-Z) and numbers (0-9).\"). The sign-up page also contains an off-screen input named \"phone\" (tabindex -1, autocomplete off) that looks like a honeypot and should be left empty. The sign-in page says \"Sign in to continue your application or check your application status\", so a started application can be resumed. No CAPTCHA was seen on the sign-up or sign-in pages and the backing HubSpot form has CAPTCHA disabled, but the pages after login were not seen. Whether email verification is required is unknown. Support: aplica.support@500.co."
+  },
+  "questions_verification": "live_form",
+  "questions_source_url": "https://flagship.aplica.500.co/",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "How obtained: the application form sits behind a login, and no account was created. However, the public landing page of the official portal (flagship.aplica.500.co) ships the complete form definition for the active batch (\"Flagship Batch 37\", form \"GAP Accelerator Application B37\") in its page data. All questions, help text, options, required flags and order are taken verbatim from that definition on 2026-11-24, and the field list was cross-checked against the public definition of the backing HubSpot form (same 65 fields). The rendered post-login screens were NOT seen, so page breaks, on-screen layout and any client-side validation are unconfirmed. Details: (1) The portal reports 52 questions, which equals the number of required top-level fields; there are 57 visible top-level fields plus 9 conditional follow-ups. (2) Conditional fields: \"If yes, please list the other name(s):\" (shown only when \"Does your company go by any other names?\" = Yes); \"When's your launch date?\" (shown only when \"Has your product or service launched?\" = No); \"When did your product launch?\" (shown only when \"Has your product or service launched?\" = Yes, it's in private beta / Yes, it's in public beta / Yes, it's public); \"State (US)\" (shown only when \"Where is your company physically headquartered?\" = United States); \"If yes, how much? (Please use USD)\" (shown only when \"Have you already raised any outside funding?\" = Yes); \"If yes, who are your current investors?\" (shown only when \"Have you already raised any outside funding?\" = Yes); \"Please describe your company's progress since you last applied.\" (shown only when \"Have you applied to 500 previously?\" = Yes); \"Please list the name of each company below and give us a sentence or two about what happened with each company listed.\" (shown only when \"Have you or any of your co-founders started a company before?\" = Yes); \"Who referred you?\" (shown only when \"How did you hear about us?\" = Investor / Previous 500 Batch Company / 500 Global Staff / Other / Misk500 Meetups / Referral). (3) Option lists for \"Which industry/sector classification applies best to your company?\", \"Where is your company physically headquartered?\" and \"Where is your company incorporated?\" are supplied by the portal at render time and are not in the page data, so options are left empty. (The backing HubSpot form lists these industries: Fintech, Health, Smart Cities, Biotech, Collaboration, Entertainment, IT Tools, Security, Sports, Real Estate, Transportation, Media, HR, Education, Marketing, Customer Success, Retail, eCommerce, Industrial, Software (Sector-Agnostic) - the portal list may differ.) (4) For the six monthly revenue fields and six monthly customer fields, the help text is the group prompt shown above them. For \"I agree to receive communications from 500 Global.\" the help text is the privacy notice shown above it. (5) Word limits (\"150 words or fewer\" etc.) are stated as help text; whether the form enforces them is unknown. No character limits are defined. (6) Placeholder texts shown inside fields: \"Describe what your company does in no more than 3 sentences. Give us your best elevator pitch:\" -> \"500 Global is a seed fund & a network of startup programs.\"; \"Please share your company's website:\" -> \"www.500.co\"; \"Six months ago?\" -> \"USD actual\"; \"Five months ago?\" -> \"USD actual\"; \"Four months ago?\" -> \"USD actual\"; \"Three months ago?\" -> \"USD actual\"; \"Two months ago?\" -> \"USD actual\"; \"Last month?\" -> \"USD actual\"; \"What is your current monthly burn rate\" -> \"USD actual\"; \"What is your current cash balance\" -> \"USD actual\"; \"If yes, who are your current investors?\" -> \"Investor one; Investor two; etc.\"; \"Please list all co-founders along with links to LinkedIn profiles for each, including yourself.\" -> \"Full name, URL; etc.\"; \"First name:\" -> \"Christine\"; \"... and last name:\" -> \"Tsai\"; \"Primary contact's email address:\" -> \"Please use your company email address.\"; \"Primary contact's phone number:\" -> \"+X (XXX) XXX - XXXX\"; \"Product demonstration video:\" -> \"Please upload a video (only if you deem it necessary).\". (7) Hidden internal fields in the definition were left out: Processing Team [processing_team]; Next Workflow [next_workflow]; Internal - Batch number [internal_batch_number]; Batch Applied For... [batch_applied_for]; Source [rel]; utm_campaign [utm_campaign]; utm_source [utm_source]; Would you like to apply to a specific track? [would_you_like_to_apply_to_a_specific_track_]. (8) The portal copy marks \"I agree to receive communications from 500 Global.\" and the phone number as required, while the HubSpot copy marks them optional; the portal copy is reported here. (9) \"Verticals\" is a visible, optional checkbox field with no further prompt.",
+  "questions": [
+    {
+      "section": "Intro",
+      "text": "What's your company's legal name?",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "Intro",
+      "text": "Does your company go by any other names?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "Intro",
+      "text": "If yes, please list the other name(s):",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "Intro",
+      "text": "Describe what your company does in no more than 3 sentences. Give us your best elevator pitch:",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "Intro",
+      "text": "Please share your company's website:",
+      "help": "",
+      "type": "url",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "Intro",
+      "text": "Has your product or service launched?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Yes, it's public",
+        "Yes, it's in public beta",
+        "Yes, it's in private beta",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "Intro",
+      "text": "When's your launch date?",
+      "help": "",
+      "type": "date",
+      "required": false,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "Intro",
+      "text": "When did your product launch?",
+      "help": "",
+      "type": "date",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Which industry/sector classification applies best to your company?",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Describe your business model. How does (or will) your company make money, even if it is not making any today?",
+      "help": "150 words or fewer",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "words",
+        "max": 150
+      },
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Which business model category best matches your company?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "SaaS",
+        "On-demand",
+        "Mobile App",
+        "Marketplace",
+        "Content",
+        "eCommerce",
+        "Other",
+        "Cloud (Usage-based)"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Type of Sales",
+      "help": "",
+      "type": "multi_select",
+      "options": [
+        "B2B",
+        "B2C",
+        "B2G",
+        "C2C",
+        "B2B2C",
+        "Other / Not Sure"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Six months ago?",
+      "help": "How much revenue did your company make during the last six months? Please break down the revenue by month in US dollars. Note: please include actual observed company revenue only, not the total value of goods sold, GMV, or projections",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Five months ago?",
+      "help": "How much revenue did your company make during the last six months? Please break down the revenue by month in US dollars. Note: please include actual observed company revenue only, not the total value of goods sold, GMV, or projections",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Four months ago?",
+      "help": "How much revenue did your company make during the last six months? Please break down the revenue by month in US dollars. Note: please include actual observed company revenue only, not the total value of goods sold, GMV, or projections",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Three months ago?",
+      "help": "How much revenue did your company make during the last six months? Please break down the revenue by month in US dollars. Note: please include actual observed company revenue only, not the total value of goods sold, GMV, or projections",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Two months ago?",
+      "help": "How much revenue did your company make during the last six months? Please break down the revenue by month in US dollars. Note: please include actual observed company revenue only, not the total value of goods sold, GMV, or projections",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Last month?",
+      "help": "How much revenue did your company make during the last six months? Please break down the revenue by month in US dollars. Note: please include actual observed company revenue only, not the total value of goods sold, GMV, or projections",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "If there are any trends you’d like to explain in the revenue numbers (seasonality, new customers/products, etc.), please explain below.",
+      "help": "100 words or fewer",
+      "type": "long_text",
+      "required": false,
+      "limit": {
+        "unit": "words",
+        "max": 100
+      },
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Six months ago?",
+      "help": "How many total customers or users (as applicable) did your company have over the last six months? Please break down the number by month. Note: please include actual observed numbers only, not projections.",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Five months ago?",
+      "help": "How many total customers or users (as applicable) did your company have over the last six months? Please break down the number by month. Note: please include actual observed numbers only, not projections.",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Four months ago?",
+      "help": "How many total customers or users (as applicable) did your company have over the last six months? Please break down the number by month. Note: please include actual observed numbers only, not projections.",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Three months ago?",
+      "help": "How many total customers or users (as applicable) did your company have over the last six months? Please break down the number by month. Note: please include actual observed numbers only, not projections.",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Two months ago?",
+      "help": "How many total customers or users (as applicable) did your company have over the last six months? Please break down the number by month. Note: please include actual observed numbers only, not projections.",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Last month?",
+      "help": "How many total customers or users (as applicable) did your company have over the last six months? Please break down the number by month. Note: please include actual observed numbers only, not projections.",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "If any customers, users, or partners are particularly notable, please share the context.",
+      "help": "100 words or fewer",
+      "type": "long_text",
+      "required": false,
+      "limit": {
+        "unit": "words",
+        "max": 100
+      },
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Where are your target customers based?",
+      "help": "(Please select no more than three options)",
+      "type": "multi_select",
+      "options": [
+        "Africa (excluding North Africa)",
+        "Australia and New Zealand (Oceania)",
+        "East Asia",
+        "Europe",
+        "Latin America",
+        "North America",
+        "Middle East & North Africa",
+        "South Asia",
+        "Southeast Asia"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "What are your go-to-market channels right now? Tell us how they have been fueling your customer or revenue growth.",
+      "help": "100 words or fewer",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "words",
+        "max": 100
+      },
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "What problem or use case does your company address, and how do your potential target customers get by today in the absence of your product/service?",
+      "help": "100 words or less",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "words",
+        "max": 100
+      },
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Who are your competitors or substitutes for your product or service?",
+      "help": "100 words or fewer",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "words",
+        "max": 100
+      },
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "What makes your company stand out amongst that competition?",
+      "help": "100 words or fewer",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "words",
+        "max": 100
+      },
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "What is your current monthly burn rate",
+      "help": "",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "What is your current cash balance",
+      "help": "",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Where is your company physically headquartered?",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "State (US)",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "Delaware",
+        "Florida",
+        "Georgia",
+        "Hawaii",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Maine",
+        "Maryland",
+        "Massachusetts",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Montana",
+        "Nebraska",
+        "Nevada",
+        "New Hampshire",
+        "New Jersey",
+        "New Mexico",
+        "New York",
+        "North Carolina",
+        "North Dakota",
+        "Ohio",
+        "Oklahoma",
+        "Oregon",
+        "Pennsylvania",
+        "Rhode Island",
+        "South Carolina",
+        "South Dakota",
+        "Tennessee",
+        "Texas",
+        "Utah",
+        "Vermont",
+        "Virginia",
+        "Washington",
+        "West Virginia",
+        "Wisconsin",
+        "Wyoming"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Where is your company incorporated?",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Have you already raised any outside funding?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "If yes, how much? (Please use USD)",
+      "help": "",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "If yes, who are your current investors?",
+      "help": "Please use \";\" to separate investors",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Tell us why you think 500 Global would be a good fit for your company and what you hope to gain from the accelerator program.",
+      "help": "150 words or fewer",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "words",
+        "max": 150
+      },
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Please select the specific functions that you’re hoping to receive the most assistance with during the accelerator program.",
+      "help": "",
+      "type": "multi_select",
+      "options": [
+        "Marketing",
+        "Sales",
+        "Fundraising",
+        "International Expansion",
+        "Industry Expertise",
+        "Corporate Partnerships",
+        "Product Development",
+        "PR",
+        "VC Network",
+        "Founder Network",
+        "HR/recruitment support",
+        "Community Events",
+        "Board Participation",
+        "Office Space",
+        "Other"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Have you applied to 500 previously?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Business",
+      "text": "Please describe your company's progress since you last applied.",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Team",
+      "text": "Tell us a bit about how the founding team knows each other (eg. through school, previous work experience, personal networks, etc).",
+      "help": "100 words or fewer",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "words",
+        "max": 100
+      },
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Team",
+      "text": "Why did you decide to start this company?",
+      "help": "100 words or fewer",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "words",
+        "max": 100
+      },
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Team",
+      "text": "Where is the founding team based? (City and country)",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Team",
+      "text": "Are all the founders full-time on this project?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Team",
+      "text": "How many full time employees do you have (counting founders)?",
+      "help": "",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Team",
+      "text": "How many part time employees do you have (counting founders)?",
+      "help": "",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Team",
+      "text": "Who writes the code or does the technical work for the company?",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Team",
+      "text": "Have you or any of your co-founders started a company before?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Team",
+      "text": "Please list the name of each company below and give us a sentence or two about what happened with each company listed.",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Team",
+      "text": "Please list all co-founders along with links to LinkedIn profiles for each, including yourself.",
+      "help": "Please use \";\" to separate founders",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "First name:",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "... and last name:",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "Primary contact's email address:",
+      "help": "",
+      "type": "email",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "Primary contact's phone number:",
+      "help": "",
+      "type": "phone",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "Please provide a link to your pitch deck here:",
+      "help": "Please check the sharing settings. If your deck is accessible in incognito, you are good to go.",
+      "type": "url",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "Please upload your latest capitalization table here:",
+      "help": "",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "cap_table",
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "Product demonstration video:",
+      "help": "This section is only for a product demo, not a pitch, and is optional. Include a video only if you think it would be beneficial to help us understand how your product works.",
+      "type": "url",
+      "required": false,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "Anything else you want to tell us?",
+      "help": "",
+      "type": "long_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "How did you hear about us?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "500 Newsletter or Email",
+        "Facebook",
+        "500 Global Staff",
+        "LinkedIn",
+        "Twitter",
+        "Google",
+        "Khmer Enterprise",
+        "Angkor 500 Facebook page",
+        "Ashdod Port",
+        "Social Media Ads",
+        "Referral",
+        "Alberta Innovates",
+        "Innovate Edmonton",
+        "Other",
+        "Previous 500 Batch Company",
+        "Aichi Prefecture",
+        "Investor",
+        "Taiwan Tech Arena",
+        "Taiwan MOST",
+        "AngelList",
+        "Kobe City",
+        "Misk500 Meetups",
+        "Previous 500 Kobe Batch Company",
+        "TechCrunch",
+        "Former 500 Miami Program Participant",
+        "Jetro",
+        "AMA Session",
+        "Startup Grind Webinar",
+        "KIC Washington DC",
+        "500 Korea",
+        "Referral Code",
+        "Innóvate Perú",
+        "PETRONAS",
+        "Shinhan Financial Group Hope Foundation",
+        "Universities",
+        "Shinhan Financial Group Channels",
+        "Café, Blog, Community Pages",
+        "Offline Posters",
+        "500 Global's Social Media Channels",
+        "YouTube Ads",
+        "500 Global Japan Facebook page",
+        "Offline events",
+        "Online events",
+        "Bank of Georgia",
+        "Georgia's Innovation & Technology Agency (GITA)",
+        "500 Global fund team",
+        "500 Global employee (non-fund team)",
+        "Former program participant",
+        "Event",
+        "ITIDA",
+        "RiseUp Summit",
+        "Deloitte",
+        "Spyre",
+        "Starburst",
+        "Webinar"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "Who referred you?",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "Verticals",
+      "help": "",
+      "type": "multi_select",
+      "options": [
+        "B2B",
+        "B2C",
+        "P2P",
+        "Analytics",
+        "Artificial Intelligence",
+        "Augmented Reality",
+        "Automotive",
+        "Beauty",
+        "Big Data",
+        "CRM",
+        "Crypto",
+        "Cybersecurity",
+        "E-commerce",
+        "Education",
+        "Entertainment",
+        "Fashion",
+        "FinTech",
+        "Government",
+        "Hardware",
+        "Health Tech",
+        "InsureTech",
+        "IoT",
+        "Last Mile",
+        "Machine Learning",
+        "Marketplace",
+        "Media",
+        "Real Estate",
+        "Retail",
+        "Robotics",
+        "SaaS",
+        "Sensors",
+        "Sharing Economy",
+        "Social Impact",
+        "Synthetic Bio",
+        "Virtual Reality"
+      ],
+      "required": false,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "I agree to receive communications from 500 Global.",
+      "help": "500 Global is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below. You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our Privacy Policy. By clicking submit below, you consent to allow 500 Global to store and process the personal information submitted above to provide you the content requested.",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    },
+    {
+      "section": "The Basics",
+      "text": "I have read and understand 500 Global's Privacy Policy",
+      "help": "https://500.co/privacy/",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://flagship.aplica.500.co/"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://500.co/founders/flagship",
+      "note": "Official program page: dates, offer, who it is for, how it works, FAQ"
+    },
+    {
+      "url": "https://flagship.aplica.500.co/",
+      "note": "Official application portal landing page; its page data contains the full application-form definition for the active batch (source of all questions) plus the rolling flag"
+    },
+    {
+      "url": "https://flagship.aplica.500.co/auth/signup",
+      "note": "Account creation page (fields and password rule); nothing was submitted"
+    },
+    {
+      "url": "https://flagship.aplica.500.co/auth/signin",
+      "note": "Sign-in page reached from \"Apply here\"; confirms login is required"
+    },
+    {
+      "url": "https://forms.hsforms.com/embed/v3/form/698640/59c4a0b8-c2a1-4e4f-9c48-7dae5a219843/json",
+      "note": "Public definition of the backing HubSpot form; used only as a cross-check (same 65 fields; a few option lists and required flags differ from the portal copy)"
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+{
+  "id": "ALC",
+  "title": "Alchemist (formerly Alchemist Accelerator)",
+  "funder": "Alchemist Accelerator, LLC (DBA Alchemist)",
+  "program_url": "https://www.alchemist.vc/invest",
+  "application_url": "https://www.alchemist.vc/pitch",
+  "status": "rolling",
+  "deadline": null,
+  "deadline_note": "No deadline or cohort date is published. The 'Pitch us' founder form was live and accepting input on 2026-11-24; Alchemist says its support 'does not run on a set program length'.",
+  "amount": "Investment check of $60,000 to $1 million at pre-seed/seed ('depending on the company and the program'); equity terms are not published on the site",
+  "summary": {
+    "at_a_glance": "Alchemist (the former Alchemist Accelerator; alchemistaccelerator.com now redirects to alchemist.vc) describes itself as an early-stage venture firm, no longer an accelerator. It invests at pre-seed and seed in deeply technical teams building for the enterprise (B2B) and then supports them through its 'Founder experience'. Founders apply by filling in a single public 'Pitch us' form.",
+    "what_they_offer": "A check of $60,000 to $1 million, plus the Founder experience: a Founder Plan built on an onboarding call, a Success Manager, an equity-aligned Alchemist Partner (operator) matched to the company for the first year, sales training and a sales coach for six months, fundraising support (Investor Feedback Summits, workshops, two Investor Showcases a year in Silicon Valley), the Vault network of 40,000 mentors, over $500K in perks, a desk in the San Francisco office for six months if based in Silicon Valley, and community events including an annual Founder Retreat in January.",
+    "what_theyre_looking_for": "Official wording: 'Deeply technical researchers, engineers and domain experts building the next generation of enterprise infrastructure and technology.' A strong fit: (1) 'You are a builder' who knows the technology deeply; (2) 'Your customers are businesses' and the sale is complex; (3) 'You are ready to commercialize, and to get in front of customers now'; (4) 'You want support beyond the check'. Sector agnostic (AI is the largest field; health is listed among portfolio sectors). An 'enterprise startup' is defined as B2B and B2B2C, hardware or software, buyers from SMB to Fortune 500, license/SaaS/usage-based models.",
+    "who_can_apply": "Pre-seed and seed companies from any country ('our investment structure works with your country of incorporation'). No warm introduction needed. Solo founders are accepted but 'it is a higher bar'; most Alchemist companies start with two or three co-founders. The form accepts companies that are not yet incorporated. No relocation to San Francisco required.",
+    "how_to_apply": "1) Open https://www.alchemist.vc/pitch (embeds the Fillout form; direct link https://forms.fillout.com/t/59MdaHhiDius). 2) Complete the one-page application (three collapsible sections: Company & Team Details; Product, Market & Traction; Other Information). 3) Click Next to reach a Review page, then Submit. The form 'goes straight to our investment team'. Later stages (interviews, decision timing) are not described on the official site.",
+    "worth_noting": "The firm states it backs B2B businesses (B2B and B2B2C); a purely consumer product is outside the stated focus. The pitch deck and the optional team video are requested as links, not uploads. The form certifies truthfulness by typed initials. Regional programs (Alchemist Chicago, Doha, Japan) exist; the FAQ says to request them through the same form, but the opt-in switches for those programs are currently hidden in the published form. The old third-party applyseed.com page is not the application."
+  },
+  "portal": {
+    "platform": "Fillout (forms.fillout.com), embedded in an iframe on alchemist.vc/pitch",
+    "requires_login": false,
+    "may_have_captcha": true,
+    "needs_file_uploads": false,
+    "notes": "No account needed. The whole application is one long page with three collapsible sections, then a Review step and a Submit button. Cloudflare Turnstile is loaded by the form page (challenge requests were observed on page load), so a bot check may run at submit. Phone fields have a country selector defaulting to US. The address widget has sub-fields: Address, Address Line 2 (Optional), City, State / Province, ZIP / Postal code, Country. Pitch deck and video must be reachable links that are not password-protected. Several fields only appear depending on earlier answers (see questions_note). The form's own page offers a direct link ('Form not loading? Open it in a new tab'): https://forms.fillout.com/t/59MdaHhiDius."
+  },
+  "questions_verification": "live_form",
+  "questions_source_url": "https://forms.fillout.com/t/59MdaHhiDius",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "Taken from the live official form on 2026-11-24: the published form definition embedded in the Fillout page (labels, required flags, options, limits, show/hide rules) and cross-checked against the rendered form in a headless browser. Nothing was typed or submitted. High confidence. Long-answer fields show a character counter but have no maximum; the only limit is 280 characters on the company description. Bullet points inside a question are written as lines starting with '- '. Conditional fields (listed in form order, marked required when shown): \"CEO's First Name\" appears only if \"Are you the company’s CEO?\" = \"No, someone else is the CEO.\"; \"CEO's Last Name\" appears only if \"Are you the company’s CEO?\" = \"No, someone else is the CEO.\"; \"CEO's Email Address\" appears only if \"Are you the company’s CEO?\" = \"No, someone else is the CEO.\"; \"CEO's Phone Number\" appears only if \"Are you the company’s CEO?\" = \"No, someone else is the CEO.\"; \"Who should be the primary point of contact for this application?\" appears only if \"Are you the company’s CEO?\" = \"We do not have a CEO.\"; \"Primary POC's First Name\" appears only if \"Who should be the primary point of contact for this application?\" = \"Someone else should be the primary contact.\"; \"Primary POC's Last Name\" appears only if \"Who should be the primary point of contact for this application?\" = \"Someone else should be the primary contact.\"; \"Primary POC's Email Address\" appears only if \"Who should be the primary point of contact for this application?\" = \"Someone else should be the primary contact.\"; \"Primary POC's Phone Number\" appears only if \"Who should be the primary point of contact for this application?\" = \"Someone else should be the primary contact.\"; \"If other, please explain:\" appears only if \"Are you and your co-founder(s) currently working full-time on this company?\" = \"Other\"; \"What is the country of your incorporation?\" appears only if \"Are you already incorporated?\" = \"Yes\"; \"What is the date of your incorporation?\" appears only if \"Are you already incorporated?\" = \"Yes\"; \"Please provide the official legal name(s) of your incorporated entity or entities. If there are multiple entities (or if the same entity is incorporated in multiple countries), please indicate the parent company by adding an asterisk (*) next to its name, if applicable.\" appears only if \"Are you already incorporated?\" = \"Yes\"; \"List the following:\" appears only if \"Are you already incorporated?\" = \"Yes\"; \"To the best of your knowledge, what country do you expect to incorporate your company in?\" appears only if \"Are you already incorporated?\" = \"No\"; \"When do you expect to incorporate your company? (Best estimate)\" appears only if \"Are you already incorporated?\" = \"No\"; \"Please provide the following information:\" appears only if \"Are you already incorporated?\" = \"No\"; \"Please provide the name(s), affiliation(s), and email address(es) of your referring contact(s), if available.\" appears only if \"Were you referred to Alchemist by someone in our community?\" = \"Yes\"; \"Please provide additional details regarding your intended location or participation format.\" appears only if \"The Alchemist program can be attended either in person in San Francisco or remotely. If admitted, do you have a preference for participating in the San Francisco Bay Area or remotely?\" = \"Other (please specify below).\". Not included because the published form marks them always-hidden: a section 'Indicate Additional Programs of Interest' with switches 'I want my application to be considered for Alchemist Chicago.' / '... Alchemist Doha.' / '... Alchemist Japan.'. The Review step after 'Next' was not opened because reaching it requires filling the required fields.",
+  "questions": [
+    {
+      "section": "Company & Team Details",
+      "text": "Company Name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Company Website URL (if available)",
+      "help": "",
+      "type": "url",
+      "required": false,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Please describe your company and business in 280 characters or fewer.",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 280
+      },
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "First Name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Last Name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Email Address",
+      "help": "",
+      "type": "email",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Phone Number",
+      "help": "",
+      "type": "phone",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Are you the company’s CEO?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Yes, I am the CEO.",
+        "No, someone else is the CEO.",
+        "We do not have a CEO."
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "CEO's First Name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "CEO's Last Name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "CEO's Email Address",
+      "help": "",
+      "type": "email",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "CEO's Phone Number",
+      "help": "",
+      "type": "phone",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Who should be the primary point of contact for this application?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "I am the primary contact.",
+        "Someone else should be the primary contact."
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Primary POC's First Name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Primary POC's Last Name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Primary POC's Email Address",
+      "help": "",
+      "type": "email",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Primary POC's Phone Number",
+      "help": "",
+      "type": "phone",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Company Headquarters Street Address",
+      "help": "",
+      "type": "address",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "How many (co-)founders does your company have?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5 or more"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "For each co-founder, please list the following information:\n- Name (please include Kanji Names, if applicable)\n- Age\n- Email Address\n- LinkedIn Profile URL\n- X (Twitter) Handle\n- School: degree & major, year of graduation (unfinished degrees in parentheses)\n- Please also briefly brag about each co-founder (e.g., list up to three relevant achievements / accomplishments / demonstrations of expertise).",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Please provide a link to a video (three minutes or less) introducing your team and pitching your product or idea. Production quality is not important. Please ensure the link is accessible and not password-protected.",
+      "help": "",
+      "type": "url",
+      "required": false,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Are you and your co-founder(s) currently working full-time on this company?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Other"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "If other, please explain:",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "How many employees does your company currently have, not including co-founder(s)?",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "What short-term team additions are needed?",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "How do you plan to scale in the next 12 months?",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Are there any Share Option Schemes or other incentives?",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "In which country are your primary operations currently based?",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Are you already incorporated?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "What is the country of your incorporation?",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "What is the date of your incorporation?",
+      "help": "",
+      "type": "date",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Please provide the official legal name(s) of your incorporated entity or entities. If there are multiple entities (or if the same entity is incorporated in multiple countries), please indicate the parent company by adding an asterisk (*) next to its name, if applicable.",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "List the following:\n- Name each shareholder and their corresponding percentage of ownership (please include Kanji names, if applicable)\n- Funding amounts and valuation at each funding event",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "To the best of your knowledge, what country do you expect to incorporate your company in?",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "When do you expect to incorporate your company? (Best estimate)",
+      "help": "",
+      "type": "date",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Company & Team Details",
+      "text": "Please provide the following information:\n- List each founder and their agreed or intended percentage of ownership (include Kanji names, if applicable).\n- Describe any funding received or committed to date, including amounts and terms (if applicable).",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Product, Market & Traction",
+      "text": "Please indicate the industry or industries your company operates in.\n(Separate multiple entries with commas.)",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Product, Market & Traction",
+      "text": "What are you building? If you have launched, please describe the product or service you provide and the specific customers you serve.",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Product, Market & Traction",
+      "text": "Please elaborate on the following:\n- How is your solution new, distinctive, or unique?\n- What are your major product milestones to date (or upcoming)?\n- What are the key differentiated or “delighting” features of your product or service?\n- Who are your primary competitors?",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Product, Market & Traction",
+      "text": "Please provide details on your current traction and growth, addressing the following:\n- Your current stage and product maturity\n- Current monthly revenue\n- Revenue growth over the past 12 months (please provide specifics)\n- Key metrics you use to measure growth (beyond revenue and cost)\n- Factors currently limiting faster growth\n- Your top customers today",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Product, Market & Traction",
+      "text": "What is your business model? Please describe how you generate — or plan to generate — revenue.",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Product, Market & Traction",
+      "text": "Please provide a link to a pitch deck or one-pager.",
+      "help": "",
+      "type": "url",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Other Information",
+      "text": "Were you referred to Alchemist by one of our partner organizations?\nIf yes, please indicate which partner organization referred you?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "212/Simya",
+        "Alchemist Memphis",
+        "AlchemistX",
+        "Newfund",
+        "QSTP",
+        "IBM",
+        "University of Chicago",
+        "KOSME",
+        "I have not been referred by a partner organization."
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Other Information",
+      "text": "Were you referred to Alchemist by someone in our community?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Other Information",
+      "text": "Please provide the name(s), affiliation(s), and email address(es) of your referring contact(s), if available.",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Other Information",
+      "text": "The Alchemist program can be attended either in person in San Francisco or remotely. If admitted, do you have a preference for participating in the San Francisco Bay Area or remotely?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "We are based in the San Francisco Bay Area and would participate in person.",
+        "We are based outside the Bay Area and would relocate to participate in person.",
+        "We are based outside the Bay Area and would prefer to participate remotely.",
+        "We are based outside the Bay Area but would fly in for major events (e.g., Founder Retreat, Demo Day).",
+        "Other (please specify below)."
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Other Information",
+      "text": "Please provide additional details regarding your intended location or participation format.",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Other Information",
+      "text": "What websites, podcasts, blogs, publications, or other content sources do you regularly follow for industry or startup insights?",
+      "help": "",
+      "type": "long_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Other Information",
+      "text": "How did you first hear about Alchemist? (e.g., X (Twitter), LinkedIn, internet search)",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Other Information",
+      "text": "Is there anything else you would like us to know?",
+      "help": "",
+      "type": "long_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Other Information",
+      "text": "By entering your initials here, you hereby certify that the information submitted on this application is true in all respects. You release Alchemist Accelerator LLC and all affiliated parties of any liability of claims of any nature resulting from any inaccurate or misleading information submitted herein.",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    },
+    {
+      "section": "Other Information",
+      "text": "By submitting this application, I consent to Alchemist collecting, storing, and using my information for the purpose of reviewing and evaluating my application, and contacting me regarding this application or related next steps. I understand that my information will be handled in accordance with Alchemist’s Privacy Policy, and that I may request access to or deletion of my data at any time.",
+      "help": "",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://forms.fillout.com/t/59MdaHhiDius"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.alchemist.vc/pitch",
+      "note": "Official 'Pitch us' page (alchemistaccelerator.com/apply redirects here); embeds the application form"
+    },
+    {
+      "url": "https://forms.fillout.com/t/59MdaHhiDius",
+      "note": "The live application form (Fillout); source of every question"
+    },
+    {
+      "url": "https://www.alchemist.vc/invest",
+      "note": "Stage, sector, check size, who they back"
+    },
+    {
+      "url": "https://www.alchemist.vc/faq",
+      "note": "Not an accelerator any more, check size, enterprise definition, solo founders, geography, how to pitch, founder experience"
+    },
+    {
+      "url": "https://www.alchemist.vc/founders",
+      "note": "Founder experience details"
+    }
+  ]
+}

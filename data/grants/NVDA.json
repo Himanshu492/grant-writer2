@@ -1,0 +1,41 @@
+{
+  "id": "NVDA",
+  "title": "NVIDIA Inception",
+  "funder": "NVIDIA",
+  "program_url": "https://www.nvidia.com/en-us/startups/",
+  "application_url": "https://programs.nvidia.com/phoenix/application",
+  "status": "rolling",
+  "deadline": null,
+  "deadline_note": "No deadline: \"There are no application fees, deadlines, or cohorts.\" NVIDIA asks applicants to allow up to 10 business days for review.",
+  "amount": "No cash and no equity taken. Free membership: preferred pricing on select NVIDIA hardware and software, free cloud credits from NVIDIA and partners, free and discounted technical training, and investor exposure for eligible members.",
+  "summary": {
+    "at_a_glance": "NVIDIA Inception is a free, always-open membership program for AI startups, not a grant or an accelerator cohort. Members get training, developer tools, discounted NVIDIA hardware and software, partner cloud credits and, if eligible, introductions to NVIDIA's venture capital network.",
+    "what_they_offer": "Training and guidance (free self-paced technical courses, discounted expert-led workshops, personalized recommendations, NVIDIA Developer Forums, a monthly newsletter); developer tools and offers (SDKs, model libraries, preferred pricing on select NVIDIA hardware and software, partner offers, free cloud credits from NVIDIA and partners); investor access through Inception Capital Connect and networking events (based on eligibility); brand and market reach (official badges, co-branded content, events, go-to-market opportunities as engagement grows). Preferred hardware pricing works as a rebate through suppliers and covers only select products.",
+    "what_theyre_looking_for": "NVIDIA publishes membership criteria rather than a scored rubric: \"Members must maintain a working website, be officially incorporated, be less than 10 years old, have a clear use case for NVIDIA technology, and be actively operated by at least one founder.\" Funding status is asked because it \"is an indicator of startup maturity\" used to decide which members fit VC introductions. The pitch deck is used to \"understand your company's mission, solutions, and unique value in the market\". Revenue is not required, and using NVIDIA GPUs or SDKs already is not required.",
+    "who_can_apply": "Incorporated startups under 10 years old with a working website, a clear use case for NVIDIA technology and at least one founder actively operating the company, at any funding stage. Solo founders with no other employees may apply. Not eligible: consulting and outsourced development firms, companies associated with cryptocurrency, cloud service providers, resellers and distributors, and public companies. A company that is not yet incorporated cannot apply.",
+    "how_to_apply": "1) Open the application page and enter a business email, then select \"Sign Up / Login\". 2) Sign in to an NVIDIA account that uses that business email, or create one when prompted. 3) Fill in the application (NVIDIA says about 10 minutes, in English) with details about the business and its products, including the incorporation date, funding details, investor information and a company pitch deck in PDF, and contact details for two people who will manage the profile. 4) Accept the Terms and Conditions and submit. 5) NVIDIA reviews within up to 10 business days and emails an approval, a rejection, or a request for more information. 6) After acceptance, keep the profile up to date in the Inception portal and request benefits there.",
+    "worth_noting": "Email aliases (such as info@domain.com) and generic domains (such as gmail.com) are not accepted; the NVIDIA account must use an individual business email. NVIDIA says the application works best in Google Chrome and is not supported on Safari or Firefox. A company that was previously declined may not be able to reapply until the date given in its decline email. Members must keep product and company details updated to stay eligible for benefits. Contact: inceptionprogram@nvidia.com."
+  },
+  "portal": {
+    "platform": "Custom NVIDIA programs portal built on Salesforce Experience Cloud (programs.nvidia.com/phoenix), behind NVIDIA account sign-in",
+    "requires_login": true,
+    "may_have_captcha": null,
+    "needs_file_uploads": true,
+    "notes": "Without signing in, the page shows only one field, \"Business Email\" (placeholder \"Enter your business email\"), and a \"Sign Up / Login\" button; the application form loads only after NVIDIA account sign-in. The business email was not entered during this check, so nothing past that point was seen. No CAPTCHA is shown on the landing page; whether NVIDIA account creation or the form shows one is unknown. A cookie banner appears first (Manage Settings / Reject Optional / Accept All). A pitch deck in PDF format is requested. Technical note: the server at programs.nvidia.com does not send its intermediate TLS certificate, so a browser running behind an intercepting proxy may get a 502 error; an ordinary Chrome browser loads the page normally."
+  },
+  "questions_verification": "not_accessible",
+  "questions_source_url": null,
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "The application form is behind NVIDIA account sign-in and NVIDIA publishes no preview or question list, so no questions are recorded. The live landing page was opened on 2026-11-24; signing in needs a real business email and an NVIDIA account, which was not attempted. What NVIDIA officially says the application asks for (these are topics, not the form's field labels): contact information for two contacts; the company's incorporation date; funding details / funding status; investor information; a company pitch deck (PDF); details about the business and its products; a company website. One piece of real form help text is served on the landing page data, for a company homepage URL field whose label was not visible: \"Enter your company's live homepage URL (starting with https://). The domain must be unique to your company. A basic or stealth website is okay, but profile pages such as LinkedIn, Facebook, or QCC are not accepted.\" Third-party write-ups of the form exist but were not used because none could be confirmed as current.",
+  "questions": [],
+  "sources": [
+    {
+      "url": "https://programs.nvidia.com/phoenix/application",
+      "note": "Official application page, opened live on 2026-11-24: \"What to Expect\", \"Minimum Requirements\", and the Business Email sign-up / login step."
+    },
+    {
+      "url": "https://www.nvidia.com/en-us/startups/",
+      "note": "Official program page and FAQ (the old /startups/faq/ address redirects here): benefits, criteria, no deadlines, pitch deck and incorporation requirements."
+    }
+  ]
+}

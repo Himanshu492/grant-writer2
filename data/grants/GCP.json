@@ -1,0 +1,61 @@
+{
+  "id": "GCP",
+  "title": "Google for Startups Cloud Program",
+  "funder": "Google Cloud (Google)",
+  "program_url": "https://cloud.google.com/startup",
+  "application_url": "https://cloud.google.com/startup/apply",
+  "status": "rolling",
+  "deadline": null,
+  "deadline_note": "Rolling: no cohorts and no published deadline; apply any time. Google's FAQ says most applicants get an acceptance or rejection email within 5-7 days (10 days or more if information is missing).",
+  "amount": "Google Cloud credits, not cash: Start tier up to $2,000 (1 year); Scale tier up to $200,000 over 2 years; Scale tier for AI startups up to $350,000 over 2 years",
+  "summary": {
+    "at_a_glance": "Google Cloud's startup credits program. One application; Google matches the startup to a tier (Start, Scale, or Scale for AI startups) based on funding, age and prior credit usage. It is a cloud-credits perk, not a grant or investment, and applications are rolling.",
+    "what_they_offer": "Start tier: up to $2,000 USD in Google Cloud credits valid for one year, $200 Google Skills credits, Google Workspace Business Plus at no extra cost for 12 months for new signups. Scale tier: up to $200,000 USD in Google Cloud credits (Year 1: 100% up to $100,000; Year 2: 20% up to an additional $100,000), $500 Google Skills credits, Workspace Business Plus for 12 months, $600 monthly Google Maps Platform credits (separate application), up to $12,000 in Enhanced Support credits for one year, a dedicated Startup Success Manager and Startup Customer Engineers. AI startups on the Scale tier: Year 1 is 100% up to $250,000, for a total of up to $350,000 over 2 years. Credits cover Google first-party pay-as-you-go Cloud products, including Gemini and Gemma; third-party models and Marketplace / Model Garden third-party products are not covered.",
+    "what_theyre_looking_for": "From the official FAQ: \"Google Cloud assesses startups based on funding stage, funding type, business model, founder experience, and product usage. We also consider additional information like your company vertical, age, growth trajectory, and so on.\" The Scale tiers need verifiable Pre-Seed to Series A equity funding from institutional investors or VC firms (SAFEs are eligible); private equity, government innovation grants, prize funding, crowdfunding, angel, and friends-and-family funding do not qualify a startup for Scale but it will be evaluated for other tiers. The Start tier asks for a technology startup with a working MVP, a clear business model, a well-defined product roadmap and plans to seek venture funding soon. An active company website that describes the company, team/founder and product is required; Google says it screens for AI-generated sites and may reject applications with a high volume of AI-generated content.",
+    "who_can_apply": "Start tier: technology startup planning to seek venture funding soon; founded within the last 24 months; has not yet received Google Cloud credits beyond the free trial. Scale tier: raised Pre-Seed/Seed rounds within the last 5 years or a Series A within the last 12 months; founded within the last five years; has not yet received more than $5,000 in Google Cloud credits; stealth is supported upon verification of funding. Scale tier for AI startups: same as Scale, plus the startup uses or plans to use Gemini to deploy AI services as a foundation of its primary product. Not accepted: companies that have IPO'd or been acquired, educational institutions, government entities, nonprofits, personal blogs or content, dev shops, consultancies or agencies, cryptocurrency mining companies, or companies distributing tokens contrary to regulatory guidance. The FAQ also says customers are not eligible if they operate \"a business that involves any regulated industry or sector\" or outside Google's Acceptable Use Policy, and they must be in a region where Google Cloud is generally available through self-service purchasing.",
+    "how_to_apply": "1) Create a Google Cloud account and a Cloud Billing account under your company-domain email (Google's best-practices PDF says to wait 48 hours after creating a Billing ID before applying). 2) Go to cloud.google.com/startup, click Apply now, and sign in with the Google Account for your business email (the email domain must match the company website domain; personal addresses such as gmail.com are not accepted). 3) Complete the application form: Google says the 18-character billing account ID is auto-populated from the Google Cloud account tied to your business email and you select the right one; if funded, give links to publicly available sources that show the equity investment, and enter your VCs / investors / accelerator affiliations. 4) Google emails an acceptance or rejection, in most cases within 5-7 days. 5) If accepted, credits are deposited into the billing account selected in the application; Workspace and Maps benefits need separate requests.",
+    "worth_noting": "The application form itself is behind Google sign-in, so its exact questions could not be read (see questions_note). Common rejection causes named by Google: email domain not matching the website domain, a billing account not owned/administered by a user on the company domain, a placeholder or AI-generated website, and funding that cannot be verified from public sources. Google does not accept pitch decks, funding documents or incorporation documents as funding proof; it wants public links (press, Crunchbase/PitchBook/Dealroom, investor portfolio pages). Funding is not required to be accepted (Start tier), but grants, crowdfunding, angel and friends-and-family money do not count towards the Scale tier. Official pages are not fully consistent with each other: the older best-practices PDF says founded within 10 years, while the current benefits page says 24 months (Start) and five years (Scale); the Workspace exclusion window is given as 31 days on one page and 90 days on another. A health-data company should note the FAQ's 'regulated industry or sector' exclusion wording. Support contact for application issues: cloudstartupsupport@google.com."
+  },
+  "portal": {
+    "platform": "custom (Google Cloud web form at cloud.google.com/startup/apply, behind Google Account sign-in)",
+    "requires_login": true,
+    "may_have_captcha": null,
+    "needs_file_uploads": null,
+    "notes": "Opening the application URL without a session returns HTTP 302 to accounts.google.com (Google sign-in) before any form field is shown. The owner must sign in with the Google Account on the company domain that owns or administers the Cloud Billing account; Google sign-in can add its own bot checks or 2-step verification. A Google Cloud billing account (18-character ID in the form ABC123-DEF456-GHI789) must exist first. AI-startup applicants are linked to https://cloud.google.com/startup/apply?pt=AI#application-form (same form, AI variant). File uploads were not observed; Google's FAQ says funding proof is given as links to public sources, not documents. Whether the form is multi-step or autosaves could not be seen."
+  },
+  "questions_verification": "not_accessible",
+  "questions_source_url": null,
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "The real form could not be read. https://cloud.google.com/startup/apply (and the AI variant ?pt=AI) redirects straight to Google Account sign-in, and Google publishes no preview, PDF or question list for the form, so no questions are listed here rather than guessed ones. What Google does state officially about the form's inputs (these are Google's descriptions in the FAQ and the 'best practices' PDF, not the form's field labels, and not a complete list): a business email address on the same domain as the company website; an active business website; the 18-character Google Cloud billing account ID (auto-populated from the signed-in account, applicant selects the right one); if funded, links to publicly available online sources showing the equity investment; and the startup's VCs, investors or accelerator affiliations. The exact labels, order, options, required flags and limits need a scan after the owner signs in.",
+  "questions": [],
+  "sources": [
+    {
+      "url": "https://cloud.google.com/startup",
+      "note": "Official program page: credit amounts, tier summary, FAQ list, exclusions; Apply now link target"
+    },
+    {
+      "url": "https://cloud.google.com/startup/benefits",
+      "note": "Official tier table: Start and Scale tier eligibility and benefits, qualifying investment types"
+    },
+    {
+      "url": "https://cloud.google.com/startup/ai",
+      "note": "Official AI startups page: eligibility and credits for Scale tier AI startups; AI apply link"
+    },
+    {
+      "url": "https://cloud.google.com/startup/faq",
+      "note": "Official FAQ: what is needed before applying, billing ID, email/domain rules, funding verification, timeline, selection criteria, restrictions"
+    },
+    {
+      "url": "https://services.google.com/fh/files/misc/best_practices_gfscp.pdf",
+      "note": "Official Google PDF '5 steps for applying to the Cloud Program': identity, billing ID and investment-verification rules (older; some figures differ from the current web pages)"
+    },
+    {
+      "url": "https://cloud.google.com/startup/onboarding",
+      "note": "Official account-setup checklist before and after applying"
+    },
+    {
+      "url": "https://cloud.google.com/startup/apply",
+      "note": "Application URL; confirmed it redirects to Google sign-in (HTTP 302 to accounts.google.com) with no form visible"
+    }
+  ]
+}

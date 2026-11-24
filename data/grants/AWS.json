@@ -1,0 +1,61 @@
+{
+  "id": "AWS",
+  "title": "AWS Activate",
+  "funder": "Amazon Web Services (AWS)",
+  "program_url": "https://aws.amazon.com/startups/credits",
+  "application_url": "https://aws.amazon.com/startups/join?destination=/credits/apply",
+  "status": "rolling",
+  "deadline": null,
+  "deadline_note": "Rolling: no deadline; apply any time. Decisions usually take 7-10 business days (3-5 days when applying through a provider's email invite). Portfolio applicants must apply within 12 months of their most recent funding date.",
+  "amount": "AWS promotional credits, not cash: Activate Founders $1,000 (select startups up to $5,000); Activate Portfolio up to $200,000 (needs an Activate Provider Org ID)",
+  "summary": {
+    "at_a_glance": "AWS's startup program. Membership is free; the credit application has two self-serve tiers: Activate Founders for self-funded startups and Activate Portfolio for startups backed by an AWS Activate Provider (accelerator, angel investor, VC). It is a cloud-credits perk, not a grant or investment, and applications are rolling.",
+    "what_they_offer": "Activate Founders: start with $1,000 USD in AWS Activate Credits; select participants may qualify for additional credits up to $5,000. Activate Portfolio: up to $200,000 USD in Activate Credits; the amount is set by the provider's package (some providers have several, e.g. $25K for pre-seed and $100K for seed). A third tier, AWS Credits for AI Startups ($200,000+), is invite-only through an AWS account manager after Activate Portfolio. Credits offset charges on 200+ eligible AWS services, including third-party models on Amazon Bedrock, and usually expire within 1-2 years depending on the package. Members also get exclusive partner offers, technical resources and events.",
+    "what_theyre_looking_for": "AWS publishes eligibility rules rather than selection criteria. Credits page: \"Eligibility for AWS Activate: Pre-series B, founded in the last 10 years, AWS Account on Paid Tier Plan, and either new to Activate Credits or requesting more credits than previously received\". The application asks about the product, funding stage and company profile \"to confirm eligibility\", and AWS says it uses the company website (which must be fully functioning) to evaluate the application. For Portfolio, AWS verifies the startup's association with the Activate Provider whose Org ID was used.",
+    "who_can_apply": "Activate Founders: new to AWS Activate Credits; self-funded; a fully functioning company website; founded in the past 10 years. Activate Portfolio: associated with an Activate Provider and holding that provider's Organization ID; has not previously received Activate Credits of equal or greater value; Pre-Series B, with the most recent funding round within the last 12 months if applicable; a fully functioning company website; founded in the past 10 years. All tiers: the AWS account must be on a Paid Tier plan (Free account plans are not eligible). Not eligible: government entities, and startups building on AWS China Regions. (AWS's FAQ words the stage limit as \"up to and including Series A\".)",
+    "how_to_apply": "1) On the AWS Credits page click Apply now and create or sign in to an AWS Builder ID (a personal sign-in; email verification required). 2) Complete the one-time AWS Activate profile about you and the startup, using a business email on the startup's domain. 3) Choose the credit tier: Founders, or Portfolio by entering the provider's Org ID (or start from the provider's email invite, which pre-validates the relationship). 4) Provide startup details: business information (product, target market, current traction), current funding stage, and most recent funding date. 5) Link the startup's AWS account to the Builder ID (create one if needed; needs root or admin permissions and browser pop-ups enabled), then press 'Verify your account' in the AWS Management Console. 6) Review and submit; a confirmation email follows. 7) AWS emails the decision, usually in 7-10 business days; approved credits are applied to the AWS account automatically. Status is shown on the Credit Application Status page.",
+    "worth_noting": "The application form is behind AWS Builder ID sign-in, so its exact questions could not be read (see questions_note). An Org ID is the unique, confidential, case-sensitive identifier of an AWS Activate Provider (VC firm, accelerator, incubator or other startup-enabling organization); it is not a promo code, the startup gets it from its provider, and an Org ID can be used only once per startup. Without an Org ID a startup is only eligible for the Founders tier. Applications cannot be edited after submission: to fix one, cancel it, unlink the AWS account from the Builder ID and submit again. Only one application at a time; only one Builder ID can be linked to an AWS account. A later, larger award pays only the difference over credits already received, up to a lifetime cap. Each startup needs its own AWS account. AWS pages differ slightly on timing (credits page: 5-10 business days; guide and FAQ: 7-10 business days) and on which email to use for the Builder ID (the guide says personal email for the Builder ID, business email for the Activate profile and credit application)."
+  },
+  "portal": {
+    "platform": "custom (AWS Startups site, startups.aws.com, with AWS Builder ID sign-in)",
+    "requires_login": true,
+    "may_have_captcha": null,
+    "needs_file_uploads": null,
+    "notes": "The Apply now link goes to startups.aws.com/join; the form itself is at https://startups.aws.com/credits/apply, which redirects (HTTP 307) to AWS Builder ID sign-in (email, or Continue with Google / Apple / GitHub / Amazon). Creating a Builder ID needs email verification. After sign-in there is a one-time Activate profile, then a multi-step credit application; progress is saved to the profile as a draft, so it can be finished later. One step requires linking and verifying an AWS account inside the AWS Management Console (separate console login with root or admin rights, pop-ups enabled, account on a Paid Tier plan); a form-filling bot will need the human for that step. Submitted applications cannot be edited. No file uploads are mentioned in AWS's official guide or FAQ, but the form was not seen."
+  },
+  "questions_verification": "not_accessible",
+  "questions_source_url": null,
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "The real form could not be read. https://startups.aws.com/credits/apply redirects to AWS Builder ID sign-in before any field is shown; the public page scripts do not contain the form text, and AWS's official step-by-step guide has no screenshots or field list. So no questions are listed here rather than guessed ones. What AWS states officially about what the applicant provides (wording from AWS's guide and FAQ, not the form's field labels, and not a complete list): the AWS Activate profile (\"essential information about your startup\"); the credit tier, Founders or Portfolio; for Portfolio, the provider's Organization ID (Org ID); \"Business information: Include details about your product, target market, and current traction.\"; \"Current funding stage: Specify your correct fundraising stage (pre-seed, seed, Series A, or beyond).\"; \"Most recent funding date: Enter the date of your latest funding round\"; the company website URL; and the linked, verified AWS account that will receive the credits. The exact labels, order, options, required flags and limits need a scan after the owner signs in.",
+  "questions": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/startups/credits",
+      "note": "Official AWS Activate Credits page: tiers, amounts, eligibility line, 4-step 'How to apply', Apply now link target"
+    },
+    {
+      "url": "https://aws.amazon.com/startups/learn/applying-for-aws-activate-credits-a-step-by-step-guide",
+      "note": "Official AWS guide (dated 04 June 2026): tier eligibility, 7 application steps, what the applicant provides, Org ID definition, post-submission rules"
+    },
+    {
+      "url": "https://aws.amazon.com/startups/learn/everything-you-need-to-know-about-aws-activate-credits",
+      "note": "Official AWS article (dated 03 June 2026): tiers, credit amounts, 12-month funding window for Portfolio, timeline, exclusions"
+    },
+    {
+      "url": "https://startups.aws.com/faq",
+      "note": "Official AWS Startups FAQ: who can apply, application steps, Org ID, email invites, re-application rules, Paid Tier requirement, China Regions exclusion"
+    },
+    {
+      "url": "https://startups.aws.com/providers",
+      "note": "Official Activate Providers page: what a provider is and how Org IDs are used"
+    },
+    {
+      "url": "https://aws.amazon.com/activate/terms/",
+      "note": "AWS Activate Terms & Conditions: registration, website-URL evaluation clause, government entities not eligible"
+    },
+    {
+      "url": "https://startups.aws.com/credits/apply",
+      "note": "Application form URL; confirmed it redirects to AWS Builder ID sign-in (HTTP 307 to startups.aws.com/login) with no form visible"
+    }
+  ]
+}

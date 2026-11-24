@@ -1,0 +1,416 @@
+{
+  "id": "MSFT",
+  "title": "Microsoft for Startups",
+  "funder": "Microsoft",
+  "program_url": "https://www.microsoft.com/en-us/startups",
+  "application_url": "https://portal.azure.com/?homeview=startup#home",
+  "status": "rolling",
+  "deadline": null,
+  "deadline_note": "No deadline or cohorts; apply any time. Microsoft says applications are typically reviewed within three business days.",
+  "amount": "Up to $150,000 in Azure \"Startup credits\" over time (no cash, no equity): $200 at sign-up, $5,000 after business verification, then $25,000 / $50,000 / $150,000 as Azure usage milestones are met. With an investor referral code: $1,000 starter credits and up to $150,000 after approval.",
+  "summary": {
+    "at_a_glance": "Microsoft's startup program (the successor to \"Founders Hub\"; Microsoft now just calls it Microsoft for Startups). It gives Azure cloud credits that grow as the startup verifies its business and uses more Azure services. It is not a grant: there is no cash and no written pitch, just an account sign-up with identity and business verification.",
+    "what_they_offer": "Up to $200 in Azure Startup credits immediately (usable for 90 days), $5,000 after business verification (usable for 180 days), and automatic upgrades to $25,000, $50,000 and $150,000 as the startup runs 5 / 7 / 10+ Azure workloads over a sustained 60 days (the $150,000 tier also needs about $3,000/month of Azure usage). Access to Azure AI services including models in Microsoft Foundry. Startups with a referral code from a Microsoft for Startups Investor Network partner (VC, accelerator, incubator, university) get $1,000 starter credits, up to $150,000 after approval, a two-year benefit period, Azure Standard Support, technical guidance, go-to-market help, and product benefits such as GitHub Enterprise, Microsoft 365 Business Premium, Dynamics 365, Power Platform and LinkedIn Premium.",
+    "what_theyre_looking_for": "There is no competitive selection or scored criteria published. Microsoft checks eligibility and verifies identity and the business: \"Eligibility is based on verified progress and sustained Azure usage, not just service activation.\" Higher credit tiers are unlocked automatically from \"business verification, service adoption, usage patterns, and overall program eligibility\". The program is \"designed for early-stage startups building software products, including AI-powered and cloud-based applications\".",
+    "who_can_apply": "Per Microsoft's \"How to Apply\" page, the company must: develop a software-based product or service that the company owns; be privately held and for-profit; be headquartered in a country where Azure services are available; not have received more than $350,000 in lifetime free Azure credits; not have raised Series C funding or later; not be an educational institution, government organization, consultancy, or agency; not be involved in cryptocurrency mining. Startups already on another cloud can apply.",
+    "how_to_apply": "1) On microsoft.com/startups click \"Get started now\" (goes to the Azure portal startup view). 2) Sign in with a Microsoft account (or create one). 3) On \"Apply for Microsoft for Startups\", either enter a 10-character investor referral code and select Next, or select \"Continue without a code\". 4a) Without a code: no long form. Select \"Verify with LinkedIn\" on the \"Build your startup\" dashboard and sign in with a personal LinkedIn profile, then create the Azure account in three steps (profile information with a human check, billing address and consents, payment card) to get $200 in credits. 4b) With a code: fill Personal information (contact email, phone, time zone), verify the email and the phone with codes Microsoft sends, fill Business information (registered name, industry, website, registered address), Submit, then create the Azure account in the same three steps to get $1,000 in starter credits. 5) Microsoft reviews within about three business days and emails the decision. 6) Later, complete business verification to unlock $5,000; higher tiers unlock automatically from Azure usage.",
+    "worth_noting": "A credit card is required at sign-up, and the Azure Sponsorship subscription automatically converts to pay-as-you-go when credits are used up or expire, so real charges can follow. The Azure country/region cannot be changed later. The registered startup name and address must match the company's legal documents or business verification can fail. A submitted application cannot be edited; a declined applicant can reapply after 14 days. Credits must be activated within 90 days of accepting the program agreement. If business verification is not done within 90 days of sign-up (or once $200 is used), the sponsorship is cancelled and the subscription becomes pay-as-you-go. LinkedIn verification must use a personal LinkedIn account. Microsoft does not publish the list of Investor Network partners; a referral code has to come from the startup's own investor or accelerator."
+  },
+  "portal": {
+    "platform": "Custom (Microsoft Azure portal, startup view) behind Microsoft account sign-in",
+    "requires_login": true,
+    "may_have_captcha": true,
+    "needs_file_uploads": false,
+    "notes": "The form cannot be seen without signing in: opening the application URL redirects straight to the Microsoft sign-in page (login.microsoftonline.com, \"Sign in to continue to Microsoft Azure\", with \"No account? Create one!\" and \"Sign in with GitHub\"). A human has to do several steps: Microsoft account sign-in (possibly with two-step verification), LinkedIn sign-in for identity verification (no-code path), email and SMS verification codes (referral-code path), the \"Let's prove you're human\" check in step 1 of Azure account creation, and entering a payment card. Multi-step wizard with Back / Next buttons; the last buttons are Submit (business information) and Save (payment information). No file uploads are shown in the official walkthrough; what the later \"business verification\" step asks for is not documented."
+  },
+  "questions_verification": "official_document",
+  "questions_source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "Taken from Microsoft's official \"How to Apply to Microsoft for Startups\" page on Microsoft Learn (last updated 2026-11-20) and the screenshots of each form step published on that page; field labels and help text were read off those screenshots. The live form itself could not be opened: it sits behind Microsoft account sign-in, which was not attempted. Things that could not be seen: the options in the \"What is your time zone\", \"What primary industry does your startup serve?\", State/Province, Country/Region and card expiry dropdowns (left empty rather than guessed); character limits; and whatever the later \"business verification\" step asks. The form has two paths. Without an investor referral code the applicant skips the Personal information and Business information sections entirely and goes from \"Verify with LinkedIn\" straight to the three Azure account steps. The referral code field shows a required asterisk but can be skipped with \"Continue without a code\", so it is marked not required. \"Website\" shows a required asterisk in the screenshot although the page text says \"Website (if available)\". Required flags are null for the Azure account steps because the screenshots show no required markers there; Microsoft's FAQ does say a credit card is needed. The Microsoft screenshot spells one label \"Email address for important notifcations\"; the page text spells it \"notifications\", which is what is recorded. Microsoft's page also lists an optional consent to \"receive product news, tips, and offers\" that does not appear as a separate checkbox in the US screenshot.",
+  "questions": [
+    {
+      "section": "Apply for Microsoft for Startups",
+      "text": "Investor referral code",
+      "help": "A 10-character investor referral code confirms that your startup is connected to an investor in the Investor Network",
+      "type": "short_text",
+      "required": false,
+      "limit": {
+        "unit": "chars",
+        "max": 10
+      },
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Personal information [only on the investor-referral-code path]",
+      "text": "Preferred contact email",
+      "help": "",
+      "type": "email",
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Personal information [only on the investor-referral-code path]",
+      "text": "Phone",
+      "help": "We'll only use your phone number for Microsoft for Startups updates.",
+      "type": "phone",
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Personal information [only on the investor-referral-code path]",
+      "text": "What is your time zone",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Verify your contact email [only on the investor-referral-code path]",
+      "text": "Verification code",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Verify your phone number [only on the investor-referral-code path]",
+      "text": "Verification code",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Business information [only on the investor-referral-code path]",
+      "text": "Registered startup name",
+      "help": "The registered name and address must match legal documents.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Business information [only on the investor-referral-code path]",
+      "text": "What primary industry does your startup serve?",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Business information [only on the investor-referral-code path]",
+      "text": "Website",
+      "help": "",
+      "type": "url",
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Business information > Registered business address [only on the investor-referral-code path]",
+      "text": "Address line 1",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Business information > Registered business address [only on the investor-referral-code path]",
+      "text": "Address line 2 (optional)",
+      "help": "",
+      "type": "short_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Business information > Registered business address [only on the investor-referral-code path]",
+      "text": "City",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Business information > Registered business address [only on the investor-referral-code path]",
+      "text": "State/Province",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Business information > Registered business address [only on the investor-referral-code path]",
+      "text": "Postal code",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Business information > Registered business address [only on the investor-referral-code path]",
+      "text": "Country/Region",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 1 of 3: Profile information [both paths]",
+      "text": "Country/Region",
+      "help": "Choose the location that matches your billing address. You cannot change this selection later. If your country is not listed, the offer is not available in your region. Learn more",
+      "type": "single_select",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 1 of 3: Profile information [both paths]",
+      "text": "First name",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 1 of 3: Profile information [both paths]",
+      "text": "Last name",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 1 of 3: Profile information [both paths]",
+      "text": "Email address for important notifications",
+      "help": "",
+      "type": "email",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 1 of 3: Profile information [both paths]",
+      "text": "Phone",
+      "help": "Please do not enter country code in your phone number.",
+      "type": "phone",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 2 of 3: Address information [both paths]",
+      "text": "Address line 1",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 2 of 3: Address information [both paths]",
+      "text": "Address line 2 (optional)",
+      "help": "",
+      "type": "short_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 2 of 3: Address information [both paths]",
+      "text": "City",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 2 of 3: Address information [both paths]",
+      "text": "State/Province",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 2 of 3: Address information [both paths]",
+      "text": "Postal code",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 2 of 3: Address information [both paths]",
+      "text": "I represent that I am the individual identified on this account. I agree to the terms and conditions of the Microsoft Customer Agreement including the Supplemental Individual User Terms.",
+      "help": "I understand Microsoft may contact me about my Azure account.",
+      "type": "yes_no",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 2 of 3: Address information [both paths]",
+      "text": "I would like Microsoft to share my information with select partners so I can receive relevant information about their products and services.",
+      "help": "I will receive information, tips, and offers about Azure and other Microsoft products and services.",
+      "type": "yes_no",
+      "required": false,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "Cardholder name",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "Card number",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "Exp. Month",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "Exp. Year",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "CVV",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "Address line 1",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "Address line 2 (optional)",
+      "help": "",
+      "type": "short_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "City",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "State/Province",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "Postal code",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    },
+    {
+      "section": "Create your Azure account > Step 3 of 3: Payment information [both paths]",
+      "text": "Country/Region",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application",
+      "note": "Official \"How to Apply\" page (updated 2026-11-20): eligibility, both application paths, every form step and its screenshots. Source of all questions."
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/startups",
+      "note": "Official program page and FAQ; \"Get started now\" button resolves to the Azure portal startup view."
+    },
+    {
+      "url": "https://portal.azure.com/?homeview=startup#home",
+      "note": "Application entry point; opened in a headless browser on 2026-11-24 and confirmed it redirects to Microsoft sign-in."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/overview",
+      "note": "Program overview and how the program works."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/startups/standard-benefits/unlock-more-benefits",
+      "note": "Credit milestones ($200 / $5,000 / $25,000 / $50,000 / $150,000) and their requirements; Investor Network benefits."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/startups/standard-benefits/getting-started-microsoft-for-startups",
+      "note": "Standard benefits and how to apply."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/program-faqs",
+      "note": "Official FAQ (updated 2026-11-20): review time, reapplying, credit periods, credit card requirement."
+    }
+  ]
+}

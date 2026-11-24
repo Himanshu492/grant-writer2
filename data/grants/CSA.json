@@ -1,0 +1,53 @@
+{
+  "id": "CSA",
+  "title": "Cedars-Sinai Accelerator+",
+  "funder": "Cedars-Sinai (Cedars-Sinai Technology Ventures)",
+  "program_url": "https://www.csaccelerator.com/",
+  "application_url": null,
+  "status": "unknown",
+  "deadline": null,
+  "deadline_note": "No application window, class date or deadline is published. The official site has no application form or apply link — only a 'Contact us today' form and the email csaccelerator@cshs.org. The last announced class was the 10th (August 2024); the program has since been rebranded 'Accelerator+' with a 'flexible duration' format.",
+  "amount": "Financial investment — amount not published for Accelerator+ (classes through the 10th, in 2024, received $100,000 per company)",
+  "summary": {
+    "at_a_glance": "The Cedars-Sinai Accelerator has been relaunched as 'Cedars-Sinai Accelerator+', which the official site describes as a venture-building platform for Seed+ and Late Seed healthcare companies advancing toward commercialization. There is currently no public application form, class schedule or deadline on the site; the only way in that it shows is a contact form and an email address. The real application questions could not be seen.",
+    "what_they_offer": "Per the official site: capital investment, clinical and market expertise, and 'guaranteed fast-track evaluation for product deployment within the Cedars-Sinai Health System and beyond'; a dedicated portfolio success team; fast-tracked paid pilots linked to enterprise contracts; co-working space next to Cedars-Sinai Medical Center in Los Angeles; curated sessions (FDA regulation, EMR integration, insurance billing); mentorship from more than 300 clinicians and executives; networking with local VCs and health systems; and follow-on investment evaluation after a successful pilot. The investment amount is not stated for Accelerator+. Under the earlier three-month class format each company received $100,000 (Cedars-Sinai newsroom, August 2024).",
+    "what_theyre_looking_for": "From the site's FAQ, ideal companies: closely align with the Cedars-Sinai mission of placing patients first; have already raised a seed round of funding; have a team of approximately 4-12 full-time staff; offer first-in-class, best-in-class, or breakthrough solutions nearing commercialization; and work in areas including medical devices, diagnostics and digital health. The 'sweet spot' is business-to-business companies that have a product and are seeking clinical or facility validation and an enterprise sales strategy into provider systems. Prior funding has ranged widely, with a typical midpoint of $500,000 to $5,000,000.",
+    "who_can_apply": "Early-stage healthcare companies with a product and full-time founders. The FAQ says they do not accept companies still at the idea stage or with part-time founders, and that, as a provider-based accelerator, they cannot support 'generalized wellness and fitness products or solutions sold directly to the consumer'. Companies do not need to be based in Los Angeles but are expected to attend one in-person session week each quarter. Note: the stated preferences (seed round already raised, 4-12 full-time staff, B2B sales to providers, no direct-to-consumer wellness products) point away from a pre-seed consumer-facing company.",
+    "how_to_apply": "No application process is published. The FAQ item 'When and how do I apply?' answers only: 'The application asks you to provide: Information about your company and your team; The market opportunity, the idea, and how you plan to execute it; A short video that describes your business' — with no link, date or form. The only published first step is to reach the team through the 'Contact us today' form on csaccelerator.com or by email at csaccelerator@cshs.org and ask how companies are being considered.",
+    "worth_noting": "The old hint URL (csaccelerator.com/company) is the official site, but it is an About/Team/FAQ page, not an application. /apply and /application return 404. Parts of the FAQ still describe the older resident format (at least one co-founder and two people on site five days a week), which sits oddly beside the new quarterly in-person weeks, so the FAQ may be partly out of date. The home page shows '10 Classes, 91 Companies, 4 Continents'. No new class has been announced since the 10th in August 2024; a December 2025 Cedars-Sinai news item mentions a company joining Accelerator+. Third-party directories describing an open cohort were not relied on."
+  },
+  "portal": {
+    "platform": "None published. The official site is a Webflow site with a general contact form only",
+    "requires_login": null,
+    "may_have_captcha": null,
+    "needs_file_uploads": null,
+    "notes": "There is no application portal to fill in. The only form on csaccelerator.com is the 'Contact us today' form in the page footer (#contact): 'Your name' (required, max 256 characters), 'Your email' (required, max 256), 'How can we help?' (required, max 5,000 characters), then 'Submit'. It needs no login and no CAPTCHA was visible. A separate newsletter box asks for an email only. Sending a contact message is an outreach step for the owner to decide on, not an application; the FAQ says the real application asks for a short video, so a video would be needed if one is offered."
+  },
+  "questions_verification": "not_accessible",
+  "questions_source_url": null,
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "No application form exists on the official site, so there are no questions to record and none were invented. Checked: the home page and /company page (raw HTML and rendered in a browser) — the only forms are the newsletter signup and the 3-field contact form described under portal notes; /apply, /application and about 20 other likely paths return 404; no link leads to an external application platform. The official FAQ describes the application only in outline (company and team information; market opportunity, idea and execution plan; a short video) — that outline is not a question list and is not recorded as questions. An F6S listing could not be checked (bot check, not bypassed) and no official page points to one. What blocks access: Cedars-Sinai does not publish the application; it presumably comes from the team after contact. To get the real questions, the owner would need to ask via the contact form or csaccelerator@cshs.org.",
+  "questions": [],
+  "sources": [
+    {
+      "url": "https://www.csaccelerator.com/",
+      "note": "Official home page: Accelerator+ description, what is offered, contact form, no apply link"
+    },
+    {
+      "url": "https://www.csaccelerator.com/company",
+      "note": "Official About / Team / FAQ page (old hint URL): format, fit criteria, 'When and how do I apply?'"
+    },
+    {
+      "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-accelerator-welcomes-10th-class-of-health-tech-startups/",
+      "note": "Cedars-Sinai newsroom, August 1, 2024: last announced class (10th), $100,000 per company, three-month format"
+    },
+    {
+      "url": "https://www.cedars-sinai.org/newsroom/cedars-sinai-and-exobiosphere-pioneering-space-biomedicine/",
+      "note": "Cedars-Sinai newsroom, December 1, 2025: a company joining the Accelerator+ program"
+    },
+    {
+      "url": "https://www.cedars-sinai.org/newsroom/tagfeed/en-us/tags/accelerator",
+      "note": "Newsroom accelerator tag feed: no call for applications or new class announced"
+    }
+  ]
+}

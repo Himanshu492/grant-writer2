@@ -1,0 +1,841 @@
+{
+  "id": "ARPAH",
+  "title": "ARPA-H Mission Office Innovative Solutions Openings (ISOs)",
+  "funder": "Advanced Research Projects Agency for Health (ARPA-H), U.S. Department of Health and Human Services",
+  "program_url": "https://arpa-h.gov/explore-funding/open-funding-opportunities",
+  "application_url": "https://solutions.arpa-h.gov/Submit-Solution/",
+  "status": "rolling",
+  "deadline": "2029-03-05",
+  "deadline_note": "Mission Office ISOs take Solution Summaries on a rolling basis; each solicitation states it will remain open until March 5, 2029 (also the Solution Summary deadline). A full proposal is requested within 45 calendar days of receiving Solution Summary feedback unless ARPA-H gives another timeline.",
+  "amount": "No award size is stated in the Mission Office ISOs; awards are milestone-based Other Transaction agreements (not grants) sized by the proposer's own Basis of Estimate",
+  "summary": {
+    "at_a_glance": "ARPA-H funds high-risk health R&D through Other Transaction agreements, not grants. The always-open route is one of four Mission Office ISOs on SAM.gov (Health Science Futures ARPA-H-SOL-24-104, Proactive Health ARPA-H-SOL-24-106, Scalable Solutions ARPA-H-SOL-24-105, Resilient Systems ARPA-H-SOL-24-103): submit a six-page Solution Summary on the ARPA-H Solutions site, wait for written feedback, then submit a full proposal.",
+    "what_they_offer": "Milestone-based Other Transaction (OT) awards for individual research projects that fall outside existing ARPA-H programs; multiple awards are anticipated and no dollar range is stated. Resource sharing may be encouraged or requested. ARPA-H strives to give written Solution Summary feedback within thirty (30) business days and to respond to proposals within sixty (60) calendar days. Separately, ARPA-H runs time-limited Program ISOs and SBIR/STTR awards (contracts of up to $600K for Phase 1 and $3.5M for Phase 2); on 2026-11-24 the ARPA-H site said there were no open small business opportunities.",
+    "what_theyre_looking_for": "Revolutionary, not incremental, advances. Proactive Health Office interest areas (ARPA-H-SOL-24-106, Amendment 04): novel prevention, detection and prophylactic treatment methods (including continuous, population-scale sensing of health state and low/no-cost early detection); population-level approaches to increase adoption of prevention and wellness behaviors; system innovation for delivering proactive health outcomes. Excluded: incremental advances, technology at the clinical trial stage, policy changes, traditional education and training, center formation, and physical infrastructure. Proposal evaluation criteria in descending order of importance: (1) Overall Scientific and Technical Merit, (2) Potential Contribution and Relevance to the ARPA-H Mission, (3) Proposer's Capabilities and/or Related Experience, (4) Cost/Price/Budget Assessment.",
+    "who_can_apply": "All responsible sources capable of satisfying the government's needs: academia, non-profit organizations, for-profit entities (small businesses included), hospitals, community health centers, non-federal research centers. FFRDCs and government entities cannot be team members. ARPA-H prioritizes entities that conduct the funded work in the U.S.; no award to a foreign entity of concern, a party to a malign foreign talent recruitment program, or a suspended/debarred entity. Entities currently providing contracted support services to ARPA-H are ineligible. SAM.gov registration and a UEI are required at proposal submission, not for the Solution Summary.",
+    "how_to_apply": "1) Read ARPA-H's Program and Initiatives portfolio and confirm the idea is outside it. 2) Pick the one Mission Office ISO that fits best and download the solicitation PDF, the Appendix A Solution Summary template and the Bundle of Attachments from SAM.gov. 3) Sign in to the ARPA-H Solutions site with a Google or Microsoft account. 4) Submit a Solution Summary (six pages, Appendix A template) through the five-step form: Solution Summary Information, Budget Information, Organizations & Key Personnel, File Uploads, Review & Submit. 5) Receive written feedback encouraging or discouraging a proposal. 6) Register in SAM.gov and obtain a UEI. 7) Submit the full proposal (Technical & Management Proposal of 20 pages, Task Description Document, Cost Proposal, Cost Proposal Workbook, Administrative & National Policy Requirements Document) on the Solutions site. 8) Notice of selection, then award negotiation.",
+    "worth_noting": "Submit the Solution Summary to only one Mission Office ISO. A submission may be rejected if it is within the scope of an existing ARPA-H program or initiative. ARPA-H says it generally reviews Program/Initiative submissions more quickly than Mission Office ISO submissions. Submitted content cannot be edited. ARPA-H's 'Know Before Applying' guide names three Mission Offices (Health Science Futures, Proactive Health, Scalable Solutions) while the Open Funding Opportunities page and SAM.gov still list a fourth active ISO for the Resilient Systems Office. Program ISOs open on 2026-11-24: SURPASS (ARPA-H-SOL-26-164; Solution Summary due November 30, 2026, proposal due January 22, 2027) and SPECTRA (ARPA-H-SOL-26-163; TA1 & TA2 Solution Summaries due December 2, 2026 3:00PM ET, TA3 due January 19, 2027); EHI and UNIQUE only accept proposals from applicants who met earlier Solution Summary deadlines. Program ISOs have their own templates and limits, which were not captured here."
+  },
+  "portal": {
+    "platform": "ARPA-H Solutions site (custom ARPA-H web application at solutions.arpa-h.gov)",
+    "requires_login": true,
+    "may_have_captcha": true,
+    "needs_file_uploads": true,
+    "notes": "Sign-in is only through Google or Microsoft ('Continue with Google' / 'Continue with Microsoft'); there is no separate username/password. Pressing 'Start Submission' while signed out redirects to /login?url=submit-summary. The site loads Google reCAPTCHA Enterprise (invisible). Five-step form with a draft that is saved automatically as you move between steps ('Save Draft and Exit' is offered). Organizations and Key Personnel are added as records first, then picked from dropdowns as Primary Organization and Technical/Administrative Points of Contact. The Solution Summary itself is uploaded as one file (Excel, PDF, Word or PowerPoint, max 500 MB). Submission is final and cannot be edited; after submitting, status is not shown on the site and questions go through 'Ask a Question'. Some opportunities enable extra or video uploads (MP4 up to 10 minutes plus captions file)."
+  },
+  "questions_verification": "official_document",
+  "questions_source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "Three groups, in this order. (1) The Solution Summary document: every field and section heading of 'Appendix A - ARPA-H Solutions Summary Template-Amend-3.docx', downloaded from the active SAM.gov notices (the same file is attached to all four Mission Office ISOs); wording is verbatim, the narrative sections are auto-numbered 1 to 5 in Word, and the six-page limit applies to the whole Solution Summary, not per section. Format rule from the template: English, sans serif font no smaller than 11-point. (2) The web form on the ARPA-H Solutions site: the form sits behind Google/Microsoft sign-in and was NOT seen rendered; labels, help text, options and limits were read from the site's publicly served JavaScript bundle (main-TFKS7EU2.js), so the wording is the site's own but on-screen order inside each step, the options of server-loaded dropdowns (opportunity list, state, country, organization and contact pickers) and which optional uploads appear for a given opportunity could not be confirmed. Organization Type options are listed in code order; the page applies a sort. Fields marked 'SBIR/STTR opportunities only' are added by the code only when the selected opportunity is a small business program. (3) The five full-proposal components, verbatim from section 4.4 of the Proactive Health Office ISO (Amendment 04, June 10, 2026); they apply only after written Solution Summary feedback. The ISO text and evaluation criteria were read from the Proactive Health Office ISO; the Scalable Solutions, Health Science Futures and Resilient Systems ISOs (Amendment 3) show the same deadline, the same 20-page proposal limit and the same template but their interest areas differ. Program ISO and SBIR templates were not captured.",
+  "questions": [
+    {
+      "section": "Solution Summary document (Appendix A template) — Solution Summary Cover Page",
+      "text": "Innovative Solutions Opening Title",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — Solution Summary Cover Page",
+      "text": "Solution Summary Title",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — Solution Summary Cover Page",
+      "text": "Submitter Organization",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — Solution Summary Cover Page",
+      "text": "Type of Organization",
+      "help": "Choose all that apply:",
+      "type": "multi_select",
+      "options": [
+        "For-Profit",
+        "Non-profit",
+        "Academia"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — Solution Summary Cover Page",
+      "text": "Technical Point of Contact (POC)",
+      "help": "Name:\nMailing Address:\nTelephone:\nEmail:",
+      "type": "long_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — Solution Summary Cover Page",
+      "text": "Administrative POC",
+      "help": "Name:\nMailing Address:\nTelephone:\nEmail:",
+      "type": "long_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — Solution Summary Cover Page",
+      "text": "Estimated Project Duration",
+      "help": "____ Months",
+      "type": "number",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — Solution Summary Cover Page",
+      "text": "Total Basis of Estimate",
+      "help": "Total: $ ___________________________",
+      "type": "number",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — Solution Summary Cover Page",
+      "text": "Resource Sharing (if applicable)",
+      "help": "Gov’t %____                $ _______________________\nPerformer % ____      $ _______________________",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — Solution Summary Cover Page",
+      "text": "Place(s) of Performance",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — SUB-AWARDEE AND CONSULTANT TEAM MEMBERS (Add rows as necessary)",
+      "text": "Organization Name:",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — SUB-AWARDEE AND CONSULTANT TEAM MEMBERS (Add rows as necessary)",
+      "text": "Technical POC Name:",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — SUB-AWARDEE AND CONSULTANT TEAM MEMBERS (Add rows as necessary)",
+      "text": "Organization Type(s):",
+      "help": "Choose all that apply:",
+      "type": "multi_select",
+      "options": [
+        "For-Profit",
+        "Non-profit",
+        "Academia"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — narrative sections (whole Solution Summary limited to six (6) pages; citations do not count)",
+      "text": "Concept Summary",
+      "help": "Describe the solution summary concept with minimal jargon and explain how it addresses the ISO interest areas.",
+      "type": "long_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — narrative sections (whole Solution Summary limited to six (6) pages; citations do not count)",
+      "text": "Innovation and Impact",
+      "help": "Clearly identify the outcome(s) sought and/or the problem(s) to be solved with the proposed technology concept. Describe how the proposed effort represents an innovative and potentially revolutionary solution to the ISO interest areas. Explain the concept’s potential to be disruptive compared to existing or emerging technologies and how the proposed approach will go far beyond current existing capabilities. To the extent possible, provide quantitative metrics in a table that compares the proposed technology concept to current and emerging technologies which may include:\n- A progression of increasingly complex technical challenges.\n- State of the art / emerging technology “baseline.”\n- Aggressive metrics for each year of the proposed project.\n- Summary of specific outcomes from the proposed project or concept.",
+      "type": "long_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — narrative sections (whole Solution Summary limited to six (6) pages; citations do not count)",
+      "text": "Proposed Work",
+      "help": "Describe the final deliverable(s) for the project, key interim milestones, and the overall technical approach used to achieve project objectives. Discuss alternative approaches considered, if any, and why the proposed approach is most appropriate for the project objectives. Describe the background, theory, simulation, modeling, experimental data, or other sound engineering and scientific practices or principles that support the proposed approach. Provide specific examples of supporting data and/or appropriate citations to the scientific and technical literature. Identify adoption challenges to be overcome for the proposed technology to be successful. Describe why the proposed effort is a significant technical challenge and the key technical risks. At a minimum, the solution summary should address:\n- Does the approach require one or more entirely new technical developments to succeed?\n- How will technical risk be mitigated?\n- What use cases, capabilities, or demonstrations will be featured?",
+      "type": "long_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — narrative sections (whole Solution Summary limited to six (6) pages; citations do not count)",
+      "text": "Team Organization and Capabilities",
+      "help": "Indicate the roles and responsibilities of the organizations and key personnel that comprise the Project Team.\n\nProvide the name, position, and institution of each key team member and describe in 1-2 sentences the skills and experience they bring to the team. Key team members include the individuals who are expected to contribute to the scientific development or execution of the project in a substantive, measurable way.",
+      "type": "long_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "Solution Summary document (Appendix A template) — narrative sections (whole Solution Summary limited to six (6) pages; citations do not count)",
+      "text": "Basis of Estimate (BOE)",
+      "help": "Identify a BOE that encompasses all costs and resources for the entire proposed project team. The BOE should include direct labor, materials, supplies, equipment, travel, profit/fee, and any other relevant costs associated with the proposed project.\n\nThe BOE should identify whether resource sharing applies. The table below may be used:\n[Table with columns 'Basis of Estimate (BOE)' and 'Amount'; rows 'Total' and 'Resource Sharing (if applicable)']",
+      "type": "long_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 1: Solution Summary Information — General",
+      "text": "Which ARPA-H opportunity does this apply to?",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 1: Solution Summary Information — General (SBIR/STTR opportunities only)",
+      "text": "Mechanism",
+      "help": "Please refer to the BAA for full information regarding mechanism eligibility criteria.",
+      "type": "single_select",
+      "options": [
+        "SBIR",
+        "STTR"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 1: Solution Summary Information — General (SBIR/STTR opportunities only)",
+      "text": "Phase",
+      "help": "Please refer to the BAA for full information regarding phase eligibility criteria.",
+      "type": "single_select",
+      "options": [
+        "Phase I",
+        "Direct-to-Phase II",
+        "Fast Track"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 1: Solution Summary Information — General",
+      "text": "What is the title of your Solution Summary?",
+      "help": "Recommended title length is under 130 characters.",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 300
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 1: Solution Summary Information — General",
+      "text": "Estimated Duration in Months including all Tasks and Phases",
+      "help": "Check the solicitation or special notice for specific timeline requirements.",
+      "type": "number",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 1: Solution Summary Information — General",
+      "text": "Does this Solution Summary contain animal subjects research?",
+      "help": "",
+      "type": "yes_no",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 1: Solution Summary Information — General",
+      "text": "Does this Solution Summary contain human subjects research?",
+      "help": "",
+      "type": "yes_no",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 1: Solution Summary Information — Submitter Information",
+      "text": "First Name",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 50
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 1: Solution Summary Information — Submitter Information",
+      "text": "Last Name",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 50
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 1: Solution Summary Information — Submitter Information",
+      "text": "Email",
+      "help": "Your email is automatically populated and cannot be changed.",
+      "type": "email",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 2: Budget Information — Funding Request",
+      "text": "Total Funds Requested from ARPA-H including all Tasks and Phases",
+      "help": "Enter the total amount of funding requested in U.S. Dollars (e.g., 50000.00).",
+      "type": "number",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 2: Budget Information — Funding Request",
+      "text": "Cost / Resource Share planned?",
+      "help": "",
+      "type": "yes_no",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization)",
+      "text": "Organization Name (required)",
+      "help": "Enter the full legal name of your organization.",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 200
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization)",
+      "text": "Organization UEI",
+      "help": "Enter your organization's 12-digit UEI number.",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": {
+        "unit": "chars",
+        "max": 12
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization)",
+      "text": "Organization Type (required)",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Large Business",
+        "Small Disadvantaged Business",
+        "Small Business",
+        "Historically Black College or University (HBCU)",
+        "Minority Institution (MI)",
+        "Educational Institution",
+        "Non-Profit Organization",
+        "Foreign Government",
+        "Hospital",
+        "Tribal Government",
+        "U.S. Federal Government",
+        "U.S. Local Government",
+        "U.S. State Government",
+        "Other",
+        "Unknown"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization)",
+      "text": "Organization Website",
+      "help": "Enter your organization's website URL.",
+      "type": "url",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization) — Organization Address",
+      "text": "Street Address 1 (required)",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 100
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization) — Organization Address",
+      "text": "Street Address 2",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": {
+        "unit": "chars",
+        "max": 100
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization) — Organization Address",
+      "text": "City (required)",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 100
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization) — Organization Address",
+      "text": "State (required)",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization) — Organization Address",
+      "text": "Country (required)",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization) — Organization Address",
+      "text": "ZIP / Postal Code (required)",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 25
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Organizations (Add Organization) — Place of Performance Address",
+      "text": "Is the place of performance address different from the organization address?",
+      "help": "",
+      "type": "yes_no",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Key Personnel (Add Key Personnel)",
+      "text": "Organization (required)",
+      "help": "Don't see the organization you need? Add it to this submission in the Organizations section above, then return here.",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Key Personnel (Add Key Personnel)",
+      "text": "First Name (required)",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 50
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Key Personnel (Add Key Personnel)",
+      "text": "Last Name (required)",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 50
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Key Personnel (Add Key Personnel)",
+      "text": "Email (required)",
+      "help": "",
+      "type": "email",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 100
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Key Personnel (Add Key Personnel)",
+      "text": "Personnel Type (required)",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Key Personnel",
+        "Principal Investigator",
+        "Co-Principal Investigator"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Primary Information",
+      "text": "Select the Primary Organization",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Primary Information (STTR opportunities only)",
+      "text": "Select the Partner University or Other Nonprofit Research Institution",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Primary Information",
+      "text": "Confirm the Primary Organization UEI Number",
+      "help": "While not required for Solution Summary submissions, ARPA-H requires a Unique Entity ID (UEI) from SAM.gov for all proposal submissions. To obtain a SAM.gov UEI, follow the instructions in the solicitation or special notice, or on SAM.gov.",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": {
+        "unit": "chars",
+        "max": 12
+      },
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Primary Information (SBIR/STTR opportunities only)",
+      "text": "SBC Control ID",
+      "help": "While not required for Solution Summary submissions, Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) applicants are required to provide an SBC Control ID (format: SBC_123456789) when submitting a proposal. To obtain an SBC Control ID, register with the Small Business Administration (SBA) at SBIR.gov.",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Primary Information (SBIR/STTR opportunities only)",
+      "text": "Is the applicant primary organization majority owned in part by multiple venture capital operating companies (VCOCs), hedge funds, or private equity funds?",
+      "help": "NOTE: SBIR applicants selecting YES are required to upload the supporting document in the “File Upload” section.",
+      "type": "yes_no",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Primary Information (SBIR/STTR opportunities only)",
+      "text": "Does the applicant organization have any foreign relationships to disclose?",
+      "help": "NOTE: A completed Foreign Risk Disclosure is required at document upload regardless of whether “Yes” or “No” is selected for this question.",
+      "type": "yes_no",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Primary Information (SBIR/STTR opportunities only)",
+      "text": "How many FAR-based contracts does the Prime Organization currently have with ARPA-H? (Other Transaction contracts do not apply)",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "Greater than 3"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Primary Information (SBIR/STTR opportunities only)",
+      "text": "How many other SBIR and/or STTR awards have you submitted to any agency within HHS this fiscal year (not including this submission)?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "Greater than 10"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Primary Information (SBIR/STTR opportunities only)",
+      "text": "Is the prime applicant a first time applicant for a federal funding opportunity?",
+      "help": "",
+      "type": "yes_no",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Primary Information (SBIR/STTR opportunities only)",
+      "text": "Has the prime applicant previously received federal funding?",
+      "help": "",
+      "type": "yes_no",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Points of Contact",
+      "text": "Who is the Primary Technical Point of Contact for the submission?",
+      "help": "These contacts will receive all official correspondence from ARPA-H, including final decisions. Be sure to use email addresses that are regularly monitored and will remain valid throughout the review period. Please note: We are unable to guarantee re-delivery or forwarding if individuals have left the project, changed roles, or are otherwise unavailable.",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 3: Organizations & Key Personnel — Points of Contact",
+      "text": "Who is the Primary Administrative Point of Contact for the submission?",
+      "help": "These contacts will receive all official correspondence from ARPA-H, including final decisions. Be sure to use email addresses that are regularly monitored and will remain valid throughout the review period. Please note: We are unable to guarantee re-delivery or forwarding if individuals have left the project, changed roles, or are otherwise unavailable.",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 4: File Uploads — Required Uploads",
+      "text": "Solution Summary",
+      "help": "Upload a single file for your Submission. Required File Type: Excel, PDF, Word or PowerPoint. Max File Size: 500 MB",
+      "type": "file",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "pages",
+        "max": 6
+      },
+      "doc_kind": "other",
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "ARPA-H Solutions site form — Step 5: Review & Submit — Confirm & Submit",
+      "text": "I confirm that the information provided is true and correct to the best of my knowledge.",
+      "help": "By submitting, you confirm that the information provided is true and correct to the best of your knowledge. Important: This submission is final. Once you select Submit, you will not be able to edit any portion of this submission.",
+      "type": "yes_no",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js"
+    },
+    {
+      "section": "Full proposal — only after written Solution Summary feedback (ISO section 4.4, Bundle of Attachments)",
+      "text": "Technical & Management Proposal (20 pages)",
+      "help": "Template sections: Proposal Summary (Discussion; Innovative Claims Table); Goals and Impact; Technical Plan; Capabilities/Management Plan; Bibliography (Optional). The Technical & Management Proposal must not exceed twenty (20) pages.",
+      "type": "file",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "pages",
+        "max": 20
+      },
+      "doc_kind": "other",
+      "source_url": "https://sam.gov/opp/16de79af3e814cdc96ce469debec4a57/view"
+    },
+    {
+      "section": "Full proposal — only after written Solution Summary feedback (ISO section 4.4, Bundle of Attachments)",
+      "text": "Task Description Document/Statement of Work (no page limit)",
+      "help": "",
+      "type": "file",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://sam.gov/opp/16de79af3e814cdc96ce469debec4a57/view"
+    },
+    {
+      "section": "Full proposal — only after written Solution Summary feedback (ISO section 4.4, Bundle of Attachments)",
+      "text": "Cost Proposal (no page limit)",
+      "help": "",
+      "type": "file",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "doc_kind": "budget",
+      "source_url": "https://sam.gov/opp/16de79af3e814cdc96ce469debec4a57/view"
+    },
+    {
+      "section": "Full proposal — only after written Solution Summary feedback (ISO section 4.4, Bundle of Attachments)",
+      "text": "Cost Proposal Workbook (fill in applicable spreadsheets)",
+      "help": "",
+      "type": "file",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "doc_kind": "budget",
+      "source_url": "https://sam.gov/opp/16de79af3e814cdc96ce469debec4a57/view"
+    },
+    {
+      "section": "Full proposal — only after written Solution Summary feedback (ISO section 4.4, Bundle of Attachments)",
+      "text": "Administrative & National Policy Requirements Document (no page limit)",
+      "help": "",
+      "type": "file",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://sam.gov/opp/16de79af3e814cdc96ce469debec4a57/view"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://arpa-h.gov/explore-funding/open-funding-opportunities",
+      "note": "List of open Program ISOs, Initiatives, small business status and the four Mission Office ISOs"
+    },
+    {
+      "url": "https://arpa-h.gov/explore-funding/submission-resources-and-FAQs/mission-office-iso-know-before-applying",
+      "note": "Mission Office ISO process, eligibility FAQ, one-ISO-only rule"
+    },
+    {
+      "url": "https://arpa-h.gov/explore-funding/submission-resources-and-FAQs/navigating-application-process",
+      "note": "Step-by-step application process, points of contact, SAM.gov/UEI timing"
+    },
+    {
+      "url": "https://sam.gov/opp/16de79af3e814cdc96ce469debec4a57/view",
+      "note": "SAM.gov notice ARPA-H-SOL-24-106 (Proactive Health Office ISO), Amendment 04 PDF and Bundle of Attachments: closing date, eligibility, submission rules, evaluation criteria, proposal components"
+    },
+    {
+      "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7232b27151445fa17fe5141ccbcd24/download",
+      "note": "Appendix A - ARPA-H Solutions Summary Template-Amend-3.docx (Solution Summary fields, sections, six-page limit)"
+    },
+    {
+      "url": "https://sam.gov/opp/eecb3e4c0dc7472797dc2938d933c7c7/view",
+      "note": "Scalable Solutions Office ISO ARPA-H-SOL-24-105 (checked deadline and page limits)"
+    },
+    {
+      "url": "https://sam.gov/opp/562890e5aa0d4eb598b52890a0b56899/view",
+      "note": "Health Science Futures ISO ARPA-H-SOL-24-104 (checked deadline and page limits)"
+    },
+    {
+      "url": "https://sam.gov/opp/2d1209273c284cb48ea9898939f7c3f8/view",
+      "note": "Resilient Systems Office ISO ARPA-H-SOL-24-103 (checked deadline and page limits)"
+    },
+    {
+      "url": "https://solutions.arpa-h.gov/summary",
+      "note": "Solutions site 'Submit a Solution Summary' page: five form sections, reminders, sign-in gate"
+    },
+    {
+      "url": "https://solutions.arpa-h.gov/main-TFKS7EU2.js",
+      "note": "Solutions site public JavaScript bundle: form field labels, help text, options and limits"
+    },
+    {
+      "url": "https://arpa-h.gov/explore-funding/sbir",
+      "note": "SBIR/STTR award sizes and eligibility; solicitation 7599226SN106 dates have passed"
+    },
+    {
+      "url": "https://arpa-h.gov/explore-funding/programs/surpass",
+      "note": "SURPASS program ISO dates"
+    },
+    {
+      "url": "https://arpa-h.gov/explore-funding/programs/spectra",
+      "note": "SPECTRA program ISO dates"
+    }
+  ]
+}

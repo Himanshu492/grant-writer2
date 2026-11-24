@@ -1,0 +1,32 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "freehealth-grants-portal",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "freehealth-grants-portal",
+      "database_id": "a7b73abd-1ad5-431b-b848-515e05e225ba",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    { "binding": "DOCS", "bucket_name": "freehealth-grants-portal" }
+  ],
+  "triggers": { "crons": ["*/5 * * * *"] },
+  "vars": {
+    "DEEPSEEK_BASE_URL": "https://api.deepseek.com",
+    "DEEPSEEK_MODEL_FAST": "deepseek-flash",
+    "DEEPSEEK_MODEL_WRITE": "deepseek-v4-pro"
+  }
+  // Secrets (set with `wrangler secret put`, never committed):
+  //   PORTAL_PASSWORD   - team password for the dashboard
+  //   SESSION_SECRET    - random string used to sign login cookies
+  //   AGENT_TOKEN       - bearer token the VM browser-agent runner uses
+  //   DEEPSEEK_API_KEY  - DeepSeek key for "Draft with AI" and knowledge inference
+}

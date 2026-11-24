@@ -1,0 +1,923 @@
+{
+  "id": "BARDA",
+  "title": "BARDA DRIVe EZ-BAA (Easy Broad Agency Announcement, EZ-BAA-22-100-SOL-00003)",
+  "funder": "U.S. Department of Health and Human Services — ASPR / Biomedical Advanced Research and Development Authority (BARDA), Division of Research, Innovation, and Ventures (DRIVe)",
+  "program_url": "https://sam.gov/opp/42afa51fe02949309a6bdd4ce111f1c4/view",
+  "application_url": "https://bdr.hhs.gov/",
+  "status": "closed",
+  "deadline": null,
+  "deadline_note": "Not rolling and not open: the BDR submission portal states 'All EZ-BAA areas of interest are currently closed.' (seen 2026-11-24). The last amendment on SAM.gov (#037, April 22, 2025) closed the remaining Areas of Interest effective immediately. The umbrella announcement itself stays on SAM.gov until October 18, 2027, and only Plus (+) Phase abstracts from prior EZ-BAA awardees are still accepted. A new AOI would be announced by a new amendment on SAM.gov.",
+  "amount": "Initial award under $750,000 in U.S. Government funding (contract or OTA — no grants), 12-24 months, with a Respondent Resource Contribution of at least 30-50% of total project value; Plus (+) Phase follow-on up to $20M for prior awardees only",
+  "summary": {
+    "at_a_glance": "The EZ-BAA is BARDA DRIVe's streamlined contract solicitation for early health-security R&D: a short abstract first, then an invited full proposal. As of November 24, 2026 every Area of Interest (AOI) is closed to new applicants, so there is nothing we can submit to right now. The old URL drive.hhs.gov/ezbaa.html now redirects to DRIVe's general partnering page, which no longer lists the EZ-BAA at all.",
+    "what_they_offer": "Contracts (most initial awards firm fixed price) or Other Transaction Agreements — explicitly no grants or cooperative agreements. Initial awards must request less than $750,000 in U.S. Government funding and are expected to run 12-24 months. Awardees may later apply to the Plus (+) Phase for the same technology (capped at $20 million; the EZ-BAA says most are expected to be $2-10 million). BARDA expects only an estimated 5-10% of abstract submitters to receive a contract.",
+    "what_theyre_looking_for": "Transformative, innovative approaches to health security that fit a specific open AOI defined in an amendment. Abstracts get an 'Interested' / 'Not Interested' notice based on (1) alignment with the AOI program strategy and current needs, (2) feasibility based on the information and supporting data provided, and (3) whether the project would enhance the AOI portfolio with an innovative technology or meet an unmet need. Full proposals are evaluated on: I. Alignment with current AOI requirements, program strategy, and resources; II. Technical Approach; III. Ability to transition technology and expand use of its application; IV. Cost/Price Reasonableness (including proposed Resource Contributions by the Respondent); V. Past Performance. Factors I-III combined are significantly more important than IV, which is more important than V.",
+    "who_can_apply": "All responsible sources, domestic and international: private companies, not-for-profits, NGOs and academic institutions, alone or in teams; small businesses are strongly encouraged. The entity must have an active SAM.gov registration (registered for 'All Awards', with an appropriate NAICS code such as 541713, 541714, 541715 or 541720) at the time of submission or the abstract is rejected unreviewed. Respondents must show the financial resources and technical capability to perform, and must propose a Resource Contribution (cash or in-kind) of at least 30-50% of total project value, or a written justification for none. The project must fall inside an AOI that is open; none is.",
+    "how_to_apply": "1) Wait for an amendment on SAM.gov that opens an AOI and read its specific requirements and closing date. 2) Request a market research (pre-submission) call with the AOI's program inbox — strongly encouraged and sometimes required. 3) Register the company in SAM.gov and create a BDR Portal account at bdr.hhs.gov. 4) Submit an Abstract in the BDR Portal (tabs: Contact, Organization, Funding, Abstract, Documents, Submit); the technical description is limited to 12,500 characters, plus one optional supporting attachment. Nothing may be sent by email. 5) BARDA targets an 'Interested' / 'Not Interested' notice 30-90 days after receipt. 6) If 'Interested', you are invited to submit a Full Proposal (the abstract plus a Statement of Work, additional cost and technical information), rated Acceptable / Not Accepted / Acceptable but No Resources Available. 7) Negotiation and award, subject to funds.",
+    "worth_noting": "The old description 'Rolling, reviewed against priorities and available funds' is wrong for the EZ-BAA. That wording matches a footnote on DRIVe's partnering page about BARDA Accelerator Network opportunities ('For opportunities without a deadline, proposals are accepted on an ongoing basis and reviewed based on BARDA priorities and availability of funds'). For a digital-health company the relevant live BARDA route on that page is 'Paratus: Digital Health Hub' proof-of-concept funding ($50K-$200K, 4- to 12-week milestone-based projects, listed as OPEN*, the page links to matter.health for it) — a different program with a different application that was not researched here. Amendment 033 (October 31, 2024) removed the Rough Order of Magnitude (ROM) cost requirement from the abstract stage. Historic AOIs were biodefense-focused (e.g. #17 Digital MCMs, #16 Lab at Home, #20 DRIVe Forward); all are closed. BDR Portal accounts are deactivated after 60 days without a login."
+  },
+  "portal": {
+    "platform": "BARDA Digital Resources (BDR) Portal — Microsoft Power Pages with Azure AD B2C sign-in",
+    "requires_login": true,
+    "may_have_captcha": null,
+    "needs_file_uploads": true,
+    "notes": "Account required before any form is visible: 'Create Account' at bdr.hhs.gov, verify the email with a code, set a password; every sign-in also sends an emailed verification code, then a Privacy and Security Notification must be accepted. BARDA asks users to use Chrome. Accounts not accessed for 60 days are deactivated. The abstract is a 6-tab wizard (Contact, Organization, Funding, Abstract, Documents, Submit) with 'Save & Close' on each tab, so drafts can be resumed from the EZ-BAA Submission Dashboard. The organization must be picked from a dropdown or created with 'Add Organization'. The Area of Interest dropdown only offers open AOIs, so with all AOIs closed a new initial abstract cannot currently be filed. Uploads are optional supporting documents (PDF, Word, Excel, PowerPoint, PNG/JPEG/GIF/BMP; 100MB max per file). An active SAM.gov registration is needed separately. No CAPTCHA was seen on the public sign-in page; the account-creation flow was not exercised."
+  },
+  "questions_verification": "official_document",
+  "questions_source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "Two official sources, no live form (the form is behind a BDR account and no AOI is open). (a) Portal field labels, options and required marks were read from screenshots in BARDA's own 'EZ-BAA Submission Process' training deck, dated March 2025 and still linked from bdr.hhs.gov/resources — the live form may have changed since. (b) The narrative prompts (sections A-J and Project Deliverables) and the 12,500-character limit are verbatim from the EZ-BAA base document on SAM.gov, Section III.B-C; the suggested lengths in brackets are part of the official wording. The 12,500-character limit applies to the technical description as a whole, not to each prompt, so no per-prompt limit is recorded. NOT SEEN: the training deck says the Abstract tab also holds 'Funding Details' and 'Description' fields, but its screenshots cut off before them, so their exact labels are unknown and they are not listed; the narrative prompts are placed where that tab's description would be. Dropdown options are listed only where the screenshots showed them; most dropdowns (US Citizenship, Contact Type, Legal Structure, socio-economic fields, Number of Employees, Annual Revenue, Government Entities, Area of Interest, etc.) have unknown options. Some fields are conditional (e.g. 'Reason for not being registered in SAM.gov?' after answering No; the award-date and contract-name fields after answering Yes). The 'Add Organization' fields only apply if the organization is not already in the dropdown. The original Section III.B.2 cost section (ROM template and cost narrative) is omitted because Amendment 033 removed it. Each AOI amendment adds its own required content, which will differ for any future AOI. Full Proposal fields (invitation only) are not listed.",
+  "questions": [
+    {
+      "section": "Contact tab — About You/Basic Info",
+      "text": "First Name",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — About You/Basic Info",
+      "text": "Middle Name or Initial",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — About You/Basic Info",
+      "text": "Last Name",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — About You/Basic Info",
+      "text": "Email Address",
+      "help": "",
+      "type": "email",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — About You/Basic Info",
+      "text": "Primary Phone",
+      "help": "",
+      "type": "phone",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — About You/Basic Info",
+      "text": "US Citizenship",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — About You/Basic Info",
+      "text": "Organization",
+      "help": "If you are not associated to any organizations yet, you can click the Add an Organization button to add your Organization",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — About You/Basic Info",
+      "text": "Organization Website",
+      "help": "",
+      "type": "url",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Add Organization (New Organization pop-up)",
+      "text": "Organization Name",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Add Organization (New Organization pop-up)",
+      "text": "Organization Type",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Association",
+        "First Responders",
+        "Healthcare Providers",
+        "Industry",
+        "Information Technology (IT)",
+        "Bioinformatics",
+        "Biotechnology",
+        "Biopharmaceutical",
+        "Pharmaceutical",
+        "Local Government",
+        "State Government",
+        "Federal Government",
+        "U.S. Defense Agency",
+        "Media/Public Relations",
+        "Non-Profit",
+        "Legal",
+        "Other",
+        "Academia",
+        "International Governments"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Add Organization (New Organization pop-up)",
+      "text": "Legal Structure",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Add Organization — Primary Worksite Address",
+      "text": "Street 1",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Add Organization — Primary Worksite Address",
+      "text": "Street 2",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Add Organization — Primary Worksite Address",
+      "text": "City",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Add Organization — Primary Worksite Address",
+      "text": "State/Province",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Add Organization — Primary Worksite Address",
+      "text": "ZIP/Postal Code",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Add Organization — Primary Worksite Address",
+      "text": "Country/Region",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Contact",
+      "text": "Primary Position/Title",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Contact",
+      "text": "Contact Type",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Contact",
+      "text": "How did you learn about the DRIVe program?",
+      "help": "",
+      "type": "multi_select",
+      "options": [
+        "A colleague",
+        "Advocacy group",
+        "ASPR.hhs.gov",
+        "BARDA event",
+        "BARDA Industry Day",
+        "MedicalCountermeasures.gov",
+        "DRIVe Accelerator",
+        "DRIVe.hhs.gov",
+        "News article or blog",
+        "Scientific conference",
+        "Scientific publication",
+        "Social Media",
+        "Other"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Contact tab — Contact",
+      "text": "Would you like to be added to the email list for future BARDA events?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Address",
+      "text": "Organization Street 1",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Address",
+      "text": "Organization Street 2",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Address",
+      "text": "Organization City",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Address",
+      "text": "Organization State/Province",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Address",
+      "text": "Organization ZIP/Postal Code",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Address",
+      "text": "Organization Country/Region",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Information",
+      "text": "Organization Type",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Information",
+      "text": "Minority Owned Business",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Information",
+      "text": "Veteran Owned Business",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Information",
+      "text": "Woman Owned Business",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Information",
+      "text": "Other Socio-Economic Status",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Information",
+      "text": "Number of Employees",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab — Organization Information",
+      "text": "Annual Revenue",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab",
+      "text": "Is the organization registered in SAM?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab",
+      "text": "Reason for not being registered in SAM.gov?",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab",
+      "text": "SAM UEI (Unique Entity Identifier)",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab",
+      "text": "DUNS Number",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab",
+      "text": "CAGE Code",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab",
+      "text": "NAICS Code",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab",
+      "text": "Legal Structure",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Organization tab",
+      "text": "Have you previously applied to BARDA for the same or a substantially similar project?",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Funding tab",
+      "text": "Have you ever been awarded a government (federal, state, local, tribal, territorial) contract or grant?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Funding tab",
+      "text": "Have you been awarded a government (federal, state, local, tribal, territorial) contract or grant related to the current submission over the past 3 years?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Funding tab",
+      "text": "Contract or Grant Name",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Funding tab",
+      "text": "Government Entities",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Funding tab",
+      "text": "Have you ever been awarded a grant or contract by BARDA?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Funding tab",
+      "text": "What was the date of award (most recent, if multiple)?",
+      "help": "",
+      "type": "date",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Funding tab",
+      "text": "Do you presently receive funding from any USG entities? (Check all that apply)",
+      "help": "",
+      "type": "multi_select",
+      "options": [
+        "BARDA",
+        "CARB-X",
+        "NIAID Pre-clinical Services",
+        "NIH/NIAID/SBIR/STTR grants or contract",
+        "Centers for Disease Control and Prevention (CDC)",
+        "Other HHS",
+        "Department of Defense (DoD)",
+        "Defense Advanced Research Projects Agency (DARPA)",
+        "Defense Threat Reduction Agency (DTRA)",
+        "Defense Health Agency (DHA)",
+        "Other DoD",
+        "National Science Foundation (NSF)",
+        "Department of Energy (DOE)",
+        "Department of Homeland Security (DHS)",
+        "Intelligence Advanced Research Projects Activity",
+        "Small Business Administration",
+        "Other Department",
+        "No US Government funding (Other selections will be removed when selected)"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Abstract",
+      "text": "Project Title",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Abstract",
+      "text": "Solicitation",
+      "help": "BAA-22-100-SOL-00003: Primary solicitation - this option should be selected for all initial submissions. Awards may not exceed $750,000 USG funding. BAA-22-100-SOL-00003 Plus: Open ONLY to Respondents who have received an initial award under the EZ-BAA (i.e. under $750,000). Submissions must be for the development of the same technology supported by the EZ-BAA award and must be received by BARDA DRIVe before two years after the completion date of the initial EZ-BAA award. All other submissions will be deemed ineligible and will be directed to submit an Abstract Submission under BAA-22-100-SOL-00003 for consideration of an initial award under this EZ-BAA. Awards may not exceed $20 million USG funding. Note: The majority of + Phase awards under this EZ-BAA area, anticipated to be in the $2 to $12 million range.",
+      "type": "single_select",
+      "options": [
+        "BAA-22-100-SOL-00003",
+        "BAA-22-100-SOL-00003 Plus"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Abstract",
+      "text": "Area of Interest",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Abstract",
+      "text": "Technical POC",
+      "help": "",
+      "type": "single_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Abstract",
+      "text": "Have you had a market research call with DRIVe about this submission?",
+      "help": "DRIVe highly encourages Respondents that are interested in proposing a submission to schedule a market research call with an AOI representative to discuss their general technology and alignment with programmatic priorities.",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract Submission — 1. Technical Section (EZ-BAA Section III.B; the whole technical description must be no more than 12,500 characters)",
+      "text": "A) Problem statement: Which major health security problem are you addressing? What is the motivation for this proposed project? (1-2 sentences)",
+      "help": "",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract Submission — 1. Technical Section (EZ-BAA Section III.B; the whole technical description must be no more than 12,500 characters)",
+      "text": "B) Solution: Briefly describe the proposed solution and the desired use case, if relevant. Outline the technology / tool / device / process and, if appropriate, the research & development question. (1-2 sentences) Explain how your solution is responsive to the goals of this program. (1 sentence)",
+      "help": "",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract Submission — 1. Technical Section (EZ-BAA Section III.B; the whole technical description must be no more than 12,500 characters)",
+      "text": "C) Impact: If you are successful, what difference will it make to health security (1-2 sentences)",
+      "help": "",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract Submission — 1. Technical Section (EZ-BAA Section III.B; the whole technical description must be no more than 12,500 characters)",
+      "text": "D) Innovation: What is unique and innovative about your proposed solution? Is the innovation in the technology / tool / process itself or is it in the application? How is this solution better than competing ones? (2-3 sentences)",
+      "help": "",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract Submission — 1. Technical Section (EZ-BAA Section III.B; the whole technical description must be no more than 12,500 characters)",
+      "text": "E) Supporting data / feasibility: Introduce relevant preliminary data generated by the Respondent (please include the data in the text as a narrative, do not merely list references from other researchers). (1 paragraph)",
+      "help": "Ensure that all solicitation and special instructions requirements are addressed. Relevant supporting figures can be provided as part of a single attachment.",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract Submission — 1. Technical Section (EZ-BAA Section III.B; the whole technical description must be no more than 12,500 characters)",
+      "text": "F) Technical approach: How does your solution (technology / tool / device / process) work? Be methodical and specific. (1-2 paragraphs) How mature is the Respondent’s solution (technology / tool / device / process)? If possible, describe the Technology Readiness Levels ( https://www.medicalcountermeasures.gov/trl) for major components of the solution in Respondent’s organization. (1 paragraph) Which R&D work will be conducted on each major component of the solution? Be specific and use quantitative metrics, whenever possible, and structure this section in terms of deliverables and milestones. What are the goal specifications (e.g. analytes of choice, limits of detection, relevant clinical ranges, algorithm accuracy etc.)? How will you assess the performance of your solution? (2-3 paragraphs)",
+      "help": "If relevant to your project: Provide details on pre-clinical studies (justification for model, alignment with regulatory path), clinical study or trial design (# of patients, endpoints, enrollment population, clinical partners etc.), regulatory approach, and how the proposed project aligns with these next steps. Relevant documentation can be supplied in the attachment, to include but not limited to Investigator’s Brochure, clinical protocol or synopsis, FDA feedback, subcontractor proposals / agreements / letters of commitment etc. If relevant to your proposal: Include a target product profile (TPP) for the product/platform under development ( https://www.phe.gov/about/amcg/BARDA-BAA/Documents/Target-Product-Profile.pdf) in the attachment. Ensure that all requirements in the broad agency announcement, including amendments, are addressed. Relevant supporting figures can be provided as part of a single attachment file.",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract Submission — 1. Technical Section (EZ-BAA Section III.B; the whole technical description must be no more than 12,500 characters)",
+      "text": "G) Regulatory approach (if relevant to your proposal): Please provide your regulatory strategy and associated clinical development approach. Please elaborate on any engagement with FDA that has occurred or will occur in the near future and summarize (or attach) feedback from FDA. (1 paragraph)",
+      "help": "",
+      "type": "long_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract Submission — 1. Technical Section (EZ-BAA Section III.B; the whole technical description must be no more than 12,500 characters)",
+      "text": "H) Manufacturing (if relevant to your proposal): Have commercial contract manufacturers for the product have been identified? If so, which ones? Please provide remaining activities needed for scale up, if needed, and a timeline of activities. Address whether the proposed solution is ready for technology transfer and/or further qualification/verification/validation. (2-3 sentences)",
+      "help": "",
+      "type": "long_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract Submission — 1. Technical Section (EZ-BAA Section III.B; the whole technical description must be no more than 12,500 characters)",
+      "text": "I) Intellectual Property: Please address the ownership and/or pending status of any patents, or related intellectual property, related to the subject technology. (1-2 sentences)",
+      "help": "",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract Submission — 1. Technical Section (EZ-BAA Section III.B; the whole technical description must be no more than 12,500 characters)",
+      "text": "J) Risks: What are the major internal and external risks associated with the project and what is your mitigation strategy? (1-2 sentences)",
+      "help": "",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract Submission — 3. Project Deliverables (EZ-BAA Section III.B)",
+      "text": "List individual deliverables and (quantitative) metrics of success.",
+      "help": "",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download"
+    },
+    {
+      "section": "Abstract tab — Conflict of Interest — Potentially Conflicted Individuals",
+      "text": "First and Last Name",
+      "help": "Provide list of BARDA staff members that may have a conflict with this submission. A contracting officer may reach out to you before your market research abstract is reviewed.",
+      "type": "short_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Conflict of Interest — Potentially Conflicted Individuals",
+      "text": "Company",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Conflict of Interest — Potentially Conflicted Individuals",
+      "text": "Job Role/Title",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Conflict of Interest — Potentially Conflicted Individuals",
+      "text": "Note",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Conflict of Interest — Key Personnel",
+      "text": "First and Last Name",
+      "help": "Provide a list of Key personnel that would be involved in this project. This list will be presented to reviewers to ensure they do not have a conflict of interest.",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Conflict of Interest — Key Personnel",
+      "text": "Organization",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Conflict of Interest — Key Personnel",
+      "text": "Job Role/Title",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Conflict of Interest — Key Personnel",
+      "text": "Note",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Abstract tab — Conflict of Interest — Key Organizations",
+      "text": "Organization",
+      "help": "Provide list of Key Organizations that may be involved with this submission",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Documents tab — Upload Documents",
+      "text": "Add files",
+      "help": "Attachments, such as relevant publication and graphs, are for supplementary information only and may not be reviewed. Only file types listed below are allowed: PDF; XLS (and XLSX); DOC (and DOCX); XLT (and XLTX); DOT (and DOTX); Image Files (PNG, JPEG, GIF, BMP); PPT (and PPTX). Files have a maximum upload limit of 100MB.",
+      "type": "file",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Submit tab — Review & Submit",
+      "text": "By clicking submit, you are confirming that all fields and documentation provided are final. Following submission, the abstract will be reviewed by a DRIVe Team Member and you will be notified progression of the review.",
+      "help": "",
+      "type": "yes_no",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    },
+    {
+      "section": "Submit tab — Review & Submit",
+      "text": "Submitted By",
+      "help": "",
+      "type": "short_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://drive.hhs.gov/ezbaa.html",
+      "note": "Old hint URL; now 301-redirects to https://drive.hhs.gov/partner.html, which has no EZ-BAA listing"
+    },
+    {
+      "url": "https://drive.hhs.gov/partner.html",
+      "note": "DRIVe 'Partnering with DRIVe' page: current opportunities (Single Shield Prize, ImmuneChip+ BAA, BARDA Accelerator Network incl. Paratus digital health hub) and the 'accepted on an ongoing basis' footnote"
+    },
+    {
+      "url": "https://bdr.hhs.gov/",
+      "note": "Submission portal home page; status line 'All EZ-BAA areas of interest are currently closed.' and Plus (+) Phase note"
+    },
+    {
+      "url": "https://bdr.hhs.gov/resources/",
+      "note": "Portal resources page linking the EZ-BAA training deck and account FAQs; contact inboxes"
+    },
+    {
+      "url": "https://bdr.hhs.gov/EZ-BAA_Submission_Training.pdf",
+      "note": "Official BDR 'EZ-BAA Submission Process' training deck (March 2025): screenshots of every abstract tab, used for portal field labels"
+    },
+    {
+      "url": "https://bdr.hhs.gov/BDR%20Portal%20Account%20FAQs.pdf",
+      "note": "Account creation, emailed verification codes, 60-day deactivation rule"
+    },
+    {
+      "url": "https://sam.gov/opp/42afa51fe02949309a6bdd4ce111f1c4/view",
+      "note": "Latest SAM.gov notice for EZ-BAA-22-100-SOL-00003 (posted April 22, 2025; response date October 18, 2027) with amendment history"
+    },
+    {
+      "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab338f0ddb51452787b95674522783b0/download",
+      "note": "EZ-BAA base announcement PDF (October 18, 2022): eligibility, award limits, abstract components, 12,500-character limit, review process"
+    },
+    {
+      "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ff83a9f799be4cee84094deb0c39c3f7/download",
+      "note": "Amendment 037 (April 22, 2025): closed AOI #19, #22 and #29 effective immediately"
+    },
+    {
+      "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31a9a7aa75464670a491de51966b4f45/download",
+      "note": "Amendment 033 (October 31, 2024): removed the Rough Order of Magnitude (ROM) requirement"
+    },
+    {
+      "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d1b4dc337cd942e5bb3bad852b71c14c/download",
+      "note": "Amendment 008 (May 1, 2023): revised Plus (+) Phase language"
+    }
+  ]
+}

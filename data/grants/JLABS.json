@@ -1,0 +1,65 @@
+{
+  "id": "JLABS",
+  "title": "JLABS (Johnson & Johnson Innovation – JLABS) residency / virtual membership",
+  "funder": "Johnson & Johnson Innovation – JLABS",
+  "program_url": "https://jnjinnovation.com/jlabs",
+  "application_url": "https://jlabsresidency.smapply.io/",
+  "status": "rolling",
+  "deadline": null,
+  "deadline_note": "No deadline is published for JLABS residency or virtual membership; the application portal is open and J&J says 'After you submit your application, you will hear back from our selection committee within 2-3 weeks'. Separately, no QuickFire Challenge is open as of 2026-11-24 (all 109 listed challenges show 'Closed').",
+  "amount": "No cash award – incubator residency or virtual membership (lab/office space access, mentorship, investor and resource hubs); 'no-strings-attached', founders keep their IP. Residency fees are not stated on the public pages.",
+  "summary": {
+    "at_a_glance": "JLABS is Johnson & Johnson's global incubator network, giving startups access to lab space, resources, expertise, industry connections and entrepreneurial programs through physical residency or virtual membership. It is not a grant: there is no funding in the residency itself, and J&J describes it as a no-strings-attached model. Applications go through a SurveyMonkey Apply portal that requires an account.",
+    "what_they_offer": "Per the official pages: capital-efficient lab space and specialized equipment, office and collaboration space, the JPALS mentorship network (mentors from across Johnson & Johnson), an Investor Hub, a Resource Hub (third-party vendor services and pricing), the JLABS Portfolio Navigator, workshops, networking events and webinars. Program options are in-person residency, virtual membership (for startups that do not require lab or office space) and QuickFire Challenges. 'JLABS is a no-strings-attached model, which means entrepreneurs are free to develop their science while holding on to their intellectual property.'",
+    "what_theyre_looking_for": "From the application portal: 'We seek companies with extraordinarily high potential across the healthcare sector, including pharmaceuticals, medical devices, health tech, and health data science.' Selection criteria: 'Conducting transformational science and/or technology'; 'Targeting a significant, unmet medical or market need'; 'Demonstrating a strong team and financial solvency'; 'Aligning with Johnson & Johnson’s strategic areas of interest or adjacencies'. The apply page says JLABS supports 'high potential companies aligned with Johnson & Johnson’s Innovative Medicine and MedTech strategic areas of focus' (Innovative Medicine: Oncology, Immunology, Neuroscience, Cardiopulmonary, Specialty ophthalmology; MedTech: Cardiovascular, Orthopaedics, Surgery, Vision).",
+    "who_can_apply": "Official FAQ: 'We welcome applications from entrepreneurs, startups, and researchers developing innovative solutions in pharmaceuticals and MedTech aligned to our areas of focus.' Location: 'JLABS offers both physical residency and virtual membership, so companies from around the world can apply.' Sites listed on the portal: JLABS San Francisco (virtual and physical), JLABS ENA (East North America; virtual only), JLABS Shanghai, JLABS EMEA (virtual only), affiliate site JLABS @ LabCentral (Cambridge, MA), and collaborations JLABS Korea and JLABS Singapore.",
+    "how_to_apply": "Steps on the official 'Steps in applying' page: (1) 'Determine which JLABS model suits the needs of your company' – in-person residency, virtual membership or QuickFire Challenges; (2) 'Review our strategic areas of focus'; (3) 'Prepare your application' – non-confidential company information: company-level information; therapeutic area of focus; key differentiation, milestones, publications, IP status; financial information such as funding rounds & deals or partnerships; footprint requirements (for those seeking residency in a physical location); additional materials: non-confidential deck, additional documentation (optional), video (optional); (4) 'Apply' on the SurveyMonkey Apply portal – response from the selection committee within 2-3 weeks. The portal home page additionally asks for non-confidential documentation covering: 'Background explaining your science/technology, highlighting focus areas'; 'License and/or IP Coverage'; 'Audience: Who are your customers or who will you help?'; 'Landscape: What differentiates you from competitors?'; 'Team bios'; '12-18-month project plan & milestone map'; 'Funding sources and/or partnerships'.",
+    "worth_noting": "Submit only non-confidential information. J&J's stated focus is pharmaceuticals and MedTech aligned to its strategic areas; the portal also names 'health tech, and health data science'. QuickFire Challenges (competition-based, non-dilutive funding and mentorship) are listed at https://jnjinnovation.com/innovation-challenges (the old https://jlabs.jnjinnovation.com/quickfire-challenges URL redirects there) – on 2026-11-24, with 'Include closed challenges' unticked, the page shows 'No matching results found', i.e. none is open, including none for digital health or AI. The most recent AI-related one, the 'Polyphonic™ AI Fund for Surgery QuickFire Challenge' (surgery-focused, up to $100,000), is marked 'CLOSED CHALLENGE' (Cohort #2 application deadline was February 27, 2026). QuickFire Challenges are applied for on a separate portal, not the residency portal (that challenge's FAQ points to an account at https://jnjquickfire.secure-platform.com/a). Contact for the portal: jlabs@its.jnj.com."
+  },
+  "portal": {
+    "platform": "SurveyMonkey Apply (jlabsresidency.smapply.io, 'JLABS Resident Application')",
+    "requires_login": true,
+    "may_have_captcha": true,
+    "needs_file_uploads": true,
+    "notes": "The program list and the application form are only visible after logging in (https://jlabsresidency.smapply.io/prog/ redirects to the login page). Log-in options: email address, 'JnJ Single Sign-On' or 'Login with Google'. Account registration page ('Register for an applicant account', with a 'Register as an organization' option) shows the fields: First Name, Last Name, Organization name, Tax number (Optional), Email, Create a password, then 'Create Account' or 'Register with Google'; the page contains a Google reCAPTCHA field. SurveyMonkey Apply normally sends an email verification after registration and saves application tasks as drafts. A non-confidential deck is requested; additional documentation and a video are optional per the official apply page."
+  },
+  "questions_verification": "not_accessible",
+  "questions_source_url": null,
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "The real application questions could not be seen. The form sits inside the SurveyMonkey Apply portal and only appears after registering/logging in and starting an application; no account was created. Johnson & Johnson publishes no application preview, PDF question list or field-by-field guide – only the lists of information and materials to prepare (quoted in summary.how_to_apply from https://jnjinnovation.com/jlabs/apply and the portal home page). Those lists are preparation guidance, not the form's questions, so they are not entered as questions. The owner needs to log in so the form can be scanned.",
+  "questions": [],
+  "sources": [
+    {
+      "url": "https://jnjinnovation.com/jlabs",
+      "note": "Official JLABS program page: offer, program options, locations, Apply link to the SM Apply portal"
+    },
+    {
+      "url": "https://jnjinnovation.com/jlabs/apply",
+      "note": "Official 'Steps in applying' page and FAQs: materials to prepare, eligibility, 2-3 week response time"
+    },
+    {
+      "url": "https://jlabsresidency.smapply.io/",
+      "note": "Official application portal home page: selection criteria, documentation to submit, site list (login needed for the form)"
+    },
+    {
+      "url": "https://jlabsresidency.smapply.io/acc/r/?g=58667",
+      "note": "Account registration page: registration fields and reCAPTCHA (viewed only, no account created)"
+    },
+    {
+      "url": "https://jlabsresidency.smapply.io/res/p/Learn-More-About-JLABS/",
+      "note": "Portal's 'Learn More About JLABS' page: core offering"
+    },
+    {
+      "url": "https://jnjinnovation.com/focus",
+      "note": "J&J Innovation strategic areas of focus"
+    },
+    {
+      "url": "https://jnjinnovation.com/innovation-challenges",
+      "note": "QuickFire Challenges list: 109 challenges, all 'Closed'; none open on 2026-11-24"
+    },
+    {
+      "url": "https://jnjinnovation.com/innovation-challenges/Polyphonic-AI-Fund-for-Surgery-QuickFire-Challenge",
+      "note": "Most recent AI-related QuickFire Challenge – closed; timeline and award"
+    }
+  ]
+}

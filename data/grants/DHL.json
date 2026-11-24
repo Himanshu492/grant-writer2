@@ -1,0 +1,229 @@
+{
+  "id": "DHL",
+  "title": "DigitalHealth.London Accelerator",
+  "funder": "DigitalHealth.London (delivered by the Health Innovation Network (HIN) South London)",
+  "program_url": "https://digitalhealth.london/programmes/accelerator",
+  "application_url": null,
+  "status": "closed",
+  "deadline": null,
+  "deadline_note": "Applications are currently closed and no next cohort or date is published. The last round found on the official site was Cohort 8 (applications 8 May – 16 June 2024, programme started September 2024). No Cohort 9 announcement exists on digitalhealth.london as of 2026-11-24.",
+  "amount": "No cash and no equity taken; 12 months of free support classified as UK Minimal Financial Assistance, estimated value £35,000",
+  "summary": {
+    "at_a_glance": "A twelve-month, NHS-delivered support programme for digital health SMEs whose product has usually already been piloted in the NHS and is ready to scale in London's health and care system. It gives no funding and takes no equity. Applications are closed and no future cohort has been announced.",
+    "what_they_offer": "Bespoke support over 12 months: an assigned NHS Navigator with NHS clinical or service-manager expertise, direct engagement with senior stakeholders, clinicians and healthcare experts, expert-led workshops and digital health advisors, and brokered connections to NHS organisations with specific challenges. The Accelerator 'can connect companies to relevant funding opportunities but does not provide or guarantee direct funding' and does not invest or take equity. Support is valued at an estimated £35,000 of Minimal Financial Assistance under the UK Subsidy Control Act 2022.",
+    "what_theyre_looking_for": "Per the official FAQs, at both application review and interview at least four professionals score applicants in three areas: (1) Credibility of business – financially viable, a working product, potential to succeed; (2) NHS and Social Care need and potential to help provide appropriate solutions – meeting a real demand (NHS Long Term Plan, NHSE Elective recovery strategy, Core20+5); (3) Potential to benefit from the programme – capacity to engage and reasonable expectations. Successful companies 'usually have a product or service that has already been piloted in the NHS and is ready to scale'; companies with capacity to fully engage 'have tended to have five employees or more'.",
+    "who_can_apply": "Eligibility criteria from the official FAQs: (1) must be an SME (fewer than 250 employees and turnover under €50 million or balance sheet total under €43 million); (2) 'registered with Companies House or equivalent' – charities and social enterprises are eligible; (3) committed to doing business in London, with a minimum of four mandatory face-to-face events in London during the year; (4) below the UK Minimal Financial Assistance threshold (£315,000 over three fiscal years; the programme counts as £35,000). NON-UK COMPANIES: 'International companies are eligible to apply ... but must be registered with UK Companies House and fit the requirements of an SME'; another FAQ says they 'must be registered with UK Companies House by the start of the programme and have a staff presence in the UK'. The Cohort 8 guidance says applicants without the registration must indicate their plans to register and submit evidence of completed registration by the start of the programme. Companies without a registered London address must demonstrate resources and commitment to work with London health and care organisations. No travel, visa or other costs are reimbursed. The Cohort 8 announcement said places go to 'up to 20 UK-registered businesses'. A US-only LLC with no UK Companies House registration, no UK staff and no NHS pilots would not meet these rules as written.",
+    "how_to_apply": "Based on the last (Cohort 8, 2024) round: (1) register for a SurveyMonkey Apply account on the 'Health Innovation Hub' application portal; (2) complete the online form – 4 question sections (Company Profile, Programme Eligibility, Policies in place, Application questions), 4 upload sections (Companies House registration and/or financial accounts, 60 second pitch video, other financial or regulatory information, company brochure/other material) and 2 sections to sign (Data Protection, Declaration); (3) applications are reviewed by health and care leaders and industry/commercial partners; (4) shortlisted applicants attend a virtual interview; (5) outcome announced, then an in-person onboarding day in Central London. No feedback is given at application-review stage; unsuccessful interviewees are offered a feedback call. Submitted applications cannot be edited.",
+    "worth_noting": "The official site shows no Accelerator cohort after Cohort 8 (17 companies, announced September 2024); the programme page (last modified 2026-08-24) and FAQs still say 'Applications to the Accelerator programme are currently closed' and point to the mailing list. The Accelerator is described as part-funded by the UK Shared Prosperity Fund. DigitalHealth.London's newest programme is the 10-week 'DigitalHealth.London Pathfinder' (Neighbourhood Health, 20 companies, open to a 'Registered company (UK or international) working or planning to work in London' with a product already deployed in a real-world health or care setting) – its applications are also closed and its first cohort runs 1 December 2026 – 19 February 2027. The Launchpad programme (earlier-stage companies) is also closed. Contact: info@digitalhealth.london."
+  },
+  "portal": {
+    "platform": "SurveyMonkey Apply (portal named 'Health Innovation Hub')",
+    "requires_login": true,
+    "may_have_captcha": null,
+    "needs_file_uploads": true,
+    "notes": "For Cohort 8 the guidance says applicants must first register for a SurveyMonkey Apply login. The portal believed to be the one used (https://healthinnovationhub.smapply.io/ – its site title 'Health Innovation Hub' matches the screenshot in the official guidance, but the URL itself is not printed in any official document) currently shows 'Site Locked' with only an administrator login, so nothing can be started. In the 2024 form: sections can be saved and revisited ('save and continue editing') until marked complete; word limits show a countdown and a section over its limit cannot be submitted; the pitch video could be uploaded (MP4 or equivalent) or given as a URL; supporting evidence formats allowed were PDF, Word, Excel, Videos; once submitted the application cannot be amended. Other SM Apply sites show Google reCAPTCHA on account registration, but this could not be checked here because the site is locked."
+  },
+  "questions_verification": "official_document",
+  "questions_source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "There is no live form: applications are closed and the SurveyMonkey Apply portal is locked. The list below is taken from DigitalHealth.London's own 'Accelerator Cohort 8 Applications: Application guidance' PDF (created 8 May 2024) – the most recent official guidance on the site; no newer cohort or guidance exists. It is therefore the 2024 form and may change if a new cohort opens. 'text' is the question/section heading exactly as printed in the guidance; 'help' is the guidance bullets for that heading (joined with ' | '), not necessarily the help text shown on the form itself. The guidance does not print the individual fields of sections 1 'Company Profile', 2 'Programme Eligibility' and 3 'Policies in place' (it only describes them: business/technology/sector profile, team skills, who will engage, funding and revenue; UK Companies House registration or plans to register, London resource and commitment, subsidy-control declaration; Net zero, EDI, Waste, founder background), so no fields are listed for those sections rather than inventing them. Field types are inferred (headings in section 4 are assumed to be free-text boxes); only the Elevator pitch word limit (100 words) is stated – other limits exist on the form ('Some sections have word limits which are clearly stated in the question') but are not given in the guidance. The guidance says 'All question sections are mandatory, but some document and media upload sections are optional'; sections 7 and 8 are stated as optional, the video is required (upload or URL), and whether the section 5 upload is mandatory is not stated. Spelling is kept as printed (e.g. 'NSH', 'here is they').",
+  "questions": [
+    {
+      "section": "4. Application questions",
+      "text": "Elevator pitch",
+      "help": "You only have 100 words to get across what your digital solution does and who it helps. Use clear language, key statistics and avoid acronyms that won’t be understood. | Who is the user group that your solution will benefit | Please upload or provide an URL to a 60 second pitch so that we can see your elevator pitch come to life",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": {
+        "unit": "words",
+        "max": 100
+      },
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "4. Application questions",
+      "text": "Description of established products and/or services of the company and the market addressed",
+      "help": "Please include the origin of the company and how it has developed to this point. | We would like you to submit any evidence of your products and/or services including links to apps and access codes. This can be done through the main application page (formats allowed: PDF, Word, Excel, Videos) or within the text box for URLs and access codes.",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "4. Application questions",
+      "text": "Description of any future products and/or services the company is developing, and the potential market addressed",
+      "help": "It is not a requirement that you have future products or functionality in development but if you do we like to know what you are developing.",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "4. Application questions",
+      "text": "Please give details of how your solution will benefit the NHS and wider UK health and social care system and meet an unmet need.",
+      "help": "This is the opportunity for you to provide evidence about the benefit of your solution or your hypothesis as to how you think it will benefit. Do you have real world data to reference here, how could this relate to a business case?",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "4. Application questions",
+      "text": "Technical and other challenges for products in development",
+      "help": "Tell us about any challenges you are currently experiencing (technical and other) and how you are planning to overcome them",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "4. Application questions",
+      "text": "Commercialisation Plans",
+      "help": "Please give an overview of your commercialisation strategy including resources needed to achieve this. | Please give information on how your product is likely to be used, by whom, how it will be paid for and distributed, costs and prices where possible and how these compare to key competitors. | Please describe the paying customer and the revenue model, as well as, the size of the market that you are addressing and your potential market share.",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "4. Application questions",
+      "text": "Key Competitors and Intellectual Property",
+      "help": "Please detail relevant competitors and Intellectual Property (IP) information for your core product, and how you differentiate yourself from your competitors. | Please give details of any other existing IP and its significance to your freedom to operate",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "4. Application questions",
+      "text": "Description of any future plans to establish new research collaborations with academic institutions around evidence generation/knowledge transfer.",
+      "help": "Tell us if you are looking to collaborate with academics to build the evidence base for your product. We have a range of collaboration opportunities we can explore with you from clinical, economic and data analysis.",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "4. Application questions",
+      "text": "Reasons for applying",
+      "help": "Please describe the three largest challenges you face and why you believe the DigitalHealth.London Accelerator will help you address them. | Be creative here and don’t just focus on introductions, networks and contacts.",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "4. Application questions",
+      "text": "Evidence of Commercial Traction",
+      "help": "We are looking to work with companies who have some established traction within the NSH and social care sectors. Tell us about pilots and contracts you have secured or even demos you have delivered. | Tell us who you are working with or speaking to and include them here is they could then act as a referee.",
+      "type": "long_text",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "5. Companies House registration and/or financial accounts",
+      "text": "Companies House registration and/or financial accounts",
+      "help": "Please upload these documents to support our due diligence processes.",
+      "type": "file",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "doc_kind": "incorporation",
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "6. 60 second pitch video",
+      "text": "60 second pitch video",
+      "help": "All applicants are required to submit a video either uploaded in this section or added as an URL in the elevator pitch question.",
+      "type": "file",
+      "options": [],
+      "required": null,
+      "limit": null,
+      "doc_kind": "video",
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "7. Other financial or regulatory information",
+      "text": "Other financial or regulatory information",
+      "help": "This is an optional section where you can upload any additional information that you think will support your application.",
+      "type": "file",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "8. Company’s brochure and other material to support the application",
+      "text": "Company’s brochure and other material to support the application",
+      "help": "This is an optional section where you can upload any additional information that you think will support your application.",
+      "type": "file",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "9. Data Protection",
+      "text": "Data Protection",
+      "help": "We require you to confirm that you agree with the data protection arrangements.",
+      "type": "yes_no",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    },
+    {
+      "section": "10. Declaration",
+      "text": "Declaration",
+      "help": "We require you to confirm that you agree with the data protection arrangements. | Once you have completed the declaration you will be able to click the green Submit button to submit your application to us. Once your application has been submitted it cannot be amended.",
+      "type": "yes_no",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://digitalhealth.london/programmes/accelerator",
+      "note": "Official programme page: description, offer, 'Applications to the Accelerator programme are currently closed' (page last modified 2026-08-24 per the site's WP API)"
+    },
+    {
+      "url": "https://digitalhealth.london/programmes/accelerator/faqs",
+      "note": "Official FAQs: eligibility criteria, international-company rules, selection criteria, no funding/equity, MFA value, video/written pitch, feedback, no editing after submission"
+    },
+    {
+      "url": "https://digitalhealth.london/wp-content/uploads/2024/05/DH.LA-C8-Application-Guidance.pdf",
+      "note": "Official Cohort 8 application guidance PDF (2024): portal, form structure, question headings, 2024 timeline"
+    },
+    {
+      "url": "https://digitalhealth.london/applications-open-for-cohort-eight-of-the-digitalhealth-londons-award-winning-accelerator-programme",
+      "note": "Cohort 8 announcement: dates 8 May – 16 June 2024, 'up to 20 UK-registered businesses', MFA value £35,000"
+    },
+    {
+      "url": "https://digitalhealth.london/introducing-the-17-innovators-driving-healthcare-forward-cohort-eight-of-the-digitalhealth-london-accelerator",
+      "note": "Latest Accelerator cohort announced on the site (Cohort 8); site search and post list show no Cohort 9"
+    },
+    {
+      "url": "https://healthinnovationhub.smapply.io/",
+      "note": "SurveyMonkey Apply portal 'Health Innovation Hub' – shows 'Site Locked' on 2026-11-24 (URL inferred from the portal name in the guidance screenshot)"
+    },
+    {
+      "url": "https://digitalhealth.london/programmes/digitalhealth-london-pathfinder",
+      "note": "Newer Pathfinder programme: eligibility and dates, applications closed"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "id": "PNP",
+  "title": "Plug and Play — startup application (Health & Longevity vertical)",
+  "funder": "Plug and Play Tech Center",
+  "program_url": "https://www.plugandplaytechcenter.com/industries/health",
+  "application_url": "https://www.plugandplaytechcenter.com/contact",
+  "status": "rolling",
+  "deadline": null,
+  "deadline_note": "No deadline published. The official startup route is a general intake form reviewed on a rolling basis (\"one of our experts will contact you if you are a fit\"). No health-specific batch dates or application deadline are shown on the Health & Longevity or Startups pages.",
+  "amount": "No fixed award. Accelerator programs have \"No Equity Requirement\"; investment from Plug and Play's in-house VC team is possible but not guaranteed (no check size published on these pages).",
+  "summary": {
+    "at_a_glance": "Plug and Play is a corporate-innovation platform and investor that runs vertical accelerator programs (including Health & Longevity) connecting startups with corporate partners. There is no separate health application: startups apply through the general \"Start Your Innovation Journey\" form on plugandplaytechcenter.com/contact (choose \"I work at a world class startup company\"), and the team follows up if there is a fit.",
+    "what_they_offer": "Per the official Startups and Accelerator Programs pages: accelerator programs with \"No Equity Requirement\"; \"Dealflows\" (curated, private one-on-one pitch meetings with corporate partners); events and networking (\"800+ annual events\"); community exposure via global co-working spaces; Focus Weeks; an Expo or Summit at the end of each program; business development with corporate partners; access to the in-house VC team (\"200+ investments per year\", \"85% seed stage investment\"); challenges/bootcamps. The Health & Longevity vertical lists corporate partners such as AstraZeneca, Eli Lilly and Company, GuideWell, Moffitt Cancer Center and Orlando Health, with programs in Silicon Valley, Abu Dhabi, Alberta, London, Munich and Singapore.",
+    "what_theyre_looking_for": "No formal selection criteria are published. The site says the platform is \"built for startup companies of all sizes\" (\"raising your seed round or your Series C\"). Health & Longevity focus areas listed: AI-Powered Healthcare Infrastructure; Chronic Disease Management; Healthcare Cybersecurity & Data Privacy; Healthcare Everywhere and for Everyone; Market Insights & Patient Access; Payer/Provider Interoperability & Value-Based Care; Personalized Healthcare & Longevity Technology; Techbio; Tech-Enabled Care Coordination & Digital Diagnostics. The form itself asks for stage, ARR, capital raised, fundraising plans, industry and a pitch-deck link.",
+    "who_can_apply": "Any startup (the form's stage options run from Bootstrapped and Pre-Seed to Series D+). No geographic or incorporation restriction is stated; applicants pick the Plug and Play location(s) that interest them.",
+    "how_to_apply": "1) Go to plugandplaytechcenter.com/contact (the \"Apply Now\" button on the Startups page and \"Contact Us\" on the Health & Longevity page both lead there). 2) Step 1 \"About yourself\": choose \"I work at a world class startup company\". 3) Step 2 \"Basic information\": fill in the startup form (choose \"Health & Longevity\" as the industry and \"Acceleration Program\" among the interests if that is the goal) and press Submit. 4) Plug and Play reviews and \"one of our experts will contact you if you are a fit\". Later steps (calls, selection into a specific batch/dealflow) are not described on the site.",
+    "worth_noting": "This is an expression-of-interest/intake form, not a cohort application with a deadline. Legacy URLs /join and /startup-application now redirect to the homepage. The ARR question is a numeric input (HubSpot validation range 0 to 2,000,000) even though its example text shows ranges. Plug and Play also runs separately branded partner programs (e.g. IU LAB Lifetech Accelerator, NJ AI Hub) with their own pages; those were not part of this check."
+  },
+  "portal": {
+    "platform": "HubSpot form (portal 3340630, form 479bbf46-27fd-484f-b4b1-802738854a0b) embedded on plugandplaytechcenter.com/contact",
+    "requires_login": false,
+    "may_have_captcha": true,
+    "needs_file_uploads": false,
+    "notes": "Two-step page, no account needed. Step 1 is a set of clickable role cards; clicking the startup card loads the HubSpot form in step 2 on the same URL. Invisible Google reCAPTCHA Enterprise is attached to the form (HubSpot captchaEnabled=true). A CookieYes cookie banner overlays the page on first load (Reject All / Accept All). Single page, single \"Submit\" button, no autosave; after submit the form redirects to /thanks. Pitch deck is requested as a link, not an upload. The conditional funding-details textarea appears only after choosing \"Yes\" for raising in the next three months. Three hidden fields (utm_source, utm_campaign, profile type) are filled by the page itself."
+  },
+  "questions_verification": "live_form",
+  "questions_source_url": "https://www.plugandplaytechcenter.com/contact",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "Taken from the live form on 2026-11-24: walked both steps in a headless browser without submitting, and cross-checked every label, option, required flag and conditional field against the HubSpot form definition the page loads (formDefinitionUpdatedAt 2026-09-17). High confidence. Notes: (1) The first entry is the step-1 role selector, which has no question label of its own beyond the step heading \"ABOUT YOURSELF\"; on the page each card is laid out as \"I work\" / \"at a world class startup company\" etc. (2) \"If you are looking for funding, provide additional details...\" is conditional: it only appears when \"Are you looking to raise money within the next three months?\" = Yes. (3) For the ARR field the on-page label has two paragraphs; the second (\"Example: ...\") is recorded as help. (4) Select fields show a \"Please Select\" placeholder which is not an option. (5) \"Bentonille\" and \"Sao Paolo\" are spelled that way on the form. (6) No character limits are set on any field. (7) Below the fields the form shows this notice (no checkbox): \"Plug and Play needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at anytime. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, check out our Privacy Policy.\"",
+  "questions": [
+    {
+      "section": "ABOUT YOURSELF",
+      "text": "ABOUT YOURSELF",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "I work at a world class startup company",
+        "I work for a major corporation",
+        "I am a venture capitalist or an angel investor",
+        "I work for a government or public sector entity",
+        "I work at a university"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "First Name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "Last Name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "Email address",
+      "help": "",
+      "type": "email",
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "Company Name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "Company Website Link",
+      "help": "",
+      "type": "url",
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "Provide a link to your startup's LinkedIn profile or to one of the founder's profiles",
+      "help": "",
+      "type": "url",
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "Company Incorporation Date (Est. Date)",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "What is your job title at the company?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Founder",
+        "C-Level",
+        "Co-Founder",
+        "CEO",
+        "COO",
+        "EVP / SVP",
+        "CRO",
+        "Other C-Suite",
+        "Other"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "What Plug and Play location interests you?",
+      "help": "",
+      "type": "multi_select",
+      "options": [
+        "Silicon Valley",
+        "Abu Dhabi",
+        "Amsterdam",
+        "Antwerp",
+        "Bangkok",
+        "Barcelona",
+        "Beijing",
+        "Bentonille",
+        "Bryan-College Station",
+        "Cairo",
+        "Calgary",
+        "Casablanca",
+        "Catania",
+        "Cedar Park",
+        "Changzhou",
+        "Detroit",
+        "Frisco",
+        "GIFT City",
+        "Gothenburg",
+        "Hamburg",
+        "Hefei",
+        "Hoboken",
+        "Indianapolis",
+        "Istanbul",
+        "Jakarta",
+        "Kuala Lumpur",
+        "Kyoto",
+        "London",
+        "Los Angeles",
+        "Madrid",
+        "McKinney",
+        "Milan",
+        "Modena",
+        "Munich",
+        "Nantong",
+        "NeoCity",
+        "New York City",
+        "Orlando",
+        "Osaka",
+        "Paris",
+        "Phnom Penh",
+        "Phoenix",
+        "Riyadh",
+        "San Jose",
+        "Sao Paolo",
+        "Seattle",
+        "Seoul",
+        "Singapore",
+        "Shanghai",
+        "Shenzhen",
+        "Stuttgart",
+        "Sugar Land",
+        "Taoyuan City",
+        "Tashkent",
+        "Tirana",
+        "Tokyo",
+        "Topeka",
+        "Turin",
+        "Valencia",
+        "Vienna",
+        "Vilnius",
+        "Warsaw",
+        "Yerevan"
+      ],
+      "required": false,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "What's your interest in joining Plug and Play?",
+      "help": "",
+      "type": "multi_select",
+      "options": [
+        "Fundraising",
+        "Startup Mentor Hours",
+        "Corporate Networking",
+        "Event Speaker",
+        "Acceleration Program",
+        "Out-of-program Events",
+        "Office Space",
+        "Recruitment Support",
+        "Other",
+        "Host an Event (only in Sunnyvale office)",
+        "Meeting/Conference Room",
+        "Content Download"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "What stage would categorise your company?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Bootstrapped",
+        "Pre-Seed",
+        "Seed",
+        "Series A",
+        "Series B",
+        "Series C",
+        "Series D+",
+        "Other"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "What is your annual recurring revenue (ARR) in USD equivalent? Please specify if revenue is non-recurring.",
+      "help": "Example: (<$100k, $100k-$500k, $500k-$1M, $1M+)",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "Are you looking to raise money within the next three months?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "If you are looking for funding, provide additional details about your current round (how much are you looking to raise, valuation, any commitments, etc.)",
+      "help": "",
+      "type": "long_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "Which industry most closely fits your company?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Advanced Manufacturing",
+        "Aerospace & Defense",
+        "Agtech",
+        "Animal Health",
+        "Brand & Retail",
+        "Crypto & Digital Assets",
+        "Deeptech",
+        "Energy",
+        "Enterprise & AI",
+        "Fintech",
+        "Food & Beverage",
+        "Insurtech",
+        "Health & Longevity",
+        "Lifetech",
+        "Maritime",
+        "Media & Advertising",
+        "Medtech",
+        "Mobility & Physical AI",
+        "New Materials & Packaging",
+        "Real Estate & Construction",
+        "Semiconductors",
+        "Smart Cities",
+        "Sportstech",
+        "Supply Chain",
+        "Sustainability",
+        "Travel & Hospitality",
+        "Unknown"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "How much capital have you raised (in USD)?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "0-1M",
+        "1-3M",
+        "3-5M",
+        "5-10M",
+        "10-20M",
+        "20M+"
+      ],
+      "required": false,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "Share a link to your pitch deck or any other relevant document",
+      "help": "",
+      "type": "url",
+      "required": true,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    },
+    {
+      "section": "BASIC INFORMATION",
+      "text": "Anything else you want to tell us?",
+      "help": "",
+      "type": "long_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://www.plugandplaytechcenter.com/contact"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.plugandplaytechcenter.com/contact",
+      "note": "Official startup intake form (live, both steps walked without submitting); source of all questions"
+    },
+    {
+      "url": "https://forms.hsforms.com/embed/v3/form/3340630/479bbf46-27fd-484f-b4b1-802738854a0b/json",
+      "note": "HubSpot form definition requested by the contact page; used to confirm labels, options, required flags, conditional field, captcha setting"
+    },
+    {
+      "url": "https://www.plugandplaytechcenter.com/innovation-services/startups",
+      "note": "Official Startups page; its \"Apply Now\" button leads to /contact"
+    },
+    {
+      "url": "https://www.plugandplaytechcenter.com/innovation-services/startups/accelerator-programs",
+      "note": "What the accelerator programs offer (no equity, dealflows, events, expos)"
+    },
+    {
+      "url": "https://www.plugandplaytechcenter.com/industries/health",
+      "note": "Health & Longevity vertical: focus areas, partners, program locations; \"Contact Us\" leads to /contact"
+    },
+    {
+      "url": "https://www.plugandplaytechcenter.com/innovation-services/our-programs",
+      "note": "List of partner/custom programs (checked for a health-specific application; none found for the general health vertical)"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+.env
+.env.*
+*.local
+*.log
+.DS_Store
+# never commit company data exports or credentials
+/private/
+*.pem
+*.key
+
+# generated at build time
+src/worker/seed.generated.json
+src/worker/client.generated.json

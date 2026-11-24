@@ -1,0 +1,659 @@
+{
+  "id": "NIH",
+  "title": "NIH SBIR/STTR (Parent SBIR PA-27-100 [R43/R44]; Parent STTR PA-27-102 [R41/R42])",
+  "funder": "National Institutes of Health (with CDC and FDA) - NIH SEED Office",
+  "program_url": "https://seed.nih.gov/small-business-funding",
+  "application_url": "https://simpler.grants.gov/opportunity/359671",
+  "status": "open",
+  "deadline": "2027-01-05",
+  "deadline_note": "Next standard due date: January 5, 2027, 5:00 PM local time of the applicant organization. The one after is April 5, 2027; the current parent announcements PA-27-100 and PA-27-102 expire April 6, 2027. NIH's standard small-business due dates are September 5, January 5 and April 5 each year. No late applications are accepted for this NOFO.",
+  "amount": "Phase I: normally up to $335,937 total costs (SBA guideline per NIH SEED); several NIH institutes allow up to $400,000 or $700,000. Phase II: $2,239,578 guideline (up to $2.5M-$3M at some institutes). Non-dilutive grant.",
+  "summary": {
+    "at_a_glance": "NIH's Seed Fund gives non-dilutive R&D grants to U.S. small businesses developing health and life-science products. Most companies apply to the 'parent' announcements (SBIR PA-27-100, STTR PA-27-102) at one of three standard due dates a year. Legislative authority for the programs expired on October 1, 2025 (NIH expired all its small-business announcements) and was restored on April 13, 2026 through September 30, 2031; new announcements were posted May 28, 2026 and applications are being accepted again.",
+    "what_they_offer": "Phase I grant to establish technical merit and feasibility; Phase II to continue R&D toward commercialization. Total funding (direct costs, indirect costs and fee) normally may not exceed SBA budget guidelines: NIH SEED lists $335,937 for Phase I and $2,239,578 for Phase II. PA-27-100 lists higher institute-specific guidelines, e.g. Phase I $700,000 at NCI, NIA, NIAID, NIGMS, NIMH, NINDS and NCCIH and $400,000 at NHLBI, NEI, NHGRI, NIAAA, NICHD, NIDCD, NIDDK, NIDA and NINR; other components follow the SBA guideline. The NOFO says award periods normally may not exceed 6 months for Phase I and 2 years for Phase II (the NIH SEED site describes Phase I timelines of 6 months to 2 years). A fee of up to 7% of total costs may be requested. Fast-Track (Phase I and II together) and Direct to Phase II are NIH-only options. Technical and Business Assistance of up to $6,500 per Phase I project is available.",
+    "what_theyre_looking_for": "Reviewers give an overall impact score and score five criteria: Significance (important problem or unmet need; for Phase I, commercial potential to lead to a marketable product or service), Investigator(s), Innovation (innovative solution with meaningful competitive advantages over existing approaches), Approach (for Phase I: will the strategy establish feasibility, are risky aspects managed, and are there clear, appropriate, measurable milestones before Phase II) and Environment (scientific and business environment; appropriate business expertise and resources). The project must fit the mission of a participating NIH, CDC or FDA component.",
+    "who_can_apply": "Only United States small business concerns: organized for profit with a place of business in the United States, not more than 500 employees including affiliates, and more than 50% directly owned and controlled by U.S. citizens or permanent residents (or by multiple venture capital, hedge fund or private equity firms, which requires an extra certification). An LLC is an accepted legal form. For SBIR the PD/PI's primary employment must be with the small business at the time of award and during the project. In SBIR Phase I normally two-thirds (67%) of the research effort is carried out by the small business. Foreign organizations are not eligible, and applications involving foreign subawards are not accepted. HHS accepts at most nine new and resubmission Phase I, Fast-Track and Direct to Phase II applications or proposals from one small business per fiscal year.",
+    "how_to_apply": "1) Complete the registrations (can take 6 weeks or more): SAM.gov with Unique Entity Identifier, SBA Company Registry (gives the SBC Control ID), eRA Commons (a Signing Official account and a separate PD/PI account, PD/PI linked to an ORCID iD) and Grants.gov. 2) Optional but encouraged: talk to an NIH program officer at the institute that fits the project. 3) Prepare the SF424 (R&R) application package in NIH ASSIST (or Grants.gov Workspace) following the SBIR/STTR (B) Instructions, Forms Version I. 4) The Signing Official submits by 5:00 PM local time on the due date; track and view the assembled application in eRA Commons. 5) Peer review (scientific merit review roughly 2-3 months after the due date), then advisory council review and an award decision; for the January 5, 2027 date the NOFO lists review in March 2027, council in May 2027 and earliest start July 2027.",
+    "worth_noting": "A Commercialization Plan is NOT allowed in a Phase I SBIR application, and Phase I appendix materials are not permitted. A Data Management and Sharing Plan is not applicable for this NOFO. The current forms version is still Forms Version I (for due dates on or after January 25, 2025); the SBIR/STTR instructions were last re-released in December 2025, which introduced the Biographical Sketch Common Form and NIH Biographical Sketch Supplement prepared in SciENcv. Applicants under consideration must later file the SBA foreign-affiliations disclosure form; NIH cannot fund a company with certain ties to foreign countries of concern. Clinical trials are optional under the parent NOFO but not every institute accepts them. Choose STTR (PA-27-102) instead if the project depends on a formal collaboration with a nonprofit research institution."
+  },
+  "portal": {
+    "platform": "NIH ASSIST (eRA) or Grants.gov Workspace; status tracked in eRA Commons",
+    "requires_login": true,
+    "may_have_captcha": null,
+    "needs_file_uploads": true,
+    "notes": "There is no simple web form: the application is a multi-form federal package (SF424 (R&R)) with many PDF attachments, prepared in ASSIST by people with eRA Commons accounts and submitted by the organization's Signing Official. Registration in SAM.gov, the SBA Company Registry, eRA Commons and Grants.gov must be finished first and can take 6 weeks or more; an eRA Commons account alone can take up to 2 weeks. If the PD/PI is also the Signing Official they need two distinct eRA Commons accounts. Biographical sketches must be digitally certified PDFs produced in SciENcv. NIH validates page limits and other rules on submission, so submit early to fix errors before the deadline. The portals were not opened for this check (login required); CAPTCHA not observed."
+  },
+  "questions_verification": "official_document",
+  "questions_source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "NIH has no question-style form; the list is the set of required forms, attachments and form fields for a new Phase I SBIR application, taken on 2026-11-24 from the official 'SBIR/STTR Instructions for NIH and Other PHS Agencies - Forms Version I Series' (PDF dated December 2025, 177 pages), NIH's Table of Page Limits (last updated September 30, 2026) and the parent announcement PA-27-100. Item names and help text are verbatim from those documents (help text is excerpted, not the complete instruction). Page limits: Specific Aims 1 page, Research Strategy 6 pages for Phase I (R43/R41), Introduction 1 page (resubmissions only), Commercialization Plan 12 pages (Phase II/Fast-Track only); Project Summary/Abstract is limited to 30 lines of text and Project Narrative to three sentences (these two limits are stated in help because they are not page, word or character limits). The Regulatory Plan (2-page maximum) applies only to clinical-trial applications. The three Research Strategy headings are listed as separate entries although they are uploaded as one PDF. Not itemized: the individual fields of the SF 424 cover form, budget form, performance-site form and the Human Subjects study record; see the guide for those. The ASSIST screens themselves were not viewed (login required).",
+  "questions": [
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "SF 424 (R&R) Form",
+      "help": "1. Type of Submission; 2. Date Submitted and Applicant Identifier; 3. Date Received by State and State Application Identifier; 4a. Federal Identifier; 4b. Agency Routing Identifier; 4c. Previous Grants.gov Tracking ID; 5. Applicant Information; 6. Employer Identification; 7. Type of Applicant; 8. Type of Application; 9. Name of Federal Agency; 10. Catalog of Federal Domestic Assistance Number and Title; 11. Descriptive Title of Applicant's Project; 12. Proposed Project; 13. Congressional District of Applicant; 14. Project Director/Principal Investigator Contact Information; 15. Estimated Project Funding; 16. Is Application Subject to Review by State Executive Order 12372 Process?; 17. Certification; 18. SFLLL (Disclosure of Lobbying Activities) or Other Explanatory Documentation; 19. Authorized Representative; 20. Pre-application; 21. Cover Letter Attachment",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "PHS 398 Cover Page Supplement Form",
+      "help": "The PHS 398 Cover Page Supplement Form is used for all grant applications except fellowships. This form collects information on human subjects, vertebrate animals, program income, human embryonic stem cells, inventions and patents, and changes of investigator/change of organization.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "R&R Other Project Information Form",
+      "help": "The R&R Other Project Information Form is used for all grant applications. This form includes questions on the use of human subjects, vertebrate animals, and environmental impact. This form also has fields to upload an abstract, project narrative, references, information on facilities, and equipment lists.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "Project/Performance Site Location(s) Form",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "R&R Senior/Key Person Profile (Expanded) Form",
+      "help": "Applications will not pass agency validation requirements without a valid eRA Commons username and a valid ORCID ID linked to the associated eRA Commons Personal Profile.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "R&R Budget Form",
+      "help": "A reasonable fee, not to exceed 7% of total costs (direct and indirect) for each Phase",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "R&R Subaward Budget Attachment(s) Form",
+      "help": "If your application includes a subaward/consortium budget, a separate Budget Justification must be submitted.",
+      "type": "short_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "PHS 398 Research Plan Form",
+      "help": "The PHS 398 Research Plan form is used only for research, multi-project, and SBIR/STTR applications. This form includes fields to upload several attachments, including the Specific Aims and Research Strategy.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "SBIR/STTR Information Form",
+      "help": "All SBIR and STTR grant applicants must complete this form.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "PHS Human Subjects and Clinical Trials Information",
+      "help": "All applicants must use the PHS Human Subjects and Clinical Trials Information form regardless of your answer to the question “Are human subjects involved?” on the B.220 - R&R Other Project Information Form.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "PHS Assignment Request Form",
+      "help": "This form is optional. Use it only if you wish to communicate specific awarding component assignments or review preferences.",
+      "type": "short_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "Application package - forms (SF424 (R&R), Forms Version I, SBIR/STTR (B) Instructions)",
+      "text": "21. Cover Letter Attachment",
+      "help": "The cover letter is for internal use only and will not be shared with peer reviewers. Refer to the “content” list below for items that are permitted, as well as for specific situations in which a cover letter must be included.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "R&R Other Project Information Form - attachments",
+      "text": "7. Project Summary/Abstract",
+      "help": "The \"Project Summary/Abstract\" attachment is required. This section is limited to 30 lines of text, and must follow the required font and margin specifications. State the application's broad, long-term objectives and specific aims, making reference to the health relatedness of the project (i.e., relevance to the mission of the agency). Describe the research design and methods for achieving the stated goals. Do not include proprietary, confidential information or trade secrets in the project summary.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "R&R Other Project Information Form - attachments",
+      "text": "8. Project Narrative",
+      "help": "The \"Project Narrative\" attachment is required. Describe the relevance of this research to public health in, at most, three sentences.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "R&R Other Project Information Form - attachments",
+      "text": "9. Bibliography & References Cited",
+      "help": "The “Bibliography & References Cited” attachment is required unless otherwise noted in the NOFO. The “Bibliography & References Cited” attachment should include any references cited in B.400 - PHS 398 Research Plan Form and in the B.500 - PHS Human Subjects and Clinical Trials Information form. While there is not a page limitation, it is important to be concise and to select only those literature references pertinent to the proposed research.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "R&R Other Project Information Form - attachments",
+      "text": "10. Facilities & Other Resources",
+      "help": "The “Facilities & Other Resources” attachment is required unless otherwise specified in the NOFO. Describe how the scientific environment in which the research will be done contributes to the probability of success (e.g., institutional support, physical resources, and intellectual rapport). Effective for applications submitted for due dates on or after September 5, 2023, in addition to describing the scientific environment and the company support, the applicant must describe the business environment and resources, or how the company will obtain access to the appropriate business resources, for completing and commercializing the proposed product or service. This includes any relevant intellectual property associated with the project necessary to facilitate commercialization.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "R&R Other Project Information Form - attachments",
+      "text": "11. Equipment",
+      "help": "The “Equipment” attachment is required. List major items of equipment already available for this project and, if appropriate, identify the equipment's location and pertinent capabilities.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "R&R Other Project Information Form - attachments",
+      "text": "12. Other Attachments",
+      "help": "Attach a file to provide additional information only in accordance with the NOFO and/or agency-specific instructions. If applicable, attach a “Foreign Justification” here. Applications that propose a clinical trial must include the Regulatory Plan attachment. Applications that DO NOT propose a clinical trial must NOT submit the Regulatory Plan attachment.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "R&R Senior/Key Person Profile (Expanded) Form - attachments",
+      "text": "Attach Biographical Sketch",
+      "help": "The Biographical Sketch Common Form and NIH Biographical Sketch Supplement are required by each individual identified as a senior/key person on a Federally funded research project. Applicants are required to use Science Experts Network Curriculum Vitae (SciENcv) to complete the Biographical Sketch Common Form and the NIH Biographical Sketch Supplement to produce digitally certified PDF(s) for use in application submission.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "resume",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "R&R Budget Form - attachments",
+      "text": "L. Budget Justification",
+      "help": "The “Budget Justification” attachment is required. Attach only one file. Use the Budget Justification to provide the additional information requested in each budget category identified above and any other information the applicant wishes to submit to support the budget request.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "budget",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "1. Introduction to Application (for Resubmission and Revision applications)",
+      "help": "An \"Introduction to Application\" attachment is required only if the type of application is resubmission or revision or if the NOFO specifies that one is needed. An introduction is not allowed for new or renewal applications.",
+      "type": "file",
+      "required": false,
+      "limit": {
+        "unit": "pages",
+        "max": 1
+      },
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "2. Specific Aims",
+      "help": "The “Specific Aims” attachment is required unless otherwise specified in the NOFO. State concisely the goals of the proposed research and summarize the expected outcome(s), including the impact that the results of the proposed research will have on the research field(s) involved. Phase I Applications: State the specific objectives of the Phase I research and development effort, including the technical questions you will try to answer to determine the Phase I feasibility of the proposed approach and the impact of the proposed research and development. State concisely and realistically what the proposed R&D is intended to accomplish in terms of its potential for technological innovation and commercial application. Define the proposed process or service to ultimately be developed. Include clear and measurable milestones for each of the aims as these will be used in the evaluation process.",
+      "type": "file",
+      "required": true,
+      "limit": {
+        "unit": "pages",
+        "max": 1
+      },
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "3. Research Strategy",
+      "help": "The “Research Strategy” attachment is required. Organize the Research Strategy in the specified order and use the instructions provided below unless otherwise specified in the NOFO. Start each section with the appropriate heading – Significance, Innovation, Approach. Although multiple sections of information are required in the Research Strategy as detailed below, the page limit applies to the entirety of the single \"Research Strategy\" attachment.",
+      "type": "file",
+      "required": true,
+      "limit": {
+        "unit": "pages",
+        "max": 6
+      },
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "3. Research Strategy - 1. Significance",
+      "help": "- Explain the importance of the problem or critical barrier to progress that the proposed project addresses.\n- Describe the strengths and weaknesses in the rigor of the prior research (both published and unpublished) that serves as the key support for the proposed project.\n- Explain how the proposed project will improve scientific knowledge, technical capability, and/or clinical practice in one or more broad fields.\n- Explain the project’s potential to lead to a marketable product, process, or service.",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "3. Research Strategy - 2. Innovation",
+      "help": "- Explain how the application challenges and seeks to shift current research or clinical practice paradigms.\n- Describe any novel theoretical concepts, approaches or methodologies, instrumentation or interventions to be developed or used, and any advantage over existing methodologies, instrumentation, or interventions.\n- Explain any refinements, improvements, or new applications of theoretical concepts, approaches or methodologies, instrumentation, or interventions.",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "3. Research Strategy - 3. Approach",
+      "help": "- Describe the overall strategy, methodology, and analyses to be used to accomplish the specific aims of the project.\n- Discuss potential problems, alternative strategies, and benchmarks for success anticipated to achieve the aims.\n- If the project is in the early stages of development, describe any strategy to establish feasibility, and address the management of any high risk aspects of the proposed work.\n- Provide a tentative sequence or timetable for the project.\n- Phase I Applications: Preliminary data are not required for Phase I Applications; however, such results may assist reviewers in assessing the likelihood of success of the proposed project and may be included in the Research Strategy attachment.",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "4. Progress Report Publication List",
+      "help": "A “Progress Report Publication List” attachment is required only if the type of application is renewal.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "5. Vertebrate Animals",
+      "help": "Include a “Vertebrate Animals” attachment if you answered “Yes” to the question “Are Vertebrate Animals Used?” on the B.220 - R&R Other Project Information Form.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "6. Select Agent Research",
+      "help": "Include a “Select Agent Research” attachment if your proposed activities involve the use of select agents at any time during the proposed project period, either at the applicant organization or at any performance site.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "7. Multiple PD/PI Leadership Plan",
+      "help": "Any applicant who designates multiple PD/PIs (on the B.240 - R&R Senior/Key Person Profile (Expanded) Form) must include a Multiple PD/PI Leadership Plan.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "8. Consortium/Contractual Arrangements",
+      "help": "Include a “Consortium/Contractual Arrangements” attachment if you have consortiums/contracts in your budget.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "9. Letters of Support",
+      "help": "Combine all letters of support into a single PDF file and attach this information here. Involvement of consultants and collaborators in the planning and research stages of the project is permitted. With the application, letters are required from each individual and / or collaborator confirming their role(s) in the project. The letter(s) should be prepared on the consultant or collaborator’s letterhead and addressed to the small business. One page is recommended. Letters of interest from potential commercial partners or investors and letters of commitment of funds or other resources that will enhance the likelihood of commercialization should be placed following the letters of support for consultants and collaborators.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "letter_of_support",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "10. Resource Sharing Plan(s)",
+      "help": "Sharing Model Organisms: Regardless of the amount requested, all applications where the development of model organisms is anticipated are expected to include a description of a specific plan for sharing and distributing unique model organisms or state why such sharing is restricted or not possible.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "11. Other Plan(s)",
+      "help": "A Data Management and Sharing Plan is not applicable for this NOFO.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://simpler.grants.gov/opportunity/359671"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "12. Authentication of Key Biological and/or Chemical Resources",
+      "help": "If applicable to the proposed science, briefly describe methods to ensure the identity and validity of key biological and/or chemical resources used in the proposed studies. A maximum of one page is suggested.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "PHS 398 Research Plan Form - attachments",
+      "text": "13. Appendix",
+      "help": "Phase I SBIR/STTR Applications: Do not include appendices unless specifically solicited by NIH.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "Agency to which you are applying (select only one):",
+      "help": "A selection is required. Note: Check HHS for all NIH, CDC, and FDA submissions.",
+      "type": "single_select",
+      "options": [
+        "DOE",
+        "HHS",
+        "USDA",
+        "Other"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "SBC Control ID:",
+      "help": "This field is required. Enter the nine digit SBC Control ID (e.g., SBC_123456789). This number is obtained from the Small Business Administration (SBA) website. You will receive a unique SBC Control ID when you complete your Small Business Company Registration.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "Program Type (select only one):",
+      "help": "A selection is required. Note: HHS does not accept ‘Both’ as a choice.",
+      "type": "single_select",
+      "options": [
+        "SBIR",
+        "STTR",
+        "Both"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "Application Type (select only one):",
+      "help": "A selection is required.",
+      "type": "single_select",
+      "options": [
+        "Phase I",
+        "Phase II",
+        "Fast-Track",
+        "Direct Phase II",
+        "Phase IIB",
+        "Phase IIC",
+        "Commercialization Readiness Program"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "Phase I Letter of Intent Number:",
+      "help": "Enter \"0\" or \"N/A\", as this field is not applicable for any HHS (NIH, CDC, FDA) submissions.",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "Agency Topic/Subtopic:",
+      "help": "Leave blank. This field is not applicable for all HHS (NIH, CDC, FDA) submissions.",
+      "type": "short_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "1a. Certification of Small Business Eligibility",
+      "help": "A selection is required. If you certify that at the time of award your organization will meet the eligibility criteria for a small business as defined in the NOFO, check “Yes.” Otherwise, check “No.”",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "1b. Anticipated Number of personnel to be employed at your organization at the time of award.",
+      "help": "This information is required. Enter the number of personnel anticipated to be employed by the small business at the time of award.",
+      "type": "number",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "1c. Is your small business majority owned by venture capital operating companies, hedge funds, or private equity firms?",
+      "help": "A selection is required. If you answer “Yes” to this question, you must submit the VCOC certification as an Other Attachment in the B.220 - R&R Other Project Information Form.",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "1d. Is your small business a Faculty or Student-Owned entity?",
+      "help": "A selection is required.",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "2. Does this application include subcontracts with Federal laboratories or any other Federal Government agencies?",
+      "help": "A selection is required. If this application includes subcontracts with federal laboratories or any other Federal Government agencies, check “Yes” and insert the name of the federal laboratories/agencies in the space provided.",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "3. Are you located in a HUBZone?",
+      "help": "A selection is required.",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "4. Will all research and development on the project be performed in its entirety in the United States?",
+      "help": "A selection is required. If you have answered \"No\" to this question, provide an explanation of the research and development that is being performed outside the United States in an “Explanation” attachment.",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "5. Has the applicant and/or Program Director/Principal Investigator submitted proposals for essentially equivalent work under other Federal program solicitations or received other Federal awards for essentially equivalent work?",
+      "help": "A selection is required. If the applicant and/or PD/PI has submitted proposals for essentially equivalent work under other federal program solicitations or received other federal awards for essentially equivalent work, check “Yes” and enter the names of the other federal agencies in the space provided.",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "6. Disclosure Permission Statement",
+      "help": "A selection is required. If this application does not result in an award, is the Government permitted to disclose the title of your proposed project, and the name, address, telephone number, and e-mail address of the official signing for the applicant organization to state-level economic development organizations that may be interested in contacting you for further information (e.g., possible collaborations, investment), check “Yes.” Otherwise check “No.” Your response will not affect any peer review or funding decisions.",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "7. Does the application include a request of SBIR or STTR funds for Technical and Business Assistance (TABA)? If yes, please follow the agency specific instructions to provide the budget request and justification. (Please answer no if you plan to use the agency TABA vendor, which does not require you to include a request for TABA funds in your application.)",
+      "help": "A selection is required.",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "8. Commercialization Plan",
+      "help": "Applicants submitting a Phase II, Direct Phase II, Phase IIB, Phase I/Phase II Fast-Track, or Commercialization Readiness Program (CRP) Application, you must include a \"Commercialization Plan\" attachment. Note that a Commercialization Plan is not allowed for a Phase I SBIR application.",
+      "type": "file",
+      "required": false,
+      "limit": {
+        "unit": "pages",
+        "max": 12
+      },
+      "doc_kind": "other",
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "9. Have you received SBIR Phase II awards from the Federal Government? If yes, provide a company commercialization history in accordance with agency-specific instructions using this attachment.",
+      "help": "A selection is required if you are submitting this application under the SBIR program.",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "10. Will the Project Director/Principal Investigator have his/her primary employment with the small business at the time of award?",
+      "help": "A selection is required if you are submitting this application under the SBIR program.",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "11. Does the Project Director/Principal Investigator have a formal appointment or commitment either with the small business directly (as an employee or a contractor) OR as an employee of the Research Institution, which in turn has made a commitment to the small business through the STTR application process; AND will the Project Director/Principal Investigator devote at least 10% effort to the proposed project?",
+      "help": "A selection is required if you are submitting this application under the STTR program.",
+      "type": "yes_no",
+      "required": false,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "12. In the joint research and development proposed in this project, does the small business perform at least 40% of the work and the research institution named in the application perform at least 30% of the work?",
+      "help": "A selection is required if you are submitting this application under the STTR program.",
+      "type": "yes_no",
+      "required": false,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    },
+    {
+      "section": "SBIR/STTR Information Form - fields",
+      "text": "13. Provide UEI of non-profit research partner for STTR.",
+      "help": "This field is required if you are submitting this application under the STTR program.",
+      "type": "short_text",
+      "required": false,
+      "limit": null,
+      "source_url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://grants.nih.gov/grants/how-to-apply-application-guide/forms-i/sbir-sttr-forms-i.pdf",
+      "note": "Official SBIR/STTR application instructions, Forms Version I (released December 2025): forms, attachments, SBIR/STTR Information form fields, content prompts"
+    },
+    {
+      "url": "https://grants.nih.gov/grants-process/write-application/how-to-apply-application-guide",
+      "note": "Confirms Forms Version I is current (due dates on/after Jan. 25, 2025; updated December 2025)"
+    },
+    {
+      "url": "https://grants.nih.gov/grants-process/write-application/how-to-apply-application-guide/page-limits",
+      "note": "Table of Page Limits (Specific Aims, Research Strategy by activity code, Commercialization Plan, biosketch)"
+    },
+    {
+      "url": "https://grants.nih.gov/grants-process/submit/submission-policies/standard-due-dates",
+      "note": "Standard due dates for SBIR/STTR: September 5, January 5, April 5; review cycles"
+    },
+    {
+      "url": "https://seed.nih.gov/small-business-funding/find-funding/sbir-sttr-funding-opportunities",
+      "note": "Current parent announcements PA-27-100, PA-27-102 (released 05/28/2026, expire 04/06/2027), PA-27-101, PAR-27-098"
+    },
+    {
+      "url": "https://simpler.grants.gov/opportunity/359671",
+      "note": "Grants.gov listing for PA-27-100: status Open, closing April 5, 2027; link to full announcement"
+    },
+    {
+      "url": "https://files.simpler.grants.gov/opportunities/d1ba49e5-3684-4420-849a-ab2330ec493e/attachments/743ad4bd-fc28-450e-9249-1008f37490af/PA-27-100-Revised-Full-Announcement.html",
+      "note": "Full text of PA-27-100: key dates, budgets by institute, eligibility, required registrations, NOFO-specific instructions, review criteria"
+    },
+    {
+      "url": "https://seed.nih.gov/small-business-funding/small-business-program-basics/understanding-sbir-sttr",
+      "note": "SBA budget guideline amounts ($335,937 Phase I; $2,239,578 Phase II)"
+    },
+    {
+      "url": "https://grants.nih.gov/news-events/nih-extramural-nexus-news/2026/04/its-official-nihs-small-business-program-is-back",
+      "note": "NIH announcement (April 21, 2026) that the SBIR/STTR programs were reauthorized"
+    },
+    {
+      "url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-26-090.html",
+      "note": "Reauthorization through September 30, 2031; HHS limit of nine applications per small business per fiscal year"
+    },
+    {
+      "url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-26-006.html",
+      "note": "Notice of early expiration of NIH SBIR/STTR funding opportunities: legislative authority expired October 1, 2025"
+    },
+    {
+      "url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-26-075.html",
+      "note": "Technical and Business Assistance: up to $6,500 per Phase I project and $50,000 per Phase II project"
+    }
+  ]
+}

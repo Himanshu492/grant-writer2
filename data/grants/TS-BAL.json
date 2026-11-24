@@ -1,0 +1,866 @@
+{
+  "id": "TS-BAL",
+  "title": "Techstars AI Health Baltimore",
+  "funder": "Techstars",
+  "program_url": "https://www.techstars.com/accelerators/baltimore-ai-health",
+  "application_url": "https://apply.techstars.com/",
+  "status": "closed",
+  "deadline": null,
+  "deadline_note": "Closed. The current cycle (Spring 2027 class, program March 8 – June 3, 2027) opened August 24, 2026 and its final deadline was November 18, 2026 at 11:59pm PST. The next cycle has not been announced. This program also ran a Fall 2026 class (started September 8, 2026), and Techstars' Fall 2026 term took applications March 2 – June 10, 2026, so an opening around March 2027 is plausible but unconfirmed.",
+  "amount": "$220,000 investment: $200,000 uncapped MFN Safe + $20,000 convertible equity agreement for 5% common stock (equity, not a grant)",
+  "summary": {
+    "at_a_glance": "Techstars' healthcare accelerator in Baltimore for AI-driven health startups, run with Johns Hopkins, CareFirst BlueCross BlueShield, MedStar Health, the University of Maryland Baltimore and the University of Maryland Medical System. It is still running: a class started in September 2026 and the next starts March 8, 2027, but applications for that class closed on November 18, 2026. No later application dates are published yet.",
+    "what_they_offer": "$220,000 investment per company, a 13-week mentorship-driven program ending in a Demo Day (June 3, 2027 for the current class), mentors, access to the Techstars network of investors, partners and alumni, and partner perks valued at more than $4M. Program-specific: access to real clinical environments, payer and reimbursement insight, policy and regulatory expertise and commercialization pathways through the Baltimore partner institutions.",
+    "what_theyre_looking_for": "Program focus: 'AI-driven health startups building solutions that improve healthcare economics and patient outcomes', with emphasis on 'measurable commercial traction'. The Managing Director (Smitha Gopal) says she looks for founders who deeply understand the problem from clinical, industry or lived experience, and for early customer validation such as a pilot, a design partnership or a signed LOI. Techstars' general ranking of criteria: team, team, team, then market, traction (progress), idea.",
+    "who_can_apply": "Early-stage startups from most countries; no co-founder, revenue or finished product is required, and solo founders are accepted. Teams must be able to be legally present in the program's country during the program, and companies 'should be organized to receive U.S. venture funding'. Techstars invests in US corporations or foreign equivalents; companies that are not yet incorporated can apply. Companies based in or doing business in Russia, North Korea, Iran, Syria, Cuba, Venezuela or the Crimea, Donetsk or Luhansk regions cannot apply. Founders apply to one program per application cycle and can name a second choice.",
+    "how_to_apply": "1) Create a Techstars account at apply.techstars.com. 2) Step 1 Founder Profile: About You, then Demographics. 3) Step 2 Accelerator Application: Startup Details, Startup Team, Startup Progress, Startup Strategy, Connections & Referrals; saving the last section submits the application to the general Techstars pool. 4) Step 3 Program Selection: pick this program as primary preference (and optionally an alternate) before applications close at 11:59pm PST on the deadline date. 5) If a program team is interested, the applicant is asked for more: Supplemental Questions and a Techstars Deal Terms question appear in the same portal. 6) First and second-round interviews, with invitations typically one to four weeks after the deadline, then a screening committee for finalists. Every applicant is told their status; Techstars says to expect an answer within 60–90 days of applying or about 4 weeks after applications close.",
+    "worth_noting": "The application portal stays open year-round: an application completed after the deadline is 'added to a general pool for consideration', with no promise on when Techstars will respond. This is an equity investment, not a grant: Techstars takes 5% common stock via the $20K agreement plus whatever the $200K uncapped MFN Safe converts into. Techstars invests in US corporations or foreign equivalents, which matters for an LLC applicant. The application form is the same as for every other Techstars accelerator; the only Baltimore-specific items in the first round are the optional affiliation choices (CareFirst, Baltimore Metro Area, Johns Hopkins University) in 'Connections & Referrals'. The program page does not state whether attendance is in person; Techstars' FAQ says most accelerators are in person in the program city. The form has tight character limits (400–500 characters for most answers)."
+  },
+  "portal": {
+    "platform": "Custom Techstars application system (apply.techstars.com, Keycloak login at login.techstars.com)",
+    "requires_login": true,
+    "may_have_captcha": false,
+    "needs_file_uploads": true,
+    "notes": "Opening apply.techstars.com redirects straight to a 'Create a Techstars account' page (First name, Last name, Email, Sign up) with a Log in link; nothing of the form is visible before that. No CAPTCHA is present on the sign-up page; pages after login were not seen. Three steps: Step 1 Founder Profile (About You, then Demographics), Step 2 Accelerator Application (Startup Details, Startup Team, Startup Progress, Startup Strategy, Connections & Referrals), Step 3 Program Selection (primary and alternate program). Each section saves only when all required fields are filled and 'Save & Continue' is pressed; the last section's button is 'Save Application', which submits the application to the general pool. Answers can be edited later and the same application is reused across terms (one accelerator application per account). Co-founders are invited by name and email from the dashboard and each completes their own Founder Profile. One file upload: pitch deck, PDF only, max 10 MB. Video fields accept YouTube links only. Long answers show a live character counter. The site states that completing the application takes 30–60 minutes."
+  },
+  "questions_verification": "official_document",
+  "questions_source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "The real form is at apply.techstars.com and sits behind a Techstars account login, so the rendered form was NOT seen. The questions here come from two official Techstars sources. (1) The official Application Preview page (techstars.com/application-preview), which lists the question topics for all accelerators. (2) The form definitions that ship in the public JavaScript of the application app itself (apply.techstars.com/main.a12a33d804e57f102763.js, downloaded 2026-11-24 without logging in), which give the exact labels, help text, options, required flags and character limits used above. The two sources agree topic by topic; where the wording differs, the app's wording is used (for example the preview says \"What problem is your company looking to solve?\" and the app says \"What problem are you looking to solve?\"). Confidence is high but not complete: the Founder Profile 'About You' page is rendered straight from these definitions, while the other sections are fetched from Techstars' API after login and could differ slightly from the copy in the JavaScript. Could not be seen: the options of \"Which vertical networks are relevant to your company?\", the full city and country lists, and the list of programs in Step 3. Text inside [square brackets] in a help field is my annotation (display conditions, validation rules), not wording from the form. A public feature flag read on page load (pitch-deck-upload = on) shows the pitch deck is currently a required PDF upload; the older \"Pitch deck URL\" field is hidden while that flag is on. The form is the same for every Techstars accelerator: there is no separate question set per program in the first-round application. Program-specific content is limited to the affiliation options in 'Connections & Referrals' (CareFirst, Baltimore, Chicago, Johns Hopkins, USC) and the program choice in Step 3. NOT included above: the second-round 'Supplemental Questions I / II' and 'Techstars Deal Terms' sections, which appear only if a program team invites the applicant (\"Good news! Our program teams want to learn more about your company.\"). The app holds a bank of about 50 such questions (team, customers, finances, cap table, pitch video, plus program-specific ones such as Johns Hopkins, CareFirst and Baltimore-area relationship questions); which ones an applicant gets is decided on Techstars' side. They are saved verbatim in the evidence file form-definition-extract.txt. Also not included: the co-founder invite dialog (name and email per co-founder), whose exact field labels were not visible.",
+  "questions": [
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "First name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "Last name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "Email",
+      "help": "Enter an email address for application updates and interview requests.",
+      "type": "email",
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "Title",
+      "help": "Select one.",
+      "type": "single_select",
+      "options": [
+        "CEO",
+        "CTO",
+        "COO",
+        "CPO",
+        "Other"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "Current Location",
+      "help": "Where are you located? Please enter nearest town or city. [Autocomplete: a location must be picked from the dropdown, format like \"New York, New York, United States\"]",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "LinkedIn URL",
+      "help": "[Must be a linkedin.com/in/... profile URL; disabled and not required if \"I do not have LinkedIn.\" is ticked]",
+      "type": "url",
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "I do not have LinkedIn.",
+      "help": "[Checkbox, unticked by default]",
+      "type": "yes_no",
+      "required": false,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "X/Twitter URL",
+      "help": "",
+      "type": "url",
+      "required": false,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "Phone number",
+      "help": "[Only digits, +, -, spaces and parentheses are accepted]",
+      "type": "phone",
+      "required": false,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "Are you working on your startup full time?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — About You",
+      "text": "I'd like to receive startup insights, resources and event invitations from Techstars.",
+      "help": "[Checkbox, unticked by default]",
+      "type": "yes_no",
+      "required": false,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — Demographics",
+      "text": "What is your birthdate?",
+      "help": "[Page intro: \"Participation in this part of the application is optional. This will in no way negatively impact your relationship with Techstars.\" The form still marks this field required.]",
+      "type": "date",
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — Demographics",
+      "text": "What is your gender identity?",
+      "help": "Select one.",
+      "type": "single_select",
+      "options": [
+        "Prefer not to disclose",
+        "Man",
+        "Woman",
+        "Transgender",
+        "Non-Binary/gender-nonconforming",
+        "Prefer to self-describe"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — Demographics",
+      "text": "Please self-describe",
+      "help": "[Shown only if \"Prefer to self-describe\" is selected in the previous question; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — Demographics",
+      "text": "Are you a part of the LGBTQ+ community?",
+      "help": "Select one. [Shown and required only when the founder's Current Location is in the United States]",
+      "type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Prefer not to disclose"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — Demographics",
+      "text": "Please select any and all race and ethnic categories with which you identify.",
+      "help": "Select all that apply. [Preceded by the line \"U.S. based founders only:\"; shown and required only when the founder's Current Location is in the United States]",
+      "type": "multi_select",
+      "options": [
+        "Prefer not to disclose",
+        "American Indian or Alaska Native",
+        "Middle Eastern",
+        "East Asian",
+        "South Asian",
+        "Southeast Asian",
+        "Black or African American",
+        "Hispanic or Latinx",
+        "Native Hawaiian or Other Pacific Islanders",
+        "White",
+        "Prefer to self-describe"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — Demographics",
+      "text": "Please self-describe",
+      "help": "[Shown only if \"Prefer to self-describe\" is selected in the previous question; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — Demographics",
+      "text": "Do you identify as a racial/ethnic minority within your home country?",
+      "help": "Select one. [Preceded by the line \"Non U.S. based founders only:\"; hidden for U.S.-based founders, required for everyone else]",
+      "type": "single_select",
+      "options": [
+        "Prefer not to disclose",
+        "Yes",
+        "No",
+        "Prefer to self-describe"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — Demographics",
+      "text": "Please self-describe",
+      "help": "[Shown only if \"Prefer to self-describe\" is selected in the previous question; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — Demographics",
+      "text": "How else do you identify?",
+      "help": "Select all that apply. [Shown only to U.S.-based founders]",
+      "type": "multi_select",
+      "options": [
+        "I choose not to disclose",
+        "A military veteran",
+        "A person living with a disability",
+        "An Immigrant",
+        "A refugee",
+        "Prefer to self-describe"
+      ],
+      "required": false,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 1: Founder Profile — Demographics",
+      "text": "Please self-describe",
+      "help": "[Shown only if \"Prefer to self-describe\" is selected in the previous question; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "Startup name",
+      "help": "",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "Startup URL",
+      "help": "",
+      "type": "url",
+      "required": false,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "What year was your company founded?",
+      "help": "[Placeholder: YYYY. Must be a year from the last 20 years, not in the future]",
+      "type": "number",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 4
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "What problem are you looking to solve?",
+      "help": "Tell us what your target audience is struggling with and why they might be unsatisfied with the current solutions available to them.",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 500
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "What is your company going to make to solve this problem?",
+      "help": "Please describe your product and what it does or will do.",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 500
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "Is your company incorporated?",
+      "help": "Type in a country name. If your company is not incorporated yet, no problem, many of our best founders were at the idea stage! Type in or select \"No, my company is not yet incorporated\".",
+      "type": "single_select",
+      "options": [
+        "No, my company is not yet incorporated",
+        "Yes, in <country> (one option per country, e.g. \"Yes, in United States\")"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "What corporation type is your company?",
+      "help": "Select one. [Shown only when an incorporation country is chosen and Techstars holds corporation types for it; required when shown. The options depend on the country: for \"Yes, in United States\" they are \"Other\" and \"Corporation\".]",
+      "type": "single_select",
+      "options": [
+        "Other",
+        "Corporation"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "Which vertical networks are relevant to your company?",
+      "help": "Select up to five. [The option list is loaded from the Techstars API after login and could not be seen]",
+      "type": "multi_select",
+      "options": [],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "Are you based or do you conduct any business activities in the following countries: Russia, North Korea, Iran, Syria, Cuba, Venezuela, or the Crimea, Donetsk, or Luhansk regions of Ukraine?",
+      "help": "[Defaults to No. Answering Yes blocks the application: \"Techstars is unable to conduct businesses with companies that are based in or conduct business in these countries or regions.\"]",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "Product demo video URL",
+      "help": "Test that the link works and is uploaded to Youtube. Mark the video as unlisted if you don't want other people finding it. [Only YouTube links pass validation]",
+      "type": "url",
+      "required": false,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "Team introduction video (~2 minutes) URL",
+      "help": "With your core team, explain what you do and why you are a great fit for your business. Test that the link works and is uploaded to Youtube. Mark the video as unlisted if you don't want other people finding it. [Only YouTube links pass validation]",
+      "type": "url",
+      "required": false,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Details",
+      "text": "Upload your pitch deck as a PDF file. You may update and resubmit it at any time.",
+      "help": "Upload pitch deck [Accepted file format: PDF. Max size of 10 MB.]",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "pitch_deck",
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Team",
+      "text": "Why is your team a winning team?",
+      "help": "Tell us what gives you/your team an unfair advantage in this market. It might be your intimate knowledge of your customer base, the skills your team brings to the table, or something else that gives your team an edge.",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 1000
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Team",
+      "text": "Where are the majority (50% or more) of your team members/employees located?",
+      "help": "Select one.",
+      "type": "single_select",
+      "options": [
+        "United States",
+        "Canada",
+        "Europe",
+        "Latin America",
+        "Middle East/North Africa",
+        "Asia Pacific",
+        "Other"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Progress",
+      "text": "Please share any traction metrics you have.",
+      "help": "Examples: Beta users, LOI’s, active users, customer growth, etc.",
+      "type": "long_text",
+      "required": false,
+      "limit": {
+        "unit": "chars",
+        "max": 280
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Progress",
+      "text": "Do you have revenue?",
+      "help": "[Defaults to Yes]",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Progress",
+      "text": "What was your revenue in each of the past six months?",
+      "help": "Please use USD. A forecasted number can be entered for a month in progress. [Shown only if \"Do you have revenue?\" is Yes. One whole-number field per month for the last six months, each labelled with the month and year; an ADD MONTH button adds more. All six are required when shown.]",
+      "type": "number",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Progress",
+      "text": "Have you received funding?",
+      "help": "[Defaults to Yes]",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Progress",
+      "text": "Friends & Family",
+      "help": "[Amount field under the question \"What are the sources and funding amounts?\" (help text: \"Please use USD.\"). Shown only if \"Have you received funding?\" is Yes. Whole number, 0 or greater, defaults to 0; required when shown.]",
+      "type": "number",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Progress",
+      "text": "Grant",
+      "help": "[Amount field under the question \"What are the sources and funding amounts?\" (help text: \"Please use USD.\"). Shown only if \"Have you received funding?\" is Yes. Whole number, 0 or greater, defaults to 0; required when shown.]",
+      "type": "number",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Progress",
+      "text": "Angel",
+      "help": "[Amount field under the question \"What are the sources and funding amounts?\" (help text: \"Please use USD.\"). Shown only if \"Have you received funding?\" is Yes. Whole number, 0 or greater, defaults to 0; required when shown.]",
+      "type": "number",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Progress",
+      "text": "Venture Capital",
+      "help": "[Amount field under the question \"What are the sources and funding amounts?\" (help text: \"Please use USD.\"). Shown only if \"Have you received funding?\" is Yes. Whole number, 0 or greater, defaults to 0; required when shown.]",
+      "type": "number",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Progress",
+      "text": "Other",
+      "help": "[Amount field under the question \"What are the sources and funding amounts?\" (help text: \"Please use USD.\"). Shown only if \"Have you received funding?\" is Yes. Whole number, 0 or greater, defaults to 0; required when shown.]",
+      "type": "number",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Strategy",
+      "text": "How do (or will) you make money? How much could you make?",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 400
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Strategy",
+      "text": "Who is your target audience?",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 400
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Strategy",
+      "text": "Who are your competitors or might become competitors?",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 400
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Strategy",
+      "text": "What is your competitive advantage?",
+      "help": "",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 400
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Strategy",
+      "text": "Why is now the right timing for your startup?",
+      "help": "What trends, changes in the market, new laws, policies, or technologies signal this is an opportune time for your startup?",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 400
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Strategy",
+      "text": "What is your customer acquisition strategy?",
+      "help": "How will you get your first (or next) 10, 100, 1,000, or 10,000 customers?",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 400
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Startup Strategy",
+      "text": "What are your next major company milestones?",
+      "help": "What are your next features, or what are you learning to let you know you're on the right path with your business?",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 400
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Are you or your cofounders affiliated with our Startup Communities or Accelerator partners?",
+      "help": "Select all that apply [\"None of the above\" cannot be combined with other options]",
+      "type": "multi_select",
+      "options": [
+        "CareFirst Blue Cross Blue Shield",
+        "Chicago, United States",
+        "Baltimore Metro Area, United States",
+        "Other community or partner affiliation",
+        "None of the above"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "CareFirst affiliation",
+      "help": "Please describe your relationship to CareFirst. [Shown only if \"CareFirst Blue Cross Blue Shield\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": {
+        "unit": "chars",
+        "max": 500
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Chicago community affiliation",
+      "help": "Please describe any personal, professional, or community connections you have to the Chicago startup community. [Shown only if \"Chicago, United States\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": {
+        "unit": "chars",
+        "max": 500
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Baltimore metro area affiliation",
+      "help": "Please describe any personal, professional, or community connections you have to the Baltimore metropolitan area, if any. [Shown only if \"Baltimore Metro Area, United States\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": {
+        "unit": "chars",
+        "max": 500
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Other affiliation",
+      "help": "Please identify and describe other community or partner affiliation(s) you feel may be relevant to the Techstars network. [Shown only if \"Other community or partner affiliation\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": {
+        "unit": "chars",
+        "max": 500
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Are you or your cofounders affiliated with any of our partner universities?",
+      "help": "Select all that apply [\"None of the above\" cannot be combined with other options]",
+      "type": "multi_select",
+      "options": [
+        "University of Southern California",
+        "Johns Hopkins University",
+        "Other university affiliation",
+        "None of the above"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "University of Southern California affiliation",
+      "help": "The USC & Techstars Accelerator is only open to members of the USC ecosystem. Please describe your relationship to USC. [Shown only if \"University of Southern California\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": {
+        "unit": "chars",
+        "max": 500
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Johns Hopkins University affiliation",
+      "help": "Please describe your relationship to Johns Hopkins University. [Shown only if \"Johns Hopkins University\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": {
+        "unit": "chars",
+        "max": 500
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Other affiliation",
+      "help": "Please identify and describe other university affiliation(s) you feel may be relevant to the Techstars network. [Shown only if \"Other university affiliation\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": {
+        "unit": "chars",
+        "max": 500
+      },
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "How did you hear about Techstars?",
+      "help": "Select all that apply.",
+      "type": "multi_select",
+      "options": [
+        "A Techstars team member recommended I apply",
+        "Mentor/alumni in the Techstars network recommended I apply",
+        "Techstars virtual event (AMA's, Pitch Practice, Office Hours, ect)",
+        "Techstars event (Start Up Week/Start Up Weekend, demo day)",
+        "Search engine (Google, Bing, ect)",
+        "Social Media, Blog or publication",
+        "Other"
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Which Techstars team member recommended you apply",
+      "help": "State their name, or if you do not remember, you can state the program name. [Shown only if \"A Techstars team member recommended I apply\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Which network member recommended you apply",
+      "help": "Name and relation to Techstars (mentor, alumni, ect). [Shown only if \"Mentor/alumni in the Techstars network recommended I apply\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Which virtual event did you attend?",
+      "help": "AMA's, pitch practice, office hours, ect. [Shown only if \"Techstars virtual event (AMA's, Pitch Practice, Office Hours, ect)\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "Which event did you attend?",
+      "help": "Start Up Week/Start Up Weekend, demo day, ect. [Shown only if \"Techstars event (Start Up Week/Start Up Weekend, demo day)\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "What brought you to apply to Techstars",
+      "help": "[Shown only if \"Other\" is selected; required when shown]",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 2: Accelerator Application — Connections & Referrals",
+      "text": "I agree to Techstars’ Terms of Service and Privacy Policy.",
+      "help": "If you have questions please reach out to privacy@techstars.com. [Checkbox, ticked by default; must stay ticked to save the application]",
+      "type": "yes_no",
+      "required": true,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 3: Program Selection",
+      "text": "PRIMARY PREFERENCE",
+      "help": "[Not a typed field: the applicant picks a program card with a \"Select program\" button from the list of accelerators open in the current term. On-page text: \"While your application has already been submitted to the general pool, you may select a primary and alternate preference of programs that you’d like to be considered for specifically. You can change your preferences any time before applications close.\" For this entry the program to pick is \"Techstars AI Health Baltimore\". The list of selectable programs is loaded after login and could not be seen.]",
+      "type": "single_select",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    },
+    {
+      "section": "Step 3: Program Selection",
+      "text": "ALTERNATE PREFERENCE",
+      "help": "[Optional second program choice, same picker. On-page text: \"The program listed as the primary preference will review your application first, following the application close date. The alternate preference will be able to engage soon after.\"]",
+      "type": "single_select",
+      "options": [],
+      "required": false,
+      "limit": null,
+      "source_url": "https://apply.techstars.com/main.a12a33d804e57f102763.js"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.techstars.com/accelerators/baltimore-ai-health",
+      "note": "Official program page: description, partners, team, dates (Applications Open Aug 24 2026, Final Deadline Nov 18 2026, Accelerator Starts Mar 08 2027, Demo Day Jun 03 2027)"
+    },
+    {
+      "url": "https://www.techstars.com/blog/program-news/5-questions-with-smitha-gopal-managing-director-of-techstars-ai-health-baltimore",
+      "note": "Managing Director on what the program looks for and what the partners provide (Aug 4, 2026)"
+    },
+    {
+      "url": "https://www.techstars.com/newsroom/introducing-techstars-fall-2026-accelerator-class",
+      "note": "Shows Techstars AI Health Baltimore ran a Fall 2026 class starting September 8, 2026"
+    },
+    {
+      "url": "https://www.techstars.com/application-preview",
+      "note": "Official Techstars application preview: list of question topics and the three parts of the application"
+    },
+    {
+      "url": "https://apply.techstars.com/",
+      "note": "Real application portal; redirects to account sign-up/login. Sign-up page text used for deadline rules (11:59pm PST, late applications go to the general pool) and response times"
+    },
+    {
+      "url": "https://apply.techstars.com/main.a12a33d804e57f102763.js",
+      "note": "Public JavaScript of the application app: exact field labels, help text, options, required flags, character limits, section order"
+    },
+    {
+      "url": "https://www.techstars.com/accelerators",
+      "note": "Official list of current Techstars accelerators (both programs are listed)"
+    },
+    {
+      "url": "https://www.techstars.com/accelerator-hub",
+      "note": "What Techstars offers ($220K, 3 months, mentors, perks)"
+    },
+    {
+      "url": "https://www.techstars.com/newsroom/investment-terms",
+      "note": "Investment terms: $200K uncapped MFN Safe + $20K CEA for 5%; invests in US corporations or foreign equivalents"
+    },
+    {
+      "url": "https://www.techstars.com/faq",
+      "note": "FAQ (last updated Nov 11, 2026): who can apply, one program per cycle plus a second choice, cycles typically twice a year"
+    },
+    {
+      "url": "https://www.techstars.com/blog/founder-advice/inside-a-techstars-accelerator-what-are-we-looking-for",
+      "note": "Selection criteria: team, team, team, market, traction, idea"
+    },
+    {
+      "url": "https://www.techstars.com/blog/founder-advice/inside-a-techstars-accelerator-the-application-and-interview-process",
+      "note": "Stages: application, first and second-round interviews, timing of responses"
+    }
+  ]
+}

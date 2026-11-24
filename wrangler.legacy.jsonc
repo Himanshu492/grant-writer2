@@ -1,0 +1,36 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "freehealth-grants-portal",
+  // ONE-TIME IMPORT CONFIG: identical to wrangler.jsonc plus read access to the old system's database and bucket.
+  // Deploy with `wrangler deploy -c wrangler.legacy.jsonc`, press "Import from the old system" in Settings, then deploy the normal config again.
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "freehealth-grants-portal",
+      "database_id": "a7b73abd-1ad5-431b-b848-515e05e225ba",
+      "migrations_dir": "migrations"
+    },
+    { "binding": "LEGACY_DB", "database_name": "freehealth-grant-operations", "database_id": "7474e2bb-1395-4d3e-9415-c53d0ad03380" }
+  ],
+  "r2_buckets": [
+    { "binding": "DOCS", "bucket_name": "freehealth-grants-portal" },
+    { "binding": "LEGACY_DOCS", "bucket_name": "freehealth-grant-documents" }
+  ],
+  "triggers": { "crons": ["*/5 * * * *"] },
+  "vars": {
+    "DEEPSEEK_BASE_URL": "https://api.deepseek.com",
+    "DEEPSEEK_MODEL_FAST": "deepseek-flash",
+    "DEEPSEEK_MODEL_WRITE": "deepseek-v4-pro"
+  }
+  // Secrets (set with `wrangler secret put`, never committed):
+  //   PORTAL_PASSWORD   - team password for the dashboard
+  //   SESSION_SECRET    - random string used to sign login cookies
+  //   AGENT_TOKEN       - bearer token the VM browser-agent runner uses
+  //   DEEPSEEK_API_KEY  - DeepSeek key for "Draft with AI" and knowledge inference
+}

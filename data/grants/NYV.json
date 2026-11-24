@@ -1,0 +1,49 @@
+{
+  "id": "NYV",
+  "title": "NY Ventures Pre-Seed & Seed Fund (Pre-Seed and Seed Matching Fund Program)",
+  "funder": "Empire State Development (New York Ventures)",
+  "program_url": "https://esd.ny.gov/pre-seed-and-seed-matching-fund-program",
+  "application_url": "https://nyventuresapply.esd.ny.gov/submit/8ed31c5f-99e0-46b3-8d69-6ac3cb59fd91/ny-ventures-pre-seed-seed-fund",
+  "status": "rolling",
+  "deadline": null,
+  "deadline_note": "ESD's FAQ: \"We are accepting applications on a rolling basis, and there is no fixed deadline to apply at this time.\"",
+  "amount": "$50,000 to $250,000 equity investment, matched at least $1 for $1 by qualified private investors (dilutive; not a grant)",
+  "summary": {
+    "at_a_glance": "New York State's venture arm co-invests $50,000 to $250,000 in pre-seed and seed-stage companies, on the same terms as the private investors in the round, with at least $1 of qualified private investment for every $1 NY Ventures invests. It is an investment, not a grant, funded through the federal State Small Business Credit Initiative (SSBCI). Applications are rolling through a Submittable portal.",
+    "what_they_offer": "Equity investment of $50,000 up to $250,000 as convertible debt, SAFE or equity financing, on the same terms as the private capital being matched. Pro bono legal, accounting and financial help for applicants through LaunchNY and Reitler Kailas & Rosenblatt LLP, and weekly office hours on Mondays.",
+    "what_theyre_looking_for": "Pre-seed or seed-stage companies likely to become venture scalable, with a particular focus on technology markets (advanced manufacturing, agricultural tech, climate and energy tech, consumer tech, data/SaaS/AI, deep tech, FinTech, healthcare, life sciences and biotech, medical devices; the list is not exhaustive). Due diligence looks at business model, market size, team, product, financials, competitive advantage and New York State impact. The program also aims to widen access to venture capital in underserved geographies and for historically marginalized founders. Meeting the eligibility criteria does not guarantee funding.",
+    "who_can_apply": "Company has raised $2M or less of dilutive funding prior to the current round; is registered to do business in New York and in good standing (it may be incorporated in another state); agrees to have its headquarters and at least one C-suite employee in New York State (the FAQ says for at least 12 months after the investment, as a binding commitment); and is raising matching funds from qualified private sector investors (investment entities, members of organized accredited investor groups, or individuals who can establish accredited investor status). ESD states a preference for companies structured as a C-Corporation. Cannabis businesses are not considered. ESD discourages applying before the company is based in New York.",
+    "how_to_apply": "1) Create a free Submittable account (same email address as in the application) from the 'Start your application' link. 2) Complete the eligibility confirmation page. 3) Complete the application. 4) Initial review by ESD's internal investor team; ESD aims to be in touch within approximately 30 days of submission. 5) Due diligence, with possible requests for more information. 6) Meetings with the company and the lead investor (ESD speaks with at least one investor in the round). 7) Funding decision and closing, including a reporting side letter.",
+    "worth_noting": "Timing matters: private capital counts toward the 1:1 match only if that financing happened no more than 90 days before the SSBCI investment, and the FAQ says funds already invested well before applying are unlikely to count, so ESD recommends applying once a lead investor and matching commitments are lined up but before the round closes. Family members cannot serve as investor references. Records submitted are subject to New York's Freedom of Information Law. ESD does not give individual status updates or feedback on rejections. The applicant here is an LLC; ESD lists a preference (not a stated requirement) for C-Corporations."
+  },
+  "portal": {
+    "platform": "Submittable (nyventuresapply.esd.ny.gov)",
+    "requires_login": true,
+    "may_have_captcha": null,
+    "needs_file_uploads": true,
+    "notes": "'Continue' on the application page redirects to the Submittable login (accounts.submittable.com): email address, or Continue with Google / DUO / Facebook, with a 'Sign up' link. ESD says to create the Submittable account with the same email address used in the application. After login there is an eligibility confirmation page, then the application. Answers are saved in real time and a draft can be finished later. To change a submitted form, withdraw and resubmit or request an edit. File uploads are implied by the portal instructions ('make sure ... the files are valid file types. You can find the acceptable file types under the \"Choose File\" button on the application'), but which documents are requested was not visible. Follow-up arrives by email from Submittable. No CAPTCHA was observed on the login page; the sign-up step was not opened."
+  },
+  "questions_verification": "not_accessible",
+  "questions_source_url": null,
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "The eligibility confirmation page and the application form are behind the Submittable login; no account was created, so no question was seen. ESD's program page, FAQ and the Submittable landing and guidelines pages do not list the questions or required documents, and no official preview or PDF of the application was found. Third-party write-ups (law-firm blog posts from 2023) describe parts of an earlier version of the form and were not used. The portal's browser agent needs to read the form after the owner signs in. Note on evidence: esd.ny.gov is behind a Cloudflare bot check, so the two ESD pages were read through a fetch tool that returns extracts rather than raw HTML; the quoted phrases in this file come from those extracts, and the Submittable pages were read directly.",
+  "questions": [],
+  "sources": [
+    {
+      "url": "https://esd.ny.gov/pre-seed-and-seed-matching-fund-program",
+      "note": "Official program page: investment size, match rule, eligibility bullets, application link, support resources"
+    },
+    {
+      "url": "https://esd.ny.gov/pre-seed-seed-matching-fund-program-faq",
+      "note": "Official FAQ: rolling applications, review stages and 30-day goal, 90-day match window, lead investor, NY registration and HQ rules, reporting, FOIL"
+    },
+    {
+      "url": "https://nyventuresapply.esd.ny.gov/submit/8ed31c5f-99e0-46b3-8d69-6ac3cb59fd91/ny-ventures-pre-seed-seed-fund",
+      "note": "Official Submittable application landing page: welcome text, eligibility confirmation step, contact email NYVenturesPreSeed@esd.ny.gov"
+    },
+    {
+      "url": "https://nyventuresapply.esd.ny.gov/submit",
+      "note": "Submittable instructions page: account email rule, drafts, withdraw/edit, file types"
+    }
+  ]
+}

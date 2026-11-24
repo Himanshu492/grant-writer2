@@ -1,0 +1,557 @@
+{
+  "id": "YC",
+  "title": "Y Combinator (Winter 2027 batch)",
+  "funder": "Y Combinator",
+  "program_url": "https://www.ycombinator.com/apply",
+  "application_url": "https://apply.ycombinator.com/home",
+  "status": "open",
+  "deadline": null,
+  "deadline_note": "Winter 2027 batch (Jan-Mar 2027, San Francisco). The on-time deadline was Nov 2, 2026 at 8pm PT and has passed; YC's apply page says it is still accepting late applications, with no promised response date (FAQ: most late applications get a decision within a month, not guaranteed). On-time applicants hear back by Dec 11, 2026. No deadline for the next batch (Spring 2027) has been published; later batches can be applied for now by choosing 'A batch after Winter 2027' on the form.",
+  "amount": "$500,000 standard deal: $125k post-money SAFE for 7% + $375k uncapped MFN SAFE",
+  "summary": {
+    "at_a_glance": "Y Combinator is a startup accelerator that funds companies in four batches a year (Winter, Spring, Summer, Fall) and runs a 3-month in-person program in San Francisco. It is currently taking applications for the Winter 2027 batch (January to March 2027); the on-time deadline (Nov 2, 2026) has passed but late applications are still accepted. Every accepted company gets the same $500,000 standard deal.",
+    "what_they_offer": "$500,000 investment per company on two SAFEs ($125,000 post-money SAFE for 7%, plus $375,000 on an uncapped SAFE with a Most Favored Nation provision), invested as soon as the company is accepted and not tied to milestones; no program fees. A 3-month in-person batch in San Francisco (3-day kick-off, weekly meetups, a dedicated YC General Partner with weekly meetings and a direct Slack channel, small groups of companies), talks from well-known founders, the YC alumni network, '$12M+ in free credits and deals' from partners, investor introductions towards the end of the batch, and continued support after the batch. YC also gets a pro rata right to invest in later rounds.",
+    "what_theyre_looking_for": "From YC's own 'How to Apply' essay (Paul Graham) and FAQ: clear, concise, matter-of-fact answers with no marketing-speak (partners read ~100 applications a day; say what you make in the first sentence). The founders matter more than the idea: YC looks for evidence that founders can do extraordinary things (the essay calls the 'something impressive that each founder has built or achieved' question the most important), specific examples rather than generic claims, and people who 'like to beat the system'. For the idea, what counts is the level of insight: what is distinctive, awareness of obstacles and a theory for overcoming them; disclose flaws rather than hide them. Submitting the founder video makes an interview much more likely. Founding teams are expected to be able to build the product themselves (usually a technical co-founder). YC funds very early companies (FAQ: on average 40% of each batch is just an idea; most have no revenue) and also ones further along (anything short of a Series A). Progress since a previous application is a strong signal for re-applicants.",
+    "who_can_apply": "Any startup, anywhere in the world, in any field (not only software). Solo founders are accepted, though YC advises having a co-founder. No need to be incorporated, to have revenue, or to be in the US. Companies that have already raised money or done another accelerator can apply. Students and people with full-time jobs can apply but founders must commit to working full-time on the company during the batch and afterwards. One application per batch; re-applying in later batches is encouraged. If accepted, YC invests in US, Canada, Cayman or Singapore corporations (companies incorporated elsewhere must create a parent company in one of those). YC says it helps with incorporation after acceptance.",
+    "how_to_apply": "1) Log in or sign up at account.ycombinator.com (email/username or Google) and open the application at apply.ycombinator.com. 2) One founder creates and fills in the single online application (sections: Founders, Founder Video, Company, Progress, Idea, Equity, Curious, Batch Preference) and adds co-founders by email; each co-founder gets an email to fill out their own founder profile. Only the founder who created the application can edit it. 3) Record the 1-minute founder video (all founders, no script, not a demo). 4) Submit with the button at the bottom of the application; YC emails a confirmation with a copy. After submission the application cannot be freely edited (material changes go through an update form). 5) If the application is promising, YC invites the team to a 10-minute Zoom interview with 2-3 partners (all founders present); for Winter 2027 most interviews are in November and December. 6) Decision by email, typically within 24 hours of the interview; teams not funded after an interview get feedback. YC invests as soon as a company is accepted.",
+    "worth_noting": "YC's deal and FAQ pages speak only of investing in corporations (US, Canada, Cayman, Singapore) and do not mention LLCs, which matters for an applicant that is currently an LLC. Applying now means applying late for Winter 2027: YC says it funds many late applicants every batch but gives no response date. Alternatively, pick 'A batch after Winter 2027' (Early Decision is aimed at students, but the option is on every application). The batch requires being in person in San Francisco for three months. YC does not give feedback on applications that are not invited to interview. Recommendations from YC alumni carry over between applications. YC's FAQ says a Paxel 'builder report' (analysis of your AI-coding sessions, paxel.ycombinator.com) is optional and can be opted into on the application. Numbers stated in the interview may be verified afterwards. Previous applications can be viewed from the account page but a new application must be filled out each batch."
+  },
+  "portal": {
+    "platform": "custom (YC's own application app at apply.ycombinator.com, with YC single sign-on at account.ycombinator.com)",
+    "requires_login": true,
+    "may_have_captcha": null,
+    "needs_file_uploads": null,
+    "notes": "Every apply.ycombinator.com URL (/home, /app/edit) redirects to account.ycombinator.com: 'Log in or sign up to access the YC Application' with an email/username field, a Continue button and 'Continue with Google'. No CAPTCHA widget was present on that login page when checked on 2026-11-24, but the sign-up and later steps were not exercised, so CAPTCHA and email-verification behaviour beyond the first screen is unknown. The form itself could not be seen without an account, so file-upload behaviour is unconfirmed: a 1-minute founder video is required and there is a separate place for a product demo (both per YC's official /video page), but whether these are in-form uploads/recordings or links was not verifiable. Third-party copies of the Summer 2026 form also show an optional .md/.txt 'coding agent session' upload. Per YC's FAQ: one founder owns and edits the application; co-founders are added by email in the main form and complete separate founder profiles from their own YC accounts; submission is a button at the bottom of the form; a confirmation email with a copy is sent; no continuous editing after submission. The form is one long page with sections (Founders, Founder Video, Company, Progress, Idea, Equity, Curious, Batch Preference) according to third-party copies."
+  },
+  "questions_verification": "third_party_copy",
+  "questions_source_url": "https://www.ycombinator.coach/apply",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "The live form is behind a YC account login (apply.ycombinator.com redirects to account.ycombinator.com), and YC publishes no official full preview or question list, so the Winter 2027 form itself was NOT seen. OFFICIALLY VERIFIED on ycombinator.com (questions #6, #10, #14, #40, #41, #42 in this list): the 50-character description, 'What is your company going to make?...' and 'How long have each of you been working on this?...' wordings are published by YC on company profile pages ('Selected answers from ... original YC application'); the three Batch Preference questions come from YC's official screenshot on the Early Decision page. That screenshot was taken in the Spring 2026 cycle (options 'Spring 2026' / 'A batch after Spring 2026', then 'Summer 2026' / 'Fall 2026' / 'Winter 2027'); the Early Decision page text confirms today's label 'A batch after Winter 2027', while 'Winter 2027' and the future-batch options 'Spring 2027' / 'Summer 2027' / 'Fall 2027' are carried over from that pattern and the apply page ('future batches (Spring, Summer, and Fall)'), not read off the live form. The screenshot also shows this text between the first and second batch questions: 'We expect almost all founders to apply for Spring 2026, the upcoming batch. But if you are currently in school and want to graduate before doing YC, you can apply for a future batch. We run four batches a year: winter, spring, summer, and fall.' The two follow-up batch questions only appear when 'A batch after ...' is selected. ALL OTHER QUESTIONS ARE A THIRD-PARTY COPY (source_url ycombinator.coach, an unofficial practice tool that mirrors the form as of the Summer 2026 batch, two batches ago). Wording and order were cross-checked against three independent third-party sources (Round Funded's list updated Nov 2, 2026; a YC F25 company's published S25/F25 applications; an applicant's Spring 2026 draft on GitHub) and agree for the top-level questions, so confidence in those is fairly high, but YC edits the form between batches and none of this is official. Field types follow the third-party copy. Required flags are unknown (null). No character limits are given except the 50 characters stated in the question itself; the third-party tool's own limits (1,500/3,000 characters) are not YC's and were left out. Conditional follow-ups in the third-party copy: 'How many active users or customers...' appears after 'Are people using your product?' = Yes and 'When will you have a version people can use?' after No; 'How much revenue?' and 'Where does your revenue come from?' after 'Do you have revenue?' = Yes; the legal-entity list and current equity breakdown after 'Have you formed ANY legal entity yet?' = Yes and the planned equity breakdown after No; the investment list and total raised after 'Have you taken any investment yet?' = Yes; fundraise details after 'Are you currently fundraising?' = Yes; the first Founders question is about multiple founders. Least certain items (seen only in the one third-party copy): the login-credentials field, 'How much revenue?', 'Where does your revenue come from?', the exact wording of the four Equity follow-ups, 'How much money have you raised in total (USD)?', the category option list, and whether 'Are you looking for a cofounder?' is free text. For the founder video only the label is given: the copy asks for a YouTube link, but that looks like the tool's own adaptation, so whether the real form takes a link or an in-form upload/recording is unverified (YC's official /video page gives the content rules: 1 minute, only founders talking, all founders, no script). DELIBERATELY LEFT OUT because the wording could not be trusted: (a) the product demo field (YC's /video page confirms there is 'a separate place in the application' for a demo; the copy's wording is the tool's own); (b) the optional 'attach a coding agent session you're particularly proud of' upload, whose text in the copy says it is 'an experimental question for the Summer 2026 batch' and may have been removed or replaced for Winter 2027; (c) a Paxel builder-report opt-in, which YC's FAQ says exists 'on your application' but whose wording is not public; (d) fields that a published real application shows only by abbreviated label: founder citizenship, noncompetes or overlapping intellectual-property agreements, 'anything else YC should know'; (e) the add-a-co-founder control (co-founder email) and the separate per-founder profile each founder fills in from their own account (education, work history, achievements and similar), which no current official or datable source lists. Questions quoted in YC's 'How to Apply' essay ('something impressive that each founder has built or achieved', 'hacked some (non-computer) system') are official but the essay is old, so they were not included as current wording. Expect the logged-in scan to add or change fields.",
+  "questions": [
+    {
+      "section": "Founders",
+      "text": "How long have the founders known one another and how did you meet? Have any of the founders not met in person?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Founders",
+      "text": "Who writes code, or does other technical work on your product? Was any of it done by a non-founder? Please explain.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Founders",
+      "text": "Are you looking for a cofounder?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Founder Video",
+      "text": "Please record a one minute video introducing the founder(s).",
+      "help": "",
+      "type": "url",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Company",
+      "text": "Company name",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Company",
+      "text": "Describe what your company does in 50 characters or less.",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": {
+        "unit": "chars",
+        "max": 50
+      },
+      "source_url": "https://www.ycombinator.com/companies/persist-ai"
+    },
+    {
+      "section": "Company",
+      "text": "Company URL, if any",
+      "help": "",
+      "type": "url",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Company",
+      "text": "Please provide a link to the product, if any.",
+      "help": "",
+      "type": "url",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Company",
+      "text": "If login credentials are required for the link above, enter them here.",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Company",
+      "text": "What is your company going to make? Please describe your product and what it does or will do.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.com/companies/persist-ai"
+    },
+    {
+      "section": "Company",
+      "text": "Where do you live now, and where would the company be based after YC?",
+      "help": "Use the format City A, Country A / City B, Country B",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Company",
+      "text": "Explain your decision regarding location.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Progress",
+      "text": "How far along are you?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Progress",
+      "text": "How long have each of you been working on this? How much of that has been full-time? Please explain.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.com/companies/requestly"
+    },
+    {
+      "section": "Progress",
+      "text": "What tech stack are you using, or planning to use, to build this product? Include AI models and AI coding tools you use.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Progress",
+      "text": "Are people using your product?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Progress",
+      "text": "How many active users or customers do you have? How many are paying? Who is paying you the most, and how much do they pay you?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Progress",
+      "text": "When will you have a version people can use?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Progress",
+      "text": "Do you have revenue?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Progress",
+      "text": "How much revenue?",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Progress",
+      "text": "Where does your revenue come from?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Progress",
+      "text": "If you are applying with the same idea as a previous batch, did anything change? If you applied with a different idea, why did you pivot and what did you learn from the last idea?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Progress",
+      "text": "If you have already participated or committed to participate in an incubator, \"accelerator\" or \"pre-accelerator\" program, please tell us about it.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Idea",
+      "text": "Why did you pick this idea to work on? Do you have domain expertise in this area? How do you know people need what you're making?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Idea",
+      "text": "Who are your competitors? What do you understand about your business that they don't?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Idea",
+      "text": "How do or will you make money? How much could you make?",
+      "help": "(We realize you can't know precisely, but give your best estimate)",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Idea",
+      "text": "Which category best applies to your company?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Adtech",
+        "Aerospace",
+        "Agriculture",
+        "Analytics",
+        "B2B SaaS",
+        "Biotech",
+        "Climate",
+        "Community",
+        "Construction",
+        "Continuing Education",
+        "Crypto / Blockchain",
+        "Developer Tools",
+        "K-12",
+        "Energy",
+        "Entertainment",
+        "Financial Services",
+        "Fitness",
+        "Food/Beverage",
+        "Freight",
+        "Gaming",
+        "Government",
+        "Hard Tech",
+        "Hardware",
+        "Healthcare",
+        "Insurance",
+        "Language Learning",
+        "Lending/Loan Management",
+        "Marketplace",
+        "Media",
+        "Medical Devices",
+        "Mental Health",
+        "Personal Finance",
+        "Real Estate",
+        "Retail",
+        "Recruiting",
+        "Robotics",
+        "Sales Enablement",
+        "Security",
+        "Transportation",
+        "Travel/Tourism",
+        "Virtual Reality / AR",
+        "Wellness",
+        "Other"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Idea",
+      "text": "If you had any other ideas you considered applying with, please list them. One may be something we've been waiting for. Often when we fund people it's to do something they list here and not in the main application.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Equity",
+      "text": "Have you formed ANY legal entity yet?",
+      "help": "This may be in the US, in your home country or in another country.",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Equity",
+      "text": "Please list all legal entities you have and in what state or country each was formed.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Equity",
+      "text": "Describe the breakdown of equity ownership among the founders, employees, and any other shareholders.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Equity",
+      "text": "Describe the planned equity ownership breakdown among the founders and any other proposed shareholders.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Equity",
+      "text": "Have you taken any investment yet?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Equity",
+      "text": "List any investments your company has received. Include the name of the investor, the amount invested, the premoney valuation / valuation cap, and the type of security sold (e.g. safe, convertible note, Series A).",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Equity",
+      "text": "How much money have you raised in total (USD)?",
+      "help": "",
+      "type": "short_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Equity",
+      "text": "Are you currently fundraising?",
+      "help": "",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Equity",
+      "text": "Provide any relevant details about your current fundraise.",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Curious",
+      "text": "What convinced you to apply to Y Combinator? Did someone encourage you to apply? Have you been to any YC events?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Curious",
+      "text": "How did you hear about Y Combinator?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.coach/apply"
+    },
+    {
+      "section": "Batch Preference",
+      "text": "What batch do you want to apply for?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Winter 2027",
+        "A batch after Winter 2027"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.com/early-decision"
+    },
+    {
+      "section": "Batch Preference",
+      "text": "Which future batch do you want to do?",
+      "help": "",
+      "type": "single_select",
+      "options": [
+        "Spring 2027",
+        "Summer 2027",
+        "Fall 2027"
+      ],
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.com/early-decision"
+    },
+    {
+      "section": "Batch Preference",
+      "text": "Why apply for a future batch rather than the upcoming one?",
+      "help": "",
+      "type": "long_text",
+      "required": null,
+      "limit": null,
+      "source_url": "https://www.ycombinator.com/early-decision"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ycombinator.com/apply",
+      "note": "Official. Batch (Winter 2027, January to March, San Francisco), on-time deadline Nov 2 8pm PT, late applications still accepted, decision date Dec 11, interview timing, batch description. Page data also carries apply_url https://apply.ycombinator.com/home and is_after_deadline=true."
+    },
+    {
+      "url": "https://www.ycombinator.com/faq",
+      "note": "Official. Eligibility, $500,000 investment, late-application policy, co-founder profile mechanics, editing/submission/confirmation email, incorporation jurisdictions, optional Paxel builder report."
+    },
+    {
+      "url": "https://www.ycombinator.com/deal",
+      "note": "Official. Standard deal terms ($125k SAFE for 7% + $375k uncapped MFN SAFE, pro rata right, no fees)."
+    },
+    {
+      "url": "https://www.ycombinator.com/early-decision",
+      "note": "Official. Early Decision; contains an official screenshot of the form's 'Batch Preference' section and the current option label 'A batch after Winter 2027'."
+    },
+    {
+      "url": "https://bookface-static.ycombinator.com/assets/ycdc/apply/early_decision_instructions-828ca3de896ce118f911823fca1d62423532a14212e337880daa31a510663536.png",
+      "note": "Official screenshot of the Batch Preference section (taken during the Spring 2026 cycle)."
+    },
+    {
+      "url": "https://www.ycombinator.com/video",
+      "note": "Official. Founder video instructions (1 minute, only founders talking, all founders, no script; demo goes in a separate place in the application)."
+    },
+    {
+      "url": "https://www.ycombinator.com/howtoapply",
+      "note": "Official. Paul Graham's 'How to Apply to Y Combinator' essay: what partners look for. It quotes a few application questions but is an old essay, so those quotes were not used as current wording."
+    },
+    {
+      "url": "https://www.ycombinator.com/interviews",
+      "note": "Official. Interview format (10-minute Zoom, 2-3 partners, all founders) and post-interview feedback."
+    },
+    {
+      "url": "https://account.ycombinator.com/?continue=https%3A%2F%2Fapply.ycombinator.com%2Fhome",
+      "note": "Official. Login wall reached from apply.ycombinator.com; shows what blocks access to the live form."
+    },
+    {
+      "url": "https://www.ycombinator.com/companies/persist-ai",
+      "note": "Official YC company profile (Winter 2023) that publishes 'Selected answers from ... original YC application' with YC's wording for the 50-character description and 'What is your company going to make?' questions. Same wording on other official profiles (aisupervision, fly-io, recordbook, rulebricks, castle, demodesk, moonrepo, gitlab, ...)."
+    },
+    {
+      "url": "https://www.ycombinator.com/companies/requestly",
+      "note": "Official YC company profile (Winter 2022) publishing the 'How long have each of you been working on this? ...' question wording (same on gitlab, castle, recordbook, aisupervision, yhat, framed-data)."
+    },
+    {
+      "url": "https://www.ycombinator.coach/apply",
+      "note": "THIRD-PARTY (unofficial practice tool, not affiliated with YC). Reproduces the YC form as of the Summer 2026 batch, section by section, including conditional follow-ups, help text and the category dropdown. Main source for the question list; its character limits and required markers are the tool's own and were not used."
+    },
+    {
+      "url": "https://www.roundfunded.com/en/blogs/how-to-apply-to-y-combinator-2026",
+      "note": "THIRD-PARTY. '26 questions in seven sections' list, article updated Nov 2, 2026; used to cross-check section order and top-level question wording (it omits conditional follow-ups, the video and the category question)."
+    },
+    {
+      "url": "https://metorial.com/blog/open-sourcing-the-yc-application",
+      "note": "THIRD-PARTY (a YC F25 company publishing its own submitted S25 and F25 applications, Aug 17, 2026). Cross-check; also shows the real form has fields the copies above lack (founder citizenship, noncompetes/IP agreements, anything else YC should know) but only with abbreviated labels."
+    },
+    {
+      "url": "https://github.com/Koding-4-Kids/docere-v2/blob/main/yc-application-draft.md",
+      "note": "THIRD-PARTY. An applicant's Spring 2026 application draft; cross-check of question headings and the coding-agent-session item."
+    },
+    {
+      "url": "https://officechai.com/ai/yc-applications-now-ask-founders-to-show-a-coding-agent-session-theyre-proud-of/",
+      "note": "THIRD-PARTY news (Feb 4, 2026) on the experimental optional coding-agent-session upload added for Spring 2026."
+    },
+    {
+      "url": "https://shizune.co/yc-application-examples",
+      "note": "THIRD-PARTY (the old system's hint URL). Rejected as a source: it is an undated aggregation of questions from applications of 2007-2021 batches and includes questions no longer on the form."
+    }
+  ]
+}

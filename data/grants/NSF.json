@@ -1,0 +1,529 @@
+{
+  "id": "NSF",
+  "title": "America's Seed Fund powered by NSF (NSF SBIR/STTR Phase I) - Project Pitch",
+  "funder": "U.S. National Science Foundation (Directorate for Technology, Innovation and Partnerships)",
+  "program_url": "https://seedfund.nsf.gov/",
+  "application_url": "https://nsfgov.my.site.com/mywork",
+  "status": "rolling",
+  "deadline": "2027-03-04",
+  "deadline_note": "Project Pitch: accepted anytime (new pitches accepted again since June 2, 2026; reply in about 1-2 months). The date given is the next FULL-proposal deadline, which only matters once invited: March 4, 2027, 5 p.m. submitter's local time. Later deadlines: July 7, 2027 and November 3, 2027 (then first Thursday in March / first Wednesday in July / first Wednesday in November each year). An invitation is valid for the next two submission deadlines.",
+  "amount": "Phase I: up to $305,000 for 6-18 months, no equity taken (Phase II up to $1,250,000; up to $2 million per company in total)",
+  "summary": {
+    "at_a_glance": "Non-dilutive federal R&D funding for startups building deep technology with real technical risk. Phase I applicants must first submit a short Project Pitch; only companies that receive an official invitation may submit the full Phase I proposal under solicitation NSF 26-510. The program was relaunched in 2026 after Congress reauthorized SBIR/STTR.",
+    "what_they_offer": "Phase I grant of up to $305,000 for 6-18 months; NSF states this amount is inclusive of all direct and indirect costs, the small business fee, Technical and Business Assistance (TABA, up to $6,500 encouraged) and the optional but highly encouraged I-Corps training (budget up to $25,000). Phase II up to $1,250,000 (typically 24 months), Fast-Track about $1.55 million, plus supplements. NSF takes no equity and awardees keep full ownership of the company and intellectual property.",
+    "what_theyre_looking_for": "Per the Project Pitch page NSF looks for: Impact (could make a difference to people worldwide or revolutionize an industry), Technological Innovation (R&D funding needed to create new products or services based on fundamental science or engineering - NSF does not fund straightforward engineering or incremental product development), Market Pull (evidence of an important unmet customer need) and Scale (foundation for a scalable business). Full proposals are reviewed on three criteria: Intellectual Merit, Broader Impacts and Commercial Impact. The suitability self-check asks for a yes on all six points: breakthrough technical innovation, risky unproven R&D, big impact on nation and economy, technological defensibility, commercial potential, and a highly qualified dedicated team.",
+    "who_can_apply": "U.S. small business concerns (fewer than 500 employees including affiliates), at least 50% owned by U.S. citizens or permanent residents; NSF does not fund companies majority-owned by multiple venture capital firms, private equity firms or hedge funds. All funded work, including consultants and contractors, must take place in the United States. The Principal Investigator must be primarily employed by the company (the solicitation says at least 51 percent; the Get Started page says legally employed at least 20 hours a week), needs no advanced degree, and must commit at least one calendar month per six months of performance. SBIR: one PI, no co-PIs. Limit of one proposal per organization and per PI at a time.",
+    "how_to_apply": "1) Take the Project Suitability Assessment on seedfund.nsf.gov (six yes/no questions). 2) Create an account and submit the Project Pitch online: company information plus four narrative elements (3500 / 3500 / 1750 / 1750 characters). 3) NSF replies by email in about 1-2 months with either an official invitation or a brief explanation. 4) If invited, complete the free registrations (SAM.gov - up to three weeks, must be done before starting in Research.gov; Research.gov - up to 48 hours; SBIR Company Registry for the SBC Control ID) and submit the full Phase I proposal in Research.gov by one of the next two deadlines. 5) External merit review by at least three experts, possible due diligence, and a decision about 5-7 months after the deadline.",
+    "worth_noting": "Limits: one Project Pitch per submission window and only one under review at a time; at most two Project Pitches per company per 12 months; at most three in total for the same project. A declined proposal needs a new invited Project Pitch. NSF funds nearly all technology areas except clinical trials and schedule I controlled substances. Historical Phase I funding rates have been between 10% and 20%. Phase I proposals need at least one and at most three letters of support. URLs are not allowed inside the Project Description. A sister solicitation, NSF 26-511, is a pilot emphasis on scientific instrumentation."
+  },
+  "portal": {
+    "platform": "Project Pitch: NSF Salesforce Experience Cloud site (nsfgov.my.site.com/mywork). Full proposal: Research.gov",
+    "requires_login": true,
+    "may_have_captcha": null,
+    "needs_file_uploads": true,
+    "notes": "The Project Pitch link redirects straight to a login page (nsfgov.my.site.com/mywork/s/login/), so an account must be created before the form can be seen. The login page did not render in the headless browser used for this check (the site's script bundles returned HTTP 400), so CAPTCHA and the exact account-creation steps could not be observed. The pitch itself is text entry; whether the pitch form accepts uploads was not visible. File uploads (PDFs) are definitely required at the full-proposal stage in Research.gov, which needs an active SAM.gov registration, a Research.gov organization registration and an SBIR Company Registry SBC Control ID. Biographical sketches and Current and Pending Support must be produced in SciENcv."
+  },
+  "questions_verification": "official_document",
+  "questions_source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/",
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "Taken from NSF's own pages on 2026-11-24, not from the live form. The four Project Pitch elements, their character limits and their instruction text are verbatim from the 'Prepare your Project Pitch' section of the official Project Pitch page; the same four headings and limits also appear on the older seedfund.nsf.gov/project-pitch/ page with slightly different instruction wording. The six Project Suitability Assessment questions are verbatim from the same page (it is a self-check on the public website, not part of the submitted form). NOT SEEN: the live Project Pitch form is behind a login, so the 'company information' fields NSF says it collects alongside the four elements (and any topic-area dropdown) could not be read and are deliberately not listed. The remaining entries are the required components of the full Phase I proposal (invitation only), verbatim from NSF's Solicitation Information pages that solicitation NSF 26-510 points to; for those, 'help' holds excerpts of NSF's instructions and the Project Description is one PDF whose four required headers are listed as separate entries.",
+  "questions": [
+    {
+      "section": "Project Suitability Assessment (interactive self-check on seedfund.nsf.gov, taken before the Project Pitch; answers are not submitted to NSF)",
+      "text": "Does your company propose to research and develop a technological innovation that requires scientific and technical feasibility resulting from your or your team’s scientific or engineering insights that will create a new product or service distinct from existing products and services in the market.",
+      "help": "1. Breakthrough Technical Innovation",
+      "type": "yes_no",
+      "options": [
+        "Yes.",
+        "No."
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/"
+    },
+    {
+      "section": "Project Suitability Assessment (interactive self-check on seedfund.nsf.gov, taken before the Project Pitch; answers are not submitted to NSF)",
+      "text": "Will the proposed technology require substantial high-risk R&D to achieve practical implementation?",
+      "help": "2. Risky, Unproven Research & Development (R&D)",
+      "type": "yes_no",
+      "options": [
+        "Yes.",
+        "No."
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/"
+    },
+    {
+      "section": "Project Suitability Assessment (interactive self-check on seedfund.nsf.gov, taken before the Project Pitch; answers are not submitted to NSF)",
+      "text": "Does the proposed technology address a problem of significant societal or national importance?",
+      "help": "3. Big Impact on Nation and Economy",
+      "type": "yes_no",
+      "options": [
+        "Yes.",
+        "No."
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/"
+    },
+    {
+      "section": "Project Suitability Assessment (interactive self-check on seedfund.nsf.gov, taken before the Project Pitch; answers are not submitted to NSF)",
+      "text": "Is the proposed technology difficult to replicate, even by experts in the relevant technical disciplines, thereby providing the basis for a sustainable competitive advantage over current technologies and methods?",
+      "help": "4. Technological Defensibility",
+      "type": "yes_no",
+      "options": [
+        "Yes.",
+        "No."
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/"
+    },
+    {
+      "section": "Project Suitability Assessment (interactive self-check on seedfund.nsf.gov, taken before the Project Pitch; answers are not submitted to NSF)",
+      "text": "Is there a significant market opportunity that will allow the creation of a scalable commercial enterprise?",
+      "help": "5. Commercial Potential",
+      "type": "yes_no",
+      "options": [
+        "Yes.",
+        "No."
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/"
+    },
+    {
+      "section": "Project Suitability Assessment (interactive self-check on seedfund.nsf.gov, taken before the Project Pitch; answers are not submitted to NSF)",
+      "text": "Is the proposing team technically qualified to undertake the required R&D and motivated to aggressively pursue a commercial path?",
+      "help": "6. A Highly Qualified, Dedicated Team",
+      "type": "yes_no",
+      "options": [
+        "Yes.",
+        "No."
+      ],
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/"
+    },
+    {
+      "section": "Project Pitch (submitted online at nsfgov.my.site.com/mywork after login) - Project Pitch Key Elements and Instructions",
+      "text": "1. The Technology Innovation. (Up to 3500 characters)",
+      "help": "Explain the core high-risk technical innovation to be researched and developed during a Phase I project. NSF must understand what research and development is required and how this technical innovation differs from and is significantly better than existing solutions. It may also be that the proposed innovation creates a new market. In this case, why will it be adopted? Describing features or benefits of the proposed technology is not sufficient.",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 3500
+      },
+      "source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/"
+    },
+    {
+      "section": "Project Pitch (submitted online at nsfgov.my.site.com/mywork after login) - Project Pitch Key Elements and Instructions",
+      "text": "2. The Technical Objectives and Challenges. (Up to 3500 characters)",
+      "help": "Clearly explain the specific research and development required to prove that the foundational technology works and address the associated challenges explicitly with a high level description of how each will be managed. This section must convey how the proposed work is technically innovative and demonstrate that you have an understanding of the core research and development tasks necessary to prove out the technical innovation.",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 3500
+      },
+      "source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/"
+    },
+    {
+      "section": "Project Pitch (submitted online at nsfgov.my.site.com/mywork after login) - Project Pitch Key Elements and Instructions",
+      "text": "3. The Market Opportunity. (Up to 1750 characters)",
+      "help": "Explain the value of the technological innovation including the potential uses and those who will benefit (who is the customer) and demonstrate a high-level understanding of the competitive landscape and why this innovation has the potential to compete.",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 1750
+      },
+      "source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/"
+    },
+    {
+      "section": "Project Pitch (submitted online at nsfgov.my.site.com/mywork after login) - Project Pitch Key Elements and Instructions",
+      "text": "4. The Company and Team. (Up to 1750 characters)",
+      "help": "Explain the team’s suitability to successfully execute the project based on the proposed innovation and approach to R&D. Provide information on plans to address gaps in the team. Your team should possess the technical expertise, leadership, and commitment necessary to successfully execute the proposed research and development activities. The team should also demonstrate a strong motivation to pursue commercialization and build a successful company around the innovation.",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 1750
+      },
+      "source_url": "https://seedfund.nsf.gov/apply/project-pitch-information/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Cover Sheet",
+      "help": "This section requests general information about the proposal and proposing organization.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "SBIR (or STTR) Questionnaire",
+      "help": "The questionnaire must be filled in completely. Required information includes SBIR/STTR Topic Code, Authorized Company Officer Information, Proposing Small Business Information, SBIR/STTR Award History, Affiliated Companies and Other Information. Phase I and Fast-Track proposers will also be asked for their eight-digit Project Pitch case number. Phase II proposers will also be asked for their seven-digit Phase I award number.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "SBIR (or STTR) Certification Questions",
+      "help": "SBIR (or STTR) Phase I Certification Questions. This form must be filled in completely.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Project Summary [One (1) page MAXIMUM]",
+      "help": "The project summary should be written in the third person, be informative to other people working in the same or related field(s) and insofar as possible, be understandable to a scientifically or technically literate lay reader. It should not be an abstract of the proposal. Do not include proprietary information. The Project Summary should be completed with headers on three separate lines for the “Overview,” “Intellectual Merit” and “Broader Impacts” sections. To be valid, a heading must be on its own line with no other text. The document must be converted to PDF format to be uploaded in Research.gov.",
+      "type": "file",
+      "required": true,
+      "limit": {
+        "unit": "pages",
+        "max": 1
+      },
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Project Summary - Overview",
+      "help": "Describe the potential outcome(s) of the proposed activity in terms of a product, process or service. Provide a list of keywords or phrases that identify the areas of technical expertise to be invoked in reviewing the proposal and the areas of application that are the initial target of the technology. Provide the subtopic name.",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Project Summary - Intellectual Merit",
+      "help": "This section MUST begin with “This Small Business Innovation Research (or Small Business Technology Transfer) Phase I project…” and should address the intellectual merits of the proposed activity. Briefly describe the technical hurdle(s) that will be addressed by the proposed research and development (R&D)(which should be crucial to successful commercialization of the innovation), the goals of the proposed R&D, and a high-level summary of the plan to reach those goals.",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Project Summary - Broader Impacts",
+      "help": "“Broader Impacts” are considered in two ways: 1) The direct impacts of this NSF-funded project on education, the environment, science, society, the nation and/or the world; and 2) the potential commercial impact that might result based on a successful commercial launch of the product or service described in the proposal. Explain the expected outcome in terms of both impacts. For “Commercial Potential,” describe how the proposed project will bring the innovation closer to commercialization under a sustainable business model. In this box, also describe the potential commercial and market impacts that such a commercialization effort would have if successful.",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Project Description [10 pages MINIMUM; 15 pages MAXIMUM]",
+      "help": "The project description is the core of the proposal document. Ensure that the following headers are used: “Intellectual Merits,” “Company/Team,” Broader Impacts,” and “Commercialization Potential.” Questions under each header are provided for your understanding in preparing this document, but it is not required that every question be explicitly (or even implicitly) addressed. Every proposal story is different, and it is up to the proposer to provide a convincing/compelling case for an award recommendation. Note: The incorporation of URLs or websites within the Project Description is not acceptable, and the proposal may be returned without review.",
+      "type": "file",
+      "required": true,
+      "limit": {
+        "unit": "pages",
+        "max": 15
+      },
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-project-description/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Project Description - Intellectual Merit (recommend 7-10 pages, including the technical solution and Research and Development (R&D plan):",
+      "help": "- What is (are) the proposed technical innovation(s)? What is the new scientific/engineering insight that underpins it? (Provide a description of the innovation, including the novel scientific/engineering aspects that enable the realization of the final product.)\n- What are the technical risks/barriers, and how does the proposal address them? What are the go/no-go technical risks/barriers that are unique to your approach and could prevent the innovation from achieving the impact the team intends it to make?\n- Please provide a detailed R&D plan, including a timeline, milestones, risk mitigation and quantitative success criteria. The detailed R&D plan should convey to the reader that the team has subject area mastery of the relevant technical details and show that significant planning has been done to maximize the chance of technical success in Phase I. An R&D plan that consists simply of a generic set of tasks and goals, without giving a substantial perspective and understanding that is unique to this particular effort, may result in the proposal being returned without review.\n- Explain the significance of the Phase I milestones and how they relate to the commercial objectives of the technology.",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-project-description/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Project Description - Company/Team (recommend 1-2 pages):",
+      "help": "- Provide the date when the company was founded and describe the revenue history, if any, for the past three years. Include and explicitly state government funding and private investment in this discussion.\n- Describe the company founders or key participants in this proposed project. What level of effort will these people devote to the proposed Phase I activities? How does the background and experience of the team enhance the credibility of the effort? Describe the company’s core competencies as related to this project, especially for aspects that are not obvious from other documents contained in the proposal. Give evidence that the core company team is committed to building a viable business around the product/service being developed. If your proposal includes consultants or advisors outside the budgeted company personnel, please discuss it briefly.\n- If the company has existing operations, describe how the proposed effort would fit into these activities. Describe your vision for the company and the company’s expected impact over the next five years.",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-project-description/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Project Description - Broader Impacts (recommend 1-2 pages):",
+      "help": "- What is the motivation for the company to take on this project?\n- Clearly articulate how the proposed technology will result in a societal benefit. Which communities will benefit and on what timeline?\n- How will the societal benefits be measured and tracked?\n- What steps are being taken to recognize and minimize any unintended consequences of the proposed technology?",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-project-description/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Project Description - Commercialization Potential (recommend 1-3 pages):",
+      "help": "- Is there a compelling potential business model?\n- What is your initial target market and its size? How have you validated that this market needs your technology?\n- Provide a detailed plan on your pathway to generate revenue and to become a self-sustaining entity. Present a compelling case that the project will significantly advance the readiness of the technology and strengthen its commercial position.\n- Describe the value proposition of the proposed technology.\n- Describe your plans to address regulatory (including permitting) or safety standards and ethical considerations involved in developing your technology and bringing your product or service to market.\n- Describe your intellectual property strategy and provide a brief rationale for why you chose this strategy.\n- Provide a detailed description of the competitive landscape and your sustainable competitive advantage.",
+      "type": "long_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-project-description/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "References Cited",
+      "help": "Provide a comprehensive listing of relevant references, including websites or relevant URLs, patent numbers and other relevant intellectual property citations. A list of references cited must be uploaded into the system. If there are no references cited in the proposal, please indicate this by putting the statement “no references cited” in the module.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Budget(s)",
+      "help": "NSF SBIR/STTR Phase I proposals may be submitted for up to $305,000 in R&D funding intended to support projects for 6-18 months. This amount is inclusive of all direct and indirect costs as well as the small business fee, Technical and Business Assistance (TABA) funding, and the optional, but highly encouraged Innovation Corps (I-Corps). NSF Phase I SBIR proposals require that at least two-thirds of the budget be allocated to the small business.",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-budget/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Budget Justification(s)",
+      "help": "The Budget Justification is uploaded in the “Budget Justification” section of Research.gov as a single PDF file. Provide details for each nonzero line of the budget, including a description and cost estimates. Identify each line item by its budgeted letter/number code (e.g., G.5 for subaward costs). There is a five-page limit for each Budget Justification (including Subaward Budget Justifications, where required).",
+      "type": "file",
+      "required": true,
+      "limit": {
+        "unit": "pages",
+        "max": 5
+      },
+      "doc_kind": "budget",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Facilities, Equipment and Other Resources",
+      "help": "Specify the availability and location of significant equipment, instrumentation, computers and physical facilities necessary to complete the portion of the research that is to be carried out by the proposing firm. If the equipment, instrumentation, computers and facilities for this research are not the property (owned or leased) of the proposing firm, include a statement signed by the owner or lessor which affirms the availability of these facilities for use in the proposed research, reasonable lease or rental costs for their use, and any other associated costs. Upload images of the scanned statements into this section.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Senior/Key Personnel Documents - Biographical Sketch(es)",
+      "help": "A biographical sketch must be provided separately for each individual including the PI, Co-PI (if STTR) and Senior/Key Personnel (individuals with critical expertise who will be working on the project and are employed at the proposing company or at a subaward organization). Proposers must prepare biographical sketch files using SciENcv (Science Experts Network Curriculum Vitae), which will produce a compliant PDF.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "resume",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Senior/Key Personnel Documents - Current and Pending (Other) Support",
+      "help": "All PIs, Co-PIs (if STTR), and Senior/Key Personnel must prepare Current and Pending (Other) Support files using SciENcv. This current SBIR/STTR proposal is considered “pending” and therefore MUST appear in the “Current and Pending Support” form for each PI and Senior/Key Personnel.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Senior/Key Personnel Documents - Collaborators & Other Affiliations (COA) Information (Single Copy Document)",
+      "help": "This document must be provided for the PI, Co-PI (if STTR) and each Senior/Key Person. This document will not be viewable by reviewers but will be used by NSF to manage the selection of reviewers. Download the required Collaborators and Other Affiliations template and follow the instructions.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Senior/Key Personnel Documents - Synergistic Activities",
+      "help": "Each individual identified as a senior/key person must provide a PDF document of up to one page that includes a list of up to five distinct examples that demonstrate the broader impact of the individual’s professional and scholarly activities and focus on the integration and transfer of knowledge as well as its creation.",
+      "type": "file",
+      "required": true,
+      "limit": {
+        "unit": "pages",
+        "max": 1
+      },
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Data Management and Sharing Plan (required, but see guidance)",
+      "help": "Proposers will be required to complete a Research.gov module related to the management of data produced during the SBIR/STTR project. For all SBIR/STTR projects, it is acceptable and sufficient to check the checkbox labeled “A detailed Data Management and Sharing Plan is not needed because the project will not produce data or research products, or for another reason that will require a justification”, and as justification to simply state “All data generated in this NSF SBIR/STTR project is considered proprietary.”",
+      "type": "short_text",
+      "required": true,
+      "limit": null,
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Mentoring Plan (required only when the budget includes a subaward to a research institution and when that subaward budgets funds for postdoctoral scholars)",
+      "help": "Mentoring Plan (Required if applicable). If a proposal requests funding to support postdoctoral scholars or graduate students at a research institution (through a subaward), a mentoring plan MUST be uploaded to the system. The PDF cannot exceed one page.",
+      "type": "file",
+      "required": false,
+      "limit": {
+        "unit": "pages",
+        "max": 1
+      },
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Letters of Support (at least one required; three maximum)",
+      "help": "Letters of Support act as an indication of market validation for the proposed innovation and add significant credibility to the proposed effort. Letters of support can be used to demonstrate that the company has initiated dialogue with relevant stakeholders (e.g., potential customers, strategic partners or investors) for the proposed innovation and that a legitimate business opportunity may exist should the technology prove feasible. The letter(s) must contain affiliation and contact information for the signatory stakeholder. Letters of commitment and supporting documents from consultants and subcontractors (or any personnel identified in the Budget Justification) are NOT considered letters of support.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "letter_of_support",
+      "source_url": "https://seedfund.nsf.gov/solicitation-documents/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "IP (Intellectual Property) Rights Agreement (Required for STTR proposals and strongly recommended for SBIR proposals where there is a subaward to another institution)",
+      "help": "A fully executed Allocation of Intellectual Property Rights agreement is not required with initial proposal submission, but will be required before a recommendation for an award can be made. For proposal submission, if an executed agreement is not in place, please include a draft Allocation of Intellectual Property Rights agreement or a statement that includes the name of the partner research institution stating that an agreement will be provided upon program officer notification of a potential award recommendation.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-documents/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Other Personnel Biographical Information (strongly recommended)",
+      "help": "This optional section can be used to provide additional biographical information about project participants who are not listed as Senior/Key Personnel for the small business or for a subawardee.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "resume",
+      "source_url": "https://seedfund.nsf.gov/solicitation-documents/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Other Supplementary Documents - Company Commercialization History (required, if applicable)",
+      "help": "A company commercialization history is required for all proposers certifying receipt of previous Small Business Innovation Research/Small Business Technology Transfer (SBIR/STTR) program Phase II awards from any federal agency in Question 11 of the SBIR certification questions. All items must be addressed in the format given in the U.S. National Science Foundation commercialization history template.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-documents/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Other Supplementary Documents - Letters of Commitment from Subawardees and Consultants (strongly recommended)",
+      "help": "Please refer to the budget guidance section for details. Each consultant, whether paid or unpaid, must provide a signed statement that confirms availability, time commitment, role in the project and the agreed upon consulting rate.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-documents/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Other Supplementary Documents - Resubmission Change Description (required, if applicable)",
+      "help": "A declined proposal may be resubmitted only after it has undergone substantial revision and only with the receipt of a new invited Project Pitch. The resubmission change description, uploaded in the Other Supplementary Documents, must detail the substantial revisions that have been made to the original submission.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-documents/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "List of Suggested Reviewers (Single Copy Document)",
+      "help": "This optional section can be used to suggest the names of reviewers who might be appropriate to assess the technical and commercial merits of the proposal.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "List of Reviewers Not to Include (Single Copy Document)",
+      "help": "This optional section can be used to suggest names (or even specific affiliations) of reviewers that the proposer prefers not to be involved in the review of their proposal.",
+      "type": "file",
+      "required": false,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    },
+    {
+      "section": "Full Phase I proposal (Research.gov; only after an official Project Pitch invitation) - Proposal Contents, NSF 26-510",
+      "text": "Additional Single Copy Document: ‘Project Pitch’ Invitation (required)",
+      "help": "In this section, proposers must submit a copy of the email invitation from an NSF SBIR/STTR program officer – in response to a submitted Project Pitch – inviting the company to submit a full proposal. Please convert this invitation email to a PDF before uploading.",
+      "type": "file",
+      "required": true,
+      "limit": null,
+      "doc_kind": "other",
+      "source_url": "https://seedfund.nsf.gov/solicitation-proposal/"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://seedfund.nsf.gov/apply/project-pitch-information/",
+      "note": "Project Suitability Assessment questions; Project Pitch key elements, character limits, instructions, submission limits, link to the pitch portal"
+    },
+    {
+      "url": "https://seedfund.nsf.gov/project-pitch/",
+      "note": "Old hint URL; still live, same four elements and limits with older instruction wording"
+    },
+    {
+      "url": "https://seedfund.nsf.gov/apply/get-started/",
+      "note": "Eligibility summary and three-step process"
+    },
+    {
+      "url": "https://seedfund.nsf.gov/apply/full-proposal/",
+      "note": "Full proposal deadlines, registrations (SAM, Research.gov, SBIR Company Registry), current solicitations"
+    },
+    {
+      "url": "https://www.nsf.gov/funding/opportunities/small-business-innovation-research-small-business-technology/nsf26-510/solicitation",
+      "note": "Solicitation NSF 26-510 (posted May 22, 2026): deadlines, award amounts, eligibility, PI rules, Project Pitch limits"
+    },
+    {
+      "url": "https://www.nsf.gov/funding/opportunities/small-business-innovation-research-small-business-technology",
+      "note": "NSF funding opportunity page: upcoming due dates March 4, July 7 and November 3, 2027"
+    },
+    {
+      "url": "https://seedfund.nsf.gov/solicitation-proposal/",
+      "note": "Required components of the full proposal and their limits"
+    },
+    {
+      "url": "https://seedfund.nsf.gov/solicitation-project-description/",
+      "note": "Phase I Project Description headers, prompts and page limits"
+    },
+    {
+      "url": "https://seedfund.nsf.gov/solicitation-documents/",
+      "note": "Phase I Other Supplementary Documents (letters of support etc.)"
+    },
+    {
+      "url": "https://seedfund.nsf.gov/solicitation-budget/",
+      "note": "Phase I budget rules (two-thirds to the small business, I-Corps, TABA)"
+    },
+    {
+      "url": "https://seedfund.nsf.gov/apply/review-decision/",
+      "note": "Review timeline, criteria and historical funding rate"
+    },
+    {
+      "url": "https://seedfund.nsf.gov/critical-information/",
+      "note": "Notice that new Project Pitches are accepted from June 2, 2026"
+    },
+    {
+      "url": "https://seedfund.nsf.gov/what-we-fund/",
+      "note": "Topic areas; exclusion of clinical trials and schedule I controlled substances"
+    },
+    {
+      "url": "https://nsfgov.my.site.com/mywork",
+      "note": "Project Pitch portal; redirects to login, form not visible without an account"
+    }
+  ]
+}

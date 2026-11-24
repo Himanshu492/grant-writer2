@@ -1,0 +1,73 @@
+{
+  "id": "MC",
+  "title": "MassChallenge Healthcare Challenge (now part of the MC Challenge Program, 2026-27 Challenge Cycle)",
+  "funder": "MassChallenge",
+  "program_url": "https://masschallenge.org/2026-2027-challenge-cycle/",
+  "application_url": "https://accelerate.masschallenge.org/dashboard/universal-navigation/getting-started/",
+  "status": "closed",
+  "deadline": null,
+  "deadline_note": "There is no separate '2027 Healthcare Challenge Program' page. The healthcare partner challenges for 2027 ran inside the MC Challenge Program '2026-27 Challenge Cycle': applications opened Oct 19, 2026 and closed Nov 16, 2026 (official page: 'Applications for the 2026-27 Challenge Cycle are now closed'). The next cycle's dates are not published; MassChallenge says new cycles open throughout the year and offers an interest list.",
+  "amount": "No cash award or investment is stated for the Challenge Cycle. MassChallenge says it takes no equity; the value is working with a corporate partner toward a pilot or proof of concept, plus mentorship.",
+  "summary": {
+    "at_a_glance": "MassChallenge no longer runs a stand-alone yearly 'Healthcare Challenge Program' page for 2027. Its healthcare challenges are now part of the MC Challenge Program, where startups are matched with corporate partners that publish challenge statements. The 2026-27 cycle (program February to June 2027) closed to applications on November 16, 2026, and the next opening has not been announced.",
+    "what_they_offer": "A program (February to June 2027 for this cycle) in which selected startups work directly with at least one corporate Challenge Partner on its challenge statement, aiming at design partnerships, pilots, proofs of concept and commercial deals. Also mentorship (including an Executive in Residence in the 2026 healthcare program), a founder curriculum, and networking events. MassChallenge is a nonprofit and states 'we take no equity'. No cash prize is listed for the Challenge Cycle.",
+    "what_theyre_looking_for": "Startups whose solution fits one or more partners' published 2027 challenge statements. Healthcare-related partners in this cycle: MassMutual (six statements, including a 'HealthTech' statement about personal health technologies that help policyowners detect risks early and act on personal health insights), Eli Lilly (copay-claims anomaly recovery; spotting payer coverage changes), and Altus Dental (AI for dental benefit administration). The Hartford (insurance) is also in the cycle. The 2026 Healthcare Challenge page adds that they look for a validated product ready for scaling, ideally with prior corporate pilots, and that they weigh team strength, product/market fit and customer traction as well as funding and revenue.",
+    "who_can_apply": "Per the 2026-27 cycle FAQ: 'pre-seed to Series A startups whose solutions address one or more of our partners' published challenge statements'. Startups from anywhere in the world can apply. At least one founder or C-suite team member must attend the required in-person events in Boston: Matchmaking (January 6 to 8, 2027, finalists only), Kickoff & Orientation (February 9 to 10, 2027) and the close-out event in mid-June 2027.",
+    "how_to_apply": "1) Create a MassChallenge Startup Profile on the Accelerate platform (accelerate.masschallenge.org/accounts/register/), or log in if you already have one. 2) Complete the application for the cycle on Accelerate ('Initial applications take less than 10 minutes'). 3) Evaluation and selection by MassChallenge and partners (November-December 2026 for this cycle). 4) Finalists notified (December 2026) and attend in-person Matchmaking interviews with partners in Boston. 5) Program kickoff (February 2027) through the finale showcase (June 2027). Right now the only available step is the 'MC Challenge Program Interest List' form, so MassChallenge emails you when the next cycle opens.",
+    "worth_noting": "The old hint URL (masschallenge.org/2026-healthcare-challenge-program/) is still live and still says 'The 2026 Healthcare Challenge program applications are now closed'; that was the previous cycle. The current cycle closed 8 days ago (Nov 16, 2026, per the official page; a third-party listing shows Nov 9). Other MassChallenge healthcare programs are also closed for now: BCBSMA Health Equity Business Accelerator 2027 (five startups, $50,000 grant each; closed Nov 16, 2026), Sanofi THRIVE Challenge (closed), and the MC Healthcare & Life Sciences Traction Program for early-stage founders (interest list only). Interest list forms: Challenge Program https://share.hsforms.com/1CiNwMDDnSsiLneBlIPEePw15wok and Traction Program https://share.hsforms.com/1V7-HYMQNRC69Dt5khaJ4xg15wok. Program questions: programs@masschallenge.org."
+  },
+  "portal": {
+    "platform": "MassChallenge Accelerate (custom platform, accelerate.masschallenge.org)",
+    "requires_login": true,
+    "may_have_captcha": true,
+    "needs_file_uploads": null,
+    "notes": "A MassChallenge Startup Profile (account) is required before the application can be seen. The Accelerate site sits behind Cloudflare: the sign-up page showed a 'Performing security verification' bot check (Cloudflare Turnstile) in a headless browser and plain requests were blocked with a 403, so an automated agent may be stopped; a human should log in first. Applications for the cycle are closed, so the form may not be available even after login. The two interest-list forms are HubSpot forms with these fields: First name*, Last name*, Email*, Company/Organization*, Job title*, LinkedIn URL, Primary Industry* (Healthcare & Life Sciences, Security & Resiliency, Sustainable Food Systems, Climate, Global Financial Systems), button 'COUNT ME IN'."
+  },
+  "questions_verification": "not_accessible",
+  "questions_source_url": null,
+  "questions_verified_on": "2026-11-24",
+  "questions_note": "No application questions could be seen. The application lives on the Accelerate platform behind a login (startup profile required) and a Cloudflare bot check, the cycle closed on Nov 16, 2026, and MassChallenge publishes no application preview, question list or PDF on its public site. I did not create an account or try to get past the bot check. The list is left empty on purpose; questions found on third-party sites were not used. The only public form right now is the interest-list sign-up, described in portal.notes; it is not the application.",
+  "questions": [],
+  "sources": [
+    {
+      "url": "https://masschallenge.org/2026-2027-challenge-cycle/",
+      "note": "Official cycle page: applications closed; key dates (open Oct 19, close Nov 16, 2026; kickoff Feb 2027; finale Jun 2027); eligibility FAQ; how to apply via Accelerate"
+    },
+    {
+      "url": "https://masschallenge.org/challenge-program/",
+      "note": "Official Challenge programs page: 2026-2027 cycle partner cards (MassMutual, The Hartford, Eli Lilly, Altus Dental, BCBSMA HEBA, Sanofi THRIVE) with 2027 challenge statements, each marked 'Program closed'"
+    },
+    {
+      "url": "https://masschallenge.org/2026-healthcare-challenge-program/",
+      "note": "Old hint URL: 2026 Healthcare Challenge Program page, applications closed; program description, eligibility guidelines and FAQs"
+    },
+    {
+      "url": "https://masschallenge.org/healthcare-and-life-sciences/",
+      "note": "Official Healthcare & Life Sciences challenge-area page; points to the Challenge programs page"
+    },
+    {
+      "url": "https://masschallenge.org/traction-program/",
+      "note": "Official Traction programs page: MC Healthcare and Life Sciences Traction Program, interest list for next cycle"
+    },
+    {
+      "url": "https://masschallenge.org/founders/",
+      "note": "Official founders page: 'we take no equity'; list of programs currently accepting applications (no healthcare challenge among them)"
+    },
+    {
+      "url": "https://masschallenge.org/heba-2027/",
+      "note": "BCBSMA Health Equity Business Accelerator 2027: $50,000 grant, applications closed Nov 16, 2026"
+    },
+    {
+      "url": "https://accelerate.masschallenge.org/accounts/register/",
+      "note": "Accelerate sign-up page: blocked by Cloudflare bot check (evidence of login + CAPTCHA gate)"
+    },
+    {
+      "url": "https://share.hsforms.com/1CiNwMDDnSsiLneBlIPEePw15wok",
+      "note": "MC Challenge Program Interest List form (fields recorded, not submitted)"
+    },
+    {
+      "url": "https://share.hsforms.com/1V7-HYMQNRC69Dt5khaJ4xg15wok",
+      "note": "MC Traction Program Interest List form (fields recorded, not submitted)"
+    }
+  ]
+}
