@@ -12,6 +12,11 @@ export interface Env {
   DEEPSEEK_BASE_URL: string;
   DEEPSEEK_MODEL_FAST: string;
   DEEPSEEK_MODEL_WRITE: string;
+  /** Cloudflare Access in front of the custom domain (optional): team domain and the application's audience tag. */
+  ACCESS_TEAM_DOMAIN?: string;
+  ACCESS_AUD?: string;
+  /** Address the VM runner uses. Must not be behind Cloudflare Access, which would block the runner. */
+  AGENT_PORTAL_URL?: string;
 }
 
 export type AnswerStatus = 'empty' | 'suggested' | 'draft' | 'approved' | 'skipped';

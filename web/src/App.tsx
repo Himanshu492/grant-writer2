@@ -55,8 +55,9 @@ const NAV = [
 
 export function App() {
   const [user, setUser] = useState<string | null | undefined>(undefined);
+  const [sso, setSso] = useState(false);
   useEffect(() => {
-    api<{ name: string }>('/me').then((r) => setUser(r.name)).catch(() => setUser(null));
+    api<{ name: string; sso?: boolean }>('/me').then((r) => { setUser(r.name); setSso(!!r.sso); }).catch(() => setUser(null));
     const out = () => setUser(null);
     window.addEventListener('gp:signed-out', out);
     return () => window.removeEventListener('gp:signed-out', out);
@@ -79,7 +80,7 @@ export function App() {
         </nav>
         <div className="side-foot">
           <span>Signed in as <b>{user}</b></span>
-          <button className="linkish" onClick={() => api('/logout', { method: 'POST' }).finally(() => setUser(null))}>Sign out</button>
+          {sso ? <a className="linkish" href="/cdn-cgi/access/logout">Sign out</a> : <button className="linkish" onClick={() => api('/logout', { method: 'POST' }).finally(() => setUser(null))}>Sign out</button>}
         </div>
       </aside>
       <main className="main">

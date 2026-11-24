@@ -1,6 +1,6 @@
 import { Hono } from 'hono';
 import type { Env, GrantRow, QuestionRow, SeedGrant } from './types';
-import { type Vars, checkPassword, clearSession, createSession, readSession, requireUser } from './auth';
+import { type Vars, accessIdentity, checkPassword, clearSession, createSession, currentUser, requireUser } from './auth';
 import { draftAnswer, KNOWLEDGE_CATEGORIES, runInference } from './ai';
 import { ACTIVE_RUN_STATUSES, type RunRow, addRunEvent, agentApi } from './agent';
 import {
@@ -55,8 +55,10 @@ app.post('/api/logout', (c) => {
 });
 
 app.get('/api/me', async (c) => {
-  const s = await readSession(c);
-  return s ? c.json({ name: s.name }) : c.json({ error: 'Not signed in' }, 401);
+  const s = await currentUser(c);
+  if (!s) return c.json({ error: 'Not signed in' }, 401);
+  // sso: this address is behind Cloudflare Access, so signing out of the portal alone would sign straight back in.
+  return c.json({ name: s.name, sso: !!(await accessIdentity(c)) });
 });
 
 app.use('/api/*', async (c, next) => {
@@ -560,7 +562,7 @@ app.patch('/api/settings', async (c) => {
 });
 
 app.get('/api/admin/agent-install', (c) => {
-  const origin = new URL(c.req.url).origin;
+  const origin = (c.env.AGENT_PORTAL_URL || new URL(c.req.url).origin).replace(/\/$/, '');
   return c.json({
     command: `curl -fsSL ${origin}/agent/install.sh | bash -s -- ${origin} ${c.env.AGENT_TOKEN}`,
     version: AGENT.version,

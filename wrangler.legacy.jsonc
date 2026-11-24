@@ -7,6 +7,9 @@
   "compatibility_date": "2026-11-01",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
+  // The team uses grants.freehealth.ai (behind Cloudflare Access). The VM runner uses the workers.dev address,
+  // because Access would turn its API calls away.
+  "routes": [{ "pattern": "grants.freehealth.ai", "custom_domain": true }],
   "preview_urls": false,
   "observability": { "enabled": true },
   "d1_databases": [
@@ -26,7 +29,10 @@
   "vars": {
     "DEEPSEEK_BASE_URL": "https://api.deepseek.com",
     "DEEPSEEK_MODEL_FAST": "deepseek-flash",
-    "DEEPSEEK_MODEL_WRITE": "deepseek-v4-pro"
+    "DEEPSEEK_MODEL_WRITE": "deepseek-v4-pro",
+    "AGENT_PORTAL_URL": "https://freehealth-grants-portal.himanshu-1ce.workers.dev",
+    "ACCESS_TEAM_DOMAIN": "freehealth-grants.cloudflareaccess.com",
+    "ACCESS_AUD": "04c00f8a028baa942175938ab6ac437c81274cd94834902428aab2fd246950de"
   }
   // Secrets (set with `wrangler secret put`, never committed):
   //   PORTAL_PASSWORD   - team password for the dashboard

@@ -79,6 +79,9 @@ migrations/        D1 schema
 
 - **D1** `freehealth-grants-portal` – grants, questions (+answers), knowledge, documents, runs
 - **R2** `freehealth-grants-portal` – uploaded documents and run screenshots (separate from the old bucket)
+- **Addresses** – the team uses `grants.freehealth.ai`, which sits behind Cloudflare Access; a valid Access sign-in is
+  accepted as the portal login (no team password needed there). The VM runner uses the `workers.dev` address
+  (`AGENT_PORTAL_URL`), because Access would turn its API calls away; that address asks for the team password.
 - **Cron** every 5 minutes – applies new grant data, re-checks open questions, fails abandoned runs
 
 ## Development and deployment
