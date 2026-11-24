@@ -1,13 +1,13 @@
 {
   "id": "NYV",
-  "title": "NY Ventures Pre-Seed & Seed Fund (Pre-Seed and Seed Matching Fund Program)",
+  "title": "New York Ventures",
   "funder": "Empire State Development (New York Ventures)",
   "program_url": "https://esd.ny.gov/pre-seed-and-seed-matching-fund-program",
   "application_url": "https://nyventuresapply.esd.ny.gov/submit/8ed31c5f-99e0-46b3-8d69-6ac3cb59fd91/ny-ventures-pre-seed-seed-fund",
   "status": "rolling",
   "deadline": null,
   "deadline_note": "ESD's FAQ: \"We are accepting applications on a rolling basis, and there is no fixed deadline to apply at this time.\"",
-  "amount": "$50,000 to $250,000 equity investment, matched at least $1 for $1 by qualified private investors (dilutive; not a grant)",
+  "amount": "$50K to $250K matched equity",
   "summary": {
     "at_a_glance": "New York State's venture arm co-invests $50,000 to $250,000 in pre-seed and seed-stage companies, on the same terms as the private investors in the round, with at least $1 of qualified private investment for every $1 NY Ventures invests. It is an investment, not a grant, funded through the federal State Small Business Credit Initiative (SSBCI). Applications are rolling through a Submittable portal.",
     "what_they_offer": "Equity investment of $50,000 up to $250,000 as convertible debt, SAFE or equity financing, on the same terms as the private capital being matched. Pro bono legal, accounting and financial help for applicants through LaunchNY and Reitler Kailas & Rosenblatt LLP, and weekly office hours on Mondays.",
@@ -45,5 +45,7 @@
       "url": "https://nyventuresapply.esd.ny.gov/submit",
       "note": "Submittable instructions page: account email rule, drafts, withdraw/edit, file types"
     }
-  ]
+  ],
+  "full_title": "NY Ventures Pre-Seed & Seed Fund (Pre-Seed and Seed Matching Fund Program)",
+  "amount_detail": "$50,000 to $250,000 equity investment, matched at least $1 for $1 by qualified private investors (dilutive; not a grant)"
 }

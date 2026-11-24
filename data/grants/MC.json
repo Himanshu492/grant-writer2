@@ -1,13 +1,13 @@
 {
   "id": "MC",
-  "title": "MassChallenge Healthcare Challenge (now part of the MC Challenge Program, 2026-27 Challenge Cycle)",
+  "title": "MassChallenge Healthcare",
   "funder": "MassChallenge",
   "program_url": "https://masschallenge.org/2026-2027-challenge-cycle/",
   "application_url": "https://accelerate.masschallenge.org/dashboard/universal-navigation/getting-started/",
   "status": "closed",
   "deadline": null,
   "deadline_note": "There is no separate '2027 Healthcare Challenge Program' page. The healthcare partner challenges for 2027 ran inside the MC Challenge Program '2026-27 Challenge Cycle': applications opened Oct 19, 2026 and closed Nov 16, 2026 (official page: 'Applications for the 2026-27 Challenge Cycle are now closed'). The next cycle's dates are not published; MassChallenge says new cycles open throughout the year and offers an interest list.",
-  "amount": "No cash award or investment is stated for the Challenge Cycle. MassChallenge says it takes no equity; the value is working with a corporate partner toward a pilot or proof of concept, plus mentorship.",
+  "amount": "Corporate pilot, no cash",
   "summary": {
     "at_a_glance": "MassChallenge no longer runs a stand-alone yearly 'Healthcare Challenge Program' page for 2027. Its healthcare challenges are now part of the MC Challenge Program, where startups are matched with corporate partners that publish challenge statements. The 2026-27 cycle (program February to June 2027) closed to applications on November 16, 2026, and the next opening has not been announced.",
     "what_they_offer": "A program (February to June 2027 for this cycle) in which selected startups work directly with at least one corporate Challenge Partner on its challenge statement, aiming at design partnerships, pilots, proofs of concept and commercial deals. Also mentorship (including an Executive in Residence in the 2026 healthcare program), a founder curriculum, and networking events. MassChallenge is a nonprofit and states 'we take no equity'. No cash prize is listed for the Challenge Cycle.",
@@ -69,5 +69,7 @@
       "url": "https://share.hsforms.com/1V7-HYMQNRC69Dt5khaJ4xg15wok",
       "note": "MC Traction Program Interest List form (fields recorded, not submitted)"
     }
-  ]
+  ],
+  "full_title": "MassChallenge Healthcare Challenge (now part of the MC Challenge Program, 2026-27 Challenge Cycle)",
+  "amount_detail": "No cash award or investment is stated for the Challenge Cycle. MassChallenge says it takes no equity; the value is working with a corporate partner toward a pilot or proof of concept, plus mentorship."
 }

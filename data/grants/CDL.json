@@ -1,13 +1,13 @@
 {
   "id": "CDL",
-  "title": "Creative Destruction Lab (CDL) Program",
+  "title": "Creative Destruction Lab",
   "funder": "Creative Destruction Lab (nonprofit, founded at the University of Toronto's Rotman School of Management)",
   "program_url": "https://creativedestructionlab.com/program/",
   "application_url": "https://creativedestructionlab.com/application-triage/",
   "status": "closed",
   "deadline": null,
   "deadline_note": "Applications for the 2026/27 program closed July 24, 2026 at 11:59PM ET. No dates for the 2027/28 cycle are published as of 2026-11-24.",
-  "amount": "No funding from CDL itself; no fees and no equity taken. Mentorship program; mentors who are investors 'often invest', but 'there is no guaranteed investment'",
+  "amount": "Mentorship, no funding",
   "summary": {
     "at_a_glance": "CDL is a nonprofit, objectives-based mentorship program for seed-stage science- and technology-based companies, run at 17 locations in 10 countries across about 26 streams. It charges no fees and takes no equity. The 2026/27 intake is closed; the next cycle has not been announced.",
     "what_they_offer": "Focused mentorship from accomplished entrepreneurs and investors, technical guidance from leading scientists and engineers, personalized 8-week objectives, and access to CDL's global network of founders, funders and researchers. Accepted startups attend up to five full-day sessions between October and June. CDL does not fund ventures directly.",
@@ -503,5 +503,7 @@
       "url": "https://creativedestructionlab.com/blog/calling-all-founders-with-massive-ideas-2021/",
       "note": "Historical timing only: 2021/22 applications opened April 15, 2021"
     }
-  ]
+  ],
+  "full_title": "Creative Destruction Lab (CDL) Program",
+  "amount_detail": "No funding from CDL itself; no fees and no equity taken. Mentorship program; mentors who are investors 'often invest', but 'there is no guaranteed investment'"
 }

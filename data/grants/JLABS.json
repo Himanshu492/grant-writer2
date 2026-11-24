@@ -1,13 +1,13 @@
 {
   "id": "JLABS",
-  "title": "JLABS (Johnson & Johnson Innovation – JLABS) residency / virtual membership",
+  "title": "JLABS",
   "funder": "Johnson & Johnson Innovation – JLABS",
   "program_url": "https://jnjinnovation.com/jlabs",
   "application_url": "https://jlabsresidency.smapply.io/",
   "status": "rolling",
   "deadline": null,
   "deadline_note": "No deadline is published for JLABS residency or virtual membership; the application portal is open and J&J says 'After you submit your application, you will hear back from our selection committee within 2-3 weeks'. Separately, no QuickFire Challenge is open as of 2026-11-24 (all 109 listed challenges show 'Closed').",
-  "amount": "No cash award – incubator residency or virtual membership (lab/office space access, mentorship, investor and resource hubs); 'no-strings-attached', founders keep their IP. Residency fees are not stated on the public pages.",
+  "amount": "Incubator residency, no cash",
   "summary": {
     "at_a_glance": "JLABS is Johnson & Johnson's global incubator network, giving startups access to lab space, resources, expertise, industry connections and entrepreneurial programs through physical residency or virtual membership. It is not a grant: there is no funding in the residency itself, and J&J describes it as a no-strings-attached model. Applications go through a SurveyMonkey Apply portal that requires an account.",
     "what_they_offer": "Per the official pages: capital-efficient lab space and specialized equipment, office and collaboration space, the JPALS mentorship network (mentors from across Johnson & Johnson), an Investor Hub, a Resource Hub (third-party vendor services and pricing), the JLABS Portfolio Navigator, workshops, networking events and webinars. Program options are in-person residency, virtual membership (for startups that do not require lab or office space) and QuickFire Challenges. 'JLABS is a no-strings-attached model, which means entrepreneurs are free to develop their science while holding on to their intellectual property.'",
@@ -61,5 +61,7 @@
       "url": "https://jnjinnovation.com/innovation-challenges/Polyphonic-AI-Fund-for-Surgery-QuickFire-Challenge",
       "note": "Most recent AI-related QuickFire Challenge – closed; timeline and award"
     }
-  ]
+  ],
+  "full_title": "JLABS (Johnson & Johnson Innovation – JLABS) residency / virtual membership",
+  "amount_detail": "No cash award – incubator residency or virtual membership (lab/office space access, mentorship, investor and resource hubs); 'no-strings-attached', founders keep their IP. Residency fees are not stated on the public pages."
 }

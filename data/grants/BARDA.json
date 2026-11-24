@@ -1,13 +1,13 @@
 {
   "id": "BARDA",
-  "title": "BARDA DRIVe EZ-BAA (Easy Broad Agency Announcement, EZ-BAA-22-100-SOL-00003)",
+  "title": "BARDA DRIVe EZ-BAA",
   "funder": "U.S. Department of Health and Human Services — ASPR / Biomedical Advanced Research and Development Authority (BARDA), Division of Research, Innovation, and Ventures (DRIVe)",
   "program_url": "https://sam.gov/opp/42afa51fe02949309a6bdd4ce111f1c4/view",
   "application_url": "https://bdr.hhs.gov/",
   "status": "closed",
   "deadline": null,
   "deadline_note": "Not rolling and not open: the BDR submission portal states 'All EZ-BAA areas of interest are currently closed.' (seen 2026-11-24). The last amendment on SAM.gov (#037, April 22, 2025) closed the remaining Areas of Interest effective immediately. The umbrella announcement itself stays on SAM.gov until October 18, 2027, and only Plus (+) Phase abstracts from prior EZ-BAA awardees are still accepted. A new AOI would be announced by a new amendment on SAM.gov.",
-  "amount": "Initial award under $750,000 in U.S. Government funding (contract or OTA — no grants), 12-24 months, with a Respondent Resource Contribution of at least 30-50% of total project value; Plus (+) Phase follow-on up to $20M for prior awardees only",
+  "amount": "Under $750K with 30-50% cost share",
   "summary": {
     "at_a_glance": "The EZ-BAA is BARDA DRIVe's streamlined contract solicitation for early health-security R&D: a short abstract first, then an invited full proposal. As of November 24, 2026 every Area of Interest (AOI) is closed to new applicants, so there is nothing we can submit to right now. The old URL drive.hhs.gov/ezbaa.html now redirects to DRIVe's general partnering page, which no longer lists the EZ-BAA at all.",
     "what_they_offer": "Contracts (most initial awards firm fixed price) or Other Transaction Agreements — explicitly no grants or cooperative agreements. Initial awards must request less than $750,000 in U.S. Government funding and are expected to run 12-24 months. Awardees may later apply to the Plus (+) Phase for the same technology (capped at $20 million; the EZ-BAA says most are expected to be $2-10 million). BARDA expects only an estimated 5-10% of abstract submitters to receive a contract.",
@@ -919,5 +919,7 @@
       "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d1b4dc337cd942e5bb3bad852b71c14c/download",
       "note": "Amendment 008 (May 1, 2023): revised Plus (+) Phase language"
     }
-  ]
+  ],
+  "full_title": "BARDA DRIVe EZ-BAA (Easy Broad Agency Announcement, EZ-BAA-22-100-SOL-00003)",
+  "amount_detail": "Initial award under $750,000 in U.S. Government funding (contract or OTA — no grants), 12-24 months, with a Respondent Resource Contribution of at least 30-50% of total project value; Plus (+) Phase follow-on up to $20M for prior awardees only"
 }

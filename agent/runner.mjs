@@ -290,7 +290,8 @@ Rules:
 2. Match fields to answers by meaning: the form's wording may differ slightly from the sheet's question. For choice fields pick the option that equals the answer.
 3. Fields whose action is "leave_blank" stay empty. Fields on the page that are NOT in the answer sheet: leave them empty and list them in "unknown_fields"
    as {"text":"exact label","type":"short_text|long_text|single_select|multi_select|yes_no|number|date|url|email|phone|file","options":[...],"required":true|false}.
-4. Hand over to a human (status "needs_human", with a clear "reason" saying exactly what they must do) whenever you meet: a login or sign-in page,
+4. Hand over to a human (status "needs_human", with a "reason" of one short sentence saying exactly what they must do, for example
+   "Sign in to the portal" or "Solve the CAPTCHA") whenever you meet: a login or sign-in page,
    account creation / registration, a password field, a CAPTCHA or "I'm not a robot" check, email / SMS verification codes, payment, a legal signature,
    or anything else that needs a person. Never type into password fields, never try to solve or bypass a CAPTCHA, never create an account.
 5. Multi-step forms: fill the visible step, then click Next / Continue / Save and continue. Check for validation errors after each step and fix what you can.

@@ -8,7 +8,7 @@ import type { Env } from './types';
  * a two-step form, selects, checkboxes, a character limit, a file upload and a final submit.
  * Nothing entered here goes anywhere except the sandbox_submissions table.
  */
-export const sandbox = new Hono<{ Bindings: Env }>();
+export const sandbox = new Hono<{ Bindings: Env }>({ strict: false });
 
 const page = (title: string, body: string) => `<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">

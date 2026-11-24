@@ -95,6 +95,8 @@ Rules:
 - confidence "high" = stated directly in the knowledge base; "medium" = assembled or condensed from it. If you would have to guess, it is NOT answerable.
 - If not answerable: set answerable=false and write "missing": one short sentence telling the team exactly what information to provide.
 - "basis": a few words naming which knowledge the answer came from.
+- "missing" must be short: at most 12 words, naming only the fact needed (for example "CEO email address").
+- Never use em dashes or en dashes anywhere; use commas or full stops.
 
 Return JSON: {"results":[{"id":"...","answerable":true,"answer":"...","confidence":"high","basis":"...","missing":""}]} with one result per question id.`;
 
@@ -115,6 +117,11 @@ function describeQuestion(q: QuestionRow, grantTitle: string): Record<string, un
   if (options.length) d.options = options;
   if (q.limit_unit && q.limit_max) d.limit = `${q.limit_max} ${q.limit_unit}`;
   return d;
+}
+
+/** Our generated text never contains em or en dashes. */
+export function noDash(s: string): string {
+  return s.replace(/\s*[\u2014\u2013]\s*/g, ', ').replace(/,\s*,/g, ',');
 }
 
 export interface InferenceSummary {
@@ -167,7 +174,7 @@ export async function runInference(env: Env, opts: { grantId?: string; maxQuesti
       const stmts: D1PreparedStatement[] = [];
       for (const q of batch) {
         const r = byId.get(q.id);
-        const answer = (r?.answer ?? '').trim();
+        const answer = noDash((r?.answer ?? '').trim());
         const options = parseJson<string[]>(q.options_json, []);
         const optionOk = !options.length || q.type === 'multi_select'
           ? true
@@ -181,12 +188,12 @@ export async function runInference(env: Env, opts: { grantId?: string; maxQuesti
             `UPDATE questions SET answer=?, answer_status=?, answer_origin='inferred', answer_confidence=?, answer_basis=?, missing_info=NULL,
                inferred_kb_version=?, updated_at=datetime('now'), updated_by='knowledge base'
              WHERE id=? AND answer_status='empty'`,
-          ).bind(answer, approve ? 'approved' : 'suggested', r!.confidence!, (r!.basis ?? '').slice(0, 300), version, q.id));
+          ).bind(answer, approve ? 'approved' : 'suggested', r!.confidence!, noDash(r!.basis ?? '').slice(0, 300), version, q.id));
         } else {
           summary.still_missing += 1;
           stmts.push(env.DB.prepare(
             `UPDATE questions SET missing_info=?, inferred_kb_version=? WHERE id=? AND answer_status='empty'`,
-          ).bind((r?.missing ?? '').slice(0, 400) || null, version, q.id));
+          ).bind(noDash(r?.missing ?? '').slice(0, 200) || null, version, q.id));
         }
       }
       if (stmts.length) await env.DB.batch(stmts);
@@ -211,6 +218,8 @@ Rules:
 - Tailor emphasis to what the funder says it looks for, without flattery and without claiming things that are not in the knowledge base.
 - Stay within the limit if one is given (aim for 85-95% of it). With no limit, be as long as the question deserves and no longer.
 - For select questions answer with the exact option label(s).
+- Never use em dashes or en dashes; use commas or full stops. Write like a founder, not like marketing copy.
+- Each "missing" item is at most 8 words.
 
 Return JSON: {"answer":"...","missing":["..."],"basis":"a few words on which knowledge was used"}`;
 
@@ -249,9 +258,9 @@ export async function draftAnswer(env: Env, q: QuestionRow, grant: GrantRow, gui
     temperature: 0.4,
   });
   return {
-    answer: String(out.answer ?? '').trim(),
-    missing: Array.isArray(out.missing) ? out.missing.map(String).filter(Boolean) : [],
-    basis: String(out.basis ?? ''),
+    answer: noDash(String(out.answer ?? '').trim()),
+    missing: Array.isArray(out.missing) ? out.missing.map((m) => noDash(String(m))).filter(Boolean) : [],
+    basis: noDash(String(out.basis ?? '')),
   };
 }
 

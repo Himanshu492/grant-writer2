@@ -1,9 +1,10 @@
 import type { Context, Next } from 'hono';
 import { getCookie, setCookie, deleteCookie } from 'hono/cookie';
 import type { Env } from './types';
+import { getSetting } from './data';
 import { timingSafeEqual } from './util';
 
-export type Vars = { user: string };
+export type Vars = { user: string; email: string };
 type Ctx = Context<{ Bindings: Env; Variables: Vars }>;
 
 const COOKIE = 'gp_session';
@@ -15,8 +16,10 @@ async function hmac(secret: string, data: string): Promise<string> {
   return btoa(String.fromCharCode(...new Uint8Array(sig))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
 
-export async function createSession(c: Ctx, name: string): Promise<void> {
-  const payload = btoa(unescape(encodeURIComponent(JSON.stringify({ n: name, e: Math.floor(Date.now() / 1000) + MAX_AGE }))));
+export interface Person { name: string; email: string }
+
+export async function createSession(c: Ctx, who: Person): Promise<void> {
+  const payload = btoa(unescape(encodeURIComponent(JSON.stringify({ n: who.name, m: who.email, e: Math.floor(Date.now() / 1000) + MAX_AGE }))));
   const sig = await hmac(c.env.SESSION_SECRET, payload);
   setCookie(c, COOKIE, `${payload}.${sig}`, { httpOnly: true, secure: true, sameSite: 'Lax', path: '/', maxAge: MAX_AGE });
 }
@@ -25,7 +28,7 @@ export function clearSession(c: Ctx): void {
   deleteCookie(c, COOKIE, { path: '/' });
 }
 
-export async function readSession(c: Ctx): Promise<{ name: string } | null> {
+async function readSession(c: Ctx): Promise<Person | null> {
   const raw = getCookie(c, COOKIE);
   if (!raw || !c.env.SESSION_SECRET) return null;
   const [payload, sig] = raw.split('.');
@@ -33,12 +36,38 @@ export async function readSession(c: Ctx): Promise<{ name: string } | null> {
   const expect = await hmac(c.env.SESSION_SECRET, payload);
   if (!timingSafeEqual(sig, expect)) return null;
   try {
-    const data = JSON.parse(decodeURIComponent(escape(atob(payload)))) as { n: string; e: number };
-    if (data.e < Date.now() / 1000) return null;
-    return { name: data.n };
+    const data = JSON.parse(decodeURIComponent(escape(atob(payload)))) as { n: string; m?: string; e: number };
+    if (data.e < Date.now() / 1000 || !data.m) return null;
+    return { name: data.n, email: data.m.toLowerCase() };
   } catch {
     return null;
   }
+}
+
+// ---------- who is allowed in ----------
+
+export const DEV_EMAIL = 'dev@localhost';
+let allowCache: { at: number; list: string[] } | null = null;
+
+/** The people allowed to use the portal. Edited in Settings; until then it comes from the ALLOWED_EMAILS secret. */
+export async function allowedEmails(env: Env, fresh = false): Promise<string[]> {
+  if (!fresh && allowCache && Date.now() - allowCache.at < 20_000) return allowCache.list;
+  const saved = await getSetting(env, 'allowed_emails', '');
+  let list: string[] = [];
+  try { list = saved ? (JSON.parse(saved) as string[]) : []; } catch { /* fall through */ }
+  if (!list.length) list = (env.ALLOWED_EMAILS ?? '').split(',');
+  list = [...new Set(list.map((e) => e.trim().toLowerCase()).filter(Boolean))];
+  allowCache = { at: Date.now(), list };
+  return list;
+}
+
+export function forgetAllowedEmails(): void {
+  allowCache = null;
+}
+
+async function isAllowed(env: Env, email: string): Promise<boolean> {
+  if (email === DEV_EMAIL) return env.DEV_PASSWORD_LOGIN === '1';
+  return (await allowedEmails(env)).includes(email.toLowerCase());
 }
 
 // ---------- Cloudflare Access (single sign-on on the custom domain) ----------
@@ -87,27 +116,36 @@ export async function accessIdentity(c: Ctx): Promise<{ email: string; name: str
   }
 }
 
-/** The signed-in person: an existing portal session, or a valid Cloudflare Access sign-in (which then gets a session). */
-export async function currentUser(c: Ctx): Promise<{ name: string } | null> {
-  const s = await readSession(c);
-  if (s) return s;
-  if (!c.env.SESSION_SECRET) return null;
+export type Who = { ok: true; person: Person } | { ok: false; denied?: string };
+
+/**
+ * Who is making this request. People sign in with Google through Cloudflare Access; the portal then checks the
+ * email against its own short list on every request, so removing someone takes effect immediately.
+ */
+export async function currentUser(c: Ctx): Promise<Who> {
+  const session = await readSession(c);
+  if (session && (await isAllowed(c.env, session.email))) return { ok: true, person: session };
+  if (!c.env.SESSION_SECRET) return { ok: false };
   const id = await accessIdentity(c);
-  if (!id) return null;
-  await createSession(c, id.name);
-  return { name: id.name };
+  if (!id) return { ok: false, denied: session?.email };
+  const email = id.email.toLowerCase();
+  if (!(await isAllowed(c.env, email))) return { ok: false, denied: email };
+  const person = { name: id.name, email };
+  await createSession(c, person);
+  return { ok: true, person };
 }
 
-/** Everything under /api (except login) needs a signed-in person. */
+/** Everything under /api (except the sign-in endpoints) needs one of the allowed people. */
 export async function requireUser(c: Ctx, next: Next) {
-  const s = await currentUser(c);
-  if (!s) return c.json({ error: 'Not signed in' }, 401);
+  const who = await currentUser(c);
+  if (!who.ok) return who.denied ? c.json({ error: 'no_access', email: who.denied }, 403) : c.json({ error: 'Not signed in' }, 401);
   // Cookie auth + state-changing request: only accept same-origin calls.
   if (c.req.method !== 'GET' && c.req.method !== 'HEAD') {
     const origin = c.req.header('origin');
     if (origin && new URL(origin).host !== new URL(c.req.url).host) return c.json({ error: 'Cross-origin request refused' }, 403);
   }
-  c.set('user', s.name);
+  c.set('user', who.person.name);
+  c.set('email', who.person.email);
   await next();
 }
 
@@ -119,6 +157,7 @@ export async function requireAgent(c: Context<{ Bindings: Env }>, next: Next) {
   await next();
 }
 
-export function checkPassword(env: Env, password: string): boolean {
-  return !!env.PORTAL_PASSWORD && timingSafeEqual(password, env.PORTAL_PASSWORD);
+/** Local development only. Production has no password: sign-in is Google through Cloudflare Access. */
+export function checkDevPassword(env: Env, password: string): boolean {
+  return env.DEV_PASSWORD_LOGIN === '1' && !!env.PORTAL_PASSWORD && timingSafeEqual(password, env.PORTAL_PASSWORD);
 }

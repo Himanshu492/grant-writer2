@@ -31,11 +31,12 @@
     "DEEPSEEK_MODEL_FAST": "deepseek-flash",
     "DEEPSEEK_MODEL_WRITE": "deepseek-v4-pro",
     "AGENT_PORTAL_URL": "https://freehealth-grants-portal.himanshu-1ce.workers.dev",
+    "PUBLIC_URL": "https://grants.freehealth.ai",
     "ACCESS_TEAM_DOMAIN": "freehealth-grants.cloudflareaccess.com",
     "ACCESS_AUD": "04c00f8a028baa942175938ab6ac437c81274cd94834902428aab2fd246950de"
   }
   // Secrets (set with `wrangler secret put`, never committed):
-  //   PORTAL_PASSWORD   - team password for the dashboard
+  //   ALLOWED_EMAILS    - comma-separated emails allowed in until the list is edited in Settings
   //   SESSION_SECRET    - random string used to sign login cookies
   //   AGENT_TOKEN       - bearer token the VM browser-agent runner uses
   //   DEEPSEEK_API_KEY  - DeepSeek key for "Draft with AI" and knowledge inference

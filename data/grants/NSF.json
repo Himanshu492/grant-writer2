@@ -1,13 +1,13 @@
 {
   "id": "NSF",
-  "title": "America's Seed Fund powered by NSF (NSF SBIR/STTR Phase I) - Project Pitch",
+  "title": "NSF Seed Fund",
   "funder": "U.S. National Science Foundation (Directorate for Technology, Innovation and Partnerships)",
   "program_url": "https://seedfund.nsf.gov/",
   "application_url": "https://nsfgov.my.site.com/mywork",
   "status": "rolling",
   "deadline": "2027-03-04",
   "deadline_note": "Project Pitch: accepted anytime (new pitches accepted again since June 2, 2026; reply in about 1-2 months). The date given is the next FULL-proposal deadline, which only matters once invited: March 4, 2027, 5 p.m. submitter's local time. Later deadlines: July 7, 2027 and November 3, 2027 (then first Thursday in March / first Wednesday in July / first Wednesday in November each year). An invitation is valid for the next two submission deadlines.",
-  "amount": "Phase I: up to $305,000 for 6-18 months, no equity taken (Phase II up to $1,250,000; up to $2 million per company in total)",
+  "amount": "Phase I up to $305K, no equity",
   "summary": {
     "at_a_glance": "Non-dilutive federal R&D funding for startups building deep technology with real technical risk. Phase I applicants must first submit a short Project Pitch; only companies that receive an official invitation may submit the full Phase I proposal under solicitation NSF 26-510. The program was relaunched in 2026 after Congress reauthorized SBIR/STTR.",
     "what_they_offer": "Phase I grant of up to $305,000 for 6-18 months; NSF states this amount is inclusive of all direct and indirect costs, the small business fee, Technical and Business Assistance (TABA, up to $6,500 encouraged) and the optional but highly encouraged I-Corps training (budget up to $25,000). Phase II up to $1,250,000 (typically 24 months), Fast-Track about $1.55 million, plus supplements. NSF takes no equity and awardees keep full ownership of the company and intellectual property.",
@@ -525,5 +525,7 @@
       "url": "https://nsfgov.my.site.com/mywork",
       "note": "Project Pitch portal; redirects to login, form not visible without an account"
     }
-  ]
+  ],
+  "full_title": "America's Seed Fund powered by NSF (NSF SBIR/STTR Phase I) - Project Pitch",
+  "amount_detail": "Phase I: up to $305,000 for 6-18 months, no equity taken (Phase II up to $1,250,000; up to $2 million per company in total)"
 }

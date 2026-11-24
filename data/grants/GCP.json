@@ -1,13 +1,13 @@
 {
   "id": "GCP",
-  "title": "Google for Startups Cloud Program",
+  "title": "Google for Startups Cloud",
   "funder": "Google Cloud (Google)",
   "program_url": "https://cloud.google.com/startup",
   "application_url": "https://cloud.google.com/startup/apply",
   "status": "rolling",
   "deadline": null,
   "deadline_note": "Rolling: no cohorts and no published deadline; apply any time. Google's FAQ says most applicants get an acceptance or rejection email within 5-7 days (10 days or more if information is missing).",
-  "amount": "Google Cloud credits, not cash: Start tier up to $2,000 (1 year); Scale tier up to $200,000 over 2 years; Scale tier for AI startups up to $350,000 over 2 years",
+  "amount": "Up to $350K in cloud credits",
   "summary": {
     "at_a_glance": "Google Cloud's startup credits program. One application; Google matches the startup to a tier (Start, Scale, or Scale for AI startups) based on funding, age and prior credit usage. It is a cloud-credits perk, not a grant or investment, and applications are rolling.",
     "what_they_offer": "Start tier: up to $2,000 USD in Google Cloud credits valid for one year, $200 Google Skills credits, Google Workspace Business Plus at no extra cost for 12 months for new signups. Scale tier: up to $200,000 USD in Google Cloud credits (Year 1: 100% up to $100,000; Year 2: 20% up to an additional $100,000), $500 Google Skills credits, Workspace Business Plus for 12 months, $600 monthly Google Maps Platform credits (separate application), up to $12,000 in Enhanced Support credits for one year, a dedicated Startup Success Manager and Startup Customer Engineers. AI startups on the Scale tier: Year 1 is 100% up to $250,000, for a total of up to $350,000 over 2 years. Credits cover Google first-party pay-as-you-go Cloud products, including Gemini and Gemma; third-party models and Marketplace / Model Garden third-party products are not covered.",
@@ -57,5 +57,7 @@
       "url": "https://cloud.google.com/startup/apply",
       "note": "Application URL; confirmed it redirects to Google sign-in (HTTP 302 to accounts.google.com) with no form visible"
     }
-  ]
+  ],
+  "full_title": "Google for Startups Cloud Program",
+  "amount_detail": "Google Cloud credits, not cash: Start tier up to $2,000 (1 year); Scale tier up to $200,000 over 2 years; Scale tier for AI startups up to $350,000 over 2 years"
 }

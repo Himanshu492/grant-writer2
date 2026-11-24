@@ -1,6 +1,7 @@
 import { useEffect, useState, type FormEvent } from 'react';
 import { NavLink, Navigate, Route, Routes } from 'react-router-dom';
-import { api } from './api';
+import { ApiError, api } from './api';
+import { AgentDock } from './components/AgentDock';
 import { Dashboard } from './pages/Dashboard';
 import { Grants } from './pages/Grants';
 import { GrantDetail } from './pages/GrantDetail';
@@ -10,82 +11,99 @@ import { Documents } from './pages/Documents';
 import { Applications } from './pages/Applications';
 import { Settings } from './pages/Settings';
 
-function Login({ onDone }: { onDone: (name: string) => void }) {
-  const [name, setName] = useState(localStorage.getItem('gp:name') ?? '');
+interface Me { name: string; email: string; dev?: boolean }
+type Gate = { kind: 'loading' } | { kind: 'in'; me: Me } | { kind: 'out'; public_url: string | null; dev_login: boolean; token_seen: boolean } | { kind: 'denied'; email: string };
+
+function DevLogin({ onDone }: { onDone: () => void }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const [busy, setBusy] = useState(false);
   async function submit(e: FormEvent) {
     e.preventDefault();
-    setBusy(true);
-    setError('');
     try {
-      const res = await api<{ name: string }>('/login', { body: { name, password } });
-      localStorage.setItem('gp:name', res.name);
-      onDone(res.name);
+      await api('/login', { body: { name: 'Developer', password } });
+      onDone();
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not sign in');
-    } finally {
-      setBusy(false);
     }
   }
   return (
-    <div className="login-wrap">
-      <form className="login" onSubmit={submit}>
-        <div className="brand big"><span className="logo">✓</span> Grants Portal</div>
-        <p className="muted">One place for company knowledge, grant questions and applications.</p>
-        <label>Your name<input value={name} onChange={(e) => setName(e.target.value)} placeholder="e.g. Alex" autoComplete="name" required /></label>
-        <label>Team password<input type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" required /></label>
-        {error && <div className="error-box">{error}</div>}
-        <button className="btn primary wide" disabled={busy}>{busy ? 'Signing in…' : 'Sign in'}</button>
-      </form>
-    </div>
+    <form className="form" onSubmit={submit}>
+      <label>Development password<input type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoFocus required /></label>
+      {error && <div className="error-box">{error}</div>}
+      <button className="btn primary wide">Sign in</button>
+    </form>
   );
 }
 
 const NAV = [
-  { to: '/', label: 'Home', icon: '◉', end: true },
-  { to: '/grants', label: 'Grants', icon: '▤' },
-  { to: '/questions', label: 'Questions', icon: '?' },
-  { to: '/knowledge', label: 'Company knowledge', icon: '✦' },
-  { to: '/documents', label: 'Documents', icon: '▣' },
-  { to: '/applications', label: 'Applications', icon: '➤' },
-  { to: '/settings', label: 'Settings', icon: '⚙' },
+  { to: '/', label: 'Home', end: true },
+  { to: '/grants', label: 'Grants' },
+  { to: '/questions', label: 'Questions' },
+  { to: '/knowledge', label: 'Company knowledge' },
+  { to: '/documents', label: 'Documents' },
+  { to: '/applications', label: 'Applications' },
+  { to: '/settings', label: 'Settings' },
 ];
 
 export function App() {
-  const [user, setUser] = useState<string | null | undefined>(undefined);
-  const [sso, setSso] = useState(false);
+  const [gate, setGate] = useState<Gate>({ kind: 'loading' });
+
+  const check = () => api<Me>('/me').then((me) => setGate({ kind: 'in', me })).catch((e) => {
+    const data = (e instanceof ApiError ? e.data : null) as { email?: string; public_url?: string | null; dev_login?: boolean; token_seen?: boolean } | null;
+    if (e instanceof ApiError && e.status === 403 && data?.email) setGate({ kind: 'denied', email: data.email });
+    else setGate({ kind: 'out', public_url: data?.public_url ?? null, dev_login: !!data?.dev_login, token_seen: !!data?.token_seen });
+  });
   useEffect(() => {
-    api<{ name: string; sso?: boolean }>('/me').then((r) => { setUser(r.name); setSso(!!r.sso); }).catch(() => setUser(null));
-    const out = () => setUser(null);
-    window.addEventListener('gp:signed-out', out);
-    return () => window.removeEventListener('gp:signed-out', out);
+    check();
+    window.addEventListener('gp:signed-out', check);
+    return () => window.removeEventListener('gp:signed-out', check);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  if (user === undefined) return <div className="empty"><span className="spinner" /></div>;
-  if (user === null) return <Login onDone={setUser} />;
+  if (gate.kind === 'loading') return <div className="login-wrap"><span className="spinner" /></div>;
+  if (gate.kind === 'denied') {
+    return (
+      <div className="login-wrap">
+        <div className="login">
+          <div className="brand big">Grants Portal</div>
+          <p><b>{gate.email}</b> does not have access.</p>
+          <a className="btn wide" href="/cdn-cgi/access/logout">Use a different account</a>
+        </div>
+      </div>
+    );
+  }
+  if (gate.kind === 'out') {
+    return (
+      <div className="login-wrap">
+        <div className="login">
+          <div className="brand big">Grants Portal</div>
+          {gate.token_seen && <div className="error-box">Google sign-in worked, but the portal could not verify it. Try again, and tell the developer if it keeps happening.</div>}
+          {gate.dev_login ? <DevLogin onDone={check} /> : <a className="btn primary wide" href={gate.public_url ?? '/'}>Sign in with Google</a>}
+        </div>
+      </div>
+    );
+  }
 
+  const me = gate.me;
   return (
     <div className="shell">
       <aside className="side">
-        <div className="brand"><span className="logo">✓</span><span className="brand-name">Grants Portal</span></div>
+        <div className="brand">Grants Portal</div>
         <nav>
           {NAV.map((n) => (
-            <NavLink key={n.to} to={n.to} end={n.end} className={({ isActive }) => (isActive ? 'active' : '')}>
-              <span className="nav-icon" aria-hidden>{n.icon}</span>
-              <span>{n.label}</span>
-            </NavLink>
+            <NavLink key={n.to} to={n.to} end={n.end} className={({ isActive }) => (isActive ? 'active' : '')}>{n.label}</NavLink>
           ))}
         </nav>
         <div className="side-foot">
-          <span>Signed in as <b>{user}</b></span>
-          {sso ? <a className="linkish" href="/cdn-cgi/access/logout">Sign out</a> : <button className="linkish" onClick={() => api('/logout', { method: 'POST' }).finally(() => setUser(null))}>Sign out</button>}
+          <span>{me.name}</span>
+          {me.dev
+            ? <button className="linkish" onClick={() => api('/logout', { method: 'POST' }).finally(check)}>Sign out</button>
+            : <a href="/cdn-cgi/access/logout">Sign out</a>}
         </div>
       </aside>
       <main className="main">
         <Routes>
-          <Route path="/" element={<Dashboard user={user} />} />
+          <Route path="/" element={<Dashboard user={me.name} />} />
           <Route path="/grants" element={<Grants />} />
           <Route path="/grants/:id" element={<GrantDetail />} />
           <Route path="/questions" element={<Questions />} />
@@ -96,6 +114,7 @@ export function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <AgentDock />
     </div>
   );
 }

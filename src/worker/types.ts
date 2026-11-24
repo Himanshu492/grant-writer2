@@ -5,7 +5,13 @@ export interface Env {
   LEGACY_DB?: D1Database;
   LEGACY_DOCS?: R2Bucket;
 
-  PORTAL_PASSWORD: string;
+  /** Comma-separated emails allowed in until the list is edited in Settings (then the saved list wins). */
+  ALLOWED_EMAILS?: string;
+  /** The address people use (behind Cloudflare Access). Other addresses redirect there. */
+  PUBLIC_URL?: string;
+  /** Local development only: "1" allows signing in with PORTAL_PASSWORD instead of Cloudflare Access. */
+  DEV_PASSWORD_LOGIN?: string;
+  PORTAL_PASSWORD?: string;
   SESSION_SECRET: string;
   AGENT_TOKEN: string;
   DEEPSEEK_API_KEY: string;
@@ -45,6 +51,7 @@ export interface QuestionRow {
   missing_info: string | null;
   document_id: string | null;
   inferred_kb_version: number;
+  show_if_json: string | null;
   updated_at: string;
   updated_by: string | null;
 }
@@ -72,6 +79,9 @@ export interface GrantRow {
   seed_hash: string | null;
   is_sandbox: number;
   live_enabled: number;
+  live_enabled_by: string | null;
+  live_enabled_at: string | null;
+  amount_detail: string | null;
   submitted_at: string | null;
   created_at: string;
   updated_at: string;
@@ -87,6 +97,14 @@ export interface SeedQuestion {
   limit?: { unit: string; max: number } | null;
   doc_kind?: string | null;
   source_url?: string | null;
+  /** Only on the form when another answer has a certain value. */
+  show_if?: ShowIf | null;
+}
+
+export interface ShowIf {
+  parent: string; // the other question's wording
+  op: '=' | '!=' | 'contains' | 'yes' | 'empty' | 'notempty';
+  value: string;
 }
 
 export interface SeedGrant {
@@ -99,6 +117,7 @@ export interface SeedGrant {
   deadline?: string | null;
   deadline_note?: string;
   amount?: string | null;
+  amount_detail?: string | null;
   summary?: Record<string, string>;
   portal?: Record<string, unknown>;
   questions_verification?: string;

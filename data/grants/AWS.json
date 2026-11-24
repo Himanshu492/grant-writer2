@@ -7,7 +7,7 @@
   "status": "rolling",
   "deadline": null,
   "deadline_note": "Rolling: no deadline; apply any time. Decisions usually take 7-10 business days (3-5 days when applying through a provider's email invite). Portfolio applicants must apply within 12 months of their most recent funding date.",
-  "amount": "AWS promotional credits, not cash: Activate Founders $1,000 (select startups up to $5,000); Activate Portfolio up to $200,000 (needs an Activate Provider Org ID)",
+  "amount": "Up to $200K in AWS credits",
   "summary": {
     "at_a_glance": "AWS's startup program. Membership is free; the credit application has two self-serve tiers: Activate Founders for self-funded startups and Activate Portfolio for startups backed by an AWS Activate Provider (accelerator, angel investor, VC). It is a cloud-credits perk, not a grant or investment, and applications are rolling.",
     "what_they_offer": "Activate Founders: start with $1,000 USD in AWS Activate Credits; select participants may qualify for additional credits up to $5,000. Activate Portfolio: up to $200,000 USD in Activate Credits; the amount is set by the provider's package (some providers have several, e.g. $25K for pre-seed and $100K for seed). A third tier, AWS Credits for AI Startups ($200,000+), is invite-only through an AWS account manager after Activate Portfolio. Credits offset charges on 200+ eligible AWS services, including third-party models on Amazon Bedrock, and usually expire within 1-2 years depending on the package. Members also get exclusive partner offers, technical resources and events.",
@@ -57,5 +57,6 @@
       "url": "https://startups.aws.com/credits/apply",
       "note": "Application form URL; confirmed it redirects to AWS Builder ID sign-in (HTTP 307 to startups.aws.com/login) with no form visible"
     }
-  ]
+  ],
+  "amount_detail": "AWS promotional credits, not cash: Activate Founders $1,000 (select startups up to $5,000); Activate Portfolio up to $200,000 (needs an Activate Provider Org ID)"
 }

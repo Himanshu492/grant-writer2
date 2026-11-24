@@ -1,13 +1,13 @@
 {
   "id": "TS-NWM",
-  "title": "Northwestern Medicine & Techstars Healthcare Accelerator",
+  "title": "Techstars Northwestern Medicine",
   "funder": "Techstars",
   "program_url": "https://www.techstars.com/accelerators/northwestern-medicine-healthcare",
   "application_url": "https://apply.techstars.com/",
   "status": "closed",
   "deadline": null,
   "deadline_note": "Closed. The current cycle (third class, program March 8 – June 3, 2027) opened August 24, 2026 and its final deadline was November 18, 2026 at 11:59pm PST. The next cycle has not been announced. The program has run one class a year starting in March, so the next opening may not come until around August 2027; that is an inference, not a published date.",
-  "amount": "$220,000 investment: $200,000 uncapped MFN Safe + $20,000 convertible equity agreement for 5% common stock (equity, not a grant)",
+  "amount": "$220K investment",
   "summary": {
     "at_a_glance": "Health tech accelerator run by Techstars with Northwestern Medicine, held in person at Northwestern Medicine's Mansueto Innovation Institute in Chicago for a class of six startups. It is still running: the third class starts March 8, 2027, but applications for it closed on November 18, 2026. No later application dates are published yet.",
     "what_they_offer": "$220,000 investment per company, three months of in-person support at the Mansueto Innovation Institute in Chicago ending in a Demo Day (June 3, 2027 for the current class), mentorship and collaboration with Northwestern Medicine clinical and technical experts, access to the Techstars network of investors, partners and alumni, and partner perks valued at more than $4M.",
@@ -858,5 +858,7 @@
       "url": "https://www.techstars.com/blog/founder-advice/inside-a-techstars-accelerator-the-application-and-interview-process",
       "note": "Stages: application, first and second-round interviews, timing of responses"
     }
-  ]
+  ],
+  "full_title": "Northwestern Medicine & Techstars Healthcare Accelerator",
+  "amount_detail": "$220,000 investment: $200,000 uncapped MFN Safe + $20,000 convertible equity agreement for 5% common stock (equity, not a grant)"
 }

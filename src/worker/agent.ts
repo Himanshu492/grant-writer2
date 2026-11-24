@@ -1,5 +1,6 @@
 import { Hono } from 'hono';
 import type { Env, GrantRow, QuestionRow, SeedQuestion } from './types';
+import { noDash } from './ai';
 import { requireAgent } from './auth';
 import { getSetting, reuseExistingAnswers, setSetting, syncQuestions } from './data';
 import { norm, parseJson, todayISO, uid } from './util';
@@ -115,8 +116,8 @@ agentApi.post('/runs/:id/update', async (c) => {
   if (run.mode === 'test' && status === 'submitted') status = 'review';
   const sets = ['status=?', "updated_at=datetime('now')"];
   const binds: (string | number | null)[] = [status];
-  if (b.note !== undefined) { sets.push('note=?'); binds.push(String(b.note).slice(0, 500)); }
-  if (status === 'needs_human') { sets.push('human_reason=?'); binds.push(String(b.human_reason ?? b.note ?? 'The agent needs you to step in').slice(0, 500)); }
+  if (b.note !== undefined) { sets.push('note=?'); binds.push(noDash(String(b.note)).slice(0, 500)); }
+  if (status === 'needs_human') { sets.push('human_reason=?'); binds.push(noDash(String(b.human_reason ?? b.note ?? 'The agent needs you to step in')).slice(0, 500)); }
   if (status === 'running' && run.status === 'needs_human') { sets.push('human_reason=NULL', 'resume_requested=0'); }
   if (typeof b.progress_done === 'number') { sets.push('progress_done=?'); binds.push(b.progress_done); }
   if (typeof b.progress_total === 'number') { sets.push('progress_total=?'); binds.push(b.progress_total); }
@@ -124,7 +125,7 @@ agentApi.post('/runs/:id/update', async (c) => {
   if (b.result !== undefined) { sets.push('result_json=?'); binds.push(JSON.stringify(b.result).slice(0, 20000)); }
   if (FINAL.has(status)) sets.push("finished_at=datetime('now')");
   await c.env.DB.prepare(`UPDATE runs SET ${sets.join(', ')} WHERE id=?`).bind(...binds, id).run();
-  if (b.message) await addRunEvent(c.env, id, b.message, b.level ?? (status === 'failed' ? 'error' : status === 'needs_human' ? 'warn' : 'info'));
+  if (b.message) await addRunEvent(c.env, id, noDash(b.message), b.level ?? (status === 'failed' ? 'error' : status === 'needs_human' ? 'warn' : 'info'));
   if (status === 'submitted' && run.mode === 'live') {
     // The practice grant stays available for more practice.
     await c.env.DB.prepare(`UPDATE grants SET pipeline='submitted', submitted_at=datetime('now'), updated_at=datetime('now') WHERE id=? AND is_sandbox=0`).bind(run.grant_id).run();

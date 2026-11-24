@@ -1,8 +1,10 @@
 export class ApiError extends Error {
   status: number;
-  constructor(message: string, status: number) {
+  data: unknown;
+  constructor(message: string, status: number, data?: unknown) {
     super(message);
     this.status = status;
+    this.data = data;
   }
 }
 
@@ -20,8 +22,9 @@ export async function api<T = any>(path: string, opts: { method?: string; body?:
     /* empty */
   }
   if (!res.ok) {
-    if (res.status === 401 && path !== '/login' && path !== '/me') window.dispatchEvent(new Event('gp:signed-out'));
-    throw new ApiError(data?.error ?? `Request failed (${res.status})`, res.status);
+    const lostAccess = res.status === 401 || (res.status === 403 && data?.error === 'no_access');
+    if (lostAccess && path !== '/login' && path !== '/me') window.dispatchEvent(new Event('gp:signed-out'));
+    throw new ApiError(data?.error ?? `Request failed (${res.status})`, res.status, data);
   }
   return data as T;
 }
@@ -30,12 +33,12 @@ export interface Progress { all: number; total: number; done: number; suggested:
 
 export interface Grant {
   id: string; title: string; funder: string; program_url: string | null; application_url: string | null;
-  status: string; deadline: string | null; deadline_note: string; days_left: number | null; amount: string | null;
+  status: string; deadline: string | null; deadline_note: string; days_left: number | null; amount: string | null; amount_detail: string | null;
   rating: string; priority_rank: number | null; pipeline: string;
   summary: Record<string, string>; portal: Record<string, any>;
   questions_verification: string; questions_source_url: string | null; questions_verified_on: string | null; questions_note: string;
   sources: { url: string; note?: string }[];
-  is_sandbox: boolean; live_enabled: boolean; submitted_at: string | null;
+  is_sandbox: boolean; live_enabled: boolean; live_enabled_by: string | null; live_enabled_at: string | null; submitted_at: string | null;
   progress: Progress; remaining: number; ready: boolean; last_run: Run | null;
 }
 
@@ -46,6 +49,7 @@ export interface Question {
   status: 'empty' | 'suggested' | 'draft' | 'approved' | 'skipped';
   answer_origin: string | null; confidence: string | null; basis: string | null; missing_info: string | null;
   document_id: string | null; updated_at: string; updated_by: string | null;
+  show_if: { parent: string; op: string; value: string } | null; not_applicable: boolean;
   grant_title?: string; grant_deadline?: string | null; norm?: string;
 }
 
@@ -81,16 +85,47 @@ export function fmtAgo(iso: string | null | undefined): string {
   return `${Math.floor(s / 86400)} d ago`;
 }
 
-export function dueLabel(g: Pick<Grant, 'deadline' | 'days_left' | 'status' | 'deadline_note'>): { text: string; tone: 'danger' | 'warn' | 'ok' | 'muted' } {
+export function dueLabel(g: Pick<Grant, 'deadline' | 'days_left' | 'status'>): { text: string; tone: 'danger' | 'warn' | 'ok' | 'muted' } {
   if (g.days_left === null || g.deadline === null) {
-    if (g.status === 'rolling') return { text: 'Rolling — apply any time', tone: 'ok' };
-    if (g.status === 'closed') return { text: 'Closed — next round not announced', tone: 'muted' };
+    if (g.status === 'rolling' || g.status === 'open') return { text: 'Open, no deadline', tone: 'ok' };
+    if (g.status === 'closed') return { text: 'Closed', tone: 'muted' };
     return { text: 'No deadline published', tone: 'muted' };
   }
   if (g.days_left < 0) return { text: `Deadline passed ${fmtDate(g.deadline)}`, tone: 'muted' };
   if (g.days_left === 0) return { text: 'Due today', tone: 'danger' };
   if (g.days_left === 1) return { text: 'Due tomorrow', tone: 'danger' };
-  if (g.days_left <= 14) return { text: `Due in ${g.days_left} days · ${fmtDate(g.deadline)}`, tone: 'danger' };
-  if (g.days_left <= 45) return { text: `Due in ${g.days_left} days · ${fmtDate(g.deadline)}`, tone: 'warn' };
+  if (g.days_left <= 14) return { text: `Due in ${g.days_left} days`, tone: 'danger' };
+  if (g.days_left <= 45) return { text: `Due in ${g.days_left} days`, tone: 'warn' };
   return { text: `Due ${fmtDate(g.deadline)}`, tone: 'ok' };
+}
+
+/** Text we generated ourselves is shown without em or en dashes. */
+export function plain(s: string | null | undefined): string {
+  return (s ?? '').replace(/\s*[\u2014\u2013]\s*/g, ', ').replace(/,\s*,/g, ',');
+}
+
+/** Form help text often carries bracketed notes about how the field behaves. Keep those out of the way. */
+export function splitHelp(help: string): { text: string; notes: string[] } {
+  const notes: string[] = [];
+  const text = help
+    .replace(/\[([^\]]+)\]/g, (_m, n: string) => { notes.push(plain(n.replace(/[{}]/g, ''))); return ''; })
+    .replace(/\n{2,}/g, '\n')
+    .trim();
+  return { text, notes };
+}
+
+/** "Only if Country is United States" */
+export function conditionText(c: { parent: string; op: string; value: string }): string {
+  const parent = c.parent.length > 48 ? c.parent.slice(0, 46) + '…' : c.parent;
+  const rule = c.op === '=' ? `is ${c.value}` : c.op === '!=' ? `is not ${c.value}` : c.op === 'contains' ? `includes ${c.value}`
+    : c.op === 'yes' ? 'is Yes' : c.op === 'empty' ? 'is not ticked' : 'is filled in';
+  return `Only if "${parent}" ${rule}`;
+}
+
+export function todoText(p: Progress): string {
+  const need = p.empty + p.draft;
+  const bits = [];
+  if (p.suggested) bits.push(`${p.suggested} to confirm`);
+  if (need) bits.push(`${need} need you`);
+  return bits.join(' · ');
 }

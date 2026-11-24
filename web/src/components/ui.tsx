@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
-import type { Grant } from '../api';
+import { todoText, type Grant } from '../api';
 
 // ---------- toasts ----------
 type Toast = { id: number; text: string; tone: 'ok' | 'error' };
@@ -53,17 +53,17 @@ export function useLoad<T>(loader: () => Promise<T>, deps: unknown[] = [], pollM
 }
 
 export function Loading({ error }: { error?: string | null }) {
-  if (error) return <div className="empty error-box">Could not load this: {error}</div>;
+  if (error) return <div className="error-box">Could not load this. {error}</div>;
   return <div className="empty"><span className="spinner" /> Loading…</div>;
 }
 
 // ---------- small pieces ----------
-export function Pill({ tone = 'muted', children, title }: { tone?: 'ok' | 'warn' | 'danger' | 'muted' | 'info' | 'accent'; children: ReactNode; title?: string }) {
+export function Pill({ tone = 'muted', children, title }: { tone?: 'ok' | 'warn' | 'danger' | 'muted' | 'info'; children: ReactNode; title?: string }) {
   return <span className={`pill ${tone}`} title={title}>{children}</span>;
 }
 
 export function ProgressBar({ p }: { p: Grant['progress'] }) {
-  if (!p.total) return <div className="bar empty-bar" title="No questions loaded yet" />;
+  if (!p.total) return <div className="bar" />;
   const pct = (n: number) => `${(n / p.total) * 100}%`;
   return (
     <div className="bar" title={`${p.done} of ${p.total} answered${p.suggested ? `, ${p.suggested} to confirm` : ''}`}>
@@ -76,22 +76,19 @@ export function ProgressBar({ p }: { p: Grant['progress'] }) {
 
 export function progressText(g: Grant): string {
   const p = g.progress;
-  if (!p.total) return g.questions_verification === 'not_accessible' ? 'Questions are behind a login — scan needed' : 'No questions loaded yet';
-  if (g.ready) return `All ${p.total} answered — ready to apply`;
-  const bits = [`${p.done} of ${p.total} answered`];
-  if (p.suggested) bits.push(`${p.suggested} to confirm`);
-  if (p.empty + p.draft) bits.push(`${p.empty + p.draft} need you`);
-  return bits.join(' · ');
+  if (!p.total) return g.questions_verification === 'not_accessible' ? 'Form is behind a login. Scan it to load the questions.' : 'No questions yet';
+  if (g.ready) return 'Ready to apply';
+  return todoText(p) || `${p.done} of ${p.total} answered`;
 }
 
-const VERIFY: Record<string, { label: string; tone: 'ok' | 'warn' | 'danger' | 'muted' | 'info'; explain: string }> = {
-  live_form: { label: 'Verified on live form', tone: 'ok', explain: 'These questions were read directly from the funder\'s live application form.' },
-  agent_scan: { label: 'Scanned from live form', tone: 'ok', explain: 'The browser agent read these questions off the live application form.' },
-  official_document: { label: 'From official guidance', tone: 'info', explain: 'These come from the funder\'s own published guidance or preview, not the form itself.' },
-  third_party_copy: { label: 'Unofficial copy', tone: 'warn', explain: 'Taken from a third-party copy because the funder does not publish the questions. Scan the live form to confirm.' },
-  not_accessible: { label: 'Behind login — not verified', tone: 'danger', explain: 'The real form is behind a login, so its questions could not be read. Run "Scan the live form" after signing in.' },
-  manual: { label: 'Added by hand', tone: 'muted', explain: 'This grant was added by hand.' },
-  unverified: { label: 'Not verified', tone: 'danger', explain: 'No verified questions yet.' },
+const VERIFY: Record<string, { label: string; tone: 'ok' | 'warn' | 'danger' | 'muted' | 'info' }> = {
+  live_form: { label: 'Read from the live form', tone: 'ok' },
+  agent_scan: { label: 'Scanned from the live form', tone: 'ok' },
+  official_document: { label: 'From official guidance', tone: 'info' },
+  third_party_copy: { label: 'Unofficial copy', tone: 'warn' },
+  not_accessible: { label: 'Behind a login', tone: 'danger' },
+  manual: { label: 'Added by hand', tone: 'muted' },
+  unverified: { label: 'Not verified', tone: 'danger' },
 };
 export function verification(v: string) {
   return VERIFY[v] ?? VERIFY.unverified;
@@ -108,7 +105,7 @@ export function Modal({ title, onClose, children }: { title: string; onClose: ()
       <div className="modal" role="dialog" aria-modal="true" aria-label={title}>
         <div className="modal-head">
           <h2>{title}</h2>
-          <button className="btn ghost" onClick={onClose} aria-label="Close">✕</button>
+          <button className="btn quiet" onClick={onClose}>Close</button>
         </div>
         {children}
       </div>

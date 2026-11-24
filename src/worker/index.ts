@@ -1,10 +1,10 @@
 import { Hono } from 'hono';
 import type { Env, GrantRow, QuestionRow, SeedGrant } from './types';
-import { type Vars, accessIdentity, checkPassword, clearSession, createSession, currentUser, requireUser } from './auth';
+import { type Vars, DEV_EMAIL, allowedEmails, checkDevPassword, clearSession, createSession, currentUser, forgetAllowedEmails, requireUser } from './auth';
 import { draftAnswer, KNOWLEDGE_CATEGORIES, runInference } from './ai';
 import { ACTIVE_RUN_STATUSES, type RunRow, addRunEvent, agentApi } from './agent';
 import {
-  allProgress, autolinkDocuments, bumpKbVersion, getSetting, grantView, kbVersion, propagateAnswer, questionView,
+  allProgress, applyConditions, autolinkDocuments, bumpKbVersion, getSetting, grantView, kbVersion, propagateAnswer, questionView,
   reuseExistingAnswers, setSetting, upsertSeedGrant,
 } from './data';
 import { importLegacy } from './legacy';
@@ -17,7 +17,7 @@ import agentBundle from './agent.generated.json';
 const SEEDS = seedBundle as unknown as SeedGrant[];
 const CLIENT = clientBundle as unknown as Record<string, { type: string; body: string; base64: boolean }>;
 
-const app = new Hono<{ Bindings: Env; Variables: Vars }>();
+const app = new Hono<{ Bindings: Env; Variables: Vars }>({ strict: false });
 
 app.onError((err, c) => {
   console.error(err);
@@ -40,12 +40,17 @@ app.route('/api/agent', agentApi);
 
 // ---------- session ----------
 
+/** How the sign-in screen should behave on this deployment. */
+function signInInfo(env: Env) {
+  return { public_url: env.PUBLIC_URL ?? null, dev_login: env.DEV_PASSWORD_LOGIN === '1' };
+}
+
+// Local development only: there is no password in production.
 app.post('/api/login', async (c) => {
   const { password, name } = await c.req.json<{ password: string; name: string }>();
-  if (!c.env.PORTAL_PASSWORD || !c.env.SESSION_SECRET) return c.json({ error: 'The portal password has not been configured yet.' }, 503);
-  if (!checkPassword(c.env, String(password ?? ''))) return c.json({ error: 'Wrong password' }, 401);
-  const who = String(name ?? '').trim().slice(0, 60) || 'Team member';
-  await createSession(c, who);
+  if (!checkDevPassword(c.env, String(password ?? ''))) return c.json({ error: 'Sign in with Google at the portal address.' }, 401);
+  const who = String(name ?? '').trim().slice(0, 60) || 'Developer';
+  await createSession(c, { name: who, email: DEV_EMAIL });
   return c.json({ name: who });
 });
 
@@ -55,10 +60,11 @@ app.post('/api/logout', (c) => {
 });
 
 app.get('/api/me', async (c) => {
-  const s = await currentUser(c);
-  if (!s) return c.json({ error: 'Not signed in' }, 401);
-  // sso: this address is behind Cloudflare Access, so signing out of the portal alone would sign straight back in.
-  return c.json({ name: s.name, sso: !!(await accessIdentity(c)) });
+  const who = await currentUser(c);
+  if (who.ok) return c.json({ name: who.person.name, email: who.person.email, dev: who.person.email === DEV_EMAIL });
+  if (who.denied) return c.json({ error: 'no_access', email: who.denied, ...signInInfo(c.env) }, 403);
+  // token_seen: Cloudflare Access passed a sign-in token but it did not verify (useful when diagnosing a sign-in loop).
+  return c.json({ error: 'Not signed in', ...signInInfo(c.env), token_seen: !!c.req.header('cf-access-jwt-assertion') }, 401);
 });
 
 app.use('/api/*', async (c, next) => {
@@ -73,6 +79,7 @@ async function applySeeds(env: Env): Promise<Record<string, string>> {
   for (const seed of SEEDS) out[seed.id] = await upsertSeedGrant(env, seed);
   await autolinkDocuments(env);
   await reuseExistingAnswers(env);
+  await applyConditions(env);
   await setSetting(env, 'seed_bundle_hash', await sha256Hex(JSON.stringify(SEEDS)));
   return out;
 }
@@ -113,7 +120,7 @@ app.get('/api/dashboard', async (c) => {
     ).all<RunRow & { grant_title: string }>(),
     env.DB.prepare(
       `SELECT (SELECT count(*) FROM knowledge) AS knowledge, (SELECT count(*) FROM documents) AS documents,
-              (SELECT count(*) FROM questions q JOIN grants g ON g.id=q.grant_id WHERE q.answer_status='suggested' AND g.pipeline='active' AND g.is_sandbox=0) AS suggested`,
+              (SELECT count(*) FROM questions q JOIN grants g ON g.id=q.grant_id WHERE q.answer_status='suggested' AND (q.required IS NULL OR q.required=1) AND g.pipeline='active' AND g.is_sandbox=0) AS suggested`,
     ).first<Record<string, number>>(),
   ]);
 
@@ -192,7 +199,12 @@ app.patch('/api/grants/:id', async (c) => {
   for (const k of editable) {
     if (!(k in b)) continue;
     let v = b[k];
-    if (k === 'live_enabled') v = v ? 1 : 0;
+    if (k === 'live_enabled') {
+      v = v ? 1 : 0;
+      // Approving a grant for real submission is recorded against the person who did it.
+      sets.push('live_enabled_by=?', `live_enabled_at=${v ? "datetime('now')" : 'NULL'}`);
+      binds.push(v ? c.get('user') : null);
+    }
     if (k === 'pipeline' && !['active', 'submitted', 'not_pursuing'].includes(String(v))) return c.json({ error: 'Bad pipeline value' }, 400);
     if (typeof v === 'string' && !v.trim() && ['program_url', 'application_url', 'deadline', 'amount'].includes(k)) v = null;
     sets.push(`${k}=?`);
@@ -226,6 +238,7 @@ app.post('/api/grants/:id/accept-suggestions', async (c) => {
     `UPDATE questions SET answer_status='approved', updated_at=datetime('now'), updated_by=? WHERE grant_id=? AND answer_status='suggested' AND answer<>''`,
   ).bind(c.get('user'), id).run();
   for (const q of results) await propagateAnswer(c.env, { ...q, answer_status: 'approved' }, c.get('user'));
+  await applyConditions(c.env);
   await bumpKbVersion(c.env);
   return c.json({ accepted: results.length });
 });
@@ -314,7 +327,9 @@ app.patch('/api/questions/:id', async (c) => {
     reused = await propagateAnswer(c.env, fresh, user);
     await bumpKbVersion(c.env); // a new approved answer is new company knowledge
   }
-  return c.json({ question: questionView(fresh), reused });
+  // This answer may decide whether other questions on the form apply at all.
+  const revealed = await applyConditions(c.env, reused ? undefined : fresh.grant_id);
+  return c.json({ question: questionView(fresh), reused, revealed });
 });
 
 app.delete('/api/questions/:id', async (c) => {
@@ -346,7 +361,9 @@ app.post('/api/questions/:id/draft', async (c) => {
 app.post('/api/infer', async (c) => {
   const { grant_id } = await c.req.json<{ grant_id?: string }>().catch(() => ({ grant_id: undefined }));
   const reused = await reuseExistingAnswers(c.env, grant_id);
+  await applyConditions(c.env, grant_id);
   const summary = await runInference(c.env, { grantId: grant_id, force: true, maxQuestions: grant_id ? 200 : 300 });
+  await applyConditions(c.env, grant_id);
   return c.json({ ...summary, reused });
 });
 
@@ -477,7 +494,7 @@ app.post('/api/grants/:id/apply', async (c) => {
   if (active) return c.json({ error: 'The agent is already working on this grant' }, 409);
   const view = grantView(g, (await allProgress(c.env)).get(id));
   if (mode === 'live') {
-    if (!g.live_enabled) return c.json({ error: 'Real submissions are switched off for this grant. Turn on "Allow real submission" first.' }, 400);
+    if (!g.live_enabled) return c.json({ error: 'This grant has not been approved for real submission yet.' }, 400);
     if (!view.ready) return c.json({ error: `${view.remaining} required question(s) still need an approved answer before submitting for real.` }, 400);
   }
   if (mode === 'test' && view.progress.done === 0) return c.json({ error: 'Approve at least one answer before a test run.' }, 400);
@@ -534,6 +551,25 @@ app.post('/api/runs/:id/cancel', async (c) => {
   return c.json({ ok: true });
 });
 
+// ---------- the floating agent window ----------
+
+app.get('/api/dock', async (c) => {
+  const agent = await agentStatus(c.env);
+  const run = await c.env.DB.prepare(
+    `SELECT r.id, r.grant_id, r.mode, r.status, r.note, r.human_reason, r.progress_done, r.progress_total, r.resume_requested, r.cancel_requested,
+            r.live_view_url, r.updated_at, g.title AS grant_title
+       FROM runs r JOIN grants g ON g.id=r.grant_id
+      WHERE r.status IN ('queued','running','needs_human') OR r.updated_at > datetime('now','-3 minutes')
+      ORDER BY (r.status IN ('queued','running','needs_human')) DESC, r.created_at DESC LIMIT 1`,
+  ).first<Record<string, unknown>>();
+  return c.json({
+    online: agent.online,
+    last_seen: agent.last_seen,
+    screen_url: (run?.live_view_url as string | null) ?? (agent.info?.live_view_url as string | undefined) ?? null,
+    run: run ?? null,
+  });
+});
+
 // ---------- settings + admin ----------
 
 app.get('/api/settings', async (c) => {
@@ -550,7 +586,22 @@ app.get('/api/settings', async (c) => {
     agent_configured: !!env.AGENT_TOKEN,
     seed_grants: SEEDS.length,
     sandbox_submissions: sandboxSubs.results,
+    people: await allowedEmails(env, true),
+    me: c.get('email'),
   });
+});
+
+/** Who may use the portal (and so who may approve a grant for real submission). */
+app.put('/api/settings/people', async (c) => {
+  const { emails } = await c.req.json<{ emails: string[] }>();
+  const list = [...new Set((emails ?? []).map((e) => String(e).trim().toLowerCase()).filter(Boolean))];
+  if (!list.length) return c.json({ error: 'At least one person must keep access.' }, 400);
+  if (list.some((e) => !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e))) return c.json({ error: 'One of those is not an email address.' }, 400);
+  const me = c.get('email');
+  if (me !== DEV_EMAIL && !list.includes(me)) return c.json({ error: 'You cannot remove yourself.' }, 400);
+  await setSetting(c.env, 'allowed_emails', JSON.stringify(list));
+  forgetAllowedEmails();
+  return c.json({ people: list });
 });
 
 app.patch('/api/settings', async (c) => {
@@ -589,7 +640,12 @@ const SECURITY_HEADERS = {
 };
 
 app.get('*', (c) => {
-  const path = new URL(c.req.url).pathname;
+  const url = new URL(c.req.url);
+  const path = url.pathname;
+  // People use the public address (behind Google sign-in). Any other address of this Worker sends them there.
+  if (c.env.PUBLIC_URL && c.env.DEV_PASSWORD_LOGIN !== '1' && url.host !== new URL(c.env.PUBLIC_URL).host && !path.startsWith('/assets/')) {
+    return c.redirect(c.env.PUBLIC_URL.replace(/\/$/, '') + path + url.search, 302);
+  }
   const file = CLIENT[path];
   if (file) {
     const body = file.base64 ? Uint8Array.from(atob(file.body), (ch) => ch.charCodeAt(0)) : file.body;
@@ -621,7 +677,9 @@ async function scheduled(env: Env): Promise<void> {
   // Knowledge changed since some open questions were last checked: see whether they can be answered now.
   if (env.DEEPSEEK_API_KEY) {
     await reuseExistingAnswers(env);
+    await applyConditions(env);
     await runInference(env, { maxQuestions: 160 });
+    await applyConditions(env);
   }
 }
 

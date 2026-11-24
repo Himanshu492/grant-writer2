@@ -53,6 +53,9 @@ the approved answers, attaches documents, and reports progress and screenshots b
   run shows *Needs you* with a link to the agent's browser (live view); do the step, press **I'm done — continue**.
   The browser profile is persistent, so a login done once is still there next time.
 - Fields found on the form that the portal did not know about are added to the grant as new questions.
+- The agent's browser is always one click away in the floating window in the corner. It opens by itself when a run
+  starts or the agent needs a person, and expanded it is fully usable for logins and CAPTCHAs.
+- Questions that a form only shows for certain answers ("State" for US companies) stay hidden until they apply.
 - Two engines: the built-in one (default; in test mode it cannot press a final Submit) and the Hermes agent already
   on the VM (chosen in Settings; falls back to the built-in engine if it cannot run a job).
 - A practice grant (**Sandbox Innovation Grant**) is built in for trying all of this safely.
@@ -79,9 +82,12 @@ migrations/        D1 schema
 
 - **D1** `freehealth-grants-portal` – grants, questions (+answers), knowledge, documents, runs
 - **R2** `freehealth-grants-portal` – uploaded documents and run screenshots (separate from the old bucket)
-- **Addresses** – the team uses `grants.freehealth.ai`, which sits behind Cloudflare Access; a valid Access sign-in is
-  accepted as the portal login (no team password needed there). The VM runner uses the `workers.dev` address
-  (`AGENT_PORTAL_URL`), because Access would turn its API calls away; that address asks for the team password.
+- **Sign-in** – people use `grants.freehealth.ai`, which sits behind Cloudflare Access (Google). The portal verifies the
+  Access token and then checks the email against its own short list (Settings, People), so only listed people get
+  in and removing someone takes effect immediately. There is no password in production.
+- **Agent address** – the VM runner uses the `workers.dev` address (`AGENT_PORTAL_URL`), because Access would turn its
+  API calls away. That address only serves the agent API, the runner files and the practice form; pages redirect to
+  the public address.
 - **Cron** every 5 minutes – applies new grant data, re-checks open questions, fails abandoned runs
 
 ## Development and deployment
@@ -102,11 +108,12 @@ npx wrangler d1 migrations apply DB --local
 npx wrangler dev
 ```
 
-Local secrets go in `.dev.vars` (git-ignored). In production they are Worker secrets, never committed:
+Local secrets go in `.dev.vars` (git-ignored); add `DEV_PASSWORD_LOGIN=1` and `PORTAL_PASSWORD=...` there to sign in
+locally without Cloudflare Access. In production they are Worker secrets, never committed:
 
 | Secret | Purpose |
 |---|---|
-| `PORTAL_PASSWORD` | team password for the dashboard |
+| `ALLOWED_EMAILS` | comma-separated emails allowed in until the list is edited in Settings |
 | `SESSION_SECRET` | signs login cookies |
 | `AGENT_TOKEN` | bearer token for the VM runner |
 | `DEEPSEEK_API_KEY` | AI drafting and knowledge inference |
@@ -115,12 +122,6 @@ Deploy:
 
 ```bash
 npm run deploy
-```
-
-To change a secret (for example the team password):
-
-```bash
-npx wrangler secret put PORTAL_PASSWORD
 ```
 
 `wrangler.legacy.jsonc` is the same deployment with read access to the old system's database and bucket added. It

@@ -1,13 +1,13 @@
 {
   "id": "YC",
-  "title": "Y Combinator (Winter 2027 batch)",
+  "title": "Y Combinator",
   "funder": "Y Combinator",
   "program_url": "https://www.ycombinator.com/apply",
   "application_url": "https://apply.ycombinator.com/home",
   "status": "open",
   "deadline": null,
   "deadline_note": "Winter 2027 batch (Jan-Mar 2027, San Francisco). The on-time deadline was Nov 2, 2026 at 8pm PT and has passed; YC's apply page says it is still accepting late applications, with no promised response date (FAQ: most late applications get a decision within a month, not guaranteed). On-time applicants hear back by Dec 11, 2026. No deadline for the next batch (Spring 2027) has been published; later batches can be applied for now by choosing 'A batch after Winter 2027' on the form.",
-  "amount": "$500,000 standard deal: $125k post-money SAFE for 7% + $375k uncapped MFN SAFE",
+  "amount": "$500K standard deal",
   "summary": {
     "at_a_glance": "Y Combinator is a startup accelerator that funds companies in four batches a year (Winter, Spring, Summer, Fall) and runs a 3-month in-person program in San Francisco. It is currently taking applications for the Winter 2027 batch (January to March 2027); the on-time deadline (Nov 2, 2026) has passed but late applications are still accepted. Every accepted company gets the same $500,000 standard deal.",
     "what_they_offer": "$500,000 investment per company on two SAFEs ($125,000 post-money SAFE for 7%, plus $375,000 on an uncapped SAFE with a Most Favored Nation provision), invested as soon as the company is accepted and not tied to milestones; no program fees. A 3-month in-person batch in San Francisco (3-day kick-off, weekly meetups, a dedicated YC General Partner with weekly meetings and a direct Slack channel, small groups of companies), talks from well-known founders, the YC alumni network, '$12M+ in free credits and deals' from partners, investor introductions towards the end of the batch, and continued support after the batch. YC also gets a pro rata right to invest in later rounds.",
@@ -553,5 +553,7 @@
       "url": "https://shizune.co/yc-application-examples",
       "note": "THIRD-PARTY (the old system's hint URL). Rejected as a source: it is an undated aggregation of questions from applications of 2007-2021 batches and includes questions no longer on the form."
     }
-  ]
+  ],
+  "full_title": "Y Combinator (Winter 2027 batch)",
+  "amount_detail": "$500,000 standard deal: $125k post-money SAFE for 7% + $375k uncapped MFN SAFE"
 }

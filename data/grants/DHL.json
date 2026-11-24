@@ -1,13 +1,13 @@
 {
   "id": "DHL",
-  "title": "DigitalHealth.London Accelerator",
+  "title": "DigitalHealth.London",
   "funder": "DigitalHealth.London (delivered by the Health Innovation Network (HIN) South London)",
   "program_url": "https://digitalhealth.london/programmes/accelerator",
   "application_url": null,
   "status": "closed",
   "deadline": null,
   "deadline_note": "Applications are currently closed and no next cohort or date is published. The last round found on the official site was Cohort 8 (applications 8 May – 16 June 2024, programme started September 2024). No Cohort 9 announcement exists on digitalhealth.london as of 2026-11-24.",
-  "amount": "No cash and no equity taken; 12 months of free support classified as UK Minimal Financial Assistance, estimated value £35,000",
+  "amount": "Support worth about £35K, no cash",
   "summary": {
     "at_a_glance": "A twelve-month, NHS-delivered support programme for digital health SMEs whose product has usually already been piloted in the NHS and is ready to scale in London's health and care system. It gives no funding and takes no equity. Applications are closed and no future cohort has been announced.",
     "what_they_offer": "Bespoke support over 12 months: an assigned NHS Navigator with NHS clinical or service-manager expertise, direct engagement with senior stakeholders, clinicians and healthcare experts, expert-led workshops and digital health advisors, and brokered connections to NHS organisations with specific challenges. The Accelerator 'can connect companies to relevant funding opportunities but does not provide or guarantee direct funding' and does not invest or take equity. Support is valued at an estimated £35,000 of Minimal Financial Assistance under the UK Subsidy Control Act 2022.",
@@ -225,5 +225,7 @@
       "url": "https://digitalhealth.london/programmes/digitalhealth-london-pathfinder",
       "note": "Newer Pathfinder programme: eligibility and dates, applications closed"
     }
-  ]
+  ],
+  "full_title": "DigitalHealth.London Accelerator",
+  "amount_detail": "No cash and no equity taken; 12 months of free support classified as UK Minimal Financial Assistance, estimated value £35,000"
 }

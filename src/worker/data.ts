@@ -1,4 +1,4 @@
-import type { Env, GrantRow, QuestionRow, SeedGrant, SeedQuestion } from './types';
+import type { Env, GrantRow, QuestionRow, SeedGrant, SeedQuestion, ShowIf } from './types';
 import { SHORT_TYPES, daysUntil, fitsLimit, norm, parseJson, sha256Hex, uid } from './util';
 
 // ---------- settings ----------
@@ -74,6 +74,7 @@ export function grantView(g: GrantRow, p: GrantProgress | undefined, lastRun?: R
     deadline_note: g.deadline_note,
     days_left: daysUntil(g.deadline),
     amount: g.amount,
+    amount_detail: g.amount_detail,
     rating: g.rating,
     priority_rank: g.priority_rank,
     pipeline: g.pipeline,
@@ -86,6 +87,8 @@ export function grantView(g: GrantRow, p: GrantProgress | undefined, lastRun?: R
     sources: parseJson<{ url: string; note?: string }[]>(g.sources_json, []),
     is_sandbox: !!g.is_sandbox,
     live_enabled: !!g.live_enabled,
+    live_enabled_by: g.live_enabled_by,
+    live_enabled_at: g.live_enabled_at,
     submitted_at: g.submitted_at,
     progress,
     remaining,
@@ -116,6 +119,8 @@ export function questionView(q: QuestionRow) {
     basis: q.answer_basis,
     missing_info: q.missing_info,
     document_id: q.document_id,
+    show_if: parseJson<ShowIf | null>(q.show_if_json, null),
+    not_applicable: q.answer_status === 'skipped' && q.answer_origin === 'not_applicable',
     updated_at: q.updated_at,
     updated_by: q.updated_by,
   };
@@ -176,6 +181,7 @@ function seedQuestionFields(sq: SeedQuestion) {
     limit_max: sq.limit?.max ?? null,
     doc_kind: type === 'file' ? sq.doc_kind ?? 'other' : null,
     source_url: sq.source_url ?? null,
+    show_if_json: sq.show_if ? JSON.stringify(sq.show_if) : null,
   };
 }
 
@@ -191,7 +197,7 @@ export async function upsertSeedGrant(env: Env, seed: SeedGrant): Promise<'creat
 
   const fields = [
     seed.title, seed.funder ?? '', seed.program_url ?? null, seed.application_url ?? null, seed.status ?? 'unknown',
-    seed.deadline ?? null, seed.deadline_note ?? '', seed.amount ?? null, JSON.stringify(seed.summary ?? {}),
+    seed.deadline ?? null, seed.deadline_note ?? '', seed.amount ?? null, seed.amount_detail ?? null, JSON.stringify(seed.summary ?? {}),
     JSON.stringify(seed.portal ?? {}), seed.questions_verification ?? 'unverified', seed.questions_source_url ?? null,
     seed.questions_verified_on ?? null, seed.questions_note ?? '', JSON.stringify(seed.sources ?? []), hash,
     seed.is_sandbox ? 1 : 0,
@@ -199,15 +205,15 @@ export async function upsertSeedGrant(env: Env, seed: SeedGrant): Promise<'creat
   const stmts: D1PreparedStatement[] = [];
   if (existing) {
     stmts.push(env.DB.prepare(
-      `UPDATE grants SET title=?, funder=?, program_url=?, application_url=?, status=?, deadline=?, deadline_note=?, amount=?,
+      `UPDATE grants SET title=?, funder=?, program_url=?, application_url=?, status=?, deadline=?, deadline_note=?, amount=?, amount_detail=?,
          summary_json=?, portal_json=?, questions_verification=?, questions_source_url=?, questions_verified_on=?, questions_note=?,
          sources_json=?, seed_hash=?, is_sandbox=?, updated_at=datetime('now') WHERE id=?`,
     ).bind(...fields, seed.id));
   } else {
     stmts.push(env.DB.prepare(
-      `INSERT INTO grants(title, funder, program_url, application_url, status, deadline, deadline_note, amount, summary_json, portal_json,
+      `INSERT INTO grants(title, funder, program_url, application_url, status, deadline, deadline_note, amount, amount_detail, summary_json, portal_json,
          questions_verification, questions_source_url, questions_verified_on, questions_note, sources_json, seed_hash, is_sandbox, id)
-       VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+       VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
     ).bind(...fields, seed.id));
   }
 
@@ -255,14 +261,14 @@ export async function syncQuestions(
       used.add(match.id);
       kept += 1;
       stmts.push(env.DB.prepare(
-        `UPDATE questions SET position=?, section=?, text=?, help=?, type=?, options_json=?, required=?, limit_unit=?, limit_max=?, doc_kind=?, source_url=?, origin=? WHERE id=?`,
-      ).bind(pos, f.section, f.text, f.help, f.type, f.options_json, f.required, f.limit_unit, f.limit_max, f.doc_kind, f.source_url ?? match.source_url, match.origin === 'manual' ? 'manual' : origin, match.id));
+        `UPDATE questions SET position=?, section=?, text=?, help=?, type=?, options_json=?, required=?, limit_unit=?, limit_max=?, doc_kind=?, source_url=?, origin=?, show_if_json=coalesce(?, show_if_json) WHERE id=?`,
+      ).bind(pos, f.section, f.text, f.help, f.type, f.options_json, f.required, f.limit_unit, f.limit_max, f.doc_kind, f.source_url ?? match.source_url, match.origin === 'manual' ? 'manual' : origin, f.show_if_json, match.id));
     } else {
       added += 1;
       stmts.push(env.DB.prepare(
-        `INSERT INTO questions(id, grant_id, position, section, text, help, type, options_json, required, limit_unit, limit_max, doc_kind, norm, origin, source_url)
-         VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
-      ).bind(uid('q'), grantId, pos, f.section, f.text, f.help, f.type, f.options_json, f.required, f.limit_unit, f.limit_max, f.doc_kind, n, origin, f.source_url));
+        `INSERT INTO questions(id, grant_id, position, section, text, help, type, options_json, required, limit_unit, limit_max, doc_kind, norm, origin, source_url, show_if_json)
+         VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+      ).bind(uid('q'), grantId, pos, f.section, f.text, f.help, f.type, f.options_json, f.required, f.limit_unit, f.limit_max, f.doc_kind, n, origin, f.source_url, f.show_if_json));
     }
   }
   for (const q of old) {
@@ -303,6 +309,60 @@ export async function reuseExistingAnswers(env: Env, grantId?: string): Promise<
     stmts.push(env.DB.prepare(
       `UPDATE questions SET answer=?, answer_status=?, answer_origin='reused', answer_confidence='high', answer_basis=?, updated_at=datetime('now') WHERE id=?`,
     ).bind(answer, auto ? 'approved' : 'suggested', `Same question already answered for ${r.s_grant}`, r.id));
+  }
+  for (let i = 0; i < stmts.length; i += 40) await env.DB.batch(stmts.slice(i, i + 40));
+  return stmts.length;
+}
+
+// ---------- questions that only apply sometimes ----------
+
+type Known = boolean | null; // null = cannot tell yet (the question it depends on has no answer)
+
+function evaluate(cond: ShowIf, parent: Pick<QuestionRow, 'answer' | 'answer_status'> | undefined): Known {
+  if (!parent || parent.answer_status === 'empty') return null;
+  const a = parent.answer_status === 'skipped' ? '' : parent.answer.trim();
+  const parts = a.split(';').map((p) => p.trim().toLowerCase()).filter(Boolean);
+  const v = cond.value.trim().toLowerCase();
+  const blank = a === '' || /^(no|false|none|unchecked)$/i.test(a);
+  switch (cond.op) {
+    case '=': return a.toLowerCase() === v;
+    case '!=': return a.toLowerCase() !== v;
+    case 'contains': return parts.includes(v);
+    case 'yes': return !blank;
+    case 'empty': return blank;
+    case 'notempty': return !blank;
+    default: return null;
+  }
+}
+
+/**
+ * Forms show some fields only when another answer has a certain value ("State" only for US companies, "Device
+ * categories" only for devices). Those questions are kept out of the way (skipped as not applicable) until the
+ * answer they depend on says they belong, so nobody is asked about things that are not on their form.
+ */
+export async function applyConditions(env: Env, grantId?: string): Promise<number> {
+  const { results } = await env.DB.prepare(
+    `SELECT id, grant_id, norm, answer, answer_status, answer_origin, show_if_json FROM questions
+      WHERE grant_id IN (SELECT DISTINCT grant_id FROM questions WHERE show_if_json IS NOT NULL ${grantId ? 'AND grant_id=?' : ''})`,
+  ).bind(...(grantId ? [grantId] : [])).all<Pick<QuestionRow, 'id' | 'grant_id' | 'norm' | 'answer' | 'answer_status' | 'answer_origin' | 'show_if_json'>>();
+  const byGrant = new Map<string, Map<string, (typeof results)[number]>>();
+  for (const q of results) {
+    const m = byGrant.get(q.grant_id) ?? new Map();
+    if (!m.has(q.norm)) m.set(q.norm, q);
+    byGrant.set(q.grant_id, m);
+  }
+  const stmts: D1PreparedStatement[] = [];
+  for (const q of results) {
+    const cond = parseJson<ShowIf | null>(q.show_if_json, null);
+    if (!cond) continue;
+    const applies = evaluate(cond, byGrant.get(q.grant_id)?.get(norm(cond.parent))) === true;
+    const hidden = q.answer_status === 'skipped' && q.answer_origin === 'not_applicable';
+    if (!applies && !hidden && q.answer_status !== 'approved' && q.answer_status !== 'skipped') {
+      stmts.push(env.DB.prepare(`UPDATE questions SET answer_status='skipped', answer_origin='not_applicable', updated_at=datetime('now') WHERE id=?`).bind(q.id));
+    } else if (applies && hidden) {
+      stmts.push(env.DB.prepare(`UPDATE questions SET answer_status=?, answer_origin=?, updated_at=datetime('now') WHERE id=?`)
+        .bind(q.answer.trim() ? 'suggested' : 'empty', q.answer.trim() ? 'inferred' : null, q.id));
+    }
   }
   for (let i = 0; i < stmts.length; i += 40) await env.DB.batch(stmts.slice(i, i + 40));
   return stmts.length;

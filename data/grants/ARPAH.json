@@ -1,13 +1,13 @@
 {
   "id": "ARPAH",
-  "title": "ARPA-H Mission Office Innovative Solutions Openings (ISOs)",
+  "title": "ARPA-H",
   "funder": "Advanced Research Projects Agency for Health (ARPA-H), U.S. Department of Health and Human Services",
   "program_url": "https://arpa-h.gov/explore-funding/open-funding-opportunities",
   "application_url": "https://solutions.arpa-h.gov/Submit-Solution/",
   "status": "rolling",
   "deadline": "2029-03-05",
   "deadline_note": "Mission Office ISOs take Solution Summaries on a rolling basis; each solicitation states it will remain open until March 5, 2029 (also the Solution Summary deadline). A full proposal is requested within 45 calendar days of receiving Solution Summary feedback unless ARPA-H gives another timeline.",
-  "amount": "No award size is stated in the Mission Office ISOs; awards are milestone-based Other Transaction agreements (not grants) sized by the proposer's own Basis of Estimate",
+  "amount": "Milestone-based award, no set size",
   "summary": {
     "at_a_glance": "ARPA-H funds high-risk health R&D through Other Transaction agreements, not grants. The always-open route is one of four Mission Office ISOs on SAM.gov (Health Science Futures ARPA-H-SOL-24-104, Proactive Health ARPA-H-SOL-24-106, Scalable Solutions ARPA-H-SOL-24-105, Resilient Systems ARPA-H-SOL-24-103): submit a six-page Solution Summary on the ARPA-H Solutions site, wait for written feedback, then submit a full proposal.",
     "what_they_offer": "Milestone-based Other Transaction (OT) awards for individual research projects that fall outside existing ARPA-H programs; multiple awards are anticipated and no dollar range is stated. Resource sharing may be encouraged or requested. ARPA-H strives to give written Solution Summary feedback within thirty (30) business days and to respond to proposals within sixty (60) calendar days. Separately, ARPA-H runs time-limited Program ISOs and SBIR/STTR awards (contracts of up to $600K for Phase 1 and $3.5M for Phase 2); on 2026-11-24 the ARPA-H site said there were no open small business opportunities.",
@@ -837,5 +837,7 @@
       "url": "https://arpa-h.gov/explore-funding/programs/spectra",
       "note": "SPECTRA program ISO dates"
     }
-  ]
+  ],
+  "full_title": "ARPA-H Mission Office Innovative Solutions Openings (ISOs)",
+  "amount_detail": "No award size is stated in the Mission Office ISOs; awards are milestone-based Other Transaction agreements (not grants) sized by the proposer's own Basis of Estimate"
 }

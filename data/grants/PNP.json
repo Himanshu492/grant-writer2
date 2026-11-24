@@ -1,13 +1,13 @@
 {
   "id": "PNP",
-  "title": "Plug and Play — startup application (Health & Longevity vertical)",
+  "title": "Plug and Play",
   "funder": "Plug and Play Tech Center",
   "program_url": "https://www.plugandplaytechcenter.com/industries/health",
   "application_url": "https://www.plugandplaytechcenter.com/contact",
   "status": "rolling",
   "deadline": null,
   "deadline_note": "No deadline published. The official startup route is a general intake form reviewed on a rolling basis (\"one of our experts will contact you if you are a fit\"). No health-specific batch dates or application deadline are shown on the Health & Longevity or Startups pages.",
-  "amount": "No fixed award. Accelerator programs have \"No Equity Requirement\"; investment from Plug and Play's in-house VC team is possible but not guaranteed (no check size published on these pages).",
+  "amount": "No fixed award",
   "summary": {
     "at_a_glance": "Plug and Play is a corporate-innovation platform and investor that runs vertical accelerator programs (including Health & Longevity) connecting startups with corporate partners. There is no separate health application: startups apply through the general \"Start Your Innovation Journey\" form on plugandplaytechcenter.com/contact (choose \"I work at a world class startup company\"), and the team follows up if there is a fit.",
     "what_they_offer": "Per the official Startups and Accelerator Programs pages: accelerator programs with \"No Equity Requirement\"; \"Dealflows\" (curated, private one-on-one pitch meetings with corporate partners); events and networking (\"800+ annual events\"); community exposure via global co-working spaces; Focus Weeks; an Expo or Summit at the end of each program; business development with corporate partners; access to the in-house VC team (\"200+ investments per year\", \"85% seed stage investment\"); challenges/bootcamps. The Health & Longevity vertical lists corporate partners such as AstraZeneca, Eli Lilly and Company, GuideWell, Moffitt Cancer Center and Orlando Health, with programs in Silicon Valley, Abu Dhabi, Alberta, London, Munich and Singapore.",
@@ -373,5 +373,7 @@
       "url": "https://www.plugandplaytechcenter.com/innovation-services/our-programs",
       "note": "List of partner/custom programs (checked for a health-specific application; none found for the general health vertical)"
     }
-  ]
+  ],
+  "full_title": "Plug and Play — startup application (Health & Longevity vertical)",
+  "amount_detail": "No fixed award. Accelerator programs have \"No Equity Requirement\"; investment from Plug and Play's in-house VC team is possible but not guaranteed (no check size published on these pages)."
 }

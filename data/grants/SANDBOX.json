@@ -1,13 +1,13 @@
 {
   "id": "SANDBOX",
-  "title": "Sandbox Innovation Grant (practice)",
+  "title": "Practice grant",
   "funder": "Built-in test form",
   "program_url": "/sandbox/",
   "application_url": "/sandbox/apply",
   "status": "rolling",
   "deadline": null,
   "deadline_note": "Not a real grant. Use it to test the browser agent end to end.",
-  "amount": "Nothing - this is a practice form",
+  "amount": "Practice only",
   "is_sandbox": true,
   "summary": {
     "at_a_glance": "A fake application hosted inside this portal. It has a login wall, a two-step form, dropdowns, checkboxes, a character limit, a file upload and a submit button, like real funder portals.",
@@ -29,16 +29,91 @@
   "questions_verified_on": "2026-11-24",
   "questions_note": "This form is part of the portal, so the questions are exact.",
   "questions": [
-    {"section": "Step 1 of 2 · Company", "text": "Company name", "type": "short_text", "required": true},
-    {"section": "Step 1 of 2 · Company", "text": "Company website", "type": "url", "required": true},
-    {"section": "Step 1 of 2 · Company", "text": "Contact email", "type": "email", "required": true},
-    {"section": "Step 1 of 2 · Company", "text": "What year was your company founded?", "type": "number", "required": true},
-    {"section": "Step 1 of 2 · Company", "text": "What stage is your company?", "type": "single_select", "options": ["Idea", "Pre-seed", "Seed", "Series A or later"], "required": true},
-    {"section": "Step 1 of 2 · Company", "text": "Which industries are relevant to your company? (select all that apply)", "type": "multi_select", "options": ["Health Tech", "AI / Machine Learning", "Fintech", "Climate"], "required": false},
-    {"section": "Step 2 of 2 · Your pitch", "text": "Describe what your company does", "help": "Maximum 280 characters", "type": "long_text", "required": true, "limit": {"unit": "chars", "max": 280}},
-    {"section": "Step 2 of 2 · Your pitch", "text": "What problem are you solving?", "type": "long_text", "required": true},
-    {"section": "Step 2 of 2 · Your pitch", "text": "Have you raised outside funding?", "type": "yes_no", "options": ["Yes", "No"], "required": true},
-    {"section": "Step 2 of 2 · Your pitch", "text": "Pitch deck (PDF)", "help": "Optional", "type": "file", "doc_kind": "pitch_deck", "required": false}
+    {
+      "section": "Step 1 of 2 · Company",
+      "text": "Company name",
+      "type": "short_text",
+      "required": true
+    },
+    {
+      "section": "Step 1 of 2 · Company",
+      "text": "Company website",
+      "type": "url",
+      "required": true
+    },
+    {
+      "section": "Step 1 of 2 · Company",
+      "text": "Contact email",
+      "type": "email",
+      "required": true
+    },
+    {
+      "section": "Step 1 of 2 · Company",
+      "text": "What year was your company founded?",
+      "type": "number",
+      "required": true
+    },
+    {
+      "section": "Step 1 of 2 · Company",
+      "text": "What stage is your company?",
+      "type": "single_select",
+      "options": [
+        "Idea",
+        "Pre-seed",
+        "Seed",
+        "Series A or later"
+      ],
+      "required": true
+    },
+    {
+      "section": "Step 1 of 2 · Company",
+      "text": "Which industries are relevant to your company? (select all that apply)",
+      "type": "multi_select",
+      "options": [
+        "Health Tech",
+        "AI / Machine Learning",
+        "Fintech",
+        "Climate"
+      ],
+      "required": false
+    },
+    {
+      "section": "Step 2 of 2 · Your pitch",
+      "text": "Describe what your company does",
+      "help": "Maximum 280 characters",
+      "type": "long_text",
+      "required": true,
+      "limit": {
+        "unit": "chars",
+        "max": 280
+      }
+    },
+    {
+      "section": "Step 2 of 2 · Your pitch",
+      "text": "What problem are you solving?",
+      "type": "long_text",
+      "required": true
+    },
+    {
+      "section": "Step 2 of 2 · Your pitch",
+      "text": "Have you raised outside funding?",
+      "type": "yes_no",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "required": true
+    },
+    {
+      "section": "Step 2 of 2 · Your pitch",
+      "text": "Pitch deck (PDF)",
+      "help": "Optional",
+      "type": "file",
+      "doc_kind": "pitch_deck",
+      "required": false
+    }
   ],
-  "sources": []
+  "sources": [],
+  "full_title": "Sandbox Innovation Grant (practice)",
+  "amount_detail": "Nothing - this is a practice form"
 }

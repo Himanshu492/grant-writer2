@@ -7,7 +7,7 @@
   "status": "closed",
   "deadline": null,
   "deadline_note": "Closed. The current cycle (Spring 2027 class, program March 8 – June 3, 2027) opened August 24, 2026 and its final deadline was November 18, 2026 at 11:59pm PST. The next cycle has not been announced. This program also ran a Fall 2026 class (started September 8, 2026), and Techstars' Fall 2026 term took applications March 2 – June 10, 2026, so an opening around March 2027 is plausible but unconfirmed.",
-  "amount": "$220,000 investment: $200,000 uncapped MFN Safe + $20,000 convertible equity agreement for 5% common stock (equity, not a grant)",
+  "amount": "$220K investment",
   "summary": {
     "at_a_glance": "Techstars' healthcare accelerator in Baltimore for AI-driven health startups, run with Johns Hopkins, CareFirst BlueCross BlueShield, MedStar Health, the University of Maryland Baltimore and the University of Maryland Medical System. It is still running: a class started in September 2026 and the next starts March 8, 2027, but applications for that class closed on November 18, 2026. No later application dates are published yet.",
     "what_they_offer": "$220,000 investment per company, a 13-week mentorship-driven program ending in a Demo Day (June 3, 2027 for the current class), mentors, access to the Techstars network of investors, partners and alumni, and partner perks valued at more than $4M. Program-specific: access to real clinical environments, payer and reimbursement insight, policy and regulatory expertise and commercialization pathways through the Baltimore partner institutions.",
@@ -862,5 +862,6 @@
       "url": "https://www.techstars.com/blog/founder-advice/inside-a-techstars-accelerator-the-application-and-interview-process",
       "note": "Stages: application, first and second-round interviews, timing of responses"
     }
-  ]
+  ],
+  "amount_detail": "$220,000 investment: $200,000 uncapped MFN Safe + $20,000 convertible equity agreement for 5% common stock (equity, not a grant)"
 }

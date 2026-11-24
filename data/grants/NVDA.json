@@ -7,7 +7,7 @@
   "status": "rolling",
   "deadline": null,
   "deadline_note": "No deadline: \"There are no application fees, deadlines, or cohorts.\" NVIDIA asks applicants to allow up to 10 business days for review.",
-  "amount": "No cash and no equity taken. Free membership: preferred pricing on select NVIDIA hardware and software, free cloud credits from NVIDIA and partners, free and discounted technical training, and investor exposure for eligible members.",
+  "amount": "Credits and discounts, no cash",
   "summary": {
     "at_a_glance": "NVIDIA Inception is a free, always-open membership program for AI startups, not a grant or an accelerator cohort. Members get training, developer tools, discounted NVIDIA hardware and software, partner cloud credits and, if eligible, introductions to NVIDIA's venture capital network.",
     "what_they_offer": "Training and guidance (free self-paced technical courses, discounted expert-led workshops, personalized recommendations, NVIDIA Developer Forums, a monthly newsletter); developer tools and offers (SDKs, model libraries, preferred pricing on select NVIDIA hardware and software, partner offers, free cloud credits from NVIDIA and partners); investor access through Inception Capital Connect and networking events (based on eligibility); brand and market reach (official badges, co-branded content, events, go-to-market opportunities as engagement grows). Preferred hardware pricing works as a rebate through suppliers and covers only select products.",
@@ -37,5 +37,6 @@
       "url": "https://www.nvidia.com/en-us/startups/",
       "note": "Official program page and FAQ (the old /startups/faq/ address redirects here): benefits, criteria, no deadlines, pitch deck and incorporation requirements."
     }
-  ]
+  ],
+  "amount_detail": "No cash and no equity taken. Free membership: preferred pricing on select NVIDIA hardware and software, free cloud credits from NVIDIA and partners, free and discounted technical training, and investor exposure for eligible members."
 }

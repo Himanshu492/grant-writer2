@@ -1,13 +1,13 @@
 {
   "id": "CSA",
-  "title": "Cedars-Sinai Accelerator+",
+  "title": "Cedars-Sinai Accelerator",
   "funder": "Cedars-Sinai (Cedars-Sinai Technology Ventures)",
   "program_url": "https://www.csaccelerator.com/",
   "application_url": null,
   "status": "unknown",
   "deadline": null,
   "deadline_note": "No application window, class date or deadline is published. The official site has no application form or apply link — only a 'Contact us today' form and the email csaccelerator@cshs.org. The last announced class was the 10th (August 2024); the program has since been rebranded 'Accelerator+' with a 'flexible duration' format.",
-  "amount": "Financial investment — amount not published for Accelerator+ (classes through the 10th, in 2024, received $100,000 per company)",
+  "amount": "Investment, amount not published",
   "summary": {
     "at_a_glance": "The Cedars-Sinai Accelerator has been relaunched as 'Cedars-Sinai Accelerator+', which the official site describes as a venture-building platform for Seed+ and Late Seed healthcare companies advancing toward commercialization. There is currently no public application form, class schedule or deadline on the site; the only way in that it shows is a contact form and an email address. The real application questions could not be seen.",
     "what_they_offer": "Per the official site: capital investment, clinical and market expertise, and 'guaranteed fast-track evaluation for product deployment within the Cedars-Sinai Health System and beyond'; a dedicated portfolio success team; fast-tracked paid pilots linked to enterprise contracts; co-working space next to Cedars-Sinai Medical Center in Los Angeles; curated sessions (FDA regulation, EMR integration, insurance billing); mentorship from more than 300 clinicians and executives; networking with local VCs and health systems; and follow-on investment evaluation after a successful pilot. The investment amount is not stated for Accelerator+. Under the earlier three-month class format each company received $100,000 (Cedars-Sinai newsroom, August 2024).",
@@ -49,5 +49,7 @@
       "url": "https://www.cedars-sinai.org/newsroom/tagfeed/en-us/tags/accelerator",
       "note": "Newsroom accelerator tag feed: no call for applications or new class announced"
     }
-  ]
+  ],
+  "full_title": "Cedars-Sinai Accelerator+",
+  "amount_detail": "Financial investment — amount not published for Accelerator+ (classes through the 10th, in 2024, received $100,000 per company)"
 }

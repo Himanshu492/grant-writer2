@@ -1,13 +1,13 @@
 {
   "id": "MTI",
-  "title": "MedTech Innovator Accelerator (2027 cohort)",
+  "title": "MedTech Innovator",
   "funder": "MedTech Innovator (nonprofit accelerator)",
   "program_url": "https://medtechinnovator.org/apply/",
   "application_url": "https://pro.innovator.org/applications#accelerator-programs",
   "status": "open",
   "deadline": "2026-12-01",
   "deadline_note": "2027 cohort. The official apply page and the Innovator Portal both say applications close December 1, 2026 (opened Oct 1, 2026). No time of day or time zone is published, so treat it as due before Dec 1. Evaluation runs December-May; notifications in late May 2027.",
-  "amount": "No investment and no equity required. Non-dilutive prize capital only: official apply page says $700,000+ across four competitions (early-stage companies compete for $350,000, mid-stage for $250,000); the portal lists '$800k (total individual prize up to $350k)'. Participation costs a $15,000 program fee (cash, or a $50K SAFE), with scholarships available.",
+  "amount": "$700K+ prize pool, no equity",
   "summary": {
     "at_a_glance": "MedTech Innovator (MTI) is a nonprofit, five-month, mostly virtual accelerator for medical device, diagnostic and digital health companies, and calls itself the world's largest medtech accelerator. Applications for the 2027 cohort are open now on the Innovator Portal and close December 1, 2026. It is very selective (the official pages give 2% to 3.6% of 1,800+ applicants) and every applicant gets written reviewer feedback.",
     "what_they_offer": "Five months (June to October/November 2027) of curriculum, mentor matching with strategic partners (e.g. J&J, BD, Zimmer Biomet, Edwards) and service providers, two months of value coaching, investor exposure through the Open Rounds platform, showcases at the Innovator Summit and The MedTech Conference, and the chance to compete for non-dilutive prize capital ($700,000+ per the apply page; '$800k' per the portal; top single prize $350,000). No equity is taken as a requirement. There is a $15,000 program fee, payable in cash (upfront or two installments) or through a $50K SAFE; scholarships are applied at acceptance (info session: every 2026 company received at least 50%), and deferral may be possible. Optional specialty tracks (American Heart Association, American Society of Plastic Surgeons, Vantage/BARDA) have no cash fee; the AHA and ASPS tracks require a $50,000 SAFE, Vantage is covered by a 100% BARDA scholarship.",
@@ -2429,5 +2429,19 @@
       "url": "https://help.innovator.org/en/articles/10074860-frequently-asked-questions",
       "note": "Innovator Help Center applicant FAQ: eligibility and evaluation basis (value, execution, momentum)"
     }
-  ]
+  ],
+  "full_title": "MedTech Innovator Accelerator (2027 cohort)",
+  "amount_detail": "No investment and no equity required. Non-dilutive prize capital only: official apply page says $700,000+ across four competitions (early-stage companies compete for $350,000, mid-stage for $250,000); the portal lists '$800k (total individual prize up to $350k)'. Participation costs a $15,000 program fee (cash, or a $50K SAFE), with scholarships available.",
+  "field_keys": {
+    "country": "Country",
+    "developmentStage": "Product Development Stage",
+    "productCategories": "Overall Categories",
+    "noDilutiveFunding": "Check this box if you have received no Dilutive Funding",
+    "noDebtFunding": "No Debt Funding",
+    "noNonDilutiveFunding": "Check this box if you have received no Non-Dilutive funding",
+    "productGeneratingRevenue": "Is your company currently generating revenue?",
+    "specialApplicationCategories": "Do you want to be considered for a specialty accelerator track?",
+    "howHeardAbout": "How did you hear about MedTech Innovator?",
+    "previouslyApplied": "Previously Applied"
+  }
 }

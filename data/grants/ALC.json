@@ -1,13 +1,13 @@
 {
   "id": "ALC",
-  "title": "Alchemist (formerly Alchemist Accelerator)",
+  "title": "Alchemist",
   "funder": "Alchemist Accelerator, LLC (DBA Alchemist)",
   "program_url": "https://www.alchemist.vc/invest",
   "application_url": "https://www.alchemist.vc/pitch",
   "status": "rolling",
   "deadline": null,
   "deadline_note": "No deadline or cohort date is published. The 'Pitch us' founder form was live and accepting input on 2026-11-24; Alchemist says its support 'does not run on a set program length'.",
-  "amount": "Investment check of $60,000 to $1 million at pre-seed/seed ('depending on the company and the program'); equity terms are not published on the site",
+  "amount": "$60K to $1M investment",
   "summary": {
     "at_a_glance": "Alchemist (the former Alchemist Accelerator; alchemistaccelerator.com now redirects to alchemist.vc) describes itself as an early-stage venture firm, no longer an accelerator. It invests at pre-seed and seed in deeply technical teams building for the enterprise (B2B) and then supports them through its 'Founder experience'. Founders apply by filling in a single public 'Pitch us' form.",
     "what_they_offer": "A check of $60,000 to $1 million, plus the Founder experience: a Founder Plan built on an onboarding call, a Success Manager, an equity-aligned Alchemist Partner (operator) matched to the company for the first year, sales training and a sales coach for six months, fundraising support (Investor Feedback Summits, workshops, two Investor Showcases a year in Silicon Valley), the Vault network of 40,000 mentors, over $500K in perks, a desk in the San Francisco office for six months if based in Silicon Valley, and community events including an annual Founder Retreat in January.",
@@ -568,5 +568,7 @@
       "url": "https://www.alchemist.vc/founders",
       "note": "Founder experience details"
     }
-  ]
+  ],
+  "full_title": "Alchemist (formerly Alchemist Accelerator)",
+  "amount_detail": "Investment check of $60,000 to $1 million at pre-seed/seed ('depending on the company and the program'); equity terms are not published on the site"
 }

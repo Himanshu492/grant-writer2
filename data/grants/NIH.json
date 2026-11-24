@@ -1,13 +1,13 @@
 {
   "id": "NIH",
-  "title": "NIH SBIR/STTR (Parent SBIR PA-27-100 [R43/R44]; Parent STTR PA-27-102 [R41/R42])",
+  "title": "NIH SBIR/STTR",
   "funder": "National Institutes of Health (with CDC and FDA) - NIH SEED Office",
   "program_url": "https://seed.nih.gov/small-business-funding",
   "application_url": "https://simpler.grants.gov/opportunity/359671",
   "status": "open",
   "deadline": "2027-01-05",
   "deadline_note": "Next standard due date: January 5, 2027, 5:00 PM local time of the applicant organization. The one after is April 5, 2027; the current parent announcements PA-27-100 and PA-27-102 expire April 6, 2027. NIH's standard small-business due dates are September 5, January 5 and April 5 each year. No late applications are accepted for this NOFO.",
-  "amount": "Phase I: normally up to $335,937 total costs (SBA guideline per NIH SEED); several NIH institutes allow up to $400,000 or $700,000. Phase II: $2,239,578 guideline (up to $2.5M-$3M at some institutes). Non-dilutive grant.",
+  "amount": "Phase I up to about $336K, non-dilutive",
   "summary": {
     "at_a_glance": "NIH's Seed Fund gives non-dilutive R&D grants to U.S. small businesses developing health and life-science products. Most companies apply to the 'parent' announcements (SBIR PA-27-100, STTR PA-27-102) at one of three standard due dates a year. Legislative authority for the programs expired on October 1, 2025 (NIH expired all its small-business announcements) and was restored on April 13, 2026 through September 30, 2031; new announcements were posted May 28, 2026 and applications are being accepted again.",
     "what_they_offer": "Phase I grant to establish technical merit and feasibility; Phase II to continue R&D toward commercialization. Total funding (direct costs, indirect costs and fee) normally may not exceed SBA budget guidelines: NIH SEED lists $335,937 for Phase I and $2,239,578 for Phase II. PA-27-100 lists higher institute-specific guidelines, e.g. Phase I $700,000 at NCI, NIA, NIAID, NIGMS, NIMH, NINDS and NCCIH and $400,000 at NHLBI, NEI, NHGRI, NIAAA, NICHD, NIDCD, NIDDK, NIDA and NINR; other components follow the SBA guideline. The NOFO says award periods normally may not exceed 6 months for Phase I and 2 years for Phase II (the NIH SEED site describes Phase I timelines of 6 months to 2 years). A fee of up to 7% of total costs may be requested. Fast-Track (Phase I and II together) and Direct to Phase II are NIH-only options. Technical and Business Assistance of up to $6,500 per Phase I project is available.",
@@ -655,5 +655,7 @@
       "url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-26-075.html",
       "note": "Technical and Business Assistance: up to $6,500 per Phase I project and $50,000 per Phase II project"
     }
-  ]
+  ],
+  "full_title": "NIH SBIR/STTR (Parent SBIR PA-27-100 [R43/R44]; Parent STTR PA-27-102 [R41/R42])",
+  "amount_detail": "Phase I: normally up to $335,937 total costs (SBA guideline per NIH SEED); several NIH institutes allow up to $400,000 or $700,000. Phase II: $2,239,578 guideline (up to $2.5M-$3M at some institutes). Non-dilutive grant."
 }
