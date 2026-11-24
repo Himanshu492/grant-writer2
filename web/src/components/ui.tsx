@@ -76,7 +76,7 @@ export function ProgressBar({ p }: { p: Grant['progress'] }) {
 
 export function progressText(g: Grant): string {
   const p = g.progress;
-  if (!p.total) return g.questions_verification === 'not_accessible' ? 'Form is behind a login. Scan it to load the questions.' : 'No questions yet';
+  if (!p.total) return g.questions_verification === 'not_accessible' ? 'Needs a form scan' : 'No questions yet';
   if (g.ready) return 'Ready to apply';
   return todoText(p) || `${p.done} of ${p.total} answered`;
 }
