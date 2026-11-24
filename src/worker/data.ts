@@ -226,9 +226,14 @@ export async function upsertSeedGrant(env: Env, seed: SeedGrant): Promise<'creat
 /**
  * Make a grant's question list match `list` (the real form, in order) without ever losing an answer.
  * `origin` is 'seed' (verified research bundled with the app) or 'agent_scan' (read off the live form by the browser agent).
- * Hand-added questions are kept after the synced ones.
+ * Hand-added questions are kept after the synced ones. Verified seed data replaces the list; a scan only merges into it.
  */
-export async function syncQuestions(env: Env, grantId: string, grantTitle: string, list: SeedQuestion[], origin: 'seed' | 'agent_scan'): Promise<{ added: number; kept: number; removed: number }> {
+export async function syncQuestions(
+  env: Env, grantId: string, grantTitle: string, list: SeedQuestion[], origin: 'seed' | 'agent_scan',
+  opts: { removeMissing?: boolean } = {},
+): Promise<{ added: number; kept: number; removed: number }> {
+  // A scan often sees only the steps it can reach without typing, so by default it only ever adds and updates.
+  const removeMissing = opts.removeMissing ?? origin === 'seed';
   const stmts: D1PreparedStatement[] = [];
   const { results: old } = await env.DB.prepare(`SELECT * FROM questions WHERE grant_id=? ORDER BY position`).bind(grantId).all<QuestionRow>();
   const replaceable = (o: QuestionRow) => o.origin !== 'manual';
@@ -262,7 +267,7 @@ export async function syncQuestions(env: Env, grantId: string, grantTitle: strin
   }
   for (const q of old) {
     if (used.has(q.id)) continue;
-    if (!replaceable(q)) {
+    if (!removeMissing || !replaceable(q)) {
       pos += 1;
       stmts.push(env.DB.prepare('UPDATE questions SET position=? WHERE id=?').bind(pos, q.id));
       continue;

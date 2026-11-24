@@ -1,0 +1,85 @@
+#!/usr/bin/env node
+// grantctl - how the Hermes agent reports to the grants portal while it works on a job.
+// It only writes small JSON files in the run folder (the runner reads them) and talks to the portal.
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+
+const dataDir = process.env.DATA_DIR || '/var/lib/grants-agent';
+let runDir = process.env.GRANT_RUN_DIR;
+if (!runDir) { try { runDir = readFileSync(join(dataDir, 'current_run'), 'utf8').trim(); } catch { /* none */ } }
+if (!runDir || !existsSync(join(runDir, 'job.json'))) { console.error('grantctl: no job is running'); process.exit(1); }
+const job = JSON.parse(readFileSync(join(runDir, 'job.json'), 'utf8'));
+const envFile = existsSync('/etc/grants-agent.env') ? readFileSync('/etc/grants-agent.env', 'utf8') : '';
+const env = (k) => process.env[k] || envFile.match(new RegExp(`^${k}=(.*)$`, 'm'))?.[1]?.trim() || '';
+const PORTAL = env('PORTAL_URL').replace(/\/$/, '');
+const TOKEN = env('AGENT_TOKEN');
+
+const progressFile = join(runDir, 'progress.json');
+const progress = existsSync(progressFile) ? JSON.parse(readFileSync(progressFile, 'utf8')) : { done: [], unknown: [], scanned: [] };
+const save = () => writeFileSync(progressFile, JSON.stringify(progress));
+const outcome = (o) => writeFileSync(join(runDir, 'outcome.json'), JSON.stringify(o));
+async function post(path, body, raw) {
+  const res = await fetch(`${PORTAL}/api/agent/runs/${job.run_id}${path}`, {
+    method: 'POST',
+    headers: { authorization: `Bearer ${TOKEN}`, 'content-type': raw ? 'image/png' : 'application/json' },
+    body: raw ?? JSON.stringify(body),
+  });
+  if (!res.ok) console.error(`grantctl: portal said ${res.status}`);
+}
+
+const [cmd, ...args] = process.argv.slice(2);
+switch (cmd) {
+  case 'job':
+    console.log(readFileSync(join(runDir, 'job.json'), 'utf8'));
+    break;
+  case 'progress': {
+    const nums = String(args[0] || '').split(/[,\s]+/).map(Number).filter((n) => Number.isInteger(n) && n > 0);
+    progress.done = [...new Set([...progress.done, ...nums])];
+    save();
+    await post('/update', { status: 'running', progress_done: progress.done.length, progress_total: job.fields.length, note: args[1] || '', message: nums.length ? `Filled ${nums.map((n) => 'Q' + n).join(', ')}${args[1] ? ' - ' + args[1] : ''}` : args[1] });
+    console.log(`ok: ${progress.done.length}/${job.fields.length} fields recorded`);
+    break;
+  }
+  case 'missing': {
+    const list = JSON.parse(args[0] || '[]');
+    for (const q of list) if (q?.text && !progress.unknown.some((x) => x.text === q.text)) progress.unknown.push(q);
+    save();
+    console.log(`ok: ${list.length} unknown field(s) noted. Leave them blank and carry on.`);
+    break;
+  }
+  case 'questions': {
+    const list = JSON.parse(readFileSync(args[0], 'utf8'));
+    for (const q of list) if (q?.text && !progress.scanned.some((x) => x.text === q.text)) progress.scanned.push(q);
+    save();
+    console.log(`ok: ${progress.scanned.length} field(s) recorded from the form`);
+    break;
+  }
+  case 'screenshot': {
+    const { chromium } = await import('playwright');
+    const b = await chromium.connectOverCDP(`http://127.0.0.1:${env('CDP_PORT') || 9222}`);
+    const pages = b.contexts().flatMap((c) => c.pages());
+    const page = pages[pages.length - 1];
+    if (page) await fetch(`${PORTAL}/api/agent/runs/${job.run_id}/screenshot?message=${encodeURIComponent(args[0] || 'Screenshot')}`, { method: 'POST', headers: { authorization: `Bearer ${TOKEN}`, 'content-type': 'image/png' }, body: await page.screenshot({ fullPage: true }) });
+    await b.close();
+    console.log('ok: screenshot sent');
+    break;
+  }
+  case 'need-human':
+    outcome({ type: 'needs_human', reason: args.join(' ') || 'The agent needs you to step in.' });
+    console.log('ok: a person has been asked to step in. END YOUR TURN NOW. You will be started again when they are done.');
+    break;
+  case 'done': {
+    const submitted = args[0] === '--submitted';
+    const text = (submitted ? args.slice(1) : args).join(' ');
+    if (submitted && job.mode !== 'live') { console.error('grantctl: this is not a live run - nothing may be submitted'); process.exit(2); }
+    outcome({ type: 'done', reason: submitted ? `SUBMITTED: ${text}` : text, submitted });
+    console.log('ok: finished. End your turn.');
+    break;
+  }
+  case 'fail':
+    outcome({ type: 'failed', reason: args.join(' ') || 'The agent could not continue.' });
+    console.log('ok: reported. End your turn.');
+    break;
+  default:
+    console.log('usage: grantctl job | progress <n,n,...> "note" | missing \'<json array>\' | questions <file.json> | screenshot "caption" | need-human "what to do" | done [--submitted] "summary" | fail "why"');
+}

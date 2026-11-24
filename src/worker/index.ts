@@ -12,6 +12,7 @@ import { SANDBOX_PASSWORD, sandbox } from './sandbox';
 import { norm, parseJson, sha256Hex, uid } from './util';
 import seedBundle from './seed.generated.json';
 import clientBundle from './client.generated.json';
+import agentBundle from './agent.generated.json';
 
 const SEEDS = seedBundle as unknown as SeedGrant[];
 const CLIENT = clientBundle as unknown as Record<string, { type: string; body: string; base64: boolean }>;
@@ -24,6 +25,17 @@ app.onError((err, c) => {
 });
 
 app.route('/sandbox', sandbox);
+
+// ---------- VM runner distribution (public: these files contain no secrets) ----------
+
+const AGENT = agentBundle as { version: string; files: Record<string, string> };
+app.get('/agent/version', (c) => c.json({ version: AGENT.version, files: Object.keys(AGENT.files).filter((f) => f !== 'install.sh') }));
+app.get('/agent/install.sh', (c) => c.text(AGENT.files['install.sh'], 200, { 'content-type': 'text/x-shellscript; charset=utf-8', 'cache-control': 'no-store' }));
+app.get('/agent/files/:name', (c) => {
+  const body = AGENT.files[c.req.param('name')];
+  return body === undefined ? c.text('Not found', 404) : c.text(body, 200, { 'cache-control': 'no-store' });
+});
+app.all('/agent/*', (c) => c.text('Not found', 404));
 app.route('/api/agent', agentApi);
 
 // ---------- session ----------
@@ -528,6 +540,7 @@ app.get('/api/settings', async (c) => {
   return c.json({
     default_mode: await getSetting(env, 'default_mode', 'test'),
     auto_approve_facts: (await getSetting(env, 'auto_approve_facts', '0')) === '1',
+    agent_engine: await getSetting(env, 'agent_engine', 'builtin'),
     kb_version: await kbVersion(env),
     agent: await agentStatus(env),
     legacy_available: !!env.LEGACY_DB,
@@ -541,8 +554,17 @@ app.get('/api/settings', async (c) => {
 app.patch('/api/settings', async (c) => {
   const b = await c.req.json<Record<string, unknown>>();
   if (b.default_mode === 'test' || b.default_mode === 'live') await setSetting(c.env, 'default_mode', b.default_mode);
+  if (b.agent_engine === 'builtin' || b.agent_engine === 'hermes') await setSetting(c.env, 'agent_engine', b.agent_engine);
   if ('auto_approve_facts' in b) await setSetting(c.env, 'auto_approve_facts', b.auto_approve_facts ? '1' : '0');
   return c.json({ ok: true });
+});
+
+app.get('/api/admin/agent-install', (c) => {
+  const origin = new URL(c.req.url).origin;
+  return c.json({
+    command: `curl -fsSL ${origin}/agent/install.sh | sudo bash -s -- ${origin} ${c.env.AGENT_TOKEN}`,
+    version: AGENT.version,
+  });
 });
 
 app.post('/api/admin/seed', async (c) => c.json({ result: await applySeeds(c.env) }));

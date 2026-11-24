@@ -13,6 +13,14 @@ interface Dash {
   runs: (Run & { grant_title: string })[];
 }
 
+function todo(g: Grant): string {
+  const need = g.progress.empty + g.progress.draft;
+  const bits = [];
+  if (g.progress.suggested) bits.push(`Confirm ${g.progress.suggested}`);
+  if (need) bits.push(`${bits.length ? 'answer' : 'Answer'} ${need}`);
+  return bits.length ? bits.join(', ') : 'Open';
+}
+
 export function Dashboard({ user }: { user: string }) {
   const { data, error, reload } = useLoad<Dash>(() => api('/dashboard'), [], 20000);
   if (!data) return <Loading error={error} />;
@@ -69,7 +77,7 @@ export function Dashboard({ user }: { user: string }) {
       {urgent.length > 0 && (
         <section>
           <h2>Urgent — due within two weeks</h2>
-          <div className="grid">{urgent.map((g) => <GrantCard key={g.id} g={g} cta={g.remaining ? `Answer ${g.remaining} question${g.remaining > 1 ? 's' : ''}` : 'Open'} />)}</div>
+          <div className="grid">{urgent.map((g) => <GrantCard key={g.id} g={g} cta={todo(g)} />)}</div>
         </section>
       )}
 
@@ -100,7 +108,7 @@ export function Dashboard({ user }: { user: string }) {
       {almost.length > 0 && (
         <section>
           <h2>Almost there — a few answers from done</h2>
-          <div className="grid">{almost.slice(0, 6).map((g) => <GrantCard key={g.id} g={g} cta={`${g.remaining} to go`} />)}</div>
+          <div className="grid">{almost.slice(0, 6).map((g) => <GrantCard key={g.id} g={g} cta={todo(g)} />)}</div>
         </section>
       )}
 

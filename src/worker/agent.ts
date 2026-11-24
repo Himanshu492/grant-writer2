@@ -1,7 +1,7 @@
 import { Hono } from 'hono';
 import type { Env, GrantRow, QuestionRow, SeedQuestion } from './types';
 import { requireAgent } from './auth';
-import { reuseExistingAnswers, setSetting, syncQuestions } from './data';
+import { getSetting, reuseExistingAnswers, setSetting, syncQuestions } from './data';
 import { norm, parseJson, todayISO, uid } from './util';
 
 export interface RunRow {
@@ -61,6 +61,7 @@ export async function buildJob(env: Env, run: RunRow, origin: string) {
   return {
     run_id: run.id,
     mode: run.mode,
+    engine: await getSetting(env, 'agent_engine', 'builtin'),
     grant: {
       id: grant.id,
       title: grant.title,
@@ -125,7 +126,8 @@ agentApi.post('/runs/:id/update', async (c) => {
   await c.env.DB.prepare(`UPDATE runs SET ${sets.join(', ')} WHERE id=?`).bind(...binds, id).run();
   if (b.message) await addRunEvent(c.env, id, b.message, b.level ?? (status === 'failed' ? 'error' : status === 'needs_human' ? 'warn' : 'info'));
   if (status === 'submitted' && run.mode === 'live') {
-    await c.env.DB.prepare(`UPDATE grants SET pipeline='submitted', submitted_at=datetime('now'), updated_at=datetime('now') WHERE id=?`).bind(run.grant_id).run();
+    // The practice grant stays available for more practice.
+    await c.env.DB.prepare(`UPDATE grants SET pipeline='submitted', submitted_at=datetime('now'), updated_at=datetime('now') WHERE id=? AND is_sandbox=0`).bind(run.grant_id).run();
   }
   return c.json({ ok: true, status });
 });
@@ -153,14 +155,22 @@ agentApi.post('/runs/:id/questions', async (c) => {
   const grant = await c.env.DB.prepare('SELECT * FROM grants WHERE id=?').bind(run.grant_id).first<GrantRow>();
   if (!grant) return c.json({ error: 'Grant not found' }, 404);
   const b = await c.req.json<{ questions: SeedQuestion[]; source_url?: string; note?: string }>();
-  const list = (b.questions ?? []).filter((q) => q && typeof q.text === 'string' && q.text.trim()).slice(0, 400);
+  // Forms mark required fields with a trailing "*" or "(required)"; that is decoration, not part of the question.
+  const tidy = (t: string) => t.replace(/\s*(\*+|\(?\b(required|optional)\b\)?)\s*$/i, '').trim();
+  const seen = new Set<string>();
+  const list = (b.questions ?? [])
+    .filter((q) => q && typeof q.text === 'string' && q.text.trim())
+    .map((q) => ({ ...q, text: tidy(q.text) }))
+    .filter((q) => { const n = norm(q.text); if (!n || seen.has(n)) return false; seen.add(n); return true; })
+    .slice(0, 400);
   if (!list.length) return c.json({ error: 'No questions supplied' }, 400);
 
   if (run.mode === 'scan') {
     const res = await syncQuestions(c.env, grant.id, grant.title, list, 'agent_scan');
     await c.env.DB.prepare(
       `UPDATE grants SET questions_verification='agent_scan', questions_source_url=?, questions_verified_on=?, questions_note=?, updated_at=datetime('now') WHERE id=?`,
-    ).bind(b.source_url ?? grant.application_url, todayISO(), b.note ?? 'Read from the live application form by the browser agent.', grant.id).run();
+    ).bind(b.source_url ?? grant.application_url, todayISO(),
+      b.note ?? 'Read from the live application form by the browser agent. A scan reads the steps it can reach without typing; fields on later steps are added when a run meets them.', grant.id).run();
     const reused = await reuseExistingAnswers(c.env, grant.id);
     await addRunEvent(c.env, id, `Scanned the live form: ${list.length} questions (${res.added} new, ${res.kept} already known, ${res.removed} removed, ${reused} answered from existing answers)`);
     return c.json({ ok: true, ...res, reused });
@@ -188,6 +198,22 @@ agentApi.post('/runs/:id/questions', async (c) => {
   await addRunEvent(c.env, id, `Found ${stmts.length} field(s) on the live form that were not in the portal; added them as new questions`, 'warn');
   return c.json({ ok: true, added: stmts.length, reused });
 });
+
+/**
+ * OpenAI-compatible model endpoint for the runner (and for Hermes on the VM), so the DeepSeek key never leaves Cloudflare.
+ */
+agentApi.post('/llm/v1/chat/completions', async (c) => {
+  if (!c.env.DEEPSEEK_API_KEY) return c.json({ error: 'DEEPSEEK_API_KEY is not configured' }, 503);
+  const body = await c.req.json<Record<string, unknown>>();
+  if (!body.model || !String(body.model).startsWith('deepseek')) body.model = c.env.DEEPSEEK_MODEL_FAST;
+  const upstream = await fetch(`${c.env.DEEPSEEK_BASE_URL.replace(/\/$/, '')}/chat/completions`, {
+    method: 'POST',
+    headers: { authorization: `Bearer ${c.env.DEEPSEEK_API_KEY}`, 'content-type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  return new Response(upstream.body, { status: upstream.status, headers: { 'content-type': upstream.headers.get('content-type') ?? 'application/json' } });
+});
+agentApi.get('/llm/v1/models', (c) => c.json({ object: 'list', data: [c.env.DEEPSEEK_MODEL_WRITE, c.env.DEEPSEEK_MODEL_FAST].map((id) => ({ id, object: 'model', owned_by: 'deepseek' })) }));
 
 agentApi.get('/documents/:id', async (c) => {
   const doc = await c.env.DB.prepare('SELECT * FROM documents WHERE id=?').bind(c.req.param('id')).first<Record<string, string>>();

@@ -291,3 +291,7 @@ a.trow:hover { background: var(--surface-2); }
 .toasts { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; gap: 8px; z-index: 30; width: min(560px, calc(100vw - 32px)); }
 .toast { background: var(--ink); color: var(--bg); border-radius: 10px; padding: 11px 15px; font-weight: 500; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25); }
 .toast.error { background: var(--danger); color: #fff; }
+
+.cmd { white-space: pre-wrap; word-break: break-all; user-select: all; }
+.pill { max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+.portal-facts .pill { white-space: normal; border-radius: 8px; }
